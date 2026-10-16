@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Belnic Cosméticos</name>
+    <description><![CDATA[Distribuidora Oficial Maison Visage & Mirra Cométicos]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name><![CDATA[Belnic Cosméticos Distribuidora Maison Visage & Mirra Cosméticos]]></name>
+      <Placemark>
+        <name>Dois Irmãos Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR46qt5n2WYgnJP6J3L-QVFyYMamwPxr3v0GQtcafUZVx1bKI1tBKTEvcdxTurcXe3SLLR5g3S2b7LvtjParYqeiSW0pfAyUzg-CySFq7zJb5rxLyG-_IKFWdtpXFgE4pN9Ez5mD9vWsLLGvwZdYfaVMl9aBQDaTPxhoVVO1aDf9YCEeN8lDR7kTEUxoXIwjZ2BO3B8ArlYE?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR46qt5n2WYgnJP6J3L-QVFyYMamwPxr3v0GQtcafUZVx1bKI1tBKTEvcdxTurcXe3SLLR5g3S2b7LvtjParYqeiSW0pfAyUzg-CySFq7zJb5rxLyG-_IKFWdtpXFgE4pN9Ez5mD9vWsLLGvwZdYfaVMl9aBQDaTPxhoVVO1aDf9YCEeN8lDR7kTEUxoXIwjZ2BO3B8ArlYE?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.0877223,-29.5883462,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sapiranga Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7Vt2omOfchOdxhMVrogBgFwZ4IysQjaY9dnaYN0QJrjuShMPA6JvvDA3YkhAMIfBydAWDC3Tlsi8LUF_9kI95mWC40d8fTAFx_8gXjKSW1_ar8_tpAhPfyqTQLny8oy9bwlgOWYu37hj6ELdckdDnWV5kNBbCt2_9dsWNySaziy38Nf2qaiNxQUkL0JltJ1ghc-5ZK3W-d?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7Vt2omOfchOdxhMVrogBgFwZ4IysQjaY9dnaYN0QJrjuShMPA6JvvDA3YkhAMIfBydAWDC3Tlsi8LUF_9kI95mWC40d8fTAFx_8gXjKSW1_ar8_tpAhPfyqTQLny8oy9bwlgOWYu37hj6ELdckdDnWV5kNBbCt2_9dsWNySaziy38Nf2qaiNxQUkL0JltJ1ghc-5ZK3W-d?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.0071753,-29.6366962,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parobé Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7swUBICy5Gwic9E978rhHZVOYObKatwITc96kYOYngFC4rQ5b312HudZ7ERoIOLENPSgaQcJWnMlPn3M4PlPQZKDF64vt_8i1OPnfxZ07kiTGHXTCPjoWnwGp_hi0vw7zjpwj2O0hQt5Ca8sgpdyO6j9CnumSdN4YGnuPh1RHjr0VeN6OoE7-vYc-LejVE96oR85YkjzDt?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7swUBICy5Gwic9E978rhHZVOYObKatwITc96kYOYngFC4rQ5b312HudZ7ERoIOLENPSgaQcJWnMlPn3M4PlPQZKDF64vt_8i1OPnfxZ07kiTGHXTCPjoWnwGp_hi0vw7zjpwj2O0hQt5Ca8sgpdyO6j9CnumSdN4YGnuPh1RHjr0VeN6OoE7-vYc-LejVE96oR85YkjzDt?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -50.8290177,-29.6270225,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Campo Bom Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7U2Y3j_XaxJ-dAs4GminlTxJG8j6pPZ03uu0r3lfFsVjhTz8giHRdR8ql459Su3o3pfVFzmeI1T3gCfaIOtBjnKx6RFZEBAaV08cpcYk0wTsN4fkrJT6aE8CZA8a_3b59pwzsAHBPh-NmlHWj0-l-7kUmVlS2gIbVIYRMkvUj4cR5sE0Ip7j0avW7srVb__DgE6YYspJtK?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7U2Y3j_XaxJ-dAs4GminlTxJG8j6pPZ03uu0r3lfFsVjhTz8giHRdR8ql459Su3o3pfVFzmeI1T3gCfaIOtBjnKx6RFZEBAaV08cpcYk0wTsN4fkrJT6aE8CZA8a_3b59pwzsAHBPh-NmlHWj0-l-7kUmVlS2gIbVIYRMkvUj4cR5sE0Ip7j0avW7srVb__DgE6YYspJtK?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.0613111,-29.6747831,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nova Hartz Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4Ij8bBzoszDGR7fXcbdnJjy4HJ_vUyt0jxHfVzs8Z-eLd4n7nY3xV0ZfXJydzuHi2WJlChc7BTYWIbRe2IiJkbe0eQMt6-1O4ehr3T40ODFDijWX5e7mNTiWgWWhaBWpEvSx6jvk-oj169R9vjQjXwOl5zOvBZZaISKyUJycvReCDy_fdSlTn5C9ndC0KxSXFQ-E8J-JwT?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4Ij8bBzoszDGR7fXcbdnJjy4HJ_vUyt0jxHfVzs8Z-eLd4n7nY3xV0ZfXJydzuHi2WJlChc7BTYWIbRe2IiJkbe0eQMt6-1O4ehr3T40ODFDijWX5e7mNTiWgWWhaBWpEvSx6jvk-oj169R9vjQjXwOl5zOvBZZaISKyUJycvReCDy_fdSlTn5C9ndC0KxSXFQ-E8J-JwT?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -50.903423,-29.5846755,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Novo Hamburgo Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6AGoCF31R2nHHejkETTlvYuH4b9oGAzquWJAHe5uqtntlBrKHTJRsabtjM7HFTC22q5cRneWAlM0N4Y1vj8pmqDUvdS9UEP6RE3IfOSeAIBnQwaGvWdfZTYAWuNufh_kPckmsPAvOfet1LodeOoDJEpaQfJspXsKxPXWPFuupfZ4LalFNeuNhSv290lNg6JyKOxD5G6Saq?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6AGoCF31R2nHHejkETTlvYuH4b9oGAzquWJAHe5uqtntlBrKHTJRsabtjM7HFTC22q5cRneWAlM0N4Y1vj8pmqDUvdS9UEP6RE3IfOSeAIBnQwaGvWdfZTYAWuNufh_kPckmsPAvOfet1LodeOoDJEpaQfJspXsKxPXWPFuupfZ4LalFNeuNhSv290lNg6JyKOxD5G6Saq?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1337575,-29.6834874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Estância Velha Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR68dnKNUduoaSgSeFLCkXT5_aZbxeQUJMNvK3bpiNs4T7d0LUJ5HIC0WNpr5P2MENi_LsIhcxmqZ_kTEtJGTxQmWZHmiTPRTJcCL2S-C_ndpBDJuC2grSdWR_3kHcYpCJhfnOM3mjtfb63nb9cnxJ_KG5_6Nm8Pl9gz3Q6iS5C-g5m-BTlVs_jH-au_buIDrTn53s8rr9Zy?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR68dnKNUduoaSgSeFLCkXT5_aZbxeQUJMNvK3bpiNs4T7d0LUJ5HIC0WNpr5P2MENi_LsIhcxmqZ_kTEtJGTxQmWZHmiTPRTJcCL2S-C_ndpBDJuC2grSdWR_3kHcYpCJhfnOM3mjtfb63nb9cnxJ_KG5_6Nm8Pl9gz3Q6iS5C-g5m-BTlVs_jH-au_buIDrTn53s8rr9Zy?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1737689,-29.6537237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ivoti Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4QGPAkx9MUrPAwiSaAGaYZ6rMdXWEk_kqo8Jn1PWREuGHRvIbSQO0D_7E0Gh93qgrq28-gTUYB2Dz8a7VyF1_q5rXQ_PJ25Bb3OcBcih6ahGgmQ1atiGQBtZ8Zht5XoALfXmS90P1sfOVvrXlQibzlhFk9v_V2gVpUPT_Rp_47bpShVB9h6DjImw-B8-JwvustZYHLZ-lW?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4QGPAkx9MUrPAwiSaAGaYZ6rMdXWEk_kqo8Jn1PWREuGHRvIbSQO0D_7E0Gh93qgrq28-gTUYB2Dz8a7VyF1_q5rXQ_PJ25Bb3OcBcih6ahGgmQ1atiGQBtZ8Zht5XoALfXmS90P1sfOVvrXlQibzlhFk9v_V2gVpUPT_Rp_47bpShVB9h6DjImw-B8-JwvustZYHLZ-lW?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1637876,-29.6106737,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Maria do Herval Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR76OcxdHewyCEqUc8ceEAKPeQB_qnA8DkTnkB3G4mJz_QAwn3PHht9YKLuyB21YOKMYwqg0Ky7En6TwSWppjvb3gGFYXTn-Zo2OjxydBgaFcsTtyy3OjsMGnayZXFoCScF63fYnEppyh-p5WdxzvJYU7r7turTIz__MuQE0umpn2tyApe9yAsf36zFl3Kgyo3PhHq8tzKub?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR76OcxdHewyCEqUc8ceEAKPeQB_qnA8DkTnkB3G4mJz_QAwn3PHht9YKLuyB21YOKMYwqg0Ky7En6TwSWppjvb3gGFYXTn-Zo2OjxydBgaFcsTtyy3OjsMGnayZXFoCScF63fYnEppyh-p5WdxzvJYU7r7turTIz__MuQE0umpn2tyApe9yAsf36zFl3Kgyo3PhHq8tzKub?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -50.9934699,-29.496943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Picada Café Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5i-3CaerTnC4KUJez8zaV2smZX4XAr5SY48HfzMNs_h76eEgPDlz5meoyx9uOsCMf5N2gPGH2imGaYlJCCD0ETRgn6l7bXZ2DXl_xYt9iaXH0_xCBH6buxt8t9rc_H2Mq3_weO5XJWFj1zsW03C7kqxZnXUy3uDszE0oyeivTyIajS6_W9tEsefULdK2JoDMkPBKR8RrmD?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5i-3CaerTnC4KUJez8zaV2smZX4XAr5SY48HfzMNs_h76eEgPDlz5meoyx9uOsCMf5N2gPGH2imGaYlJCCD0ETRgn6l7bXZ2DXl_xYt9iaXH0_xCBH6buxt8t9rc_H2Mq3_weO5XJWFj1zsW03C7kqxZnXUy3uDszE0oyeivTyIajS6_W9tEsefULdK2JoDMkPBKR8RrmD?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1331285,-29.4503793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São Leopoldo Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4hJwipH0H26ccaFa_rB6c2Q9-s_MuxhrLdWzSE8svBRcwwsGyS_pv4qJ3pg4_YgGHNDiWYme9AbJM_Ip1bWZ9eeor-FrXqioRsgTBMrYBhW9IkoiuymIH7MhbKJXCOk-D1caXV1uNokN7Xo0zTVPdNcwa4TskXnnBszmFfsAhCKl9Lhktkrg_cIfGcnkIoWXXX_A-9moKe?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4hJwipH0H26ccaFa_rB6c2Q9-s_MuxhrLdWzSE8svBRcwwsGyS_pv4qJ3pg4_YgGHNDiWYme9AbJM_Ip1bWZ9eeor-FrXqioRsgTBMrYBhW9IkoiuymIH7MhbKJXCOk-D1caXV1uNokN7Xo0zTVPdNcwa4TskXnnBszmFfsAhCKl9Lhktkrg_cIfGcnkIoWXXX_A-9moKe?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1480174,-29.7607417,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lindolfo Collor Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4nArdyY9JPhYYwW8bH0YT7Len8xYXBkkrrkbMJoqzBG47ksqFnqWb2aSnNNQ7CD-NDuQHrFcAzyg6nChPuRZZMBS3PMDm414L9OMg9KfkCHqLeq5jbJ3-sJKgjBbcRcufDQNJ5PuAloC_kE6_GRmdaeFkZI4r5UcuRK9O-ehN93MalyTFNWM8nCYDihKCSwnIQCzxLsBHi?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4nArdyY9JPhYYwW8bH0YT7Len8xYXBkkrrkbMJoqzBG47ksqFnqWb2aSnNNQ7CD-NDuQHrFcAzyg6nChPuRZZMBS3PMDm414L9OMg9KfkCHqLeq5jbJ3-sJKgjBbcRcufDQNJ5PuAloC_kE6_GRmdaeFkZI4r5UcuRK9O-ehN93MalyTFNWM8nCYDihKCSwnIQCzxLsBHi?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.210529,-29.5959516,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Araricá Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7kz2l9IPkck9L6zAEgdQKCHWuEtSIOXOs5n-_VV2LdiUgTAJQSVl_Bo16xhTKT9rvO8DRfq54BzzYnGe_Bf1IW8m7MvYNVwkDgrRKwK4ZqSSNZnmZMCHRKsPqVmApUuoV3uqIq1Lkff8FtDAU2ki_zzGPJvrHRim7DP8NXgW1iakM35t1XWj70ddO146DIz-BzPgl25bnA?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7kz2l9IPkck9L6zAEgdQKCHWuEtSIOXOs5n-_VV2LdiUgTAJQSVl_Bo16xhTKT9rvO8DRfq54BzzYnGe_Bf1IW8m7MvYNVwkDgrRKwK4ZqSSNZnmZMCHRKsPqVmApUuoV3uqIq1Lkff8FtDAU2ki_zzGPJvrHRim7DP8NXgW1iakM35t1XWj70ddO146DIz-BzPgl25bnA?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -50.9281662,-29.6164702,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Três Coroas Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5ZWjiv022EL7K8XGxyZOhjMBvFVgwSMJd1Q7RAsRqH7vIgyxj2CKl8vgLO0xNCVce_dZLUlTv6IXSiC-YN6U8Q3-1z_UkJSxOaBu1RVuY9ODUPKEZm50QT-UTXG6ijG-e4VeRxkjYQOzXMWte1YkMTMM7Xgsl7nNwjf36MlNRhN8MRVmc9KWolODIFgXkniCPrft3vJkoJ?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5ZWjiv022EL7K8XGxyZOhjMBvFVgwSMJd1Q7RAsRqH7vIgyxj2CKl8vgLO0xNCVce_dZLUlTv6IXSiC-YN6U8Q3-1z_UkJSxOaBu1RVuY9ODUPKEZm50QT-UTXG6ijG-e4VeRxkjYQOzXMWte1YkMTMM7Xgsl7nNwjf36MlNRhN8MRVmc9KWolODIFgXkniCPrft3vJkoJ?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -50.7790937,-29.5156152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Igrejinha Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR77hypDEMYG-TCyyOusiAtISUCRvlhDcMnNccOOs8gEY_I6Ys5bNcRYrDGkCV-9gc050KjOFcYb0Brmb1myNYvU9y_ui6kn_109eJ19WvSiktJLMM3dMwcnSKHW_fFgWMKmMSv-uGp7AaN9RzpcD_FfOA3pEBy-YEwlaC4zetETq_W2otMtveSp-_-Mj8yZF_6XxnYZqeFu?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR77hypDEMYG-TCyyOusiAtISUCRvlhDcMnNccOOs8gEY_I6Ys5bNcRYrDGkCV-9gc050KjOFcYb0Brmb1myNYvU9y_ui6kn_109eJ19WvSiktJLMM3dMwcnSKHW_fFgWMKmMSv-uGp7AaN9RzpcD_FfOA3pEBy-YEwlaC4zetETq_W2otMtveSp-_-Mj8yZF_6XxnYZqeFu?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -50.7924981,-29.5734428,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taquara Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7NHBgvRCsPRhFmEXw3k8R6Pssu-opyuoQVoqrKSBqGtY2MLf7IkzpEegqqs-p04YH_iWWBDJWvRPANMfZe2EoREACzVPijHI753H7RPn4qG_YOmRwFmqMrQc1bfeq-Kr7abIs1--3VgQZiRZDgub3PubDKGLp1VwGC28ts4WapCx4mKy1pgOeUDWzNV7j5KUt05VjjHd5B?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7NHBgvRCsPRhFmEXw3k8R6Pssu-opyuoQVoqrKSBqGtY2MLf7IkzpEegqqs-p04YH_iWWBDJWvRPANMfZe2EoREACzVPijHI753H7RPn4qG_YOmRwFmqMrQc1bfeq-Kr7abIs1--3VgQZiRZDgub3PubDKGLp1VwGC28ts4WapCx4mKy1pgOeUDWzNV7j5KUt05VjjHd5B?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -50.7763602,-29.6516601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Morro Reuter Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6UqA1UyKAbdc-If6CJLDxXesur1hoJymOfvbABF0qVAY2wMFqQ10lIL1TwIWH_ck9a1XxEkzEWTxpAK-QKNmHbTlRWPuDFlyqoRSU3h6SiEUBYd7DmBubbSQtUsrEtw-6zsN8jbddKs0jxELBGmpPrVCWtuOtkgS_qMkLWU9vofuDLPG8qfuX_fyuc3boZR2Z8-pAUVmu2?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6UqA1UyKAbdc-If6CJLDxXesur1hoJymOfvbABF0qVAY2wMFqQ10lIL1TwIWH_ck9a1XxEkzEWTxpAK-QKNmHbTlRWPuDFlyqoRSU3h6SiEUBYd7DmBubbSQtUsrEtw-6zsN8jbddKs0jxELBGmpPrVCWtuOtkgS_qMkLWU9vofuDLPG8qfuX_fyuc3boZR2Z8-pAUVmu2?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.0818339,-29.5401441,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nova Petrópolis Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4JxFbSZ2L1GlV_7-gcce6fvGb6ocpil4kIGpI1vYB2GesdzgM9ukPPYwRiSS5GW4DEjiGBGM-hEAdAHnPrWmO4_N8lU4QJbnTAFnlrRuiBy3kX3vSL2wHsWwVdqFyP4t1QkeDzB5GFm1PNKuIIWt7CbvULgEuhGOJvK8KkqRb5ZNOTDu1DljlCQvjqGGcQWcyaEWGwQ9Kf?fife=s16383" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4JxFbSZ2L1GlV_7-gcce6fvGb6ocpil4kIGpI1vYB2GesdzgM9ukPPYwRiSS5GW4DEjiGBGM-hEAdAHnPrWmO4_N8lU4QJbnTAFnlrRuiBy3kX3vSL2wHsWwVdqFyP4t1QkeDzB5GFm1PNKuIIWt7CbvULgEuhGOJvK8KkqRb5ZNOTDu1DljlCQvjqGGcQWcyaEWGwQ9Kf?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1118952,-29.3766026,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porto Alegre Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7io-QUiYQ20LGEmsy6rvkpTjVhtSomgXHrWjNsnsXB-rR3VReK1dAeoXtcF22JNTBGwtdup_FbjL6lPdxlxFVWSBRyCXzj73-pzfKRWS52D5t5bN7S049BeSlkQQ0YOuLeT7ge2uE7axZwVugSq5RuwrEdcBK45i4k1j4eb2Sg3_MLQ8cqKqHXmSNxoSxP5opdDk_LODuQ2vbO2f0hg4ZctaTLzNN88NgD-27G7lQxMesHm2GyEEMasMU?fife=s16383" height="200" width="auto" /><br><br>Porto Alegre Belnic]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7io-QUiYQ20LGEmsy6rvkpTjVhtSomgXHrWjNsnsXB-rR3VReK1dAeoXtcF22JNTBGwtdup_FbjL6lPdxlxFVWSBRyCXzj73-pzfKRWS52D5t5bN7S049BeSlkQQ0YOuLeT7ge2uE7axZwVugSq5RuwrEdcBK45i4k1j4eb2Sg3_MLQ8cqKqHXmSNxoSxP5opdDk_LODuQ2vbO2f0hg4ZctaTLzNN88NgD-27G7lQxMesHm2GyEEMasMU?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.2089887,-30.0368176,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canoas Belnic</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4WzI_J60NnGaRkAHmyQYen_Vd4msUJ0VbOJJdj7RLsTLmLxaFFTSFEQxYX1jyz9fF9gJ2UjOIiaIKn7yaU6YA7ti2fxvXcAK3feGdRX8Oz9gPoNomL12X55gATqwTGMuKq30Mm853ZNMsSdDwLAs1X9fHJSIYSkeu_O4fIpLIwopbomSslxiZw9Q6OnR6TUz8pc7ARrVBwflQUZvh6gIIyUgi2dZMn6-v_Nn2elhxNxYSORFBlUiAsimk?fife=s16383" height="200" width="auto" /><br><br>Canoas Belnic]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4WzI_J60NnGaRkAHmyQYen_Vd4msUJ0VbOJJdj7RLsTLmLxaFFTSFEQxYX1jyz9fF9gJ2UjOIiaIKn7yaU6YA7ti2fxvXcAK3feGdRX8Oz9gPoNomL12X55gATqwTGMuKq30Mm853ZNMsSdDwLAs1X9fHJSIYSkeu_O4fIpLIwopbomSslxiZw9Q6OnR6TUz8pc7ARrVBwflQUZvh6gIIyUgi2dZMn6-v_Nn2elhxNxYSORFBlUiAsimk?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1847036,-29.9077898,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alvorada Belnic</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.0784875,-29.9999068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gravataí</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -50.9947529,-29.9398869,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Viamão</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.0340956,-30.0827721,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guaíba</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.3216111,-30.1165868,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cachoeirinha</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.0989724,-29.9457416,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sapucaia do Sul</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.146738,-29.8236495,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nova Santa Rita</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.2741267,-29.8561217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

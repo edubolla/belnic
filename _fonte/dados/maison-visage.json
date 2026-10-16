@@ -1,0 +1,1501 @@
+{
+  "marca": "Maison Visage",
+  "catalogo": "maison-visage",
+  "institucional": "Inspirado na mulher moderna, a Maison Visage Cosmetique acredita que criar produtos sustentáveis é mais que um ato de responsabilidade. Estudamos toda intimidade feminina e entendemos que este fator, entre outros, é fundamental para atingir a perfeição nos resultados de nossos produtos. Além disso, o respeito a variáveis fundamentais como a natureza, os animais, os profissionais da beleza e o consumidor final são primordiais para atingir tais resultados.\n\nComprovadamente nossos produtos possuem um “Blend Sensorial” envolvendo um conjunto de experiências tanto olfativas, de bem estar e de beleza, que resultam em uma fidelidade de longo prazo. Aliamos em primeira linha os profissionais da beleza, que com sua intimidade e expertise, entregam resultados extraordinários.\n\nA Maison Visage Cosmetique é pioneira e reconhecida internacionalmente por suas formulações otimizadas com fragrâncias intimamente selecionadas. O fundador, apaixonado pelo bem estar provocado pela aromaterapia e com várias conexões no sul da França, seleciona aromas únicos e inigualáveis para a formulação dos produtos, recolhidos de plantas selecionadas e encontradas somente em regiões favorecidas por condições climáticas bem particulares.\n\nNossa equipe de desenvolvimento inspira-se sempre na política de que, ao iniciar cada projeto, o respeito à natureza, aos animais e ao meio ambiente seja primordial e que principalmente agregue valores ao bem estar de nossos clientes. Somos 100% veganos, Cruelty Free, e somos reconhecidos com o selo internacional PETA (Organização mundial de proteção aos animais).\n\nBeleza, luxo e responsabilidade. Ressignifique sua melhor versão.",
+  "linhas": [
+    {
+      "slug": "touch-finishers",
+      "nome": "Touch Finishers",
+      "descricao": "Linha de pós-finalização para o dia a dia do salão: ceras, pomada, sprays, texturizador, fluidos e normalizador de pH.",
+      "area": "cabelo"
+    },
+    {
+      "slug": "le-bain",
+      "nome": "Le Bain",
+      "descricao": "Linha home care de nutrição, hidratação e reparação com ativos fitocêuticos, em três versões: Vitamins, Nutrition e Repairing.",
+      "area": "cabelo"
+    },
+    {
+      "slug": "home-spa-therapy",
+      "nome": "Home Spa Therapy",
+      "descricao": "Terapia energizante home care que atua em sinergia a favor da recuperação capilar e na biomodulação do folículo piloso, com shampoo, bálsamo e tônicos para o couro cabeludo.",
+      "area": "spa-capilar"
+    },
+    {
+      "slug": "spa-therapy",
+      "nome": "Spa Therapy",
+      "descricao": "Linha de terapia capilar com esfoliante, óleos essenciais e vegetais, argilas, vitaminas, tônico, espuma de limpeza, máscara de carvão e água termal.",
+      "area": "spa-capilar"
+    },
+    {
+      "slug": "nano-force",
+      "nome": "Nano Force",
+      "descricao": "Linha com Tecnologia Nanotriply (Biotin, Resveratrol, Hyaluronic, Amino Acids e Lipidium) para recuperação capilar, com versões profissional e home care.",
+      "area": "cabelo"
+    },
+    {
+      "slug": "beach-intensive",
+      "nome": "Beach Intensive",
+      "descricao": "Protege e repara os cabelos dos danos provocados pela exposição ao sol, cloro e água do mar.",
+      "area": "cabelo"
+    },
+    {
+      "slug": "luxury",
+      "nome": "Luxury",
+      "descricao": "Linha profissional home care Luxury, com tratamento Nanotherapy e finalizadores: Elixir, Premium Laque, Volume Powder Finisher e Ultimate Finisher.",
+      "area": "cabelo"
+    },
+    {
+      "slug": "linha-profissional-home-care",
+      "nome": "Linha Profissional Home Care",
+      "descricao": "Linhas de tratamento Ômega Complex, Protein Fusion, Minerals Vitamin (Detox), Curls Control (Cachos) e Blond Absolute (Matizador), em versões profissional e home care.",
+      "area": "cabelo"
+    },
+    {
+      "slug": "vegan-oil",
+      "nome": "Vegan Oil",
+      "descricao": "Linha que une tratamento com finalização. Fórmula intensa mas leve, traz nutrição, proteção dos raios UV, controla o frizz e promove brilho radiante.",
+      "area": "cabelo"
+    },
+    {
+      "slug": "hair-mist",
+      "nome": "Hair Mist",
+      "descricao": "Perfume capilar (Hair Parfum) em duas fragrâncias.",
+      "area": "cabelo"
+    },
+    {
+      "slug": "maison",
+      "nome": "Maison",
+      "descricao": "Fragrâncias Maison: Body Lotion Maison e Parfum de Maison.",
+      "area": "corpo"
+    }
+  ],
+  "produtos": [
+    {
+      "slug": "cera-defining-wax",
+      "nome": "Cera Defining Wax",
+      "linha": "touch-finishers",
+      "categoria": "cera",
+      "uso": null,
+      "volumes": [
+        "60 g"
+      ],
+      "descricao": "Produto de finalização que traz estilização e tratamento aos fios, textura incomparável, com fragrância exclusiva.",
+      "beneficios": [
+        "Define os fios sem pesar oferecendo flexibilidade para trabalhar diversos tipos de penteados",
+        "Constrói penteados com efeito soft, eliminando 100% do frizz",
+        "Garante acabamento impecável em cabelos soltos e presos"
+      ],
+      "ativos": [
+        "Manteiga de Karitê: promove blindagem ao fio, trazendo proteção contra polímeros de fixação",
+        "Poliquaternium: auxilia na prevenção contra ressecamento e melhora a penteabilidade dos fios"
+      ],
+      "indicacao": "Possui fixação média de longa duração e efeito memória. Indicado para resultados definidos com acabamento mate.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 5,
+      "imagem": "maison-visage/cera-defining-wax.webp"
+    },
+    {
+      "slug": "glossy-pomade",
+      "nome": "Glossy Pomade",
+      "linha": "touch-finishers",
+      "categoria": "pomada",
+      "uso": null,
+      "volumes": [
+        "60 g"
+      ],
+      "descricao": "A Pomada Glossy Pomade é multifuncional e traz variadas formas de aplicação. Possui fixação forte de longa duração.",
+      "beneficios": [
+        "Proporciona efeito extra brilho sem pesar ou enrijecer o fio",
+        "Não deixa resíduos",
+        "Ideal para acabamentos limpos e sofisticados",
+        "Substitui o efeito gel sem enrijecer ou danificar os fios"
+      ],
+      "ativos": [
+        "Glicerina: protege o cabelo das agressões causadas pelos ativos de fixação",
+        "Óleo de Rícino: rico em ômegas 6 e 9, forma uma película no fio impedindo que ele perca água com tanta facilidade"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 5,
+      "imagem": "maison-visage/glossy-pomade.webp"
+    },
+    {
+      "slug": "spray-wax",
+      "nome": "Spray Wax",
+      "linha": "touch-finishers",
+      "categoria": "spray de finalização",
+      "uso": null,
+      "volumes": [
+        "200 ml"
+      ],
+      "descricao": "É um produto independente, que sozinho oferece infinitas possibilidades. Proporciona limpeza, textura e aumenta a qualidade dos fios.",
+      "beneficios": [
+        "Permite finalizações soft para cabelos soltos e penteados presos",
+        "Capaz de encorpar os fios e fixá-los sem o resultado rígido de spray",
+        "Proporciona limpeza do frizz",
+        "Após a aplicação é possível fazer marcações e aberturas, alinhar as mechas do coque, fazer rabo de cavalo, moicanos, tranças e colar fios curtos"
+      ],
+      "ativos": [
+        "Pantenol D: retém a umidade do fio, formando uma barreira protetora",
+        "Óleo de Amêndoas: com alto teor de hidratação, previne ressecamento e doa muito brilho aos fios"
+      ],
+      "indicacao": null,
+      "modo_de_uso": "Para resultados soft, borrife jatos suaves em uma distância de 20 cm dos cabelos.",
+      "selos": [],
+      "pagina_pdf": 6,
+      "imagem": "maison-visage/spray-wax.webp"
+    },
+    {
+      "slug": "luminous-spray",
+      "nome": "Luminous Spray",
+      "linha": "touch-finishers",
+      "categoria": "spray de brilho",
+      "uso": null,
+      "volumes": [],
+      "descricao": "Tratamento em spray. Possui uma fórmula rica em óleos luxuosos que ajudam a dar mais brilho e suavidade para os fios sem pesar, garantindo nutrição intensa e um brilho extraordinário.",
+      "beneficios": [
+        "Possui acabamento texturizado e é um poderoso produto antilaka e anti spray de fixação",
+        "Possui efeito seda, ideal para finalizações de todos os cabelos no dia a dia do salão",
+        "Garante um efeito único de saúde aos cabelos",
+        "Indispensável para cabelos loiros, coloridos e opacos"
+      ],
+      "ativos": [
+        "Óleo de Abacate: repõe nutrientes, suaviza os quadros de ressecamento e aumenta a resistência dos fios, rico em aminoácidos",
+        "Óleo de Argan: nutritivo, seu principal benefício é sua ação antioxidante"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 6,
+      "imagem": "maison-visage/luminous-spray.webp"
+    },
+    {
+      "slug": "invisible-hold",
+      "nome": "Invisible Hold",
+      "linha": "touch-finishers",
+      "categoria": "spray fixador",
+      "uso": null,
+      "volumes": [
+        "400 ml"
+      ],
+      "descricao": "Fixação seca com poderosa fórmula capaz de fixar sem danificar os fios.",
+      "beneficios": [
+        "Fixação extra forte para penteados em todos os estilos",
+        "Garante 100% de diluição em contato com o condicionador, facilitando a completa remoção do produto"
+      ],
+      "ativos": [
+        "Pantenol D: retém a umidade do fio, formando uma barreira protetora",
+        "Polímero: agente de fixação extremamente suave, que não provoca nenhuma agressão ao fio; deixa os fios encorpados e com muito brilho"
+      ],
+      "indicacao": "Formulado com o equilíbrio ideal para garantir uma finalização sem erros.",
+      "modo_de_uso": "Para resultados de fixação suave, aplique de modo contínuo com leves jatos nos cabelos secos mantendo uma distância de 20 a 35 cm. Para modelagens mais pesadas, aplicar de forma mais concentrada.",
+      "selos": [],
+      "pagina_pdf": 7,
+      "imagem": "maison-visage/invisible-hold.webp"
+    },
+    {
+      "slug": "volumizing-texturizing-cream",
+      "nome": "Volumizing Texturizing Cream",
+      "linha": "touch-finishers",
+      "categoria": "creme texturizador",
+      "uso": null,
+      "volumes": [
+        "120 ml"
+      ],
+      "descricao": "Um texturizador revolucionário. Você conseguirá criar volumes com efeito natural ou extra volumes com efeitos mecanicamente produzidos.",
+      "beneficios": [
+        "Possui proteção térmica para construção de penteados extra volumosos na raiz e em todo comprimento do cabelo",
+        "Garante cachos incríveis",
+        "Texturiza de forma suave com fixação leve e flexível, traz sensação e aparência natural, sem deixar residual branco"
+      ],
+      "ativos": [
+        "Polímero: agente de fixação extremamente suave, que não provoca nenhuma agressão ao fio, deixando os fios encorpados e com muito brilho",
+        "Óleo de Rícino: rico em ômega 6 e 9, forma uma película no fio impedindo que ele perca água com tanta facilidade"
+      ],
+      "indicacao": "Use em cabelos cacheados naturais ou antes do babyliss.",
+      "modo_de_uso": "Para efeito natural, pode ser aplicado nos cabelos secos. Para extra volume aplique no cabelo úmido e crie o resultado de penteado desejado.",
+      "selos": [],
+      "pagina_pdf": 7,
+      "imagem": "maison-visage/volumizing-texturizing-cream.webp"
+    },
+    {
+      "slug": "fluido-para-escova",
+      "nome": "Fluido para Escova",
+      "linha": "touch-finishers",
+      "categoria": "fluido para escova",
+      "uso": null,
+      "volumes": [
+        "250 ml"
+      ],
+      "descricao": "Os ácidos graxos presentes no ômega 3 nutrem profundamente os folículos pilosos, sendo fortalecidos para resistir melhor à tração da escova. O blend de óleos nobres possui vitaminas do complexo B e E, proteínas, fósforo e ferro que formam uma película protetora, aumentando emoliência e doando brilho sublime. Indicado para escovação térmica, é um produto livre de parabenos e composto por um blend de ômegas e óleos nobres orgânicos, que promovem uma suavidade e sedosidade sublime aos fios, além de brilho intenso.",
+      "beneficios": [
+        "Proporciona fácil deslize na escovação, super brilho e ação antifrizz",
+        "Repara pontas duplas",
+        "Proteção térmica contra os raios UVA/UVB (proteção solar)"
+      ],
+      "ativos": [
+        "Blend de Ômegas e Óleos Nobres"
+      ],
+      "indicacao": "Indicado para escovação térmica.",
+      "modo_de_uso": null,
+      "selos": [
+        "Livre de parabenos"
+      ],
+      "pagina_pdf": 8,
+      "imagem": "maison-visage/fluido-para-escova.webp"
+    },
+    {
+      "slug": "normalizador-de-ph",
+      "nome": "Normalizador de pH",
+      "linha": "touch-finishers",
+      "categoria": "normalizador de pH",
+      "uso": null,
+      "volumes": [
+        "250 ml"
+      ],
+      "descricao": "Reduz o pH capilar e bloqueia a oxidação pós-descoloração, coloração e químicas. Proporciona cutículas extremamente alinhadas, macias e hidratadas. Auxilia na proteção da cutícula e da cor dos cabelos. A tecnologia MEGA PLEX BOOSTER fortalece, estabiliza e reestrutura as ligações dissulfídicas das fibras capilares nos processos químicos, protegendo os fios dos tratamentos com químicas, colorações e descolorantes. A Queratina Vegetal tem a função de recuperar os fios, trazendo mais força, hidratação e brilho. Composta por aminoácidos, suas propriedades condicionadoras suavizam e aumentam a flexibilidade dos tecidos melhorando o seu aspecto. Aliado a Queratina Vegetal, o Pantenol previne o envelhecimento prematuro do cabelo.",
+      "beneficios": [],
+      "ativos": [
+        "Queratina Vegetal",
+        "Pantenol"
+      ],
+      "indicacao": "Cabelos submetidos a descoloração, coloração e químicas.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 8,
+      "imagem": "maison-visage/normalizador-de-ph.webp"
+    },
+    {
+      "slug": "surf-waves",
+      "nome": "Surf Waves",
+      "linha": "touch-finishers",
+      "categoria": "spray texturizador",
+      "uso": null,
+      "volumes": [
+        "200 ml"
+      ],
+      "descricao": "Processo nanotecnológico usado para separar o sal do aminoácido. Este sal extraído de um aminoácido produz o efeito de ondulações praianas naturais e saudáveis. O D`PANTENOL encorpa, fortalece e doa brilho aos fios capilares. O spray texturizador SURF WAVES proporciona um efeito praia com ondas amplificadas, encorpadas, soltas e textura incrível. Também fixa o efeito do babyliss, mantendo o efeito desejado por muito mais tempo.",
+      "beneficios": [],
+      "ativos": [
+        "Arginina Hidrolizada",
+        "Pantenol"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 9,
+      "imagem": "maison-visage/surf-waves.webp"
+    },
+    {
+      "slug": "fluido-desembaracante",
+      "nome": "Fluido Desembaraçante",
+      "linha": "touch-finishers",
+      "categoria": "fluido desembaraçante",
+      "uso": null,
+      "volumes": [
+        "250 ml"
+      ],
+      "descricao": "Penetra nas camadas cuticulares, reduzindo a porosidade dos fios, potencializando a hidratação e umectação, eliminando frizz, dando brilho e reparando a elasticidade natural da fibra capilar, evitando assim que os fios se quebrem e que pontas duplas se formem. Super desembaraçante e doador de sedosidade. Permite que o pente ou a escova deslizem com suavidade, eliminando a tração repetida na mesma mecha, evitando assim o desgaste excessivo da fibra e consequentemente reduzindo as quedas e quebras ocasionadas por essas ferramentas.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo de Semente de Macadâmia",
+        "Blend de Óleos Nobres"
+      ],
+      "indicacao": "Indicado no pós-eriçado ou pós-químicas.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 9,
+      "imagem": "maison-visage/fluido-desembaracante.webp"
+    },
+    {
+      "slug": "le-bain-vitamins",
+      "nome": "Le Bain Vitamins: Green Tea, Mint and Ginkgo Biloba",
+      "linha": "le-bain",
+      "categoria": "kit de tratamento (shampoo, condicionador, leave-in e máscara)",
+      "uso": "home care",
+      "volumes": [
+        "Shampoo 330 ml",
+        "Condicionador (conditioner) 330 ml",
+        "Leave-in 170 ml",
+        "Máscara 300 g"
+      ],
+      "descricao": "Composição riquíssima em vitaminas, minerais e ativos fitocêuticos que fortalece e hidrata o bulbo piloso, deixando os cabelos leves, macios e sedosos da raiz às pontas.",
+      "beneficios": [],
+      "ativos": [
+        "Chá Verde: além de desobstruir os poros do couro cabeludo, possui vitaminas e enzimas bloqueadoras de DHT",
+        "Hortelã: proporciona uma limpeza refrescante aos cabelos, conferindo equilíbrio na oleosidade, desobstruindo os poros e deixando o couro cabeludo limpo e saudável",
+        "Ginkgo Biloba: estimula a circulação e o crescimento saudável dos fios"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 10,
+      "imagem": "maison-visage/le-bain-vitamins.webp"
+    },
+    {
+      "slug": "le-bain-nutrition",
+      "nome": "Le Bain Nutrition: Ginger, Graine de Lin and Chia",
+      "linha": "le-bain",
+      "categoria": "kit de tratamento (shampoo, condicionador, leave-in e máscara)",
+      "uso": "home care",
+      "volumes": [
+        "Shampoo 330 ml",
+        "Condicionador (conditioner) 330 ml",
+        "Leave-in 170 ml",
+        "Máscara 300 g"
+      ],
+      "descricao": "Rica composição de ativos fitocêuticos que trazem nutrição aos cabelos deixando os fios fortes e protegidos.",
+      "beneficios": [],
+      "ativos": [
+        "Gengibre: ação bactericida, anti-inflamatória e tonificante; conta também com Gingerol, um derivado do gengibre conhecido por ajudar a reduzir a queda de cabelo",
+        "Graine de Lin (linhaça): grão extremamente nutritivo, rico em fibras, ácidos graxos e proteína; rico em Ômega 3, Ômega 6 e Ômega 9",
+        "Chia: rica em proteínas, vitamina A, fibras e gorduras boas, recupera nutrientes perdidos no dia a dia"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 11,
+      "imagem": null
+    },
+    {
+      "slug": "le-bain-repairing",
+      "nome": "Le Bain Repairing: Quinoa, Avocado and Brazil Nut",
+      "linha": "le-bain",
+      "categoria": "kit de tratamento (shampoo, condicionador, leave-in e máscara)",
+      "uso": "home care",
+      "volumes": [
+        "Shampoo 330 ml",
+        "Condicionador (conditioner) 330 ml",
+        "Leave-in 170 ml",
+        "Máscara 300 g"
+      ],
+      "descricao": "Possui uma poderosa composição de aminoácidos vegetais. Redensifica e reconstrói os cabelos da raiz às pontas trazendo aquela sensação de frescor da natureza.",
+      "beneficios": [],
+      "ativos": [
+        "Quinoa: semente rica em compostos fenólicos, com propriedades antioxidantes e anti-inflamatórias, que auxiliam no combate ao envelhecimento da fibra devolvendo densidade ao fio",
+        "Abacate: rico em gorduras, minerais e aminoácidos, reconstrói e nutre os fios ao mesmo tempo",
+        "Castanha do Brasil: rica em óleos e aminoácidos reconstrutores, possui alto teor de selênio, mineral que combate os radicais livres"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 11,
+      "imagem": null
+    },
+    {
+      "slug": "home-spa-therapy-energizing-shampoo",
+      "nome": "Energizing Shampoo",
+      "linha": "home-spa-therapy",
+      "categoria": "shampoo",
+      "uso": "home care",
+      "volumes": [
+        "350 ml"
+      ],
+      "descricao": "Linha que atua em sinergia a favor da recuperação capilar e na biomodulação do folículo piloso. Paralisa a queda e controla diversos distúrbios capilares (micoses, fungos, coceira, Psoríase, Eflúvio Telógeno, Dermatite Seborreica).",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Essencial de Alecrim: age no sistema circulatório e vascular como um estimulante vasodilatador",
+        "Óleo Essencial Melaleuca: com propriedades antissépticas, antifúngicas, parasiticidas, germicidas, antibacterianas e anti-inflamatórias",
+        "Zinco: promove renovação celular, controle da oleosidade e auxilia na metabolização de vitaminas e proteínas essenciais para o crescimento dos fios",
+        "Cafeína: estimulante natural e bloqueador do DHT, hormônio responsável pela calvície",
+        "Triglicerídeos: protege o manto hidrolipídico, gorduras transportadoras de ativos",
+        "Baicalina: flavonoide que promove a proliferação celular de micro vasos, ajudando a aumentar a irrigação sanguínea necessária para o crescimento capilar; reduz a atividade andrógena",
+        "Niacinamida: vitamina do complexo B, combate os radicais livres e possui ação anti-inflamatória"
+      ],
+      "indicacao": "Energizante para o couro cabeludo (estimulante do bulbo capilar).",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 12,
+      "imagem": null
+    },
+    {
+      "slug": "home-spa-therapy-conditioning-balm",
+      "nome": "Conditioning Balm",
+      "linha": "home-spa-therapy",
+      "categoria": "bálsamo",
+      "uso": "home care",
+      "volumes": [
+        "350 ml"
+      ],
+      "descricao": "Linha que atua em sinergia a favor da recuperação capilar e na biomodulação do folículo piloso. Paralisa a queda e controla diversos distúrbios capilares (micoses, fungos, coceira, Psoríase, Eflúvio Telógeno, Dermatite Seborreica).",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Essencial de Alecrim: age no sistema circulatório e vascular como um estimulante vasodilatador",
+        "Óleo Essencial Melaleuca: com propriedades antissépticas, antifúngicas, parasiticidas, germicidas, antibacterianas e anti-inflamatórias",
+        "Zinco: promove renovação celular, controle da oleosidade e auxilia na metabolização de vitaminas e proteínas essenciais para o crescimento dos fios",
+        "Cafeína: estimulante natural e bloqueador do DHT, hormônio responsável pela calvície",
+        "Triglicerídeos: protege o manto hidrolipídico, gorduras transportadoras de ativos",
+        "Baicalina: flavonoide que promove a proliferação celular de micro vasos, ajudando a aumentar a irrigação sanguínea necessária para o crescimento capilar; reduz a atividade andrógena",
+        "Niacinamida: vitamina do complexo B, combate os radicais livres e possui ação anti-inflamatória"
+      ],
+      "indicacao": "Bálsamo para o couro cabeludo (estimulante do bulbo capilar).",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 12,
+      "imagem": null
+    },
+    {
+      "slug": "home-spa-therapy-scalp-tonic",
+      "nome": "Scalp Tonic",
+      "linha": "home-spa-therapy",
+      "categoria": "tônico",
+      "uso": "home care",
+      "volumes": [
+        "100 ml"
+      ],
+      "descricao": "Linha que atua em sinergia a favor da recuperação capilar e na biomodulação do folículo piloso. Paralisa a queda e controla diversos distúrbios capilares (micoses, fungos, coceira, Psoríase, Eflúvio Telógeno, Dermatite Seborreica).",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Essencial de Alecrim: age no sistema circulatório e vascular como um estimulante vasodilatador",
+        "Óleo Essencial Melaleuca: com propriedades antissépticas, antifúngicas, parasiticidas, germicidas, antibacterianas e anti-inflamatórias",
+        "Zinco: promove renovação celular, controle da oleosidade e auxilia na metabolização de vitaminas e proteínas essenciais para o crescimento dos fios",
+        "Cafeína: estimulante natural e bloqueador do DHT, hormônio responsável pela calvície",
+        "Triglicerídeos: protege o manto hidrolipídico, gorduras transportadoras de ativos",
+        "Baicalina: flavonoide que promove a proliferação celular de micro vasos, ajudando a aumentar a irrigação sanguínea necessária para o crescimento capilar; reduz a atividade andrógena",
+        "Niacinamida: vitamina do complexo B, combate os radicais livres e possui ação anti-inflamatória"
+      ],
+      "indicacao": "Tônico estimulante do couro cabeludo.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 12,
+      "imagem": null
+    },
+    {
+      "slug": "home-spa-therapy-scalp-calming",
+      "nome": "Scalp Calming",
+      "linha": "home-spa-therapy",
+      "categoria": "tônico",
+      "uso": "home care",
+      "volumes": [
+        "60 ml"
+      ],
+      "descricao": "Composto por Physavie, conhecido também como um corticoide vegetal, este produto é indicado para tratamento da Psoríase Capilar, Dermatite Seborreica, alopecias, eflúvios, prurido, ardência, sensibilidade e descamação, sensibilidade pós-química e processos inflamatórios. Excelente opção para uso na região da barba, principalmente as que apresentam hiperemia (pele vermelha), prurido (coceira), Psoríase, Dermatite e Foliculite. Diante desses casos clínicos é necessário e fundamental uma conduta profissional, além de um acompanhamento home care adequado para a eficácia das ações calmantes, cicatrizantes, anti-inflamatórias e suavizantes.",
+      "beneficios": [
+        "Ações calmantes, cicatrizantes, anti-inflamatórias e suavizantes"
+      ],
+      "ativos": [
+        "Physavie (corticoide vegetal)"
+      ],
+      "indicacao": "Tônico calmante do couro cabeludo.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 12,
+      "imagem": "maison-visage/home-spa-therapy-scalp-calming.webp"
+    },
+    {
+      "slug": "spa-therapy-scrub",
+      "nome": "Spa Therapy Scrub",
+      "linha": "spa-therapy",
+      "categoria": "esfoliante",
+      "uso": null,
+      "volumes": [
+        "140 g"
+      ],
+      "descricao": "Esfoliante fitocêutico para o couro cabeludo (scrub + essential oil). Atua como esfoliante no couro cabeludo. Com suas propriedades terapêuticas, desintoxica, purifica e normaliza o excesso de oleosidade. A combinação de ativos veganos e naturais como a clorofila e os minerais marinhos remove com delicadeza impurezas e células mortas causadoras de possíveis patologias.",
+      "beneficios": [],
+      "ativos": [
+        "Cristais de Quartzo",
+        "Sal Marinho",
+        "Clorofila"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 13,
+      "imagem": "maison-visage/spa-therapy-scrub.webp"
+    },
+    {
+      "slug": "spa-therapy-essential-oil-alecrim-limao",
+      "nome": "Spa Therapy Essential Oil Alecrim + Limão",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "A combinação refrescante dos ativos do Essential Oil Alecrim e Limão oferece propriedades terapêuticas. Indicado para tratar a queda capilar, o tratamento contém dois ativos que intensificam o desenvolvimento dos fios e promovem ação calmante no couro cabeludo. Possui ação refrescante, que além de relaxar potencializa o crescimento capilar.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Essencial de Alecrim",
+        "Óleo Essencial de Limão"
+      ],
+      "indicacao": "Queda capilar.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 14,
+      "imagem": "maison-visage/spa-therapy-essential-oil-alecrim-limao.webp"
+    },
+    {
+      "slug": "spa-therapy-essential-oil-melaleuca-laranja",
+      "nome": "Spa Therapy Essential Oil Melaleuca + Laranja",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "Para completar o conjunto de tratamento intensivo, o Essential Oil Melaleuca e Laranja une dois ativos terapêuticos significativos, que agem no couro cabeludo. Juntos tratam a caspa, seborreia, dermatites e irritações, além de promover ação revitalizante.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Essencial de Melaleuca",
+        "Óleo Essencial de Laranja"
+      ],
+      "indicacao": "Caspa, seborreia, dermatites e irritações.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 14,
+      "imagem": "maison-visage/spa-therapy-essential-oil-melaleuca-laranja.webp"
+    },
+    {
+      "slug": "spa-therapy-essential-oil-menta-piperita",
+      "nome": "Spa Therapy Essential Oil Menta Piperita",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "Um dos óleos essenciais mais utilizados em todo o mundo. Seus principais efeitos terapêuticos são: analgésico, antimicrobiano, antioxidante, estimulante do crescimento e fortalecimento capilar por sua ação de vasodilatação.",
+      "beneficios": [],
+      "ativos": [
+        "OE Menta Piperita"
+      ],
+      "indicacao": "Indicado para protocolos de tratamento de prurido (coceira), dor, afinamento capilar, queda capilar, alopecias, seborreia capilar e facial.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 15,
+      "imagem": "maison-visage/spa-therapy-essential-oil-menta-piperita.webp"
+    },
+    {
+      "slug": "spa-therapy-essential-oil-gengibre",
+      "nome": "Spa Therapy Essential Oil Gengibre",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "Óleo essencial com grande ação anti-inflamatória e ativador da circulação sanguínea. Muito utilizado em tratamentos capilares, faciais e corporais. É um vasodilatador que também favorece o crescimento e fortalecimento dos fios, sendo também potente aliado no tratamento da queda capilar. Apresenta excelentes resultados no processo de cicatrização, atuando também nos tratamentos corporais para celulite.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Essencial de Gengibre"
+      ],
+      "indicacao": "Dermatite Seborreica, alopecias.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 15,
+      "imagem": "maison-visage/spa-therapy-essential-oil-gengibre.webp"
+    },
+    {
+      "slug": "spa-therapy-essential-oil-eucalipto-globulus",
+      "nome": "Spa Therapy Essential Oil Eucalipto Globulus",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "Óleo essencial muito indicado para potencializar os tratamentos capilares, faciais e corporais. Tem atividade antibiótica comprovada (bactericida, fungicida), controlando patologias como Dermatite Seborreica, Caspa, Acne, Foliculite e mantém a integridade da pele. Age no tratamento de feridas e lesões, além de ser antisséptico. Controla a microbiota da pele e a oleosidade.",
+      "beneficios": [],
+      "ativos": [
+        "OE Eucalipto Globulus"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 15,
+      "imagem": "maison-visage/spa-therapy-essential-oil-eucalipto-globulus.webp"
+    },
+    {
+      "slug": "spa-therapy-essential-oil-lavanda",
+      "nome": "Spa Therapy Essential Oil Lavanda Francesa",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "Muito versátil. Ajuda a equilibrar os óleos naturais do couro cabeludo, possui propriedades anti-inflamatórias, antissépticas, calmantes, cicatrizantes e antimicrobianas. Muito utilizado no combate a doenças como Dermatite, Eczema, Psoríase e Alopecias.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Essencial Lavanda"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 15,
+      "imagem": "maison-visage/spa-therapy-essential-oil-lavanda.webp"
+    },
+    {
+      "slug": "spa-therapy-vegetable-oil-jojoba",
+      "nome": "Spa Therapy Vegetable Oil Jojoba",
+      "linha": "spa-therapy",
+      "categoria": "óleo vegetal",
+      "uso": null,
+      "volumes": [
+        "50 ml",
+        "500 ml"
+      ],
+      "descricao": "O óleo vegetal de Jojoba é muito rico em vitamina A, vitaminas do complexo B, vitamina E e ceramida, um lipídio presente na estrutura capilar. Possui grande poder de compensação da hidratação de pele e cabelos secos, assim como equilíbrio de pele e cabelos muito oleosos. Ação antioxidante e anti-inflamatória.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Vegetal de Jojoba"
+      ],
+      "indicacao": "Pele e cabelos secos ou muito oleosos.",
+      "modo_de_uso": "Massagens faciais, corporais, cranianas e capilares; também usado como carreador de óleos essenciais.",
+      "selos": [],
+      "pagina_pdf": 17,
+      "imagem": "maison-visage/spa-therapy-vegetable-oil-jojoba.webp"
+    },
+    {
+      "slug": "spa-therapy-vegetable-oil-avocado",
+      "nome": "Spa Therapy Vegetable Oil Avocado",
+      "linha": "spa-therapy",
+      "categoria": "óleo vegetal",
+      "uso": null,
+      "volumes": [
+        "50 ml",
+        "500 ml"
+      ],
+      "descricao": "O óleo vegetal de Avocado é rico em gorduras e uma excelente fonte de ácido oleico. Possui alta concentração de vitamina E. Tem intensa ação desintoxicante e fortalecedora do cabelo e da pele e também auxilia no crescimento capilar. Muito eficiente para melhorar a absorção de nutrientes de outros óleos.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Vegetal de Avocado"
+      ],
+      "indicacao": null,
+      "modo_de_uso": "Massagens faciais, corporais, cranianas e capilares; também usado como carreador de óleos essenciais.",
+      "selos": [],
+      "pagina_pdf": 17,
+      "imagem": "maison-visage/spa-therapy-vegetable-oil-avocado.webp"
+    },
+    {
+      "slug": "spa-therapy-vegetable-oil-semente-de-uva",
+      "nome": "Spa Therapy Vegetable Oil Semente de Uva",
+      "linha": "spa-therapy",
+      "categoria": "óleo vegetal",
+      "uso": null,
+      "volumes": [
+        "50 ml"
+      ],
+      "descricao": "O óleo vegetal de Semente de Uva possui um alto teor de ácidos graxos poli-insaturados, como os ômegas 6 e 9, e vitamina E. Eficaz no tratamento da caspa, reduz a queda capilar e promove o fortalecimento dos fios.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Vegetal de Semente de Uva"
+      ],
+      "indicacao": null,
+      "modo_de_uso": "Aplicado diretamente no couro cabeludo.",
+      "selos": [],
+      "pagina_pdf": 17,
+      "imagem": "maison-visage/spa-therapy-vegetable-oil-semente-de-uva.webp"
+    },
+    {
+      "slug": "spa-therapy-argila-verde",
+      "nome": "Spa Therapy Argila Verde",
+      "linha": "spa-therapy",
+      "categoria": "argila",
+      "uso": null,
+      "volumes": [
+        "500 g"
+      ],
+      "descricao": "A argila verde é 100% natural e orgânica, composta por diversos oligoelementos como silício, cálcio, potássio, zinco, alumínio, entre outros. Apresenta ação adstringente promovendo um detox da pele, remove o excesso de oleosidade além de realizar uma esfoliação suave dos tecidos, desobstruindo assim os poros e folículos capilares, melhorando a oxigenação, nutrição e absorção de ativos. Combate edemas e tem potencial secativo. Também é tonificante e estimulante da pele. Possui capacidade bactericida. É normalmente aplicada em shampoo e máscaras secativas.",
+      "beneficios": [],
+      "ativos": [
+        "Argila Verde (montmorillonita e gipsita)"
+      ],
+      "indicacao": "Peles oleosas e acneicas; cabelos oleosos.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 18,
+      "imagem": null
+    },
+    {
+      "slug": "spa-therapy-argila-preta",
+      "nome": "Spa Therapy Argila Preta",
+      "linha": "spa-therapy",
+      "categoria": "argila",
+      "uso": null,
+      "volumes": [
+        "500 g"
+      ],
+      "descricao": "A argila preta possui alto teor de sais minerais, silício, titânio e alumínio. Promove um excelente efeito rejuvenescedor por sua ação de nutrição e oxigenação dos tecidos. Tem ação cicatrizante, anti-inflamatória, antioxidante e desintoxicante, controlando a oleosidade da pele e couro cabeludo. É ideal para reduzir manchas na pele, assim como ativar e otimizar a circulação sanguínea. Remove toxinas e oleosidades, além de ser indicada para o melhoramento da textura da pele e do cabelo. Possui capacidade revitalizadora do couro cabeludo e confere toque acetinado e boa textura à pele. Também usada para remineralização dos cabelos, aumentando o brilho e a sedosidade da fibra capilar.",
+      "beneficios": [],
+      "ativos": [
+        "Argila Preta"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 18,
+      "imagem": null
+    },
+    {
+      "slug": "spa-therapy-vitamin-e",
+      "nome": "Spa Therapy Vitamin E",
+      "linha": "spa-therapy",
+      "categoria": "vitamina",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "Poderoso antioxidante, ajuda a neutralizar os radicais livres que são moléculas instáveis causadoras de danos à pele e ao folículo piloso. Muito utilizada na terapia capilar para o tratamento de Eflúvio Telógeno (Queda Capilar), Alopecias, Dermatites, Psoríase entre outras patologias inflamatórias que apresentam grande produção de radicais livres. Além de ser um excelente recurso na prevenção e tratamento do envelhecimento facial.",
+      "beneficios": [],
+      "ativos": [
+        "Vitamina E"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 19,
+      "imagem": "maison-visage/spa-therapy-vitamin-e.webp"
+    },
+    {
+      "slug": "spa-therapy-vitamin-b5",
+      "nome": "Spa Therapy Vitamin B5",
+      "linha": "spa-therapy",
+      "categoria": "vitamina",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "Poderoso hidratante. Restaura, fortalece e nutre intensamente a pele e a fibra capilar. Apresenta efeito anti-inflamatório, acalmando a pele irritada, estimula a epitelização auxiliando na cicatrização de pequenas feridas. Muito utilizada nos protocolos de tratamento para Psoríase de couro cabeludo, sobrancelhas, barba e corpo, dermatites, caspa seca entre outras patologias inflamatórias e descamativas. Na face serve para dar brilho, maciez e prevenir o envelhecimento.",
+      "beneficios": [],
+      "ativos": [
+        "Vitamina B5"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 19,
+      "imagem": "maison-visage/spa-therapy-vitamin-b5.webp"
+    },
+    {
+      "slug": "spa-therapy-biotin",
+      "nome": "Spa Therapy Biotin",
+      "linha": "spa-therapy",
+      "categoria": "vitamina",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "A Biotina está intimamente ligada à produção de queratina (principal proteína que forma nossa pele, cabelos e unhas). Ela é indispensável para os tratamentos de estímulo de crescimento e fortalecimento capilar, como no caso de Eflúvio Telógeno (queda capilar), Alopecias Areata. É grande aliada no tratamento da Alopecia Androgenética (calvície) onde ocorre um afinamento capilar significativo. Para a pele facial ela devolve a firmeza, elasticidade, força e resistência sendo utilizada na prevenção e tratamento do envelhecimento facial.",
+      "beneficios": [],
+      "ativos": [
+        "Biotina (vitamina B7)"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 19,
+      "imagem": "maison-visage/spa-therapy-biotin.webp"
+    },
+    {
+      "slug": "spa-therapy-growth-factor-tonic",
+      "nome": "Spa Therapy Growth Factor Tonic",
+      "linha": "spa-therapy",
+      "categoria": "tônico",
+      "uso": null,
+      "volumes": [
+        "60 ml"
+      ],
+      "descricao": "Com uma tecnologia cosmética inovadora, o tônico Growth Factor traz em sua composição os fatores de crescimento (IGF, KGF, AFGF, VEGF, BFGF) amplamente utilizados na indústria cosmética. Os fatores de crescimento são proteínas sinalizadoras que realizam a comunicação celular e melhoram o metabolismo folicular acelerando o processo de crescimento dos cabelos e pelos. Estimula o crescimento capilar e realiza a inibição da enzima 5 alfa redutase, agindo na prevenção e tratamento da Alopecia Androgenética. Estimula também o crescimento dos pelos das sobrancelhas, barba e proporciona o fortalecimento capilar. Para profissionais habilitados ao microagulhamento, pode ser utilizado como Drug Delivery.",
+      "beneficios": [
+        "Estimula o crescimento capilar",
+        "Inibe a enzima 5 alfa redutase",
+        "Estimula o crescimento dos pelos das sobrancelhas e barba",
+        "Proporciona o fortalecimento capilar"
+      ],
+      "ativos": [
+        "Fatores de crescimento (IGF, KGF, AFGF, VEGF, BFGF)",
+        "Jaborandi",
+        "Chá Verde",
+        "Alecrim",
+        "Capilmax",
+        "Vitamina B7 (Biotina)",
+        "Copper Peptídeo"
+      ],
+      "indicacao": "Eflúvio Telógeno (queda capilar), Alopecia Areata e Alopecia Androgenética.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 20,
+      "imagem": "maison-visage/spa-therapy-growth-factor-tonic.webp"
+    },
+    {
+      "slug": "spa-therapy-chlorhexidine-cleansing",
+      "nome": "Spa Therapy Chlorhexidine Cleansing",
+      "linha": "spa-therapy",
+      "categoria": "espuma de limpeza",
+      "uso": "ambos",
+      "volumes": [
+        "150 ml"
+      ],
+      "descricao": "A espuma de limpeza apresenta-se como um cosmético funcional que serve para realizar a higienização da pele do corpo, face e couro cabeludo. Muito indicada para higienização da pele facial, tanto na rotina skincare quanto em cabine de atendimento em procedimentos de limpeza de pele, pré-microagulhamento, pré-eletroterapia e pré-design de sobrancelhas. Proporciona a limpeza da região onde é aplicada, apresenta ação de calmia da pele, controla a microbiota cutânea e possui ação antioxidante e antisséptica, proporcionando uma pele macia, limpa e hidratada. Uso home care e profissional.",
+      "beneficios": [
+        "Ação de calmia da pele (Alfa Bisabolol, D´Pantenol e Açafrão da Terra)",
+        "Controla a microbiota cutânea através do óleo essencial de Melaleuca, com ação anti-inflamatória e cicatrizante",
+        "Ação antioxidante e antisséptica"
+      ],
+      "ativos": [
+        "Clorexidina",
+        "Alfa Bisabolol",
+        "Óleo essencial de Melaleuca",
+        "Pantenol",
+        "Açafrão da Terra"
+      ],
+      "indicacao": "Excelente opção para uso no pós-operatório de transplante capilar imediato; higienização do couro cabeludo de crianças com disfunção capilar como Dermatite Seborreica ou inflamação; pré-aplicação de blends de óleos essenciais; pré-microagulhamento capilar; higienização corporal pré-técnicas manuais ou eletroterapia.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 20,
+      "imagem": "maison-visage/spa-therapy-chlorhexidine-cleansing.webp"
+    },
+    {
+      "slug": "spa-therapy-charcoal-mask",
+      "nome": "Spa Therapy Charcoal Mask",
+      "linha": "spa-therapy",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "500 g"
+      ],
+      "descricao": "Apresenta uma excelente ação adsorvente atraindo todo o excesso de oleosidade, sujidades, impurezas, acúmulo de toxinas e resíduos de pele, além de apresentar uma excelente ação cicatrizante e anti-inflamatória. Seu uso na terapia capilar apresenta inúmeros benefícios desde o controle da oleosidade, prevenção e tratamento de dermatite seborreica, foliculite, caspa, crescimento e fortalecimento dos fios. Versátil e multifuncional, pode ser associado aos óleos essenciais da Linha Spa Therapy e às vitaminas B5, Biotin e Vitamin E.",
+      "beneficios": [
+        "Controle da oleosidade",
+        "Prevenção e tratamento de dermatite seborreica, foliculite e caspa",
+        "Crescimento e fortalecimento dos fios"
+      ],
+      "ativos": [
+        "Óleo vegetal de macadâmia",
+        "Óleo vegetal de milho",
+        "Extrato de Oliveira"
+      ],
+      "indicacao": null,
+      "modo_de_uso": "Sua aplicabilidade varia de acordo com o objetivo do tratamento; para cada protocolo é necessário avaliar o blend de óleos essenciais e vitaminas que será utilizado.",
+      "selos": [],
+      "pagina_pdf": 21,
+      "imagem": "maison-visage/spa-therapy-charcoal-mask.webp"
+    },
+    {
+      "slug": "spa-therapy-thermal-water",
+      "nome": "Spa Therapy Thermal Water",
+      "linha": "spa-therapy",
+      "categoria": "água termal",
+      "uso": null,
+      "volumes": [
+        "1 L"
+      ],
+      "descricao": "Composta por aminoácidos, minerais e oligoelementos. Enriquecida com óleos essenciais orgânicos puros e Aloe Vera. Oferece propriedades calmantes e suavizantes. Atua na regeneração capilar, reduz as inflamações no couro cabeludo, ativa a circulação e regula a produção excessiva de sebo. Melhora a absorção de produtos combinados, promove excelente associação com argilas, máscaras e outros preparados cosméticos.",
+      "beneficios": [
+        "Propriedades calmantes e suavizantes",
+        "Atua na regeneração capilar",
+        "Reduz as inflamações no couro cabeludo",
+        "Ativa a circulação",
+        "Regula a produção excessiva de sebo"
+      ],
+      "ativos": [
+        "Aminoácidos",
+        "Minerais",
+        "Oligoelementos",
+        "Óleos essenciais orgânicos puros",
+        "Aloe Vera"
+      ],
+      "indicacao": "Indicado para infusões, vaporizações, ionizações, preparados cosméticos e misturas terapêuticas.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 21,
+      "imagem": "maison-visage/spa-therapy-thermal-water.webp"
+    },
+    {
+      "slug": "nano-force-recovery-shampoo",
+      "nome": "Nano Force Recovery Shampoo",
+      "linha": "nano-force",
+      "categoria": "shampoo",
+      "uso": "ambos",
+      "volumes": [
+        "Profissional 1000 ml",
+        "Home care 270 ml"
+      ],
+      "descricao": "O Nano Force Recovery é um shampoo de alto desempenho e ultra condicionamento. Foi desenvolvido para preparar o cabelo para recuperação de diversas necessidades. Ele prepara o fio para receber o tratamento indicado, reduz a quebra dos fios que são recuperados de dentro para fora, pois limpa de forma delicada, sem qualquer agressão, principalmente em cabelos danificados por química. Limpa sem remover a umectação natural, o que ajuda a mantê-los hidratados. Sua fórmula contém Tecnologia Nanotriply, que é a união de diversos ativos.",
+      "beneficios": [],
+      "ativos": [
+        "Pró-Vitamina B5",
+        "Biotin",
+        "Ômega Complex",
+        "Resveratrol",
+        "Ácido Hialurônico",
+        "Nanoaminoácidos",
+        "Colágeno Vegetal"
+      ],
+      "indicacao": "Cabelos danificados por química.",
+      "modo_de_uso": null,
+      "selos": [
+        "Livre de sulfatos",
+        "Livre de parabenos"
+      ],
+      "pagina_pdf": 22,
+      "imagem": "maison-visage/nano-force-recovery-shampoo.webp"
+    },
+    {
+      "slug": "nano-force-leave-in",
+      "nome": "Nano Force Leave-in Fluido Bifásico",
+      "linha": "nano-force",
+      "categoria": "leave-in",
+      "uso": "ambos",
+      "volumes": [
+        "Profissional 200 ml",
+        "Home care 120 ml"
+      ],
+      "descricao": "O leave-in fluido bifásico foi desenvolvido com tecnologia NanoTriply, união de diversos ativos de alta performance. Feito para reverter vários danos em um único produto, reconstrói parte por parte do fio e protege da quebra por fricção. Recupera a força, revitaliza a cor enquanto garante maciez, movimento e brilho intenso. Possui também proteção térmica e proteção contra a oxidação gerada por poluição e raios UVA/UVB. Proporciona tratamento anti-age, retarda o envelhecimento natural dos fios.",
+      "beneficios": [],
+      "ativos": [
+        "Biotin: ativa a multiplicação celular fazendo com que os cabelos cresçam de forma acelerada e saudável; acelera a fase de crescimento dos fios e retarda a fase de queda",
+        "Resveratrol: combate os radicais livres, impedindo a oxidação da cor dos cabelos e consequentemente o desbotamento da coloração e tonalização",
+        "Hyaluronic Acid: age como um hidratante, retendo água no interior da célula; combate o ressecamento e o frizz, além de atuar na reparação de pontas duplas",
+        "Lipidium + Amino Acids: complexo reconstrutor que repõe massa e nutre os cabelos simultaneamente, fazendo uma impermeabilização no fio"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 23,
+      "imagem": "maison-visage/nano-force-leave-in.webp"
+    },
+    {
+      "slug": "nano-force-concentrated-base",
+      "nome": "Nano Force Concentrated Base",
+      "linha": "nano-force",
+      "categoria": "base de tratamento (liquid hair mask)",
+      "uso": "ambos",
+      "volumes": [
+        "Profissional 250 ml",
+        "Home care 120 ml"
+      ],
+      "descricao": "Tratamento de choque térmico instantâneo que quando combinado com os aditivos ultra concentrados, proporciona tratamento intenso de acordo com os ativos de cada aditivo através do aquecimento da fibra capilar. Rendimento: 25 aplicações.",
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 24,
+      "imagem": null
+    },
+    {
+      "slug": "nano-force-vitamin-b5-biotin",
+      "nome": "Nano Force Vitamin B5 + Biotin",
+      "linha": "nano-force",
+      "categoria": "aditivo",
+      "uso": "ambos",
+      "volumes": [
+        "Profissional 250 ml",
+        "Home care 120 ml"
+      ],
+      "descricao": "Força e crescimento. Aditivo ultra concentrado que age no bulbo capilar, o que aumenta a multiplicação celular e permite que os cabelos cresçam de forma acelerada e saudável. Rendimento: 25 aplicações.",
+      "beneficios": [],
+      "ativos": [
+        "Pró-Vitamina B5",
+        "Biotin"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 24,
+      "imagem": null
+    },
+    {
+      "slug": "nano-force-lipidium-amino-acids",
+      "nome": "Nano Force Lipidium + Amino Acids",
+      "linha": "nano-force",
+      "categoria": "aditivo",
+      "uso": "ambos",
+      "volumes": [
+        "Profissional 250 ml",
+        "Home care 120 ml"
+      ],
+      "descricao": "Anti-idade e antioxidante. Aditivo ultra concentrado, que reconstrói instantaneamente a fibra capilar e garante uma excelente penetração das nanopartículas dos 19 aminoácidos nos fios danificados. Rendimento: 25 aplicações.",
+      "beneficios": [],
+      "ativos": [
+        "Nanoaminoácidos (19 aminoácidos)",
+        "Lipidium"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 24,
+      "imagem": null
+    },
+    {
+      "slug": "nano-force-resveratrol-hyaluronic",
+      "nome": "Nano Force Resveratrol + Hyaluronic",
+      "linha": "nano-force",
+      "categoria": "aditivo",
+      "uso": "ambos",
+      "volumes": [
+        "Profissional 250 ml",
+        "Home care 120 ml"
+      ],
+      "descricao": "Anti-idade e antioxidante. Aditivo ultra concentrado que combate os radicais livres, impede a oxidação da cor dos cabelos e consequentemente o desbotamento da coloração e tonalização. Rendimento: 25 aplicações.",
+      "beneficios": [],
+      "ativos": [
+        "Resveratrol",
+        "Ácido Hialurônico"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 24,
+      "imagem": null
+    },
+    {
+      "slug": "beach-intensive",
+      "nome": "Beach Intensive",
+      "linha": "beach-intensive",
+      "categoria": "kit de tratamento (shampoo, cond+mask e serum)",
+      "uso": null,
+      "volumes": [
+        "Shampoo 270 ml",
+        "Cond + Mask 180 g",
+        "Serum 180 g"
+      ],
+      "descricao": "A Linha Beach Intensive protege e repara os cabelos dos danos provocados pela exposição ao sol, cloro e água do mar. Contém em sua fórmula Óleo de Framboesa e Vitamina E, que promove uma blindagem no fio impedindo a absorção da radiação solar, além de hidratar, nutrir e remineralizar com água de coco.",
+      "beneficios": [
+        "Proteção máxima contra os efeitos do verão (vento, sol, mar e piscina)",
+        "Proteção solar UVA/UVB",
+        "Shampoo suave, sem sulfatos (LOW POO)",
+        "Cond + Mask: dupla função, rico em nutrientes e ômegas",
+        "O leave-in é protetor térmico, auxilia na proteção da cor evitando o desbotamento"
+      ],
+      "ativos": [
+        "Água de Coco",
+        "Óleo de Framboesa",
+        "Vitamina E",
+        "Ethylhexyl Salicilate",
+        "Benzophenone"
+      ],
+      "indicacao": "Cabelos expostos a sol, cloro e água do mar.",
+      "modo_de_uso": null,
+      "selos": [
+        "Parabens free",
+        "Petrolato free",
+        "Sulfate free",
+        "Vegan base"
+      ],
+      "pagina_pdf": 25,
+      "imagem": "maison-visage/beach-intensive.webp"
+    },
+    {
+      "slug": "luxury-nanotherapy",
+      "nome": "Luxury Nanotherapy",
+      "linha": "luxury",
+      "categoria": "kit de tratamento (shampoo, condicionador, máscara e leave-in)",
+      "uso": "ambos",
+      "volumes": [
+        "Shampoo home care 270 ml",
+        "Condicionador home care 270 ml",
+        "Máscara home care 200 g",
+        "Leave-in home care 140 ml",
+        "Shampoo profissional 1000 ml",
+        "Conditioner/Mask profissional 1000 ml",
+        "Leave-in profissional 500 ml"
+      ],
+      "descricao": "Indicado para o dia a dia do salão de beleza. Limpeza suave. Altamente nutritivo, protege todos os tipos de cabelos, confere hidratação e brilho intenso. Melhora significativamente a penetração dos ativos no fio, promovendo brilho e condicionamento intenso. Nanotherapy é uma nanomedicina exclusiva com ativos mega potencializados em nanopartículas para entregar um medicamento a um determinado local-alvo por meio de um processo conhecido como direcionamento.",
+      "beneficios": [],
+      "ativos": [
+        "Nanotherapy",
+        "Pró-Vitamina B5: favorece o crescimento dos fios",
+        "Macadâmia oil: diminuição do frizz, repara a elasticidade natural dos fios",
+        "Keratina Vegetal: nutrir e condicionar os cabelos",
+        "Oliva: age contra a caspa e previne pontas duplas",
+        "Polyquaternium-7",
+        "Phospholipids"
+      ],
+      "indicacao": "Todos os tipos de cabelo.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 26,
+      "imagem": "maison-visage/luxury-nanotherapy.webp"
+    },
+    {
+      "slug": "luxury-elixir",
+      "nome": "Luxury Elixir",
+      "linha": "luxury",
+      "categoria": "elixir",
+      "uso": null,
+      "volumes": [
+        "100 ml"
+      ],
+      "descricao": "Proporciona ação termoprotetora e efeito condicionante eficaz para nutrir e recuperar a textura e a suavidade dos cabelos. Cabelo altamente brilhoso ou 100% nutrido. Além de ser nutritivo e com efeito condicionante, realça 5x mais brilho no fio. Rendimento: 80/90 aplicações. (varia conforme comprimento, quantidade e tipo de cabelo).",
+      "beneficios": [
+        "Ação termoprotetora",
+        "Efeito condicionante",
+        "Realça 5x mais brilho no fio"
+      ],
+      "ativos": [
+        "Macadâmia oil: diminuição do frizz, repara a elasticidade natural dos fios",
+        "Oliva: age contra a caspa e previne pontas duplas",
+        "Vitamina E: ação antioxidante, neutralizando os radicais livres que podem causar danos ao couro cabeludo e à fibra capilar; ajuda a evitar a quebra e as fissuras nos fios"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 27,
+      "imagem": "maison-visage/luxury-elixir.webp"
+    },
+    {
+      "slug": "luxury-premium-laque",
+      "nome": "Luxury Premium Laque",
+      "linha": "luxury",
+      "categoria": "laquê",
+      "uso": null,
+      "volumes": [
+        "200 ml"
+      ],
+      "descricao": "Definição e fixação. Fixa e modela os cabelos com naturalidade sem ressecá-los, garantindo volume e definição na finalização e criação de penteados. Usado para realçar a textura dos cabelos e proporcionar uma forte fixação. Também é indicado para a fixação de Babyliss. Finaliza e oferece sustentação até aos penteados mais elaborados e exuberantes. Não deixa resíduos e protege o cabelo da umidade. Rendimento: 100 aplicações. (varia conforme comprimento, quantidade e tipo de cabelo).",
+      "beneficios": [
+        "Fixa e modela com naturalidade sem ressecar",
+        "Garante volume e definição",
+        "Forte fixação",
+        "Não deixa resíduos e protege o cabelo da umidade"
+      ],
+      "ativos": [],
+      "indicacao": "Indicado para todos os tipos de cabelos.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 28,
+      "imagem": "maison-visage/luxury-premium-laque.webp"
+    },
+    {
+      "slug": "luxury-volume-powder-finisher",
+      "nome": "Luxury Volume Powder Finisher",
+      "linha": "luxury",
+      "categoria": "finalizador em pó",
+      "uso": null,
+      "volumes": [
+        "15 g"
+      ],
+      "descricao": "Volumizador. É um finalizador em pó para dar textura, flexibilidade e volume com efeito mate. Volume instantâneo com aspecto natural em fios penteados, presos e soltos. Deixa os fios modelados e hidratados. Rendimento: 80/90 aplicações. (varia conforme comprimento, quantidade e tipo de cabelo).",
+      "beneficios": [
+        "Textura, flexibilidade e volume com efeito mate",
+        "Volume instantâneo com aspecto natural",
+        "Deixa os fios modelados e hidratados"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 28,
+      "imagem": "maison-visage/luxury-volume-powder-finisher.webp"
+    },
+    {
+      "slug": "luxury-ultimate-finisher",
+      "nome": "Luxury Ultimate Finisher",
+      "linha": "luxury",
+      "categoria": "finalizador com proteção solar",
+      "uso": null,
+      "volumes": [
+        "200 ml"
+      ],
+      "descricao": "Proteção solar. Tratamento para recuperar o aspecto saudável do cabelo danificado e quimicamente processado. Disciplina os fios, protege do calor do secador e evita a formação de pontas duplas. 100% natural. Rico em Ômegas Essenciais e Vitaminas. Possui ação antioxidante. Restaura, nutre, protege e hidrata profundamente os fios. Rendimento: 25/30 aplicações. (varia conforme comprimento, quantidade e tipo de cabelo).",
+      "beneficios": [
+        "Aumento da durabilidade da escova e do Babyliss",
+        "Desembaraça e reconstrói o fio",
+        "Aumenta o brilho e a sedosidade"
+      ],
+      "ativos": [
+        "Soy Protein"
+      ],
+      "indicacao": "Cabelo danificado e quimicamente processado.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 29,
+      "imagem": "maison-visage/luxury-ultimate-finisher.webp"
+    },
+    {
+      "slug": "omega-complex",
+      "nome": "Ômega Complex",
+      "linha": "linha-profissional-home-care",
+      "categoria": "kit de tratamento (shampoo, condicionador, máscara e leave-in)",
+      "uso": "ambos",
+      "volumes": [
+        "Shampoo home care 270 ml",
+        "Condicionador home care 270 ml",
+        "Máscara home care 200 g",
+        "Leave-in home care 140 ml",
+        "Shampoo profissional 1000 ml",
+        "Conditioner/Mask profissional 1000 ml",
+        "Leave-in profissional 500 ml"
+      ],
+      "descricao": "Óleos sublimadores (Oliva, Gergelim). Tratamento nutritivo com óleo sublimador também em formato para salões profissionais. Ideal para dar espessura e força ao cabelo. Forma uma película que envolve os fios, recuperando e encorpando as fibras danificadas. Nutre profundamente e ilumina todos os tipos de cabelo, conferindo brilho esplendoroso e fios totalmente regenerados. Possui fórmula composta por uma verdadeira infusão de óleos preciosos, que deixa os cabelos macios e sedosos.",
+      "beneficios": [],
+      "ativos": [
+        "Óleo Complex Sublimador Exclusive (nanotecnologia)",
+        "Óleo de Ômegas: regeneram a fibra capilar",
+        "Óleo de Oliva: proporciona brilho intenso",
+        "Óleo de Gergelim: dá força e resistência",
+        "Óleo de Gérmen de Milho: nutrição profunda",
+        "Cocos Nucifera Oil",
+        "Tocopherol",
+        "Helianthus Oil"
+      ],
+      "indicacao": "Todos os tipos de cabelo.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 30,
+      "imagem": "maison-visage/omega-complex.webp"
+    },
+    {
+      "slug": "protein-fusion",
+      "nome": "Protein Fusion",
+      "linha": "linha-profissional-home-care",
+      "categoria": "kit de tratamento (shampoo, condicionador, máscara e leave-in)",
+      "uso": "ambos",
+      "volumes": [
+        "Shampoo home care 270 ml",
+        "Condicionador home care 270 ml",
+        "Máscara home care 200 g",
+        "Leave-in home care 140 ml",
+        "Shampoo profissional 1000 ml",
+        "Conditioner/Mask profissional 1000 ml",
+        "Leave-in profissional 500 ml"
+      ],
+      "descricao": "Repair. Ciclodextrina | Pro-Repair 19. Tecnologia exclusiva dos 19 aminoácidos. O Pro-Repair 19 é uma molécula com os 19 aminoácidos da fibra capilar, envolvida pela Ciclodextrina permeável. Assegura uma penetração adequada para dentro da fibra e consequentemente uma eficácia em curto e longo prazo. Possui alto potencial para ação preventiva, ação antiquebra e ação anti pontas duplas. Fornece aminoácidos para regeneração dos cabelos que aumentam a densidade da fibra. Diminui a porosidade do fio, promove brilho, maciez e realinhamento da fibra.",
+      "beneficios": [
+        "Ação preventiva, antiquebra e anti pontas duplas",
+        "Aumenta a densidade da fibra",
+        "Diminui a porosidade do fio, promove brilho, maciez e realinhamento da fibra"
+      ],
+      "ativos": [
+        "Pro-Repair 19 (nanoaminoácidos)",
+        "Ciclodextrina",
+        "Cocos Nucifera Oil",
+        "Óleo de Girassol",
+        "Óleo de Milho",
+        "Óleo de Gergelim",
+        "Óleo de Macadâmia",
+        "Óleo de Oliva",
+        "Keratin Vegan",
+        "Vitamina E",
+        "Pró-Vitamina B5",
+        "Manteiga de Karitê Vegetal"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 31,
+      "imagem": "maison-visage/protein-fusion.webp"
+    },
+    {
+      "slug": "minerals-vitamin",
+      "nome": "Minerals Vitamin (Detox)",
+      "linha": "linha-profissional-home-care",
+      "categoria": "kit de tratamento (shampoo, condicionador, máscara e leave-in)",
+      "uso": "home care",
+      "volumes": [
+        "Shampoo home care 270 ml",
+        "Condicionador home care 270 ml",
+        "Máscara home care 200 g",
+        "Leave-in home care 140 ml"
+      ],
+      "descricao": "Argila | Gengibre | Hortelã. Formulada para oxigenar e dar resistência aos cabelos, promovendo um crescimento saudável e livre de quebras. Possui vitaminas e sais minerais que reforçam a estrutura interna da fibra capilar, mantendo-a preservada. Age como tratamento intensivo para o fortalecimento dos fios, do couro cabeludo até as pontas. Tratamento para eliminação de caspas, seborréias, controle de eczemas e dermatites.",
+      "beneficios": [],
+      "ativos": [
+        "Argila Verde",
+        "Gengibre",
+        "Hortelã",
+        "Chá Verde",
+        "Pró-Vitamina B5",
+        "Clorofila",
+        "Oligoelementos",
+        "Metionina"
+      ],
+      "indicacao": "Caspa, seborreia, eczemas e dermatites.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 32,
+      "imagem": "maison-visage/minerals-vitamin.webp"
+    },
+    {
+      "slug": "curls-control",
+      "nome": "Curls Control (Cachos)",
+      "linha": "linha-profissional-home-care",
+      "categoria": "kit de tratamento (shampoo, condicionador, máscara e leave-in)",
+      "uso": "home care",
+      "volumes": [
+        "Shampoo home care 270 ml",
+        "Condicionador home care 270 ml",
+        "Máscara home care 200 g",
+        "Leave-in home care 140 ml"
+      ],
+      "descricao": "Vegetable Wax Complex | Organics Actives. Contém nanopartículas moleculares que são capazes de conferir definição, deixando os cabelos sedosos e flexíveis. Revitaliza o fio profundamente reorganizando suas ligações e promovendo nutrição, textura e sedosidade. Excelente ação antifrizz. Garante cachos mais definidos, macios, sedosos e flexíveis. Ação desembaraçante. Elimina o aspecto ressecado e forma uma película transparente, fixando os cachos, deixando-os sem efeito acumulativo e sem aspecto oleoso.",
+      "beneficios": [
+        "Definição, maciez, sedosidade e flexibilidade dos cachos",
+        "Excelente ação antifrizz",
+        "Ação desembaraçante"
+      ],
+      "ativos": [
+        "Blend de Óleos + Karitê Vegetal",
+        "Cocos Nucifera Oil",
+        "Óleo de Girassol",
+        "Óleo de Milho",
+        "Óleo de Gergelim",
+        "Óleo de Macadâmia",
+        "Óleo de Oliva",
+        "Vitamina E",
+        "Pró-Vitamina B5",
+        "Benzophenone-3",
+        "Keratin Vegan"
+      ],
+      "indicacao": "Cabelos cacheados e ondulados.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 33,
+      "imagem": "maison-visage/curls-control.webp"
+    },
+    {
+      "slug": "blond-absolute",
+      "nome": "Blond Absolute (Matizador)",
+      "linha": "linha-profissional-home-care",
+      "categoria": "kit de tratamento (shampoo, condicionador, máscara e leave-in)",
+      "uso": "home care",
+      "volumes": [
+        "Shampoo home care 270 ml",
+        "Condicionador home care 270 ml",
+        "Máscara home care 200 g",
+        "Leave-in home care 140 ml"
+      ],
+      "descricao": "Blend of Violet Pigments | Ácido Hialurônico. Linha indicada para cabelos loiros que recupera a força, resistência e flexibilidade natural dos fios, deixando-os mais macios e brilhantes. Contém um blend of violets pigments que atuam na neutralização dos tons alaranjados em cabelos loiros e descoloridos e pode ser utilizado também para retirar tons amarelados em cabelos grisalhos. O ácido hialurônico penetra no interior da fibra capilar reparando e reconstruindo toda sua estrutura, deixando-os saudáveis e com brilho especial.",
+      "beneficios": [
+        "Neutraliza tons alaranjados e amarelados",
+        "Recupera força, resistência e flexibilidade natural dos fios",
+        "Fios mais macios e brilhantes"
+      ],
+      "ativos": [
+        "Blend of Violet Pigments",
+        "Ácido Hialurônico",
+        "Cocos Nucifera Oil",
+        "Violet Extract",
+        "Lavanda Extract",
+        "Alecrim Extract",
+        "Vegetal Keratin",
+        "Pró-Vitamina B5",
+        "Polyquaternium"
+      ],
+      "indicacao": "Cabelos loiros, descoloridos e grisalhos.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 34,
+      "imagem": "maison-visage/blond-absolute.webp"
+    },
+    {
+      "slug": "vegan-oil-argan-avocado",
+      "nome": "Vegan Oil Argan e Avocado",
+      "linha": "vegan-oil",
+      "categoria": "óleo de finalização",
+      "uso": null,
+      "volumes": [
+        "40 ml"
+      ],
+      "descricao": "Linha que une tratamento com finalização. Sua fórmula intensa mas leve, traz nutrição, proteção dos raios UV, controla o frizz e promove brilho radiante. Os óleos vegetais de Argan e Avocado são ricos em vitaminas A, B, D, E e aminoácidos.",
+      "beneficios": [
+        "Nutrição",
+        "Proteção dos raios UV",
+        "Controla o frizz",
+        "Brilho radiante"
+      ],
+      "ativos": [
+        "Óleo de Argan",
+        "Óleo de Avocado",
+        "Vitamina E",
+        "Ethylhexyl Salicilate"
+      ],
+      "indicacao": "Blend nutritive.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 35,
+      "imagem": "maison-visage/vegan-oil-argan-avocado.webp"
+    },
+    {
+      "slug": "vegan-oil-argan-jojoba",
+      "nome": "Vegan Oil Argan e Jojoba",
+      "linha": "vegan-oil",
+      "categoria": "óleo de finalização",
+      "uso": null,
+      "volumes": [
+        "40 ml"
+      ],
+      "descricao": "Linha que une tratamento com finalização. Sua fórmula intensa mas leve, traz nutrição, proteção dos raios UV, controla o frizz e promove brilho radiante. Os óleos vegetais de Argan e Jojoba repõem a umidade perdida, nutrem e reduzem o envelhecimento.",
+      "beneficios": [
+        "Nutrição",
+        "Proteção dos raios UV",
+        "Controla o frizz",
+        "Brilho radiante"
+      ],
+      "ativos": [
+        "Óleo de Argan",
+        "Óleo de Jojoba",
+        "Vitamina E",
+        "Ethylhexyl Salicilate"
+      ],
+      "indicacao": "Blend repair.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 35,
+      "imagem": "maison-visage/vegan-oil-argan-jojoba.webp"
+    },
+    {
+      "slug": "hair-mist",
+      "nome": "Hair Mist (Hair Parfum)",
+      "linha": "hair-mist",
+      "categoria": "perfume capilar",
+      "uso": null,
+      "volumes": [],
+      "descricao": "O Hair Parfum é um perfume capilar disponível em duas fragrâncias. A primeira, uma fragrância refinada e empoderada: na nota de saída, bergamota; a família floral apresenta um amplo espectro de notas, desde as flores tradicionais até as mais exóticas; a família amadeirada oferece uma paleta de ingredientes como sândalo, cedro, musk, patchouli e vetiver. A segunda reúne um leque de sensações: na nota de saída, flor de amendoeira explora um sensorial de frescor e leveza; a elegante fragrância floral amadeirada cria uma aura radiante; no coração revela-se o jasmin egípcio, dolce e suave, e na base a essência de madeira de patchouli, criando uma sensação de elegância e sensualidade.",
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 36,
+      "imagem": "maison-visage/hair-mist.webp"
+    },
+    {
+      "slug": "body-lotion-maison",
+      "nome": "Body Lotion Maison",
+      "linha": "maison",
+      "categoria": "body lotion",
+      "uso": null,
+      "volumes": [
+        "200 ml"
+      ],
+      "descricao": "Creme corporal encapsulado no perfume floral poético de Maison. Macio e leve, com textura delicada que nutre a pele. Com uma radiância vibrante e uma composição envolvente, possui um perfume cintilante que engloba a suavidade e a sensualidade do que é ser mulher. É o toque perfeito de feminilidade moderna e deleite sensorial, capturando a beleza de quem a usa, irradiando a essência do coração da rosa turca.",
+      "beneficios": [
+        "Perfume cintilante e sensual",
+        "Textura leve e delicada",
+        "Nutre a pele"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 38,
+      "imagem": "maison-visage/body-lotion-maison.webp"
+    },
+    {
+      "slug": "parfum-de-maison",
+      "nome": "Parfum de Maison (Sensuality)",
+      "linha": "maison",
+      "categoria": "perfume (eau de parfum)",
+      "uso": null,
+      "volumes": [
+        "60 ml"
+      ],
+      "descricao": "Parfum de Maison é um perfume com fragrância jovem e vibrante, com um toque de mel gourmet refrescante. O aroma de gardênia e laranja sanguínea ilumina delicadamente a pele. O parfum é uma sensual e sedutora combinação de mel e Patchouli. A narrativa olfativa apresenta uma rica e frutada nota de Chipre. No coração encontra-se a mais preciosa essência do Mel. Refinado e harmonioso com um sutil acompanhamento de Patchouli que envolve os sentidos. O N.º 1 da Maison Visage Cosmetique.",
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 39,
+      "imagem": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+_fonte/tmp/
+# PDFs grandes (catálogos): ficam fora do git, sobem direto para a hospedagem
+*.pdf
+# Cópia de trabalho das imagens extraídas (as usadas no site ficam em src/assets/img/produtos)
+_fonte/imagens/

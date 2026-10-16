@@ -1,0 +1,3397 @@
+{
+  "marca": "Mirra Professional",
+  "catalogo": "mirra",
+  "institucional": "Há mais de 25 anos a Mirra Professional é apaixonada por cuidados pessoais. Preocupa-se com a beleza, a autoestima e as necessidades diárias, trazendo produtos de alta qualidade e precisão para a rotina. Preza o toque pessoal como símbolo de familiaridade em sua trajetória, e é esse o motivo, além da excelência dos produtos, de estar crescendo no mundo todo. Ser um membro Mirra Professional é muito mais do que parceria, é ser parte da família. Atendimento ao consumidor (catálogo março/2026): (31) 3826-3161 | (31) 99448-6990 (WhatsApp), atendimento@mirracosmeticos.com, www.mirracosmeticos.com.",
+  "linhas": [
+    {
+      "slug": "lumina",
+      "nome": "Lumina",
+      "descricao": "Lumina Smooth Therapy trata os fios promovendo redução do frizz, controle de volume e disciplina; Lumina Tint Hair é um corante em sérum para manutenção da cor de cabelos loiros.",
+      "area": "finalizacao",
+      "imagem_linha": "mirra/linha-lumina.webp"
+    },
+    {
+      "slug": "elements",
+      "nome": "Elements",
+      "descricao": "Como tudo na Mirra é feito com detalhes, a linha Elements é feita com elementos práticos, conscientes, marcantes, elementos únicos. Orgânicos e naturais, sem adição de sal, fragrâncias exclusivas e exuberantes, fórmulas superconcentradas, alto poder de restauração capilar e pH balanceado.",
+      "area": "cabelo",
+      "imagem_linha": "mirra/linha-elements.webp"
+    },
+    {
+      "slug": "biorestore",
+      "nome": "BioRestore Professional",
+      "descricao": "A BioRestore faz jus aos seus resultados! É projetada para proporcionar mais elegância e poder em seu dia a dia. Com mais sofisticação nas embalagens, os tratamentos continuam com excelência conquistando profissionais por onde passa.",
+      "area": "cabelo",
+      "imagem_linha": "mirra/linha-biorestore.webp"
+    },
+    {
+      "slug": "cronograma-capilar",
+      "nome": "Cronograma Capilar",
+      "descricao": "O Cronograma Capilar proporciona nutrição e disciplina aos fios, promove um perfeito alinhamento capilar e reduz o frizz. Possui sofisticada fórmula com exclusiva tecnologia Amino Keratin B3, de interface múltipla, que atua desde as camadas mais profundas até a superfície da fibra capilar. Indicado para cabelos indisciplinados.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-cronograma-capilar.webp"
+    },
+    {
+      "slug": "coloracao",
+      "nome": "Coloração e Descoloração",
+      "descricao": "Linha profissional de coloração, descoloração e oxidantes Mirra Professional.",
+      "area": "coloracao",
+      "imagem_linha": "mirra/linha-coloracao.webp"
+    },
+    {
+      "slug": "reparacao-sos",
+      "nome": "Reparação Total e S.O.S",
+      "descricao": "Potencializadores super concentrados com nanopartículas que polimerizam em contato com os fios, promovendo mega nutrição e recuperação instantânea.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-reparacao-sos.webp"
+    },
+    {
+      "slug": "acidic-bonding",
+      "nome": "Acidic Bonding",
+      "descricao": "Estabilizador de pH para controle total do pH capilar pós-química.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-acidic-bonding.webp"
+    },
+    {
+      "slug": "theraplex",
+      "nome": "Theraplex",
+      "descricao": "Ligamento ultra reforçador com nanotecnologia para proteção pré-química.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-theraplex.webp"
+    },
+    {
+      "slug": "btx-v",
+      "nome": "BTX-V Volume Reducer",
+      "descricao": "Redutor de volume com Avocado Oil e Apple Tannin.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-btx-v.webp"
+    },
+    {
+      "slug": "blonds-platinados",
+      "nome": "Blonds Platinados",
+      "descricao": "Tratamento intensivo para cabelos loiros, descoloridos e grisalhos com Blend of Violet Pigments.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-blonds-platinados.webp"
+    },
+    {
+      "slug": "pos-progressiva",
+      "nome": "Pós Progressiva",
+      "descricao": "Combinação de ativos de alta tecnologia para recuperar fios danificados, reduzir pontas duplas, eliminar o frizz e conservar o efeito liso por mais tempo.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-pos-progressiva.webp"
+    },
+    {
+      "slug": "capsitrat",
+      "nome": "Capsitrat",
+      "descricao": "Linha antiqueda com tecnologia de Microchoque Folicular.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-capsitrat.webp"
+    },
+    {
+      "slug": "uniq-pro-12",
+      "nome": "Uniq Pro 12",
+      "descricao": "Tratamento ultracondicionante 12x1.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-uniq-pro-12.webp"
+    },
+    {
+      "slug": "ms-curls",
+      "nome": "MS Curls",
+      "descricao": "Linha para cachos perfeitos com Argan Oil e Castor Oil: cachos desembaraçados, nutridos e definidos.",
+      "area": "finalizacao",
+      "imagem_linha": "mirra/linha-ms-curls.webp"
+    },
+    {
+      "slug": "miss-curls",
+      "nome": "Miss Curls",
+      "descricao": "Tratamento diário Cocoa + Protein Volume Control para cachos intensos, definidos e profundamente hidratados.",
+      "area": "tratamento",
+      "imagem_linha": "mirra/linha-miss-curls.webp"
+    },
+    {
+      "slug": "lavatorio",
+      "nome": "Lavatório",
+      "descricao": "Produtos para uso no lavatório do salão: shampoo antirresíduos, kit back bar Ultra Hydration e Hydra Care.",
+      "area": "outro",
+      "imagem_linha": "mirra/linha-lavatorio.webp"
+    },
+    {
+      "slug": "finalizadores",
+      "nome": "Finalizadores",
+      "descricao": "Óleos, séruns, defrizantes e sprays para finalização, brilho e proteção térmica.",
+      "area": "finalizacao",
+      "imagem_linha": "mirra/linha-finalizadores.webp"
+    },
+    {
+      "slug": "hombre-barbearia",
+      "nome": "Hombre Barbearia",
+      "descricao": "Linha masculina para cabelo, barba e corpo. Uma fragrância nobre, faz lembrar fineza e sentir-se agradável e superior. Sensação de segurança e respeito.",
+      "area": "outro",
+      "imagem_linha": "mirra/linha-hombre-barbearia.webp"
+    }
+  ],
+  "produtos": [
+    {
+      "slug": "lumina-smooth-therapy",
+      "nome": "Lumina Smooth Therapy",
+      "linha": "lumina",
+      "categoria": "tratamento redutor de volume",
+      "uso": null,
+      "volumes": [],
+      "descricao": "O Lumina Smooth Therapy trata os fios promovendo redução do frizz, controle de volume e disciplina total aos cabelos. Ele age na estrutura dos fios sem agressões e efeito indesejados.",
+      "beneficios": [
+        "Controle avançado da fibra capilar",
+        "Realça o brilho",
+        "Redução do frizz",
+        "Controle de volume",
+        "Disciplina total aos cabelos"
+      ],
+      "ativos": [],
+      "indicacao": "Todos os tipos de cabelo",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 4,
+      "imagem": "mirra/lumina-smooth-therapy.webp"
+    },
+    {
+      "slug": "lumina-tint-hair",
+      "nome": "Lumina Tint Hair",
+      "linha": "lumina",
+      "categoria": "sérum (manutenção da cor)",
+      "uso": null,
+      "volumes": [],
+      "descricao": "O Lumina Tint Hair é um corante em sérum que protege os fios da oxidação causada por fontes de calor. Em sua fórmula, além de corantes desamareladores, contém também um blend de antioxidantes que auxilia na proteção da cor.",
+      "beneficios": [
+        "Manutenção da cor",
+        "Protege os fios da oxidação causada por fontes de calor"
+      ],
+      "ativos": [
+        "Corantes desamareladores",
+        "Blend de antioxidantes"
+      ],
+      "indicacao": "Cabelos loiros",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 5,
+      "imagem": "mirra/lumina-tint-hair.webp"
+    },
+    {
+      "slug": "elements-proteinas-do-leite-shampoo",
+      "nome": "Elements Proteínas do Leite Shampoo",
+      "linha": "elements",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "60 ml",
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento revitalizante e hidratante. Contém aminoácidos, vitaminas e sais minerais extraídos do soro do leite. Forma uma película hidratante e protetora sobre a fibra capilar. A caseína presente no soro do leite promove neutralização de odores indesejáveis provocados por químicas capilares no couro cabeludo. Os lipídeos do soro do leite são ricos em Ômegas que nutrem e promovem brilho radiante.",
+      "beneficios": [
+        "Maior luminosidade dos fios",
+        "Restauração e hidratação profunda"
+      ],
+      "ativos": [
+        "Aminoácidos",
+        "Vitaminas",
+        "Sais minerais",
+        "Caseína do soro do leite",
+        "Lipídeos do soro do leite (Ômegas)"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 9,
+      "imagem": null
+    },
+    {
+      "slug": "elements-proteinas-do-leite-cond-mask",
+      "nome": "Elements Proteínas do Leite Cond Mask",
+      "linha": "elements",
+      "categoria": "condicionador / máscara",
+      "uso": null,
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento revitalizante e hidratante. Contém aminoácidos, vitaminas e sais minerais extraídos do soro do leite. Forma uma película hidratante e protetora sobre a fibra capilar. A caseína presente no soro do leite promove neutralização de odores indesejáveis provocados por químicas capilares no couro cabeludo. Os lipídeos do soro do leite são ricos em Ômegas que nutrem e promovem brilho radiante.",
+      "beneficios": [
+        "Maior luminosidade dos fios",
+        "Restauração e hidratação profunda"
+      ],
+      "ativos": [
+        "Aminoácidos",
+        "Vitaminas",
+        "Sais minerais",
+        "Caseína do soro do leite",
+        "Lipídeos do soro do leite (Ômegas)"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 9,
+      "imagem": null
+    },
+    {
+      "slug": "elements-proteinas-do-leite-leave-in",
+      "nome": "Elements Proteínas do Leite Leave-in",
+      "linha": "elements",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Tratamento revitalizante e hidratante. Contém aminoácidos, vitaminas e sais minerais extraídos do soro do leite. Forma uma película hidratante e protetora sobre a fibra capilar. A caseína presente no soro do leite promove neutralização de odores indesejáveis provocados por químicas capilares no couro cabeludo. Os lipídeos do soro do leite são ricos em Ômegas que nutrem e promovem brilho radiante.",
+      "beneficios": [
+        "Maior luminosidade dos fios",
+        "Restauração e hidratação profunda"
+      ],
+      "ativos": [
+        "Aminoácidos",
+        "Vitaminas",
+        "Sais minerais",
+        "Caseína do soro do leite",
+        "Lipídeos do soro do leite (Ômegas)"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 9,
+      "imagem": null
+    },
+    {
+      "slug": "elements-proteinas-do-leite-mascara",
+      "nome": "Elements Proteínas do Leite Máscara",
+      "linha": "elements",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "250 g",
+        "500 g",
+        "1 kg"
+      ],
+      "descricao": "Tratamento revitalizante e hidratante. Contém aminoácidos, vitaminas e sais minerais extraídos do soro do leite. Forma uma película hidratante e protetora sobre a fibra capilar. A caseína presente no soro do leite promove neutralização de odores indesejáveis provocados por químicas capilares no couro cabeludo. Os lipídeos do soro do leite são ricos em Ômegas que nutrem e promovem brilho radiante.",
+      "beneficios": [
+        "Maior luminosidade dos fios",
+        "Restauração e hidratação profunda"
+      ],
+      "ativos": [
+        "Aminoácidos",
+        "Vitaminas",
+        "Sais minerais",
+        "Caseína do soro do leite",
+        "Lipídeos do soro do leite (Ômegas)"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 9,
+      "imagem": null
+    },
+    {
+      "slug": "elements-ginkgo-biloba-shampoo",
+      "nome": "Elements Ginkgo Biloba Shampoo",
+      "linha": "elements",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "60 ml",
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Antiqueda, crescimento e fortalecimento da raiz. Extratos fitossomados: Ginkgo Biloba aumenta a circulação sanguínea no couro cabeludo; Aloe Vera, rica em vitaminas, fortalece o bulbo pilossebáceo; Broto de Bambu, em alta concentração de sais minerais, induz o crescimento do fio.",
+      "beneficios": [
+        "Restaura o bulbo piloso",
+        "Proporciona brilho e maciez",
+        "Antiqueda, crescimento e fortalecimento da raiz"
+      ],
+      "ativos": [
+        "Ginkgo Biloba",
+        "Aloe Vera",
+        "Broto de Bambu"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 11,
+      "imagem": null
+    },
+    {
+      "slug": "elements-ginkgo-biloba-cond-mask",
+      "nome": "Elements Ginkgo Biloba Cond Mask",
+      "linha": "elements",
+      "categoria": "condicionador / máscara",
+      "uso": null,
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Antiqueda, crescimento e fortalecimento da raiz. Extratos fitossomados: Ginkgo Biloba aumenta a circulação sanguínea no couro cabeludo; Aloe Vera, rica em vitaminas, fortalece o bulbo pilossebáceo; Broto de Bambu, em alta concentração de sais minerais, induz o crescimento do fio.",
+      "beneficios": [
+        "Restaura o bulbo piloso",
+        "Proporciona brilho e maciez",
+        "Antiqueda, crescimento e fortalecimento da raiz"
+      ],
+      "ativos": [
+        "Ginkgo Biloba",
+        "Aloe Vera",
+        "Broto de Bambu"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 11,
+      "imagem": null
+    },
+    {
+      "slug": "elements-ginkgo-biloba-leave-in",
+      "nome": "Elements Ginkgo Biloba Leave-in",
+      "linha": "elements",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Antiqueda, crescimento e fortalecimento da raiz. Extratos fitossomados: Ginkgo Biloba aumenta a circulação sanguínea no couro cabeludo; Aloe Vera, rica em vitaminas, fortalece o bulbo pilossebáceo; Broto de Bambu, em alta concentração de sais minerais, induz o crescimento do fio.",
+      "beneficios": [
+        "Restaura o bulbo piloso",
+        "Proporciona brilho e maciez",
+        "Antiqueda, crescimento e fortalecimento da raiz"
+      ],
+      "ativos": [
+        "Ginkgo Biloba",
+        "Aloe Vera",
+        "Broto de Bambu"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 11,
+      "imagem": null
+    },
+    {
+      "slug": "elements-ginkgo-biloba-mascara",
+      "nome": "Elements Ginkgo Biloba Máscara",
+      "linha": "elements",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "250 g",
+        "500 g",
+        "1 kg"
+      ],
+      "descricao": "Antiqueda, crescimento e fortalecimento da raiz. Extratos fitossomados: Ginkgo Biloba aumenta a circulação sanguínea no couro cabeludo; Aloe Vera, rica em vitaminas, fortalece o bulbo pilossebáceo; Broto de Bambu, em alta concentração de sais minerais, induz o crescimento do fio.",
+      "beneficios": [
+        "Restaura o bulbo piloso",
+        "Proporciona brilho e maciez",
+        "Antiqueda, crescimento e fortalecimento da raiz"
+      ],
+      "ativos": [
+        "Ginkgo Biloba",
+        "Aloe Vera",
+        "Broto de Bambu"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 11,
+      "imagem": null
+    },
+    {
+      "slug": "elements-tutano-e-caviar-shampoo",
+      "nome": "Elements Tutano e Caviar Shampoo",
+      "linha": "elements",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "60 ml",
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento para cabelos ressecados. Rico em colágeno, o tutano sela as cutículas dos fios, deixando-os flexíveis, revitalizados e resistentes contra a quebra. O óleo de Tutano tem o poder de nutrir as fibras capilares, pois repõe a umidade natural produzida no couro cabeludo.",
+      "beneficios": [
+        "Protege e hidrata os cabelos",
+        "Reparação da textura e da fibra capilar com brilho e vitalidade"
+      ],
+      "ativos": [
+        "Tutano",
+        "Caviar",
+        "Colágeno"
+      ],
+      "indicacao": "Cabelos ressecados",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 13,
+      "imagem": null
+    },
+    {
+      "slug": "elements-tutano-e-caviar-cond-mask",
+      "nome": "Elements Tutano e Caviar Cond Mask",
+      "linha": "elements",
+      "categoria": "condicionador / máscara",
+      "uso": null,
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento para cabelos ressecados. Rico em colágeno, o tutano sela as cutículas dos fios, deixando-os flexíveis, revitalizados e resistentes contra a quebra. O óleo de Tutano tem o poder de nutrir as fibras capilares, pois repõe a umidade natural produzida no couro cabeludo.",
+      "beneficios": [
+        "Protege e hidrata os cabelos",
+        "Reparação da textura e da fibra capilar com brilho e vitalidade"
+      ],
+      "ativos": [
+        "Tutano",
+        "Caviar",
+        "Colágeno"
+      ],
+      "indicacao": "Cabelos ressecados",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 13,
+      "imagem": null
+    },
+    {
+      "slug": "elements-tutano-e-caviar-leave-in",
+      "nome": "Elements Tutano e Caviar Leave-in",
+      "linha": "elements",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Tratamento para cabelos ressecados. Rico em colágeno, o tutano sela as cutículas dos fios, deixando-os flexíveis, revitalizados e resistentes contra a quebra. O óleo de Tutano tem o poder de nutrir as fibras capilares, pois repõe a umidade natural produzida no couro cabeludo.",
+      "beneficios": [
+        "Protege e hidrata os cabelos",
+        "Reparação da textura e da fibra capilar com brilho e vitalidade"
+      ],
+      "ativos": [
+        "Tutano",
+        "Caviar",
+        "Colágeno"
+      ],
+      "indicacao": "Cabelos ressecados",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 13,
+      "imagem": null
+    },
+    {
+      "slug": "elements-tutano-e-caviar-mascara",
+      "nome": "Elements Tutano e Caviar Máscara",
+      "linha": "elements",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "250 g",
+        "500 g"
+      ],
+      "descricao": "Tratamento para cabelos ressecados. Rico em colágeno, o tutano sela as cutículas dos fios, deixando-os flexíveis, revitalizados e resistentes contra a quebra. O óleo de Tutano tem o poder de nutrir as fibras capilares, pois repõe a umidade natural produzida no couro cabeludo.",
+      "beneficios": [
+        "Protege e hidrata os cabelos",
+        "Reparação da textura e da fibra capilar com brilho e vitalidade"
+      ],
+      "ativos": [
+        "Tutano",
+        "Caviar",
+        "Colágeno"
+      ],
+      "indicacao": "Cabelos ressecados",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 13,
+      "imagem": null
+    },
+    {
+      "slug": "elements-nutricao-vegetal-shampoo",
+      "nome": "Elements Nutrição Vegetal Shampoo",
+      "linha": "elements",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "60 ml",
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento anticaspa. Associação de extratos vegetais que ajudam a prevenir e combater a descamação excessiva do couro cabeludo. Trata a caspa e é estimulante capilar, atuando na regulação da função sebácea. É composto de Aquiléa, Juá, Limão, Sálvia, Menta, Alecrim e Quilaia. Esta combinação combate infecções, bactérias e fungos. Reduz a oleosidade da raiz e trata as pontas secas.",
+      "beneficios": [
+        "Reduz secreção sebácea",
+        "Estimula circulação periférica",
+        "Controla a oleosidade excessiva",
+        "Combate a caspa"
+      ],
+      "ativos": [
+        "Aquiléa",
+        "Juá",
+        "Limão",
+        "Sálvia",
+        "Menta",
+        "Alecrim",
+        "Quilaia"
+      ],
+      "indicacao": "Couro cabeludo com caspa e oleosidade excessiva",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 15,
+      "imagem": null
+    },
+    {
+      "slug": "elements-nutricao-vegetal-cond-mask",
+      "nome": "Elements Nutrição Vegetal Cond Mask",
+      "linha": "elements",
+      "categoria": "condicionador / máscara",
+      "uso": null,
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento anticaspa. Associação de extratos vegetais que ajudam a prevenir e combater a descamação excessiva do couro cabeludo. Trata a caspa e é estimulante capilar, atuando na regulação da função sebácea. É composto de Aquiléa, Juá, Limão, Sálvia, Menta, Alecrim e Quilaia. Esta combinação combate infecções, bactérias e fungos. Reduz a oleosidade da raiz e trata as pontas secas.",
+      "beneficios": [
+        "Reduz secreção sebácea",
+        "Estimula circulação periférica",
+        "Controla a oleosidade excessiva",
+        "Combate a caspa"
+      ],
+      "ativos": [
+        "Aquiléa",
+        "Juá",
+        "Limão",
+        "Sálvia",
+        "Menta",
+        "Alecrim",
+        "Quilaia"
+      ],
+      "indicacao": "Couro cabeludo com caspa e oleosidade excessiva",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 15,
+      "imagem": null
+    },
+    {
+      "slug": "elements-nutricao-vegetal-leave-in",
+      "nome": "Elements Nutrição Vegetal Leave-in",
+      "linha": "elements",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Tratamento anticaspa. Associação de extratos vegetais que ajudam a prevenir e combater a descamação excessiva do couro cabeludo. Trata a caspa e é estimulante capilar, atuando na regulação da função sebácea. É composto de Aquiléa, Juá, Limão, Sálvia, Menta, Alecrim e Quilaia. Esta combinação combate infecções, bactérias e fungos. Reduz a oleosidade da raiz e trata as pontas secas.",
+      "beneficios": [
+        "Reduz secreção sebácea",
+        "Estimula circulação periférica",
+        "Controla a oleosidade excessiva",
+        "Combate a caspa"
+      ],
+      "ativos": [
+        "Aquiléa",
+        "Juá",
+        "Limão",
+        "Sálvia",
+        "Menta",
+        "Alecrim",
+        "Quilaia"
+      ],
+      "indicacao": "Couro cabeludo com caspa e oleosidade excessiva",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 15,
+      "imagem": null
+    },
+    {
+      "slug": "elements-nutricao-vegetal-mascara",
+      "nome": "Elements Nutrição Vegetal Máscara",
+      "linha": "elements",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "250 g",
+        "500 g"
+      ],
+      "descricao": "Tratamento anticaspa. Associação de extratos vegetais que ajudam a prevenir e combater a descamação excessiva do couro cabeludo. Trata a caspa e é estimulante capilar, atuando na regulação da função sebácea. É composto de Aquiléa, Juá, Limão, Sálvia, Menta, Alecrim e Quilaia. Esta combinação combate infecções, bactérias e fungos. Reduz a oleosidade da raiz e trata as pontas secas.",
+      "beneficios": [
+        "Reduz secreção sebácea",
+        "Estimula circulação periférica",
+        "Controla a oleosidade excessiva",
+        "Combate a caspa"
+      ],
+      "ativos": [
+        "Aquiléa",
+        "Juá",
+        "Limão",
+        "Sálvia",
+        "Menta",
+        "Alecrim",
+        "Quilaia"
+      ],
+      "indicacao": "Couro cabeludo com caspa e oleosidade excessiva",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 15,
+      "imagem": null
+    },
+    {
+      "slug": "elements-cacau-acai-mel-shampoo",
+      "nome": "Elements Cacau + Açaí + Mel Shampoo",
+      "linha": "elements",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "60 ml",
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento para cabelos étnicos. Manteiga de Cacau é um ingrediente rico em aminoácidos que promove a reconstrução capilar de dentro para fora. O Óleo de Açaí promove nutrição intensa e imediata. Contém vitaminas C, B1, B2, B3, carboidratos, proteínas, lipídeos e sais minerais. Já o Extrato de Mel é rico em açúcares e sais minerais, ideais para hidratação, maciez e sedosidade.",
+      "beneficios": [
+        "Excelente doador de umidade",
+        "Evita o ressecamento e reduz o volume",
+        "Hidratação intensa"
+      ],
+      "ativos": [
+        "Manteiga de Cacau",
+        "Óleo de Açaí",
+        "Extrato de Mel",
+        "Vitaminas C, B1, B2, B3"
+      ],
+      "indicacao": "Cabelos étnicos",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 17,
+      "imagem": null
+    },
+    {
+      "slug": "elements-cacau-acai-mel-cond-mask",
+      "nome": "Elements Cacau + Açaí + Mel Cond Mask",
+      "linha": "elements",
+      "categoria": "condicionador / máscara",
+      "uso": null,
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento para cabelos étnicos. Manteiga de Cacau é um ingrediente rico em aminoácidos que promove a reconstrução capilar de dentro para fora. O Óleo de Açaí promove nutrição intensa e imediata. Contém vitaminas C, B1, B2, B3, carboidratos, proteínas, lipídeos e sais minerais. Já o Extrato de Mel é rico em açúcares e sais minerais, ideais para hidratação, maciez e sedosidade.",
+      "beneficios": [
+        "Excelente doador de umidade",
+        "Evita o ressecamento e reduz o volume",
+        "Hidratação intensa"
+      ],
+      "ativos": [
+        "Manteiga de Cacau",
+        "Óleo de Açaí",
+        "Extrato de Mel",
+        "Vitaminas C, B1, B2, B3"
+      ],
+      "indicacao": "Cabelos étnicos",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 17,
+      "imagem": null
+    },
+    {
+      "slug": "elements-cacau-acai-mel-leave-in",
+      "nome": "Elements Cacau + Açaí + Mel Leave-in",
+      "linha": "elements",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Tratamento para cabelos étnicos. Manteiga de Cacau é um ingrediente rico em aminoácidos que promove a reconstrução capilar de dentro para fora. O Óleo de Açaí promove nutrição intensa e imediata. Contém vitaminas C, B1, B2, B3, carboidratos, proteínas, lipídeos e sais minerais. Já o Extrato de Mel é rico em açúcares e sais minerais, ideais para hidratação, maciez e sedosidade.",
+      "beneficios": [
+        "Excelente doador de umidade",
+        "Evita o ressecamento e reduz o volume",
+        "Hidratação intensa"
+      ],
+      "ativos": [
+        "Manteiga de Cacau",
+        "Óleo de Açaí",
+        "Extrato de Mel",
+        "Vitaminas C, B1, B2, B3"
+      ],
+      "indicacao": "Cabelos étnicos",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 17,
+      "imagem": null
+    },
+    {
+      "slug": "elements-cacau-acai-mel-mascara",
+      "nome": "Elements Cacau + Açaí + Mel Máscara",
+      "linha": "elements",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "250 g",
+        "500 g",
+        "1 kg"
+      ],
+      "descricao": "Tratamento para cabelos étnicos. Manteiga de Cacau é um ingrediente rico em aminoácidos que promove a reconstrução capilar de dentro para fora. O Óleo de Açaí promove nutrição intensa e imediata. Contém vitaminas C, B1, B2, B3, carboidratos, proteínas, lipídeos e sais minerais. Já o Extrato de Mel é rico em açúcares e sais minerais, ideais para hidratação, maciez e sedosidade.",
+      "beneficios": [
+        "Excelente doador de umidade",
+        "Evita o ressecamento e reduz o volume",
+        "Hidratação intensa"
+      ],
+      "ativos": [
+        "Manteiga de Cacau",
+        "Óleo de Açaí",
+        "Extrato de Mel",
+        "Vitaminas C, B1, B2, B3"
+      ],
+      "indicacao": "Cabelos étnicos",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 17,
+      "imagem": null
+    },
+    {
+      "slug": "elements-queratina-manteiga-de-karite-shampoo",
+      "nome": "Elements Queratina + Manteiga de Karité Shampoo",
+      "linha": "elements",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "60 ml",
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Cabelos quimicamente tratados. A Queratina é composta por 19 aminoácidos que formam 90% dos fios. Promove força, elasticidade e resistência à fibra. A Manteiga de Karité contém vitaminas A, D, E e F que são antioxidantes para ajudar a remover células mortas. A combinação promove brilho, suavidade, proteção térmica e reconstrução imediata.",
+      "beneficios": [
+        "Regenera e nutre os cabelos",
+        "Fortifica e recupera os fios danificados",
+        "Brilho, suavidade, proteção térmica e reconstrução imediata"
+      ],
+      "ativos": [
+        "Queratina",
+        "Manteiga de Karité",
+        "Vitaminas A, D, E e F"
+      ],
+      "indicacao": "Cabelos quimicamente tratados",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 19,
+      "imagem": null
+    },
+    {
+      "slug": "elements-queratina-manteiga-de-karite-cond-mask",
+      "nome": "Elements Queratina + Manteiga de Karité Cond Mask",
+      "linha": "elements",
+      "categoria": "condicionador / máscara",
+      "uso": null,
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Cabelos quimicamente tratados. A Queratina é composta por 19 aminoácidos que formam 90% dos fios. Promove força, elasticidade e resistência à fibra. A Manteiga de Karité contém vitaminas A, D, E e F que são antioxidantes para ajudar a remover células mortas. A combinação promove brilho, suavidade, proteção térmica e reconstrução imediata.",
+      "beneficios": [
+        "Regenera e nutre os cabelos",
+        "Fortifica e recupera os fios danificados",
+        "Brilho, suavidade, proteção térmica e reconstrução imediata"
+      ],
+      "ativos": [
+        "Queratina",
+        "Manteiga de Karité",
+        "Vitaminas A, D, E e F"
+      ],
+      "indicacao": "Cabelos quimicamente tratados",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 19,
+      "imagem": null
+    },
+    {
+      "slug": "elements-queratina-manteiga-de-karite-leave-in",
+      "nome": "Elements Queratina + Manteiga de Karité Leave-in",
+      "linha": "elements",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Cabelos quimicamente tratados. A Queratina é composta por 19 aminoácidos que formam 90% dos fios. Promove força, elasticidade e resistência à fibra. A Manteiga de Karité contém vitaminas A, D, E e F que são antioxidantes para ajudar a remover células mortas. A combinação promove brilho, suavidade, proteção térmica e reconstrução imediata.",
+      "beneficios": [
+        "Regenera e nutre os cabelos",
+        "Fortifica e recupera os fios danificados",
+        "Brilho, suavidade, proteção térmica e reconstrução imediata"
+      ],
+      "ativos": [
+        "Queratina",
+        "Manteiga de Karité",
+        "Vitaminas A, D, E e F"
+      ],
+      "indicacao": "Cabelos quimicamente tratados",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 19,
+      "imagem": null
+    },
+    {
+      "slug": "elements-queratina-manteiga-de-karite-mascara",
+      "nome": "Elements Queratina + Manteiga de Karité Máscara",
+      "linha": "elements",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "250 g",
+        "500 g"
+      ],
+      "descricao": "Cabelos quimicamente tratados. A Queratina é composta por 19 aminoácidos que formam 90% dos fios. Promove força, elasticidade e resistência à fibra. A Manteiga de Karité contém vitaminas A, D, E e F que são antioxidantes para ajudar a remover células mortas. A combinação promove brilho, suavidade, proteção térmica e reconstrução imediata.",
+      "beneficios": [
+        "Regenera e nutre os cabelos",
+        "Fortifica e recupera os fios danificados",
+        "Brilho, suavidade, proteção térmica e reconstrução imediata"
+      ],
+      "ativos": [
+        "Queratina",
+        "Manteiga de Karité",
+        "Vitaminas A, D, E e F"
+      ],
+      "indicacao": "Cabelos quimicamente tratados",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 19,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-total-repair-shampoo",
+      "nome": "BioRestore Total Repair Shampoo",
+      "linha": "biorestore",
+      "categoria": "shampoo",
+      "uso": "profissional",
+      "volumes": [
+        "60 ml",
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Poderoso tratamento. Fórmula concentrada e rica em nutrientes, repara os fios danificados de dentro para fora, aumentando a força da fibra capilar. A combinação da Cistina + Óleo de Ojon orgânico + Óleo de Macadâmia favorece a maciez e o brilho instantâneos. Contém filtros UVA/UVB, que protegem os fios contra os raios solares.",
+      "beneficios": [
+        "Aumenta a durabilidade do alisamento",
+        "Repõe aminoácidos perdidos durante processos químicos",
+        "Maciez e brilho instantâneos",
+        "Proteção contra os raios solares"
+      ],
+      "ativos": [
+        "Cistina",
+        "Óleo de Ojon orgânico",
+        "Óleo de Macadâmia",
+        "Filtros UVA/UVB"
+      ],
+      "indicacao": "Cabelos danificados por processos químicos",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 23,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-total-repair-cond-mask",
+      "nome": "BioRestore Total Repair Cond Mask",
+      "linha": "biorestore",
+      "categoria": "condicionador / máscara",
+      "uso": "profissional",
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Poderoso tratamento. Fórmula concentrada e rica em nutrientes, repara os fios danificados de dentro para fora, aumentando a força da fibra capilar. A combinação da Cistina + Óleo de Ojon orgânico + Óleo de Macadâmia favorece a maciez e o brilho instantâneos. Contém filtros UVA/UVB, que protegem os fios contra os raios solares.",
+      "beneficios": [
+        "Aumenta a durabilidade do alisamento",
+        "Repõe aminoácidos perdidos durante processos químicos",
+        "Maciez e brilho instantâneos",
+        "Proteção contra os raios solares"
+      ],
+      "ativos": [
+        "Cistina",
+        "Óleo de Ojon orgânico",
+        "Óleo de Macadâmia",
+        "Filtros UVA/UVB"
+      ],
+      "indicacao": "Cabelos danificados por processos químicos",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 23,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-total-repair-leave-in",
+      "nome": "BioRestore Total Repair Leave-in",
+      "linha": "biorestore",
+      "categoria": "leave-in",
+      "uso": "profissional",
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Poderoso tratamento. Fórmula concentrada e rica em nutrientes, repara os fios danificados de dentro para fora, aumentando a força da fibra capilar. A combinação da Cistina + Óleo de Ojon orgânico + Óleo de Macadâmia favorece a maciez e o brilho instantâneos. Contém filtros UVA/UVB, que protegem os fios contra os raios solares.",
+      "beneficios": [
+        "Aumenta a durabilidade do alisamento",
+        "Repõe aminoácidos perdidos durante processos químicos",
+        "Maciez e brilho instantâneos",
+        "Proteção contra os raios solares"
+      ],
+      "ativos": [
+        "Cistina",
+        "Óleo de Ojon orgânico",
+        "Óleo de Macadâmia",
+        "Filtros UVA/UVB"
+      ],
+      "indicacao": "Cabelos danificados por processos químicos",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 23,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-total-repair-mascara",
+      "nome": "BioRestore Total Repair Máscara",
+      "linha": "biorestore",
+      "categoria": "máscara",
+      "uso": "profissional",
+      "volumes": [
+        "250 g",
+        "500 g",
+        "1 kg"
+      ],
+      "descricao": "Poderoso tratamento. Fórmula concentrada e rica em nutrientes, repara os fios danificados de dentro para fora, aumentando a força da fibra capilar. A combinação da Cistina + Óleo de Ojon orgânico + Óleo de Macadâmia favorece a maciez e o brilho instantâneos. Contém filtros UVA/UVB, que protegem os fios contra os raios solares.",
+      "beneficios": [
+        "Aumenta a durabilidade do alisamento",
+        "Repõe aminoácidos perdidos durante processos químicos",
+        "Maciez e brilho instantâneos",
+        "Proteção contra os raios solares"
+      ],
+      "ativos": [
+        "Cistina",
+        "Óleo de Ojon orgânico",
+        "Óleo de Macadâmia",
+        "Filtros UVA/UVB"
+      ],
+      "indicacao": "Cabelos danificados por processos químicos",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 23,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-jojoba-e-andiroba-shampoo",
+      "nome": "BioRestore Jojoba e Andiroba Shampoo",
+      "linha": "biorestore",
+      "categoria": "shampoo",
+      "uso": "profissional",
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Banho de ouro. Melhora a resistência dos fios garantindo um filme protetor contra o efeito build-up (acúmulo de resíduos de produtos na fibra capilar). Favorece a umectação e a emoliência.",
+      "beneficios": [
+        "Umectação (reposição mista de água e óleo)",
+        "Proteção contra build-up"
+      ],
+      "ativos": [
+        "Jojoba",
+        "Andiroba"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 25,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-jojoba-e-andiroba-cond-mask",
+      "nome": "BioRestore Jojoba e Andiroba Cond Mask",
+      "linha": "biorestore",
+      "categoria": "condicionador / máscara",
+      "uso": "profissional",
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Banho de ouro. Melhora a resistência dos fios garantindo um filme protetor contra o efeito build-up (acúmulo de resíduos de produtos na fibra capilar). Favorece a umectação e a emoliência.",
+      "beneficios": [
+        "Umectação (reposição mista de água e óleo)",
+        "Proteção contra build-up"
+      ],
+      "ativos": [
+        "Jojoba",
+        "Andiroba"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 25,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-jojoba-e-andiroba-leave-in",
+      "nome": "BioRestore Jojoba e Andiroba Leave-in",
+      "linha": "biorestore",
+      "categoria": "leave-in",
+      "uso": "profissional",
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Banho de ouro. Melhora a resistência dos fios garantindo um filme protetor contra o efeito build-up (acúmulo de resíduos de produtos na fibra capilar). Favorece a umectação e a emoliência.",
+      "beneficios": [
+        "Umectação (reposição mista de água e óleo)",
+        "Proteção contra build-up"
+      ],
+      "ativos": [
+        "Jojoba",
+        "Andiroba"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 25,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-jojoba-e-andiroba-mascara",
+      "nome": "BioRestore Jojoba e Andiroba Máscara",
+      "linha": "biorestore",
+      "categoria": "máscara",
+      "uso": "profissional",
+      "volumes": [
+        "250 g",
+        "500 g",
+        "1 kg"
+      ],
+      "descricao": "Banho de ouro. Melhora a resistência dos fios garantindo um filme protetor contra o efeito build-up (acúmulo de resíduos de produtos na fibra capilar). Favorece a umectação e a emoliência.",
+      "beneficios": [
+        "Umectação (reposição mista de água e óleo)",
+        "Proteção contra build-up"
+      ],
+      "ativos": [
+        "Jojoba",
+        "Andiroba"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 25,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-argan-shampoo",
+      "nome": "BioRestore Argan Shampoo",
+      "linha": "biorestore",
+      "categoria": "shampoo",
+      "uso": "profissional",
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento hidratante e reparador. Tratamento intensivo que penetra profundamente nas cutículas capilares para nutrir e reconstruir o fio danificado por processos químicos e fatores ambientais. É rica em vitaminas e ácidos graxos essenciais para o combate aos radicais livres e diminuição do frizz.",
+      "beneficios": [
+        "Alta concentração de vitaminas",
+        "Óleo de Ômegas 3, 6 e 9",
+        "Diminuição do frizz"
+      ],
+      "ativos": [
+        "Óleo de Argan",
+        "Vitaminas",
+        "Ácidos graxos essenciais",
+        "Ômegas 3, 6 e 9"
+      ],
+      "indicacao": "Cabelos danificados por processos químicos e fatores ambientais",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 27,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-argan-cond-mask",
+      "nome": "BioRestore Argan Cond Mask",
+      "linha": "biorestore",
+      "categoria": "condicionador / máscara",
+      "uso": "profissional",
+      "volumes": [
+        "270 ml",
+        "1 L"
+      ],
+      "descricao": "Tratamento hidratante e reparador. Tratamento intensivo que penetra profundamente nas cutículas capilares para nutrir e reconstruir o fio danificado por processos químicos e fatores ambientais. É rica em vitaminas e ácidos graxos essenciais para o combate aos radicais livres e diminuição do frizz.",
+      "beneficios": [
+        "Alta concentração de vitaminas",
+        "Óleo de Ômegas 3, 6 e 9",
+        "Diminuição do frizz"
+      ],
+      "ativos": [
+        "Óleo de Argan",
+        "Vitaminas",
+        "Ácidos graxos essenciais",
+        "Ômegas 3, 6 e 9"
+      ],
+      "indicacao": "Cabelos danificados por processos químicos e fatores ambientais",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 27,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-argan-leave-in",
+      "nome": "BioRestore Argan Leave-in",
+      "linha": "biorestore",
+      "categoria": "leave-in",
+      "uso": "profissional",
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Tratamento hidratante e reparador. Tratamento intensivo que penetra profundamente nas cutículas capilares para nutrir e reconstruir o fio danificado por processos químicos e fatores ambientais. É rica em vitaminas e ácidos graxos essenciais para o combate aos radicais livres e diminuição do frizz.",
+      "beneficios": [
+        "Alta concentração de vitaminas",
+        "Óleo de Ômegas 3, 6 e 9",
+        "Diminuição do frizz"
+      ],
+      "ativos": [
+        "Óleo de Argan",
+        "Vitaminas",
+        "Ácidos graxos essenciais",
+        "Ômegas 3, 6 e 9"
+      ],
+      "indicacao": "Cabelos danificados por processos químicos e fatores ambientais",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 27,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-argan-mascara",
+      "nome": "BioRestore Argan Máscara",
+      "linha": "biorestore",
+      "categoria": "máscara",
+      "uso": "profissional",
+      "volumes": [
+        "250 g"
+      ],
+      "descricao": "Tratamento hidratante e reparador. Tratamento intensivo que penetra profundamente nas cutículas capilares para nutrir e reconstruir o fio danificado por processos químicos e fatores ambientais. É rica em vitaminas e ácidos graxos essenciais para o combate aos radicais livres e diminuição do frizz.",
+      "beneficios": [
+        "Alta concentração de vitaminas",
+        "Óleo de Ômegas 3, 6 e 9",
+        "Diminuição do frizz"
+      ],
+      "ativos": [
+        "Óleo de Argan",
+        "Vitaminas",
+        "Ácidos graxos essenciais",
+        "Ômegas 3, 6 e 9"
+      ],
+      "indicacao": "Cabelos danificados por processos químicos e fatores ambientais",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 27,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-color-revive-shampoo",
+      "nome": "BioRestore Color Revive Shampoo",
+      "linha": "biorestore",
+      "categoria": "shampoo",
+      "uso": "profissional",
+      "volumes": [
+        "270 ml"
+      ],
+      "descricao": "Fragrância oriental sedutora. Color Revive Óleo de Cranberry é um tratamento para todos os tipos de cabelos. Condiciona os fios e revitaliza a cor dos cabelos. Sua fórmula é rica em agentes com ação antioxidante e filtros UVA/UVB que ajudam a bloquear agentes agressores. Promove maior retenção da cor nos cabelos, além de brilho radiante.",
+      "beneficios": [
+        "Ação antioxidante",
+        "Proteção da cor com filtros UVA e UVB",
+        "Maior retenção da cor",
+        "Brilho radiante"
+      ],
+      "ativos": [
+        "Óleo de Cranberry",
+        "Filtros UVA/UVB",
+        "Antioxidantes"
+      ],
+      "indicacao": "Todos os tipos de cabelo",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 29,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-color-revive-cond-mask",
+      "nome": "BioRestore Color Revive Cond Mask",
+      "linha": "biorestore",
+      "categoria": "condicionador / máscara",
+      "uso": "profissional",
+      "volumes": [
+        "270 ml"
+      ],
+      "descricao": "Fragrância oriental sedutora. Color Revive Óleo de Cranberry é um tratamento para todos os tipos de cabelos. Condiciona os fios e revitaliza a cor dos cabelos. Sua fórmula é rica em agentes com ação antioxidante e filtros UVA/UVB que ajudam a bloquear agentes agressores. Promove maior retenção da cor nos cabelos, além de brilho radiante.",
+      "beneficios": [
+        "Ação antioxidante",
+        "Proteção da cor com filtros UVA e UVB",
+        "Maior retenção da cor",
+        "Brilho radiante"
+      ],
+      "ativos": [
+        "Óleo de Cranberry",
+        "Filtros UVA/UVB",
+        "Antioxidantes"
+      ],
+      "indicacao": "Todos os tipos de cabelo",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 29,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-color-revive-leave-in",
+      "nome": "BioRestore Color Revive Leave-in",
+      "linha": "biorestore",
+      "categoria": "leave-in",
+      "uso": "profissional",
+      "volumes": [
+        "180 g"
+      ],
+      "descricao": "Fragrância oriental sedutora. Color Revive Óleo de Cranberry é um tratamento para todos os tipos de cabelos. Condiciona os fios e revitaliza a cor dos cabelos. Sua fórmula é rica em agentes com ação antioxidante e filtros UVA/UVB que ajudam a bloquear agentes agressores. Promove maior retenção da cor nos cabelos, além de brilho radiante.",
+      "beneficios": [
+        "Ação antioxidante",
+        "Proteção da cor com filtros UVA e UVB",
+        "Maior retenção da cor",
+        "Brilho radiante"
+      ],
+      "ativos": [
+        "Óleo de Cranberry",
+        "Filtros UVA/UVB",
+        "Antioxidantes"
+      ],
+      "indicacao": "Todos os tipos de cabelo",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 29,
+      "imagem": null
+    },
+    {
+      "slug": "biorestore-color-revive-mascara",
+      "nome": "BioRestore Color Revive Máscara",
+      "linha": "biorestore",
+      "categoria": "máscara",
+      "uso": "profissional",
+      "volumes": [
+        "250 g"
+      ],
+      "descricao": "Fragrância oriental sedutora. Color Revive Óleo de Cranberry é um tratamento para todos os tipos de cabelos. Condiciona os fios e revitaliza a cor dos cabelos. Sua fórmula é rica em agentes com ação antioxidante e filtros UVA/UVB que ajudam a bloquear agentes agressores. Promove maior retenção da cor nos cabelos, além de brilho radiante.",
+      "beneficios": [
+        "Ação antioxidante",
+        "Proteção da cor com filtros UVA e UVB",
+        "Maior retenção da cor",
+        "Brilho radiante"
+      ],
+      "ativos": [
+        "Óleo de Cranberry",
+        "Filtros UVA/UVB",
+        "Antioxidantes"
+      ],
+      "indicacao": "Todos os tipos de cabelo",
+      "modo_de_uso": null,
+      "selos": [
+        "Petrolate free",
+        "Paraben free"
+      ],
+      "pagina_pdf": 29,
+      "imagem": null
+    },
+    {
+      "slug": "detox-therapy-shampoo-cream",
+      "nome": "Detox Therapy Shampoo Cream",
+      "linha": "cronograma-capilar",
+      "categoria": "shampoo",
+      "uso": "profissional",
+      "volumes": [
+        "1000 ml"
+      ],
+      "descricao": "Tratamento rico em sais minerais, vitaminas e aminoácidos. Age melhorando a oxigenação do couro cabeludo. O tratamento desintoxicante e exfoliante remove as impurezas, células mortas, metais e todo acúmulo de resíduos indesejáveis. Regula oleosidade, elimina caspa, aumenta a defesa antioxidante e favorece o crescimento.",
+      "beneficios": [
+        "Elimina toxinas",
+        "Regula a sebosidade",
+        "Combate a caspa",
+        "Ativa o crescimento"
+      ],
+      "ativos": [
+        "Argila verde",
+        "Gengibre",
+        "Hortelã"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 33,
+      "imagem": null
+    },
+    {
+      "slug": "detox-therapy-mascara",
+      "nome": "Detox Therapy Máscara",
+      "linha": "cronograma-capilar",
+      "categoria": "máscara",
+      "uso": "profissional",
+      "volumes": [
+        "500 g"
+      ],
+      "descricao": "Tratamento rico em sais minerais, vitaminas e aminoácidos. Age melhorando a oxigenação do couro cabeludo. O tratamento desintoxicante e exfoliante remove as impurezas, células mortas, metais e todo acúmulo de resíduos indesejáveis. Regula oleosidade, elimina caspa, aumenta a defesa antioxidante e favorece o crescimento.",
+      "beneficios": [
+        "Elimina toxinas",
+        "Regula a sebosidade",
+        "Combate a caspa",
+        "Ativa o crescimento"
+      ],
+      "ativos": [
+        "Argila verde",
+        "Gengibre",
+        "Hortelã"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 33,
+      "imagem": null
+    },
+    {
+      "slug": "detox-therapy-finalizador",
+      "nome": "Detox Therapy Finalizador",
+      "linha": "cronograma-capilar",
+      "categoria": "finalizador",
+      "uso": "profissional",
+      "volumes": [
+        "300 ml"
+      ],
+      "descricao": "Tratamento rico em sais minerais, vitaminas e aminoácidos. Age melhorando a oxigenação do couro cabeludo. O tratamento desintoxicante e exfoliante remove as impurezas, células mortas, metais e todo acúmulo de resíduos indesejáveis. Regula oleosidade, elimina caspa, aumenta a defesa antioxidante e favorece o crescimento.",
+      "beneficios": [
+        "Elimina toxinas",
+        "Regula a sebosidade",
+        "Combate a caspa",
+        "Ativa o crescimento"
+      ],
+      "ativos": [
+        "Argila verde",
+        "Gengibre",
+        "Hortelã"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 33,
+      "imagem": null
+    },
+    {
+      "slug": "fusion-cmc-passo-1-shampoo-treatment",
+      "nome": "Fusion CMC Passo 1 Shampoo Treatment",
+      "linha": "cronograma-capilar",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "750 ml"
+      ],
+      "descricao": "Reconstituição fortalecedora do CMC. Fusão de aminoácidos associados a lipídios micronizados e água que penetram no interior da fibra para reconstituir a película que protege o córtex, deixando o cabelo até 98% mais resistente.",
+      "beneficios": [
+        "Elimina toxinas",
+        "Regula a sebosidade",
+        "Combate a caspa",
+        "Ativa o crescimento"
+      ],
+      "ativos": [
+        "Aminoácidos",
+        "Lipídios micronizados"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 35,
+      "imagem": "mirra/fusion-cmc-passo-1-shampoo-treatment.webp"
+    },
+    {
+      "slug": "fusion-cmc-passo-2-therapy-balm",
+      "nome": "Fusion CMC Passo 2 Therapy Balm",
+      "linha": "cronograma-capilar",
+      "categoria": "condicionador / bálsamo",
+      "uso": null,
+      "volumes": [
+        "750 g"
+      ],
+      "descricao": "Reconstituição fortalecedora do CMC. Fusão de aminoácidos associados a lipídios micronizados e água que penetram no interior da fibra para reconstituir a película que protege o córtex, deixando o cabelo até 98% mais resistente.",
+      "beneficios": [
+        "Elimina toxinas",
+        "Regula a sebosidade",
+        "Combate a caspa",
+        "Ativa o crescimento"
+      ],
+      "ativos": [
+        "Aminoácidos",
+        "Lipídios micronizados"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 35,
+      "imagem": "mirra/fusion-cmc-passo-2-therapy-balm.webp"
+    },
+    {
+      "slug": "fusion-cmc-passo-3-creamy-oil-treatment",
+      "nome": "Fusion CMC Passo 3 Creamy Oil Treatment",
+      "linha": "cronograma-capilar",
+      "categoria": "finalizador",
+      "uso": null,
+      "volumes": [
+        "750 g",
+        "30 ml"
+      ],
+      "descricao": "Reconstituição fortalecedora do CMC. Fusão de aminoácidos associados a lipídios micronizados e água que penetram no interior da fibra para reconstituir a película que protege o córtex, deixando o cabelo até 98% mais resistente. O Passo 3 da linha Fusion CMC possui bionanotecnologia que age em todas as camadas da fibra capilar para proporcionar recuperação imediata além de aumentar a densidade do fio de cabelo. Termoprotetor e termoativado.",
+      "beneficios": [
+        "Termoprotetor e termoativado",
+        "Recuperação imediata",
+        "Aumenta a densidade do fio"
+      ],
+      "ativos": [
+        "Aminoácidos",
+        "Lipídios micronizados",
+        "Bionanotecnologia"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 35,
+      "imagem": "mirra/fusion-cmc-passo-3-creamy-oil-treatment.webp"
+    },
+    {
+      "slug": "plastica-capilar-shampoo-therapy",
+      "nome": "Plástica Capilar Shampoo Therapy",
+      "linha": "cronograma-capilar",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "1000 ml"
+      ],
+      "descricao": "Repositor de massa proteica. Repõe minerais, proteínas e nutrientes perdidos no envelhecimento capilar ou desgaste por produto químico. Defende os fios de futuros processos oxidativos.",
+      "beneficios": [
+        "Reconstrução instantânea de alto impacto",
+        "Antienvelhecimento capilar"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 37,
+      "imagem": "mirra/plastica-capilar-shampoo-therapy.webp"
+    },
+    {
+      "slug": "plastica-capilar-balsamo-revitalizante",
+      "nome": "Plástica Capilar Bálsamo Revitalizante",
+      "linha": "cronograma-capilar",
+      "categoria": "condicionador / bálsamo",
+      "uso": null,
+      "volumes": [
+        "1000 ml"
+      ],
+      "descricao": "Repositor de massa proteica. Repõe minerais, proteínas e nutrientes perdidos no envelhecimento capilar ou desgaste por produto químico. Defende os fios de futuros processos oxidativos.",
+      "beneficios": [
+        "Reconstrução instantânea de alto impacto",
+        "Antienvelhecimento capilar"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 37,
+      "imagem": "mirra/plastica-capilar-balsamo-revitalizante.webp"
+    },
+    {
+      "slug": "plastica-capilar-mascara-repositora",
+      "nome": "Plástica Capilar Máscara Repositora",
+      "linha": "cronograma-capilar",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "1 kg"
+      ],
+      "descricao": "Repositor de massa proteica. Repõe minerais, proteínas e nutrientes perdidos no envelhecimento capilar ou desgaste por produto químico. Defende os fios de futuros processos oxidativos.",
+      "beneficios": [
+        "Reconstrução instantânea de alto impacto",
+        "Antienvelhecimento capilar"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 37,
+      "imagem": "mirra/plastica-capilar-mascara-repositora.webp"
+    },
+    {
+      "slug": "plastica-capilar-serum-reconstrutor",
+      "nome": "Plástica Capilar Sérum Reconstrutor",
+      "linha": "cronograma-capilar",
+      "categoria": "sérum",
+      "uso": null,
+      "volumes": [
+        "300 ml"
+      ],
+      "descricao": "Repositor de massa proteica. Repõe minerais, proteínas e nutrientes perdidos no envelhecimento capilar ou desgaste por produto químico. Defende os fios de futuros processos oxidativos.",
+      "beneficios": [
+        "Reconstrução instantânea de alto impacto",
+        "Antienvelhecimento capilar"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 37,
+      "imagem": "mirra/plastica-capilar-serum-reconstrutor.webp"
+    },
+    {
+      "slug": "cream-developer",
+      "nome": "Cream Developer",
+      "linha": "coloracao",
+      "categoria": "oxidante",
+      "uso": "profissional",
+      "volumes": [
+        "1000 ml"
+      ],
+      "descricao": "Água oxigenada estabilizada. Garantia de um processo seguro de coloração e descoloração. Além de vegana, possui formulação com colágeno, que promove resistência e flexibilidade aos fios durante o processo químico. Não resseca os fios.",
+      "beneficios": [
+        "Processo seguro de coloração e descoloração",
+        "Vegana",
+        "Não resseca os fios",
+        "Resistência e flexibilidade aos fios"
+      ],
+      "ativos": [
+        "Colágeno"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 38,
+      "imagem": "mirra/cream-developer.webp"
+    },
+    {
+      "slug": "po-descolorante-luxury-blond",
+      "nome": "Pó Descolorante Luxury Blond",
+      "linha": "coloracao",
+      "categoria": "pó descolorante",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Fórmula que proporciona diversos resultados de mechas. O Silk Protein preserva a saúde e a integridade dos fios. A combinação com a Água Oxigenada Estabilizada Mirra Professional promove clareamento gradativo e rápido para até 9 tons, amenizando consideravelmente as agressões dos processos químicos.",
+      "beneficios": [
+        "Abre até 9 tons",
+        "Ultra rápido"
+      ],
+      "ativos": [
+        "Silk Protein"
+      ],
+      "indicacao": null,
+      "modo_de_uso": "Proporção de 30 g de pó para 90 g de água oxigenada estabilizada (proporção de 1:3 no medidor).",
+      "selos": [],
+      "pagina_pdf": 39,
+      "imagem": "mirra/po-descolorante-luxury-blond.webp"
+    },
+    {
+      "slug": "po-descolorante-extreme-plus",
+      "nome": "Pó Descolorante Extreme Plus",
+      "linha": "coloracao",
+      "categoria": "pó descolorante",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Fórmula que proporciona diversos resultados de mechas. O Silk Protein preserva a saúde e a integridade dos fios. A combinação com a Água Oxigenada Estabilizada Mirra Professional promove clareamento gradativo e rápido para até 9 tons, amenizando consideravelmente as agressões dos processos químicos.",
+      "beneficios": [
+        "Abre até 9 tons",
+        "Ultra rápido"
+      ],
+      "ativos": [
+        "Silk Protein"
+      ],
+      "indicacao": null,
+      "modo_de_uso": "Proporção de 30 g de pó para 90 g de água oxigenada estabilizada (proporção de 1:3 no medidor).",
+      "selos": [],
+      "pagina_pdf": 39,
+      "imagem": "mirra/po-descolorante-extreme-plus.webp"
+    },
+    {
+      "slug": "trend-colors",
+      "nome": "Trend Colors",
+      "linha": "coloracao",
+      "categoria": "coloração",
+      "uso": "profissional",
+      "volumes": [
+        "60 g"
+      ],
+      "descricao": "Nanopigmentos de última geração que promovem excelente cobertura de fios brancos com cores intensas e vibrantes, além de brilho, condicionamento e baixo teor de amônia. Angstrons Technology: alto poder de penetração e fixação com maior durabilidade e fidelização de cor. Blend of Omegas: combinação de óleos que possuem propriedades de proteção solar, protegendo a cor dos fios.",
+      "beneficios": [
+        "Excelente cobertura de fios brancos",
+        "Cores intensas e vibrantes",
+        "Brilho e condicionamento",
+        "Baixo teor de amônia",
+        "Maior durabilidade e fidelização de cor"
+      ],
+      "ativos": [
+        "Angstrons Technology",
+        "Blend of Omegas: Argan, Chia, Macadamia, Avellana, Moringa, Peach, Canola, Coconut"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 41,
+      "imagem": "mirra/trend-colors.webp",
+      "tons": [
+        "1.0 Preto",
+        "3.0 Castanho Escuro",
+        "4.0 Castanho Médio",
+        "4.66 Vermelho Intenso",
+        "4.7 Chocolate Amendoado",
+        "5.0 Castanho Claro",
+        "5.1 Castanho Claro Acinzentado",
+        "5.5 Castanho Claro Acaju",
+        "5.62 Castanho Vermelho Irisado",
+        "5.65 Castanho Claro Vermelho Acaju",
+        "5.7 Chocolate ao Mel",
+        "5.71 Castanho Claro Marrom Acinzentado",
+        "6.0 Louro Escuro",
+        "6.1 Louro Escuro Acinzentado",
+        "6.3 Louro Escuro Dourado",
+        "6.13 Louro Escuro Mate",
+        "6.34 Louro Escuro Acobreado",
+        "6.35 Marron Glacê",
+        "6.47 Louro Escuro Cobre Marrom",
+        "6.66 Opala de Fogo",
+        "6.7 Chocolate ao Leite",
+        "6.73 Marrom Dourado Espanhol",
+        "7.0 Louro Médio",
+        "7.1 Louro Natural Acinzentado",
+        "7.3 Louro Dourado",
+        "7.34 Louro Médio Dourado Acobreado",
+        "7.35 Louro Avelã",
+        "7.4 Louro Médio Acobreado",
+        "7.47 Louro Médio Cobre Marrom",
+        "7.66 Vermelho Super Intenso",
+        "7.7 Marron Dourado",
+        "7.71 Louro Médio Marrom Acinzentado",
+        "7.72 Louro Médio Marrom Violeta",
+        "7.73 Louro Médio Marrom Dourado",
+        "7.89 Louro Médio Pérola",
+        "8.0 Louro Claro",
+        "8.1 Louro Claro Acinzentado",
+        "8.05 Louro Claro Bege Natural",
+        "8.13 Louro Claro Acinzentado Dourado",
+        "8.31 Louro Claro Folha Seca",
+        "8.38 Louro Claro Dourado Pérola",
+        "8.4 Louro Claro Acobreado",
+        "8.72 Louro Claro Marrom Violeta",
+        "9.0 Louro Muito Claro",
+        "9.1 Louro Claríssimo Acinzentado",
+        "9.43 Louro Muito Claro Dourado Gold",
+        "9.7 Louro Claro Bege Glacê",
+        "9.72 Louro Muito Claro Marrom Violeta",
+        "9.73 Louro Muito Claro Dourado",
+        "9.89 Louro Muito Claro Pérola",
+        "9.98 Marsala Violeta",
+        "10.0 Louro Claríssimo",
+        "10.1 Louro Claríssimo Muito Acinzentado",
+        "10.38 Louro Claríssimo Dourado Pérola",
+        "10.73 Louro Claríssimo Marrom Dourado",
+        "12.1 Louro Super Claro Acinzentado",
+        "12.13 Louro Ultra Claro Bege Acinzentado",
+        "12.89 Louro Ultra Claro Champagne"
+      ],
+      "proporcao_de_mistura": [
+        "1:1,5",
+        "1:2"
+      ],
+      "observacao": "O catálogo indica 'Disponível com 60 g 1:1,5' e 'Disponível com 60 g 1:2' sem associar cada proporção a uma versão específica."
+    },
+    {
+      "slug": "trend-colors-semipermanentes",
+      "nome": "Trend Colors Semipermanentes",
+      "linha": "coloracao",
+      "categoria": "coloração semipermanente",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": null,
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 40,
+      "imagem": null,
+      "tons": [
+        "0.33 Dourado Intenso",
+        "7.89 Louro Médio Pérola",
+        "8.73 Louro Claro Marron Dourado",
+        "8.89 Louro Claro Pérola",
+        "9.89 Louro Médio Muito Claro Pérola",
+        "10.3 Louro Claríssimo Dourado",
+        "10.72 Louro Claríssimo Marron Violeta",
+        "10.89 Louro Claríssimo Pérola",
+        "11.11 Louro Ultra Claríssimo Cinza Intenso",
+        "11.2 Louro Ultra Claríssimo Violeta",
+        "11.21 Louro Ultra Claríssimo Violeta Acinzentado"
+      ],
+      "observacao": "Tons da seção 'Semipermanentes' da cartela de cores; o catálogo não traz texto descritivo próprio."
+    },
+    {
+      "slug": "trend-colors-intensificadores",
+      "nome": "Trend Colors Intensificadores",
+      "linha": "coloracao",
+      "categoria": "intensificador de cor",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": null,
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 40,
+      "imagem": null,
+      "tons": [
+        "000 Extra Clareador",
+        "020 Violeta",
+        "0.220 Violeta Intenso",
+        "044 Cobre",
+        "011 Cinza",
+        "034 Dourado Acobreado",
+        "066 Vermelho",
+        "013 Verde",
+        "043 Cobre Dourado",
+        "088 Azul"
+      ],
+      "observacao": "Seção 'Intensificadores' da cartela de cores. O catálogo traz também o Diluidor (.00)."
+    },
+    {
+      "slug": "trend-colors-diluidor",
+      "nome": "Trend Colors Diluidor",
+      "linha": "coloracao",
+      "categoria": "diluidor",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": null,
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 40,
+      "imagem": null,
+      "tons": [
+        ".00 Diluidor"
+      ]
+    },
+    {
+      "slug": "trend-express-10-minutes",
+      "nome": "Trend Express 10 Minutes",
+      "linha": "coloracao",
+      "categoria": "coloração",
+      "uso": "profissional",
+      "volumes": [
+        "60 g"
+      ],
+      "descricao": "A Trend Express 10 Minutes surge como a escolha mais eficiente tanto para profissionais quanto para consumidores modernos. Revolucionária, combina agilidade, qualidade e segurança, proporcionando uma experiência única de coloração permanente em apenas 10 minutos para retoque de raiz. Possui ativos protetores do couro cabeludo além de ser uma fórmula profissional livre de amônia, sem PPD, enriquecida com fragrância e sem alergênicos. É a primeira e única no mercado brasileiro a oferecer todos esses benefícios em um só produto. Ideal para ser usado em raízes e retoques bem como aplicação global em cabelos de comprimento curto ou médio, alcançando resultados de uma coloração permanente padrão, tudo isso em apenas 10 minutos.",
+      "beneficios": [
+        "Vegana, livre de amônia, PPD e parabenos",
+        "Coloração permanente em 10 minutos",
+        "Excelente para camuflagem",
+        "Cobertura total dos brancos",
+        "Efeito glossy, banho de brilho",
+        "Indicado para clientes mais sensíveis",
+        "Ativos protetores do couro cabeludo"
+      ],
+      "ativos": [],
+      "indicacao": "Retoque de raiz; aplicação global em cabelos curtos ou médios",
+      "modo_de_uso": null,
+      "selos": [
+        "Vegana",
+        "Livre de amônia",
+        "Sem PPD",
+        "Sem parabenos"
+      ],
+      "pagina_pdf": 42,
+      "imagem": "mirra/trend-express-10-minutes.webp",
+      "tons": [
+        "1.0 Black (Preto)",
+        "3.0 Coffe Rush (Castanho Escuro)",
+        "4.0 Quick Brown (Castanho Médio)",
+        "5.0 Caramel Fast (Castanho Claro)",
+        "6.0 Turbo Blond (Louro Escuro)",
+        "7.0 Gold Express (Louro Médio)",
+        "8.0 Flash Vanilla (Louro Claro)",
+        "9.0 Sunrise Time (Louro Muito Claro)",
+        "10.0 Speed Sunlight (Louro Claríssimo)"
+      ],
+      "proporcao_de_mistura": [
+        "1:1,5"
+      ]
+    },
+    {
+      "slug": "ampolas-potencializadoras-reparacao-total",
+      "nome": "Ampolas Potencializadoras Reparação Total",
+      "linha": "reparacao-sos",
+      "categoria": "ampola",
+      "uso": null,
+      "volumes": [],
+      "descricao": "Potencializadores super concentrados com nanopartículas que polimerizam em contato com os fios, promovendo uma mega nutrição e recuperação instantânea. Podem ser usados puros ou associados em nossas máscaras capilares.",
+      "beneficios": [
+        "Nutrição instantânea",
+        "Recuperação instantânea"
+      ],
+      "ativos": [
+        "Nanopartículas"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 44,
+      "imagem": "mirra/ampolas-potencializadoras-reparacao-total.webp"
+    },
+    {
+      "slug": "s-o-s-cystine-cyteine-bio-hair",
+      "nome": "S.O.S Cystine & Cyteine Bio Hair",
+      "linha": "reparacao-sos",
+      "categoria": "spray reconstrutor",
+      "uso": null,
+      "volumes": [
+        "250 ml"
+      ],
+      "descricao": "Recuperação S.O.S para danos químicos. Auxilia na fixação e duração de processos químicos. Previne a quebra capilar e corrige o emborrachamento dos fios de cabelo. Reconstrução para recuperação de cabelos danificados, sensíveis e quebradiços.",
+      "beneficios": [
+        "Auxilia na fixação e duração de processos químicos",
+        "Previne a quebra capilar",
+        "Corrige o emborrachamento dos fios",
+        "Reconstrução de cabelos danificados, sensíveis e quebradiços"
+      ],
+      "ativos": [
+        "Cystine",
+        "Cyteine"
+      ],
+      "indicacao": "Cabelos danificados, sensíveis e quebradiços",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 45,
+      "imagem": "mirra/s-o-s-cystine-cyteine-bio-hair.webp"
+    },
+    {
+      "slug": "s-o-s-cystine-cyteine-ampola",
+      "nome": "S.O.S Cystine & Cyteine Ampola",
+      "linha": "reparacao-sos",
+      "categoria": "ampola",
+      "uso": null,
+      "volumes": [
+        "15 ml (display com 10 unidades)"
+      ],
+      "descricao": "Recuperação S.O.S para danos químicos. Auxilia na fixação e duração de processos químicos. Previne a quebra capilar e corrige o emborrachamento dos fios de cabelo. Reconstrução para recuperação de cabelos danificados, sensíveis e quebradiços.",
+      "beneficios": [
+        "Auxilia na fixação e duração de processos químicos",
+        "Previne a quebra capilar",
+        "Corrige o emborrachamento dos fios",
+        "Reconstrução de cabelos danificados, sensíveis e quebradiços"
+      ],
+      "ativos": [
+        "Cystine",
+        "Cyteine"
+      ],
+      "indicacao": "Cabelos danificados, sensíveis e quebradiços",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 45,
+      "imagem": "mirra/s-o-s-cystine-cyteine-ampola.webp"
+    },
+    {
+      "slug": "acidic-bonding",
+      "nome": "Acidic Bonding",
+      "linha": "acidic-bonding",
+      "categoria": "acidificante / estabilizador de pH",
+      "uso": "ambos",
+      "volumes": [
+        "900 ml",
+        "225 ml"
+      ],
+      "descricao": "Estabilizador de pH revolucionário formulado para acidificar e paralisar processos químicos, garantindo controle total e segurança máxima durante descolorações. Testado e aprovado em diversos protocolos, oferece resposta rápida prevenindo corte químico, enquanto reconstrói instantaneamente a fibra capilar através do seu blend exclusivo de aminoácidos ramificados de ação imediata. Sela a cutícula revelando cor vibrante, age como SOS em situações críticas e potencializa tratamentos posteriores. Indispensável pós-química.",
+      "beneficios": [
+        "Estabilização dos fios",
+        "Controle total do pH capilar",
+        "Absorção otimizada pela estrutura capilar",
+        "Previne corte químico",
+        "Sela a cutícula revelando cor vibrante",
+        "Reconstrói a fibra capilar"
+      ],
+      "ativos": [
+        "Blend de aminoácidos ramificados"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 47,
+      "imagem": "mirra/acidic-bonding.webp",
+      "observacao": "900 ml é a versão profissional; 225 ml é home care."
+    },
+    {
+      "slug": "theraplex-link-restore",
+      "nome": "Theraplex Link Restore",
+      "linha": "theraplex",
+      "categoria": "tratamento",
+      "uso": "profissional",
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "Ligamento ultra reforçador. Trata e protege os fios antes de serem agredidos pelo descolorante ou outras químicas. Complexo que potencializa o efeito platinado. Nanotecnologia que reforça as pontes dissulfídicas com o exclusivo Bis-ethyl Amino Propyl Silanetriol.",
+      "beneficios": [
+        "Proteção pré-química",
+        "Platinado realçado",
+        "Reforço molecular: nanotecnologia"
+      ],
+      "ativos": [
+        "Bis-ethyl Amino Propyl Silanetriol"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 48,
+      "imagem": "mirra/theraplex-link-restore.webp",
+      "observacao": "O texto do catálogo indica Link Restore como Passo 1 e Protector Multiplier como Passo 2; nas embalagens da foto, a numeração aparece invertida (Nº1 Protector Multiplier, Nº2 Link Restore)."
+    },
+    {
+      "slug": "theraplex-protector-multiplier",
+      "nome": "Theraplex Protector Multiplier",
+      "linha": "theraplex",
+      "categoria": "tratamento",
+      "uso": "profissional",
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "Ligamento ultra reforçador. Trata e protege os fios antes de serem agredidos pelo descolorante ou outras químicas. Complexo que potencializa o efeito platinado. Nanotecnologia que reforça as pontes dissulfídicas com o exclusivo Bis-ethyl Amino Propyl Silanetriol.",
+      "beneficios": [
+        "Proteção pré-química",
+        "Platinado realçado",
+        "Reforço molecular: nanotecnologia"
+      ],
+      "ativos": [
+        "Bis-ethyl Amino Propyl Silanetriol"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 48,
+      "imagem": "mirra/theraplex-protector-multiplier.webp"
+    },
+    {
+      "slug": "btx-v-volume-reducer",
+      "nome": "BTX-V Volume Reducer",
+      "linha": "btx-v",
+      "categoria": "redutor de volume",
+      "uso": "profissional",
+      "volumes": [
+        "1 kg"
+      ],
+      "descricao": "Proporciona redução significativa do frizz, oferecendo controle e disciplina completa aos fios. Sua tecnologia avançada remodela a estrutura capilar, garantindo fios perfeitamente alinhados e sedosos, com resultados que variam conforme a temperatura utilizada na prancha. Especialmente desenvolvido para cabelos ondulados, rebeldes, crespos e com frizz, promove hidratação profunda e diminuição do volume. Sua fórmula versátil é compatível com todos os tipos de cabelo, incluindo fios com coloração ou mechas.",
+      "beneficios": [
+        "Reduz volume",
+        "Anti frizz",
+        "Liso natural",
+        "Realinhamento saudável",
+        "Zero porosidade desde a 1ª aplicação"
+      ],
+      "ativos": [
+        "Avocado Oil",
+        "Apple Tannin"
+      ],
+      "indicacao": "Cabelos ondulados, rebeldes, crespos e com frizz; compatível com todos os tipos de cabelo",
+      "modo_de_uso": "Sempre realize o teste de mecha previamente para verificar se o cabelo apresenta condições adequadas para receber o procedimento.",
+      "selos": [],
+      "pagina_pdf": 49,
+      "imagem": "mirra/btx-v-volume-reducer.webp"
+    },
+    {
+      "slug": "blonds-platinados-shampoo",
+      "nome": "Blonds Platinados Shampoo",
+      "linha": "blonds-platinados",
+      "categoria": "shampoo",
+      "uso": "home care",
+      "volumes": [
+        "270 ml"
+      ],
+      "descricao": "Recuperação imediata com pigmentos da flor da violeta. Tratamento intensivo para cabelos loiros, descoloridos e grisalhos. Possui em sua fórmula o Blend of Violet Pigments, que são pigmentos nanotecnológicos que não desidratam os fios e neutralizam os tons amarelados e alaranjados, conferindo um efeito platinado. Age também em tons amarelados nos cabelos grisalhos.",
+      "beneficios": [
+        "Recuperação imediata",
+        "Neutraliza tons amarelados e alaranjados",
+        "Efeito platinado",
+        "Não desidrata os fios"
+      ],
+      "ativos": [
+        "Blend of Violet Pigments"
+      ],
+      "indicacao": "Cabelos loiros, descoloridos e grisalhos",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 50,
+      "imagem": "mirra/blonds-platinados-shampoo.webp"
+    },
+    {
+      "slug": "blonds-platinados-condicionador",
+      "nome": "Blonds Platinados Condicionador",
+      "linha": "blonds-platinados",
+      "categoria": "condicionador",
+      "uso": "home care",
+      "volumes": [
+        "270 ml"
+      ],
+      "descricao": "Recuperação imediata com pigmentos da flor da violeta. Tratamento intensivo para cabelos loiros, descoloridos e grisalhos. Possui em sua fórmula o Blend of Violet Pigments, que são pigmentos nanotecnológicos que não desidratam os fios e neutralizam os tons amarelados e alaranjados, conferindo um efeito platinado. Age também em tons amarelados nos cabelos grisalhos.",
+      "beneficios": [
+        "Recuperação imediata",
+        "Neutraliza tons amarelados e alaranjados",
+        "Efeito platinado",
+        "Não desidrata os fios"
+      ],
+      "ativos": [
+        "Blend of Violet Pigments"
+      ],
+      "indicacao": "Cabelos loiros, descoloridos e grisalhos",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 50,
+      "imagem": "mirra/blonds-platinados-condicionador.webp"
+    },
+    {
+      "slug": "blonds-platinados-mascara",
+      "nome": "Blonds Platinados Máscara",
+      "linha": "blonds-platinados",
+      "categoria": "máscara",
+      "uso": "ambos",
+      "volumes": [
+        "250 g",
+        "1 kg"
+      ],
+      "descricao": "Recuperação imediata com pigmentos da flor da violeta. Tratamento intensivo para cabelos loiros, descoloridos e grisalhos. Possui em sua fórmula o Blend of Violet Pigments, que são pigmentos nanotecnológicos que não desidratam os fios e neutralizam os tons amarelados e alaranjados, conferindo um efeito platinado. Age também em tons amarelados nos cabelos grisalhos.",
+      "beneficios": [
+        "Recuperação imediata",
+        "Neutraliza tons amarelados e alaranjados",
+        "Efeito platinado",
+        "Não desidrata os fios"
+      ],
+      "ativos": [
+        "Blend of Violet Pigments"
+      ],
+      "indicacao": "Cabelos loiros, descoloridos e grisalhos",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 50,
+      "imagem": "mirra/blonds-platinados-mascara.webp"
+    },
+    {
+      "slug": "blonds-platinados-leave-in-hair-reconstructor",
+      "nome": "Blonds Platinados Leave-in Hair Reconstructor",
+      "linha": "blonds-platinados",
+      "categoria": "leave-in",
+      "uso": "home care",
+      "volumes": [
+        "140 ml"
+      ],
+      "descricao": "Recuperação imediata com pigmentos da flor da violeta. Tratamento intensivo para cabelos loiros, descoloridos e grisalhos. Possui em sua fórmula o Blend of Violet Pigments, que são pigmentos nanotecnológicos que não desidratam os fios e neutralizam os tons amarelados e alaranjados, conferindo um efeito platinado. Age também em tons amarelados nos cabelos grisalhos.",
+      "beneficios": [
+        "Recuperação imediata",
+        "Neutraliza tons amarelados e alaranjados",
+        "Efeito platinado",
+        "Não desidrata os fios"
+      ],
+      "ativos": [
+        "Blend of Violet Pigments"
+      ],
+      "indicacao": "Cabelos loiros, descoloridos e grisalhos",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 50,
+      "imagem": "mirra/blonds-platinados-leave-in-hair-reconstructor.webp"
+    },
+    {
+      "slug": "blonds-platinados-fluido-matizador",
+      "nome": "Blonds Platinados Fluido Matizador",
+      "linha": "blonds-platinados",
+      "categoria": "fluido matizador",
+      "uso": "profissional",
+      "volumes": [
+        "270 ml"
+      ],
+      "descricao": "Recuperação imediata com pigmentos da flor da violeta. Tratamento intensivo para cabelos loiros, descoloridos e grisalhos. Possui em sua fórmula o Blend of Violet Pigments, que são pigmentos nanotecnológicos que não desidratam os fios e neutralizam os tons amarelados e alaranjados, conferindo um efeito platinado. Age também em tons amarelados nos cabelos grisalhos.",
+      "beneficios": [
+        "Recuperação imediata",
+        "Neutraliza tons amarelados e alaranjados",
+        "Efeito platinado",
+        "Não desidrata os fios"
+      ],
+      "ativos": [
+        "Blend of Violet Pigments"
+      ],
+      "indicacao": "Cabelos loiros, descoloridos e grisalhos",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 50,
+      "imagem": "mirra/blonds-platinados-fluido-matizador.webp"
+    },
+    {
+      "slug": "pos-progressiva-shampoo",
+      "nome": "Pós Progressiva Shampoo",
+      "linha": "pos-progressiva",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "270 ml"
+      ],
+      "descricao": "Combinação de ativos de alta tecnologia que proporciona recuperação dos fios danificados, reduz pontas duplas, elimina o frizz e conserva o efeito liso por mais tempo.",
+      "beneficios": [
+        "Efeito antiestático",
+        "Indução de brilho",
+        "Proteção contra raios solares",
+        "Maciez e sedosidade"
+      ],
+      "ativos": [],
+      "indicacao": "Cabelos com progressiva",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 51,
+      "imagem": "mirra/pos-progressiva-shampoo.webp"
+    },
+    {
+      "slug": "pos-progressiva-condicionador",
+      "nome": "Pós Progressiva Condicionador",
+      "linha": "pos-progressiva",
+      "categoria": "condicionador",
+      "uso": null,
+      "volumes": [
+        "270 ml"
+      ],
+      "descricao": "Combinação de ativos de alta tecnologia que proporciona recuperação dos fios danificados, reduz pontas duplas, elimina o frizz e conserva o efeito liso por mais tempo.",
+      "beneficios": [
+        "Efeito antiestático",
+        "Indução de brilho",
+        "Proteção contra raios solares",
+        "Maciez e sedosidade"
+      ],
+      "ativos": [],
+      "indicacao": "Cabelos com progressiva",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 51,
+      "imagem": "mirra/pos-progressiva-condicionador.webp"
+    },
+    {
+      "slug": "pos-progressiva-mascara",
+      "nome": "Pós Progressiva Máscara",
+      "linha": "pos-progressiva",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "250 g"
+      ],
+      "descricao": "Combinação de ativos de alta tecnologia que proporciona recuperação dos fios danificados, reduz pontas duplas, elimina o frizz e conserva o efeito liso por mais tempo.",
+      "beneficios": [
+        "Efeito antiestático",
+        "Indução de brilho",
+        "Proteção contra raios solares",
+        "Maciez e sedosidade"
+      ],
+      "ativos": [],
+      "indicacao": "Cabelos com progressiva",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 51,
+      "imagem": "mirra/pos-progressiva-mascara.webp"
+    },
+    {
+      "slug": "pos-progressiva-leave-in",
+      "nome": "Pós Progressiva Leave-in",
+      "linha": "pos-progressiva",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [
+        "60 ml"
+      ],
+      "descricao": "Combinação de ativos de alta tecnologia que proporciona recuperação dos fios danificados, reduz pontas duplas, elimina o frizz e conserva o efeito liso por mais tempo.",
+      "beneficios": [
+        "Efeito antiestático",
+        "Indução de brilho",
+        "Proteção contra raios solares",
+        "Maciez e sedosidade"
+      ],
+      "ativos": [],
+      "indicacao": "Cabelos com progressiva",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 51,
+      "imagem": "mirra/pos-progressiva-leave-in.webp"
+    },
+    {
+      "slug": "capsitrat-antiqueda-shampoo-ativador",
+      "nome": "Capsitrat Antiqueda Shampoo Ativador",
+      "linha": "capsitrat",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "250 ml"
+      ],
+      "descricao": "Desenvolvida com a exclusiva tecnologia de Microchoque Folicular, a linha combate a queda e o afinamento capilar ao estimular a microcirculação e reativar folículos adormecidos diretamente na raiz. Este tratamento de alta performance interrompe a perda de fios, acelera o crescimento e aumenta a densidade capilar, promovendo uma ancoragem mais firme e um couro cabeludo energizado. Indicada para homens e mulheres.",
+      "beneficios": [
+        "Combate a queda de cabelo",
+        "Tecnologia de Microchoque Folicular",
+        "Estimula a microcirculação periférica",
+        "Restaura a saúde do bulbo piloso",
+        "Induz o crescimento capilar"
+      ],
+      "ativos": [],
+      "indicacao": "Queda e afinamento capilar, para homens e mulheres",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 52,
+      "imagem": "mirra/capsitrat-antiqueda-shampoo-ativador.webp"
+    },
+    {
+      "slug": "capsitrat-antiqueda-balsamo-estimulante",
+      "nome": "Capsitrat Antiqueda Bálsamo Estimulante",
+      "linha": "capsitrat",
+      "categoria": "condicionador / bálsamo",
+      "uso": null,
+      "volumes": [
+        "250 ml"
+      ],
+      "descricao": "Desenvolvida com a exclusiva tecnologia de Microchoque Folicular, a linha combate a queda e o afinamento capilar ao estimular a microcirculação e reativar folículos adormecidos diretamente na raiz. Este tratamento de alta performance interrompe a perda de fios, acelera o crescimento e aumenta a densidade capilar, promovendo uma ancoragem mais firme e um couro cabeludo energizado. Indicada para homens e mulheres.",
+      "beneficios": [
+        "Combate a queda de cabelo",
+        "Tecnologia de Microchoque Folicular",
+        "Estimula a microcirculação periférica",
+        "Restaura a saúde do bulbo piloso",
+        "Induz o crescimento capilar"
+      ],
+      "ativos": [],
+      "indicacao": "Queda e afinamento capilar, para homens e mulheres",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 52,
+      "imagem": "mirra/capsitrat-antiqueda-balsamo-estimulante.webp"
+    },
+    {
+      "slug": "capsitrat-antiqueda-locao-spray",
+      "nome": "Capsitrat Antiqueda Loção Spray",
+      "linha": "capsitrat",
+      "categoria": "loção",
+      "uso": null,
+      "volumes": [
+        "200 ml"
+      ],
+      "descricao": "Desenvolvida com a exclusiva tecnologia de Microchoque Folicular, a linha combate a queda e o afinamento capilar ao estimular a microcirculação e reativar folículos adormecidos diretamente na raiz. Este tratamento de alta performance interrompe a perda de fios, acelera o crescimento e aumenta a densidade capilar, promovendo uma ancoragem mais firme e um couro cabeludo energizado. Indicada para homens e mulheres.",
+      "beneficios": [
+        "Combate a queda de cabelo",
+        "Tecnologia de Microchoque Folicular",
+        "Estimula a microcirculação periférica",
+        "Restaura a saúde do bulbo piloso",
+        "Induz o crescimento capilar"
+      ],
+      "ativos": [],
+      "indicacao": "Queda e afinamento capilar, para homens e mulheres",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 52,
+      "imagem": "mirra/capsitrat-antiqueda-locao-spray.webp"
+    },
+    {
+      "slug": "uniq-pro-12-shampoo",
+      "nome": "Uniq Pro 12 Shampoo",
+      "linha": "uniq-pro-12",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "300 ml"
+      ],
+      "descricao": "Uniq Pro 12 é um produto que veio transformar o conceito do tratamento. Sua fórmula exclusiva e ultracondicionante faz com que os fios \"desmaiem\" para que todos os nutrientes sejam devidamente incorporados, proporcionando um efeito imediato, notado no instante da aplicação. O resultado são fios sedosos, flexíveis, brilhantes, com uma sensação de tratamento revitalizado.",
+      "beneficios": [
+        "Reconstrutor",
+        "Antioxidante",
+        "Proteção solar UVA e UVB",
+        "Repositor de massa",
+        "Protetor térmico",
+        "Redução do frizz",
+        "Proteção da cor",
+        "Diminuição do volume",
+        "Reparador de pontas duplas",
+        "Desembaraçante",
+        "Facilita a escova",
+        "Mantém o penteado"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 53,
+      "imagem": "mirra/uniq-pro-12-shampoo.webp"
+    },
+    {
+      "slug": "uniq-pro-12-condicionador",
+      "nome": "Uniq Pro 12 Condicionador",
+      "linha": "uniq-pro-12",
+      "categoria": "condicionador",
+      "uso": null,
+      "volumes": [
+        "300 ml"
+      ],
+      "descricao": "Uniq Pro 12 é um produto que veio transformar o conceito do tratamento. Sua fórmula exclusiva e ultracondicionante faz com que os fios \"desmaiem\" para que todos os nutrientes sejam devidamente incorporados, proporcionando um efeito imediato, notado no instante da aplicação. O resultado são fios sedosos, flexíveis, brilhantes, com uma sensação de tratamento revitalizado.",
+      "beneficios": [
+        "Reconstrutor",
+        "Antioxidante",
+        "Proteção solar UVA e UVB",
+        "Repositor de massa",
+        "Protetor térmico",
+        "Redução do frizz",
+        "Proteção da cor",
+        "Diminuição do volume",
+        "Reparador de pontas duplas",
+        "Desembaraçante",
+        "Facilita a escova",
+        "Mantém o penteado"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 53,
+      "imagem": "mirra/uniq-pro-12-condicionador.webp"
+    },
+    {
+      "slug": "uniq-pro-12-hair-mask",
+      "nome": "Uniq Pro 12 Hair Mask",
+      "linha": "uniq-pro-12",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "300 g"
+      ],
+      "descricao": "Uniq Pro 12 é um produto que veio transformar o conceito do tratamento. Sua fórmula exclusiva e ultracondicionante faz com que os fios \"desmaiem\" para que todos os nutrientes sejam devidamente incorporados, proporcionando um efeito imediato, notado no instante da aplicação. O resultado são fios sedosos, flexíveis, brilhantes, com uma sensação de tratamento revitalizado.",
+      "beneficios": [
+        "Reconstrutor",
+        "Antioxidante",
+        "Proteção solar UVA e UVB",
+        "Repositor de massa",
+        "Protetor térmico",
+        "Redução do frizz",
+        "Proteção da cor",
+        "Diminuição do volume",
+        "Reparador de pontas duplas",
+        "Desembaraçante",
+        "Facilita a escova",
+        "Mantém o penteado"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 53,
+      "imagem": "mirra/uniq-pro-12-hair-mask.webp"
+    },
+    {
+      "slug": "uniq-pro-12-tratamento-absoluto",
+      "nome": "Uniq Pro 12 Tratamento Absoluto",
+      "linha": "uniq-pro-12",
+      "categoria": "tratamento",
+      "uso": null,
+      "volumes": [
+        "200 ml"
+      ],
+      "descricao": "Uniq Pro 12 é um produto que veio transformar o conceito do tratamento. Sua fórmula exclusiva e ultracondicionante faz com que os fios \"desmaiem\" para que todos os nutrientes sejam devidamente incorporados, proporcionando um efeito imediato, notado no instante da aplicação. O resultado são fios sedosos, flexíveis, brilhantes, com uma sensação de tratamento revitalizado.",
+      "beneficios": [
+        "Reconstrutor",
+        "Antioxidante",
+        "Proteção solar UVA e UVB",
+        "Repositor de massa",
+        "Protetor térmico",
+        "Redução do frizz",
+        "Proteção da cor",
+        "Diminuição do volume",
+        "Reparador de pontas duplas",
+        "Desembaraçante",
+        "Facilita a escova",
+        "Mantém o penteado"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 53,
+      "imagem": "mirra/uniq-pro-12-tratamento-absoluto.webp"
+    },
+    {
+      "slug": "ms-curls-shampoo-low-poo",
+      "nome": "MS Curls Shampoo Low Poo",
+      "linha": "ms-curls",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "O shampoo MS Curls de limpeza suave possui um blend de óleos na sua formulação que previne o ressecamento, limpa e equilibra o frizz, mantendo os cachos e o movimento natural dos cabelos.",
+      "beneficios": [
+        "Limpeza suave",
+        "Previne o ressecamento",
+        "Equilibra o frizz"
+      ],
+      "ativos": [
+        "Argan Oil",
+        "Castor Oil"
+      ],
+      "indicacao": "Cabelos ondulados, cacheados e crespos",
+      "modo_de_uso": null,
+      "selos": [
+        "Paraben free",
+        "Petrolate free",
+        "Sulfate free"
+      ],
+      "pagina_pdf": 54,
+      "imagem": "mirra/ms-curls-shampoo-low-poo.webp"
+    },
+    {
+      "slug": "ms-curls-condicionador",
+      "nome": "MS Curls Condicionador",
+      "linha": "ms-curls",
+      "categoria": "condicionador",
+      "uso": null,
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "O condicionador MS Curls traz ativos tecnológicos de efeito memória, proporcionando uma melhor definição dos cachos a cada lavagem. Os óleos e manteigas presentes na formulação hidratam até a segunda camada da fibra capilar, definindo os cachos e estabelecendo uma curvatura perfeita.",
+      "beneficios": [
+        "Leveza volumizada",
+        "Melhor definição dos cachos a cada lavagem"
+      ],
+      "ativos": [
+        "Argan Oil",
+        "Castor Oil"
+      ],
+      "indicacao": "Cabelos ondulados, cacheados e crespos",
+      "modo_de_uso": null,
+      "selos": [
+        "Paraben free",
+        "Petrolate free",
+        "Sulfate free"
+      ],
+      "pagina_pdf": 54,
+      "imagem": "mirra/ms-curls-condicionador.webp"
+    },
+    {
+      "slug": "ms-curls-day-after",
+      "nome": "MS Curls Day After",
+      "linha": "ms-curls",
+      "categoria": "finalizador",
+      "uso": null,
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "O Day After MS Curls proporciona revitalização dos cachos, ideal para manter os cachos definidos, soltinhos e sem frizz de um dia para o outro sem precisar lavar ou molhar completamente os fios. Responsável por recuperar os fios que foram amassados, desfeitos e desalinhados durante o dia e a noite.",
+      "beneficios": [
+        "Umidifica e modela",
+        "Revitaliza e reidrata com ação anti-frizz"
+      ],
+      "ativos": [
+        "Argan Oil",
+        "Castor Oil"
+      ],
+      "indicacao": "Cabelos ondulados, cacheados e crespos",
+      "modo_de_uso": null,
+      "selos": [
+        "Paraben free",
+        "Petrolate free",
+        "Sulfate free"
+      ],
+      "pagina_pdf": 55,
+      "imagem": "mirra/ms-curls-day-after.webp"
+    },
+    {
+      "slug": "ms-curls-geleia-modeladora-curve-defining-jelly",
+      "nome": "MS Curls Geleia Modeladora (Curve Defining Jelly)",
+      "linha": "ms-curls",
+      "categoria": "geleia modeladora",
+      "uso": null,
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "A Geleia Modeladora MS Curls é um coringa da definição. Podendo ser usada sozinha ou associada aos nossos leave-ins. Sua definição é leve, glamourizando a curvatura de uma forma que gera uma sensação de cabelos super saudáveis e tratados.",
+      "beneficios": [
+        "Umidifica e modela",
+        "Definição de cachos",
+        "Zero frizz"
+      ],
+      "ativos": [
+        "Argan Oil",
+        "Castor Oil"
+      ],
+      "indicacao": "Cabelos ondulados, cacheados e crespos",
+      "modo_de_uso": null,
+      "selos": [
+        "Paraben free",
+        "Petrolate free",
+        "Sulfate free"
+      ],
+      "pagina_pdf": 55,
+      "imagem": "mirra/ms-curls-geleia-modeladora-curve-defining-jelly.webp"
+    },
+    {
+      "slug": "ms-curls-leave-in-cachos-definidos-tipo-2",
+      "nome": "MS Curls Leave-in Cachos Definidos Tipo 2",
+      "linha": "ms-curls",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [],
+      "descricao": "Os cabelos cacheados de curvatura tipo 2 são os ondulados, formados de curvas em forma de S. Rico em ativos tecnológicos com efeito memória, proporciona uma incrível definição das ondas e cachos. O Leave-in MS Curls nutre os fios da raiz às pontas protegendo contra o ressecamento.",
+      "beneficios": [
+        "Definição das ondas e cachos",
+        "Nutre da raiz às pontas",
+        "Protege contra o ressecamento"
+      ],
+      "ativos": [],
+      "indicacao": "Tipo 2 (2A, 2B, 2C): cabelos ondulados",
+      "modo_de_uso": null,
+      "selos": [
+        "Paraben free",
+        "Petrolate free",
+        "Sulfate free"
+      ],
+      "pagina_pdf": 56,
+      "imagem": "mirra/ms-curls-leave-in-cachos-definidos-tipo-2.webp"
+    },
+    {
+      "slug": "ms-curls-leave-in-cachos-definidos-tipo-3",
+      "nome": "MS Curls Leave-in Cachos Definidos Tipo 3",
+      "linha": "ms-curls",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [],
+      "descricao": "Os cabelos cacheados de curvatura tipo 3 possuem cachos abertos e exigem bastante cuidado ao finalizar. O Leave-in MS Curls foi desenvolvido para modelar cabelos cacheados, promovendo hidratação intensa, sedosidade e longa duração.",
+      "beneficios": [
+        "Modelagem dos cachos",
+        "Hidratação intensa",
+        "Sedosidade e longa duração"
+      ],
+      "ativos": [],
+      "indicacao": "Tipo 3 (3A, 3B, 3C): cabelos cacheados",
+      "modo_de_uso": null,
+      "selos": [
+        "Paraben free",
+        "Petrolate free",
+        "Sulfate free"
+      ],
+      "pagina_pdf": 56,
+      "imagem": "mirra/ms-curls-leave-in-cachos-definidos-tipo-3.webp"
+    },
+    {
+      "slug": "ms-curls-leave-in-cachos-definidos-tipo-4",
+      "nome": "MS Curls Leave-in Cachos Definidos Tipo 4",
+      "linha": "ms-curls",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [],
+      "descricao": "Os cabelos cacheados de curvatura tipo 4 são crespos ou afro. Bem enroladinhos da raiz às pontas e bastante volumosos. O Leave-in MS Curls possui uma textura de fácil absorção, que penetra na fibra capilar, proporcionando hidratação e nutrição aos fios.",
+      "beneficios": [
+        "Hidratação e nutrição aos fios",
+        "Textura de fácil absorção"
+      ],
+      "ativos": [],
+      "indicacao": "Tipo 4 (4A, 4B, 4C): cabelos crespos ou afro",
+      "modo_de_uso": null,
+      "selos": [
+        "Paraben free",
+        "Petrolate free",
+        "Sulfate free"
+      ],
+      "pagina_pdf": 57,
+      "imagem": "mirra/ms-curls-leave-in-cachos-definidos-tipo-4.webp"
+    },
+    {
+      "slug": "miss-curls-shampoo",
+      "nome": "Miss Curls Shampoo",
+      "linha": "miss-curls",
+      "categoria": "shampoo",
+      "uso": null,
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "Tratamento diário que promove a maciez dos cabelos cacheados, deixando-os definidos e com a modelagem desejada. A combinação de Óleo de Coco, Cacau e Proteínas siliconizadas garante a retenção de umidade e a penetração no córtex, que é fundamental para o fortalecimento das ligações que estruturam os cachos, permitindo assim a flexibilidade dos fios. Os óleos combinados presentes na formulação nutrem e fortalecem as pontes de hidrogênio proporcionando brilho, maciez e controle do volume. Contém metionina, aminoácido responsável por definir os cachos.",
+      "beneficios": [
+        "Cachos intensos, definidos e profundamente hidratados",
+        "Brilho, maciez e controle do volume"
+      ],
+      "ativos": [
+        "Óleo de Coco",
+        "Cacau",
+        "Proteínas siliconizadas",
+        "Metionina"
+      ],
+      "indicacao": "Cabelos cacheados",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 58,
+      "imagem": "mirra/miss-curls-shampoo.webp"
+    },
+    {
+      "slug": "miss-curls-conditioner",
+      "nome": "Miss Curls Conditioner",
+      "linha": "miss-curls",
+      "categoria": "condicionador",
+      "uso": null,
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "Tratamento diário que promove a maciez dos cabelos cacheados, deixando-os definidos e com a modelagem desejada. A combinação de Óleo de Coco, Cacau e Proteínas siliconizadas garante a retenção de umidade e a penetração no córtex, que é fundamental para o fortalecimento das ligações que estruturam os cachos, permitindo assim a flexibilidade dos fios. Os óleos combinados presentes na formulação nutrem e fortalecem as pontes de hidrogênio proporcionando brilho, maciez e controle do volume. Contém metionina, aminoácido responsável por definir os cachos.",
+      "beneficios": [
+        "Cachos intensos, definidos e profundamente hidratados",
+        "Brilho, maciez e controle do volume"
+      ],
+      "ativos": [
+        "Óleo de Coco",
+        "Cacau",
+        "Proteínas siliconizadas",
+        "Metionina"
+      ],
+      "indicacao": "Cabelos cacheados",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 58,
+      "imagem": "mirra/miss-curls-conditioner.webp"
+    },
+    {
+      "slug": "miss-curls-mask",
+      "nome": "Miss Curls Mask",
+      "linha": "miss-curls",
+      "categoria": "máscara",
+      "uso": null,
+      "volumes": [
+        "430 g"
+      ],
+      "descricao": "Tratamento diário que promove a maciez dos cabelos cacheados, deixando-os definidos e com a modelagem desejada. A combinação de Óleo de Coco, Cacau e Proteínas siliconizadas garante a retenção de umidade e a penetração no córtex, que é fundamental para o fortalecimento das ligações que estruturam os cachos, permitindo assim a flexibilidade dos fios. Os óleos combinados presentes na formulação nutrem e fortalecem as pontes de hidrogênio proporcionando brilho, maciez e controle do volume. Contém metionina, aminoácido responsável por definir os cachos.",
+      "beneficios": [
+        "Cachos intensos, definidos e profundamente hidratados",
+        "Brilho, maciez e controle do volume"
+      ],
+      "ativos": [
+        "Óleo de Coco",
+        "Cacau",
+        "Proteínas siliconizadas",
+        "Metionina"
+      ],
+      "indicacao": "Cabelos cacheados",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 58,
+      "imagem": "mirra/miss-curls-mask.webp"
+    },
+    {
+      "slug": "miss-curls-leave-in",
+      "nome": "Miss Curls Leave-in",
+      "linha": "miss-curls",
+      "categoria": "leave-in",
+      "uso": null,
+      "volumes": [
+        "500 ml",
+        "1000 ml"
+      ],
+      "descricao": "Tratamento diário que promove a maciez dos cabelos cacheados, deixando-os definidos e com a modelagem desejada. A combinação de Óleo de Coco, Cacau e Proteínas siliconizadas garante a retenção de umidade e a penetração no córtex, que é fundamental para o fortalecimento das ligações que estruturam os cachos, permitindo assim a flexibilidade dos fios. Os óleos combinados presentes na formulação nutrem e fortalecem as pontes de hidrogênio proporcionando brilho, maciez e controle do volume. Contém metionina, aminoácido responsável por definir os cachos.",
+      "beneficios": [
+        "Cachos intensos, definidos e profundamente hidratados",
+        "Brilho, maciez e controle do volume"
+      ],
+      "ativos": [
+        "Óleo de Coco",
+        "Cacau",
+        "Proteínas siliconizadas",
+        "Metionina"
+      ],
+      "indicacao": "Cabelos cacheados",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 58,
+      "imagem": "mirra/miss-curls-leave-in.webp"
+    },
+    {
+      "slug": "deep-clean-shampoo-antirresiduos",
+      "nome": "Deep Clean Shampoo Antirresíduos",
+      "linha": "lavatorio",
+      "categoria": "shampoo antirresíduos",
+      "uso": "profissional",
+      "volumes": [
+        "1000 ml"
+      ],
+      "descricao": "Desenvolvido para uma limpeza profunda sem danificar os fios. Limpa os fios profundamente, retirando o excesso de produtos químicos, resíduos de cosméticos que aderem aos fios, cloro, poluição, poeira, silicones e outros. Proporciona o controle de pH ideal aos procedimentos técnicos e químicos, como progressivas e outros. Facilita a absorção dos nutrientes do passo seguinte à lavagem, devido ao pH alcalino (8.0). Excelente higienizador refrescante no couro cabeludo.",
+      "beneficios": [
+        "Limpeza profunda sem danificar os fios",
+        "Remove excesso de produtos químicos, resíduos de cosméticos, cloro, poluição, poeira e silicones",
+        "Controle de pH ideal para procedimentos técnicos e químicos",
+        "Higienizador refrescante no couro cabeludo"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 59,
+      "imagem": "mirra/deep-clean-shampoo-antirresiduos.webp"
+    },
+    {
+      "slug": "ultra-hydration-kit-back-bar-shampoo",
+      "nome": "Ultra Hydration Kit Back Bar Shampoo",
+      "linha": "lavatorio",
+      "categoria": "shampoo",
+      "uso": "profissional",
+      "volumes": [
+        "1 L"
+      ],
+      "descricao": "Kit back bar que traz sofisticação e gera experiência de spa profissional para o seu lavatório. Rico em nutrientes extraídos do Argan, Quinoa e Karité, proporciona um pré e pós ideal para qualquer tratamento profissional. Possui ativos biodegradáveis e sua fórmula conta também com um blend de extratos vegetais que possuem multipropriedades que podem agregar diversos benefícios à saúde do couro cabeludo e dos fios.",
+      "beneficios": [
+        "Sofisticação e modernidade",
+        "Experiência de spa profissional no lavatório"
+      ],
+      "ativos": [
+        "Argan",
+        "Quinoa",
+        "Karité",
+        "Blend de extratos vegetais"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 60,
+      "imagem": "mirra/ultra-hydration-kit-back-bar-shampoo.webp"
+    },
+    {
+      "slug": "ultra-hydration-kit-back-bar-condicionador",
+      "nome": "Ultra Hydration Kit Back Bar Condicionador",
+      "linha": "lavatorio",
+      "categoria": "condicionador",
+      "uso": "profissional",
+      "volumes": [
+        "1 L"
+      ],
+      "descricao": "Kit back bar que traz sofisticação e gera experiência de spa profissional para o seu lavatório. Rico em nutrientes extraídos do Argan, Quinoa e Karité, proporciona um pré e pós ideal para qualquer tratamento profissional. Possui ativos biodegradáveis e sua fórmula conta também com um blend de extratos vegetais que possuem multipropriedades que podem agregar diversos benefícios à saúde do couro cabeludo e dos fios.",
+      "beneficios": [
+        "Sofisticação e modernidade",
+        "Experiência de spa profissional no lavatório"
+      ],
+      "ativos": [
+        "Argan",
+        "Quinoa",
+        "Karité",
+        "Blend de extratos vegetais"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 60,
+      "imagem": "mirra/ultra-hydration-kit-back-bar-condicionador.webp"
+    },
+    {
+      "slug": "ultra-hydration-kit-back-bar-leave-in",
+      "nome": "Ultra Hydration Kit Back Bar Leave-in",
+      "linha": "lavatorio",
+      "categoria": "leave-in",
+      "uso": "profissional",
+      "volumes": [
+        "500 ml"
+      ],
+      "descricao": "Kit back bar que traz sofisticação e gera experiência de spa profissional para o seu lavatório. Rico em nutrientes extraídos do Argan, Quinoa e Karité, proporciona um pré e pós ideal para qualquer tratamento profissional. Possui ativos biodegradáveis e sua fórmula conta também com um blend de extratos vegetais que possuem multipropriedades que podem agregar diversos benefícios à saúde do couro cabeludo e dos fios.",
+      "beneficios": [
+        "Sofisticação e modernidade",
+        "Experiência de spa profissional no lavatório"
+      ],
+      "ativos": [
+        "Argan",
+        "Quinoa",
+        "Karité",
+        "Blend de extratos vegetais"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 60,
+      "imagem": "mirra/ultra-hydration-kit-back-bar-leave-in.webp"
+    },
+    {
+      "slug": "hydra-care-shampoo",
+      "nome": "Hydra Care Shampoo",
+      "linha": "lavatorio",
+      "categoria": "shampoo",
+      "uso": "profissional",
+      "volumes": [
+        "1,6 L",
+        "3,6 L"
+      ],
+      "descricao": "Desenvolvida para restaurar o equilíbrio hídrico essencial, a linha Hydra Care combina alta tecnologia e ativos de última geração para devolver a vitalidade aos fios severamente desidratados. Sua fórmula avançada atua profundamente na fibra capilar, promovendo uma reposição de água imediata que resgata a maciez, a elasticidade e o brilho natural dos cabelos sem comprometer a leveza. O diferencial tecnológico é consolidado por um rico complexo de aminoácidos, que regeneram a estrutura interna e devolvem a força aos fios. A presença de extratos vegetais revitalizantes, ativos higroscópicos e polímeros condicionantes, que atuam no selamento imediato das cutículas, garante brilho intenso e eliminação total do frizz.",
+      "beneficios": [
+        "Reposição de água imediata",
+        "Resgata maciez, elasticidade e brilho natural",
+        "Brilho intenso e eliminação total do frizz"
+      ],
+      "ativos": [
+        "Complexo de aminoácidos",
+        "Extratos vegetais revitalizantes",
+        "Ativos higroscópicos",
+        "Polímeros condicionantes"
+      ],
+      "indicacao": "Cabelos severamente desidratados",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 61,
+      "imagem": "mirra/hydra-care-shampoo.webp"
+    },
+    {
+      "slug": "hydra-care-condicionador",
+      "nome": "Hydra Care Condicionador",
+      "linha": "lavatorio",
+      "categoria": "condicionador",
+      "uso": "profissional",
+      "volumes": [
+        "1,6 L",
+        "3,6 L"
+      ],
+      "descricao": "Desenvolvida para restaurar o equilíbrio hídrico essencial, a linha Hydra Care combina alta tecnologia e ativos de última geração para devolver a vitalidade aos fios severamente desidratados. Sua fórmula avançada atua profundamente na fibra capilar, promovendo uma reposição de água imediata que resgata a maciez, a elasticidade e o brilho natural dos cabelos sem comprometer a leveza. O diferencial tecnológico é consolidado por um rico complexo de aminoácidos, que regeneram a estrutura interna e devolvem a força aos fios. A presença de extratos vegetais revitalizantes, ativos higroscópicos e polímeros condicionantes, que atuam no selamento imediato das cutículas, garante brilho intenso e eliminação total do frizz.",
+      "beneficios": [
+        "Reposição de água imediata",
+        "Resgata maciez, elasticidade e brilho natural",
+        "Brilho intenso e eliminação total do frizz"
+      ],
+      "ativos": [
+        "Complexo de aminoácidos",
+        "Extratos vegetais revitalizantes",
+        "Ativos higroscópicos",
+        "Polímeros condicionantes"
+      ],
+      "indicacao": "Cabelos severamente desidratados",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 61,
+      "imagem": "mirra/hydra-care-condicionador.webp"
+    },
+    {
+      "slug": "bio-elixir",
+      "nome": "Bio Elixir",
+      "linha": "finalizadores",
+      "categoria": "óleo bifásico",
+      "uso": null,
+      "volumes": [
+        "200 ml",
+        "30 ml"
+      ],
+      "descricao": "Óleo bifásico de reconstrução termoativada. Desenvolvido com uma sofisticada combinação de ativos de alta performance, entrega um brilho espelhado extraordinário aliado a uma maciez profunda e efeito restaurador imediato. Sua fórmula termoativada promove uma ação antifrizz e um potente efeito cauterizante, que sela as cutículas e reconstrói a superfície da fibra capilar. Atua como um selante cuticular completo, blindando os fios contra as agressões térmicas da chapinha e os danos externos causados pela exposição ao sol, mar e piscina.",
+      "beneficios": [
+        "Brilho espelhado",
+        "Maciez profunda",
+        "Efeito restaurador imediato",
+        "Ação antifrizz",
+        "Efeito cauterizante",
+        "Proteção contra agressões térmicas da chapinha, sol, mar e piscina"
+      ],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 62,
+      "imagem": "mirra/bio-elixir.webp"
+    },
+    {
+      "slug": "m-night-8h-nutri-night-serum",
+      "nome": "M Night 8H Nutri Night Serum",
+      "linha": "finalizadores",
+      "categoria": "sérum noturno",
+      "uso": null,
+      "volumes": [
+        "140 ml",
+        "30 ml"
+      ],
+      "descricao": "Tratamento definitivo para quem busca uma regeneração profunda através de um ritual de nutrição noturna. Formulado com uma fonte rica de Ômegas e Helianthus Oil, ele penetra na fibra capilar durante o sono, repondo lipídeos essenciais e nutrientes vitais sem comprometer a leveza dos fios. Sua combinação exclusiva de óleos nobres proporciona um sensorial extremamente leve e sedoso, enquanto sua fragrância relaxante foi desenvolvida especificamente para promover uma sensação de bem-estar e conforto durante o repouso. Atua como potente termoprotetor.",
+      "beneficios": [
+        "Regeneração profunda durante o sono",
+        "Sensorial leve e sedoso",
+        "Fragrância relaxante",
+        "Termoprotetor"
+      ],
+      "ativos": [
+        "Ômegas",
+        "Helianthus Oil"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 63,
+      "imagem": "mirra/m-night-8h-nutri-night-serum.webp"
+    },
+    {
+      "slug": "elixir-gold-ultimate-gold-argan-chia",
+      "nome": "Elixir Gold Ultimate Gold (Argan & Chia)",
+      "linha": "finalizadores",
+      "categoria": "óleo finalizador",
+      "uso": null,
+      "volumes": [
+        "140 ml",
+        "30 ml"
+      ],
+      "descricao": "Óleos nobres e luxuosos para tratamentos dos cabelos e corpo. Excelente finalizador de cabelos. Promove brilho, suavidade e leveza. Recomendado para dar naturalidade na ondulação dos fios após babyliss e/ou secador. Ação nutritiva e condicionante para a pele e cabelo. Proporciona ação emoliente e efeito condicionante eficaz para nutrir e recuperar a textura e a suavidade da pele e dos cabelos.",
+      "beneficios": [
+        "Brilho, suavidade e leveza",
+        "Elixir da beleza restaurada"
+      ],
+      "ativos": [
+        "Argan",
+        "Chia"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 64,
+      "imagem": "mirra/elixir-gold-ultimate-gold-argan-chia.webp"
+    },
+    {
+      "slug": "elixir-gold-ultimate-caviar",
+      "nome": "Elixir Gold Ultimate Caviar",
+      "linha": "finalizadores",
+      "categoria": "óleo finalizador",
+      "uso": null,
+      "volumes": [
+        "140 ml",
+        "30 ml"
+      ],
+      "descricao": "Óleos nobres e luxuosos para tratamentos dos cabelos e corpo. Excelente finalizador de cabelos. Promove brilho, suavidade e leveza. Recomendado para dar naturalidade na ondulação dos fios após babyliss e/ou secador. Ação nutritiva e condicionante para a pele e cabelo. Proporciona ação emoliente e efeito condicionante eficaz para nutrir e recuperar a textura e a suavidade da pele e dos cabelos.",
+      "beneficios": [
+        "Brilho, suavidade e leveza",
+        "Elixir da eterna juventude"
+      ],
+      "ativos": [
+        "Caviar"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 64,
+      "imagem": "mirra/elixir-gold-ultimate-caviar.webp"
+    },
+    {
+      "slug": "defrizante-termoativado-profissional-elements",
+      "nome": "Defrizante Termoativado Profissional Elements",
+      "linha": "finalizadores",
+      "categoria": "defrizante termoativado",
+      "uso": "profissional",
+      "volumes": [
+        "1000 ml",
+        "180 g",
+        "60 ml"
+      ],
+      "descricao": "Ômegas Blend é uma combinação sinérgica de óleos vegetais ricos em ômegas 3, 6, 7 e 9 e ácidos graxos essenciais que garantem suavidade, emoliência e restauração da fibra capilar. O Óleo de Girassol é rico em vitamina E, C e muitos minerais que hidratam e minimizam o ressecamento deixando os fios mais definidos. Termoprotetor.",
+      "beneficios": [
+        "Suavidade, emoliência e restauração da fibra capilar",
+        "Minimiza o ressecamento",
+        "Fios mais definidos",
+        "Termoprotetor"
+      ],
+      "ativos": [
+        "Ômegas Blend",
+        "Helianthus Oil (óleo de girassol)"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 65,
+      "imagem": "mirra/defrizante-termoativado-profissional-elements.webp"
+    },
+    {
+      "slug": "oleo-capilar-para-massagem-e-banho-de-oleo",
+      "nome": "Óleo Capilar para Massagem e Banho de Óleo",
+      "linha": "finalizadores",
+      "categoria": "óleo capilar",
+      "uso": null,
+      "volumes": [
+        "150 ml"
+      ],
+      "descricao": "Óleo capilar para massagem e banho de óleo, recomendado para massagem e banho de óleo. Proporciona hidratação e umectação que deixam os cabelos saudáveis, macios e com brilho especial. Ideal para ser usado no envelopamento da cor durante o processo de coloração.",
+      "beneficios": [
+        "Hidratação e umectação",
+        "Cabelos saudáveis, macios e com brilho especial"
+      ],
+      "ativos": [
+        "Silicone",
+        "Karité"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 66,
+      "imagem": "mirra/oleo-capilar-para-massagem-e-banho-de-oleo.webp"
+    },
+    {
+      "slug": "defrizante-termoativado-germen-de-trigo-elements",
+      "nome": "Defrizante Termoativado Gérmen de Trigo Elements",
+      "linha": "finalizadores",
+      "categoria": "defrizante termoativado",
+      "uso": null,
+      "volumes": [
+        "250 ml"
+      ],
+      "descricao": "O Defrizante Termoprotetor Gérmen de Trigo Elements proporciona facilidade no processo de escova e forma um filme protetor sobre os fios. Promove brilho, maciez e restauração através de componentes ativados pelo calor e pelos aminoácidos presentes em sua fórmula.",
+      "beneficios": [
+        "Facilita o processo de escova e chapinha",
+        "Brilho, maciez e restauração",
+        "Filme protetor sobre os fios"
+      ],
+      "ativos": [
+        "Gérmen de trigo",
+        "Aminoácidos"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 67,
+      "imagem": "mirra/defrizante-termoativado-germen-de-trigo-elements.webp"
+    },
+    {
+      "slug": "ativador-e-modelador-de-cachos-elements",
+      "nome": "Ativador e Modelador de Cachos Elements",
+      "linha": "finalizadores",
+      "categoria": "ativador de cachos",
+      "uso": null,
+      "volumes": [
+        "250 ml"
+      ],
+      "descricao": "A Manteiga de Murumuru é altamente nutritiva e ajuda a prevenir o ressecamento dos fios. É constituída de ácidos láurico, mirístico e oleico, que contribuem para regular o equilíbrio de água e a atividade dos lipídeos da camada dos cabelos. Promove recuperação da umidade e da maciez dos fios. Controle de volume, evita o frizz e auxilia na força capilar.",
+      "beneficios": [
+        "Cachos ativados e modelados diariamente",
+        "Recuperação da umidade e da maciez",
+        "Controle de volume",
+        "Evita o frizz"
+      ],
+      "ativos": [
+        "Manteiga de Murumuru"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 67,
+      "imagem": "mirra/ativador-e-modelador-de-cachos-elements.webp"
+    },
+    {
+      "slug": "cristalli-repair",
+      "nome": "Cristalli Repair",
+      "linha": "finalizadores",
+      "categoria": "reparador de pontas",
+      "uso": null,
+      "volumes": [
+        "60 ml"
+      ],
+      "descricao": "O Óleo de Monoi do Taiti é riquíssimo em cisteína que promove ligações cisteínicas nas cutículas, tratando as pontas duplas. É eficiente como finalizador de penteados a úmido e a seco. Termoprotetor e termoativado.",
+      "beneficios": [
+        "Reparador de pontas",
+        "Trata as pontas duplas",
+        "Termoprotetor e termoativado"
+      ],
+      "ativos": [
+        "Óleo de Monoi do Taiti",
+        "Cisteína"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 68,
+      "imagem": "mirra/cristalli-repair.webp",
+      "observacao": "O rodapé do catálogo traz 'Óleo de Cranberry: 60 ml' nesta página (provável repetição do rodapé da página seguinte)."
+    },
+    {
+      "slug": "intensificador-de-brilho",
+      "nome": "Intensificador de Brilho",
+      "linha": "finalizadores",
+      "categoria": "spray de brilho",
+      "uso": null,
+      "volumes": [
+        "120 ml"
+      ],
+      "descricao": "Partículas de silicone que volatizam no ar quando borrifado com distância adequada, deixando um brilho especial nos fios, sem deixar oleosidade. Formam uma película protetora nos fios contra agressões externas. Termoativado.",
+      "beneficios": [
+        "Proporciona brilho intenso sem deixar resíduos oleosos ou pesar",
+        "Película protetora contra agressões externas"
+      ],
+      "ativos": [
+        "Partículas de silicone"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 68,
+      "imagem": "mirra/intensificador-de-brilho.webp"
+    },
+    {
+      "slug": "cranberry-color-revive-oleo-de-cranberry",
+      "nome": "Cranberry Color Revive Óleo de Cranberry",
+      "linha": "finalizadores",
+      "categoria": "óleo finalizador",
+      "uso": null,
+      "volumes": [
+        "60 ml"
+      ],
+      "descricao": "Possui vitaminas C e E. Sua fórmula é rica em agentes antioxidantes e filtros UVA/UVB que ajudam a proteger os fios dos raios solares e agentes agressores. A alta concentração de antioxidantes é excelente para proteger a cor dos cabelos. Termoativado.",
+      "beneficios": [
+        "Proteção e brilho da cor",
+        "Proteção contra raios solares"
+      ],
+      "ativos": [
+        "Vitaminas C e E",
+        "Antioxidantes",
+        "Filtros UVA/UVB",
+        "Óleo de Cranberry"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 69,
+      "imagem": "mirra/cranberry-color-revive-oleo-de-cranberry.webp"
+    },
+    {
+      "slug": "oleo-de-argan-marroquino",
+      "nome": "Óleo de Argan Marroquino",
+      "linha": "finalizadores",
+      "categoria": "óleo finalizador",
+      "uso": null,
+      "volumes": [
+        "60 ml",
+        "30 ml"
+      ],
+      "descricao": "O Óleo de Argan Marroquino é uma fonte natural de vitamina E que ajuda a tratar cabelos secos, danificados e com frizz. Possui uma fórmula repleta de antioxidantes que ajudam a fortalecer os cabelos mais frágeis. Restaura e hidrata o cabelo dando-lhe maior brilho e sedosidade. Termoativado.",
+      "beneficios": [
+        "Cachos ativados e modelados diariamente",
+        "Brilho e sedosidade",
+        "Fortalece cabelos frágeis"
+      ],
+      "ativos": [
+        "Óleo de Argan Marroquino",
+        "Vitamina E",
+        "Antioxidantes"
+      ],
+      "indicacao": "Cabelos secos, danificados e com frizz",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 69,
+      "imagem": "mirra/oleo-de-argan-marroquino.webp",
+      "observacao": "Catálogo informa 60 ml (Óleo de Argan Marroquino) e 30 ml (Argan Oil)."
+    },
+    {
+      "slug": "styling-spray-01-hair-spray-extra-forte",
+      "nome": "Styling Spray 01 Hair Spray Extra Forte",
+      "linha": "finalizadores",
+      "categoria": "spray fixador",
+      "uso": null,
+      "volumes": [
+        "400 ml"
+      ],
+      "descricao": "Extra strong, extra forte. Contém pró-vitamina B5 e partículas de silicones cristalizados associados ao óleo de argan para fixar, modelar e hidratar sem alterar a aparência natural dos cabelos. Efeito matte.",
+      "beneficios": [
+        "Fixação extra forte",
+        "Modela e hidrata sem alterar a aparência natural",
+        "Efeito matte"
+      ],
+      "ativos": [
+        "Pró-vitamina B5",
+        "Silicones cristalizados",
+        "Óleo de argan"
+      ],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 70,
+      "imagem": "mirra/styling-spray-01-hair-spray-extra-forte.webp"
+    },
+    {
+      "slug": "hombre-barbearia-shampoo-2x1",
+      "nome": "Hombre Barbearia Shampoo 2x1",
+      "linha": "hombre-barbearia",
+      "categoria": "shampoo 2x1",
+      "uso": null,
+      "volumes": [
+        "230 ml"
+      ],
+      "descricao": "Limpa e hidrata profundamente o cabelo e a barba sem agredi-los. Shampoo e condicionador.",
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 71,
+      "imagem": null
+    },
+    {
+      "slug": "hombre-barbearia-shower-gel",
+      "nome": "Hombre Barbearia Shower Gel",
+      "linha": "hombre-barbearia",
+      "categoria": "shower gel",
+      "uso": null,
+      "volumes": [
+        "230 ml"
+      ],
+      "descricao": "Aromaterapia facial e corporal.",
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 71,
+      "imagem": null
+    },
+    {
+      "slug": "hombre-barbearia-colonia",
+      "nome": "Hombre Barbearia Colônia",
+      "linha": "hombre-barbearia",
+      "categoria": "colônia",
+      "uso": null,
+      "volumes": [
+        "180 ml"
+      ],
+      "descricao": "Sensação de frescor. Perfuma e hidrata a pele.",
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 71,
+      "imagem": null
+    },
+    {
+      "slug": "hombre-barbearia-oleo-multifuncional-cabelo-e-barba",
+      "nome": "Hombre Barbearia Óleo Multifuncional Cabelo e Barba",
+      "linha": "hombre-barbearia",
+      "categoria": "óleo",
+      "uso": null,
+      "volumes": [
+        "30 ml"
+      ],
+      "descricao": "Barba mais uniforme. Diminui o frizz dos pelos.",
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 71,
+      "imagem": null
+    },
+    {
+      "slug": "hombre-barbearia-cera-multifuncional",
+      "nome": "Hombre Barbearia Cera Multifuncional",
+      "linha": "hombre-barbearia",
+      "categoria": "cera",
+      "uso": null,
+      "volumes": [
+        "50 g"
+      ],
+      "descricao": "Não resseca o cabelo. Acabamento matte.",
+      "beneficios": [],
+      "ativos": [],
+      "indicacao": null,
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 71,
+      "imagem": null
+    }
+  ]
+}

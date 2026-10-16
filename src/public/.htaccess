@@ -1,0 +1,62 @@
+# Belnic — Hostinger (Apache/LiteSpeed)
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # HTTPS + sem www
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^(.*)$ https://belniccosmeticos.com/$1 [R=301,L]
+
+  # Atalhos que já circulam no Instagram/WhatsApp (mantidos do site antigo)
+  RewriteRule ^comunidadebelnic/?$ https://api.whatsapp.com/send?phone=5551989086044&text=Oii,\%20quero\%20fazer\%20parte\%20da\%20Comunidade\%20Belnic. [R=302,NE,L]
+  RewriteRule ^leticiawhats/?$ https://wa.me/5551989086044?text=Oi\%2C\%20gostaria\%20de\%20mais\%20informa\%C3\%A7\%C3\%B5es\%20sobre\%20os\%20Cursos. [R=302,NE,L]
+
+  # URLs antigas do WordPress → páginas novas
+  RewriteRule ^catalogo-mirra-professional/?$ /marcas/mirra-professional/ [R=301,L]
+  RewriteRule ^catalogo-maison-visage/?$ /marcas/maison-visage/ [R=301,L]
+  RewriteRule ^(terapia-02|imersao-terapia-capilar)/?$ /terapia-capilar/ [R=301,L]
+  RewriteRule ^(formacao-gil-minogue-01|curso-pedro-pinheiro|treinamento01|materiais01)/?$ /formacao/ [R=301,L]
+  RewriteRule ^(bio|bio-salao-e-final|bio-gisele|bio-carina|bio-leticia|bio-brenda|bio-queiti|carina|gisele|deisi|triagem|promocoes-vip|24-com-24-off|green-friday|green-friday-2023|revista|thank-you|obrigada-cielo|confirmacao-reinauguracao|confirmacao-reinauguracao-duplicate-1992|relatorio|teste-relatorio|duplicado-teste)/?$ / [R=301,L]
+  RewriteRule ^2023/03/14/hello-world/?$ / [R=301,L]
+  RewriteRule ^wp-content/uploads/.*Maison-Visage.*\.pdf$ /catalogos/catalogo-maison-visage.pdf [R=301,NC,L]
+  RewriteRule ^wp-content/uploads/.*MIRRA.*\.pdf$ /catalogos/catalogo-mirra-professional.pdf [R=301,NC,L]
+  RewriteRule ^wp-content/uploads/.*SPA.*\.pdf$ /catalogos/catalogo-terapia-capilar-spa-therapy.pdf [R=301,NC,L]
+  RewriteRule ^(wp-sitemap\.xml|sitemap_index\.xml|page-sitemap\.xml|post-sitemap\.xml)$ /sitemap.xml [R=301,L]
+  RewriteRule ^(wp-admin|wp-login\.php|xmlrpc\.php|feed) - [R=410,L]
+
+  # Barra final nas páginas (evita conteúdo duplicado)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  <FilesMatch "\.(css|js|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(webp|png|jpg|svg|pdf)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "public, max-age=600"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json application/xml image/svg+xml text/plain
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+</IfModule>

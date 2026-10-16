@@ -1,0 +1,960 @@
+{
+  "marca": "Maison Visage",
+  "catalogo": "terapia-capilar",
+  "institucional": "A Linha Spa Therapy tem o compromisso com a qualidade e a busca contínua pela excelência em proporcionar momentos únicos de tranquilidade e rejuvenescimento para seu corpo. E como consequência, acrescentamos à nossa linha mais produtos. Cada novo produto inserido na linha foi formulado com o mesmo comprometimento e máxima excelência que você já conhece. Explore as novas fragrâncias inspiradoras e texturas luxuosas que elevam a arte do autocuidado a patamares inéditos nunca antes atingidos.",
+  "protocolos": [
+    {
+      "slug": "calm-scalp",
+      "nome": "Calm Scalp",
+      "pagina_pdf": 12,
+      "indicacao": "Anti-inflamatório e antioxidante; psoríase, dermatite seborreica entre outras patologias inflamatórias.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo (não remover).",
+        "Em uma cubeta de vidro ou porcelana misturar: 10 ml de óleo vegetal de Avocado, 4 gotas de óleo essencial de Lavanda, 4 gotas de óleo essencial de Melaleuca e Laranja, 2 gotas de óleo essencial de Gengibre.",
+        "Aplicar o blend de óleos diretamente no couro cabeludo com a ponta dos dedos, sempre com luvas. Massagem de 5 a 8 minutos.",
+        "Tempo de pausa total de 20 minutos.",
+        "Em uma cubeta, diluir o shampoo anti-inflamatório Nutrição Vegetal ou Spa Home com água filtrada ou destilada.",
+        "Com auxílio de um pincel, aplicar o shampoo no couro cabeludo, massagear e deixar agir de 3 a 5 minutos.",
+        "No lavatório, aplicar mais uma mão de shampoo.",
+        "Para a haste capilar, utilizar condicionador ou máscara de acordo com a necessidade do fio.",
+        "Retirar o excesso de umidade com toalha ou secador em temperatura média.",
+        "Finalizar com Scalp Calming na região inflamada (não remover)."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "oleo-vegetal-avocado",
+        "oleo-essencial-lavanda",
+        "oleo-essencial-melaleuca-laranja",
+        "oleo-essencial-gengibre",
+        "scalp-calming"
+      ]
+    },
+    {
+      "slug": "calmia",
+      "nome": "Calmia",
+      "pagina_pdf": 13,
+      "indicacao": "Anti-inflamatório e hidratante; psoríase, xerose capilar ou queimadura pós-exposição solar.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo (não remover).",
+        "Em uma cubeta de vidro ou porcelana adicionar: 10 ml do óleo vegetal de Jojoba, 4 gotas de óleo essencial de Lavanda, 4 gotas de óleo essencial de Melaleuca e Laranja, 2 gotas de óleo essencial de Gengibre.",
+        "Aplicar o blend de óleos diretamente no couro cabeludo com a ponta dos dedos, sempre com luvas.",
+        "Massagem de 5 a 8 minutos; tempo de pausa total de 20 minutos.",
+        "Em uma cubeta, diluir o shampoo de Nutrição Vegetal em água mineral ou filtrada; aplicar com pincel no couro cabeludo e deixar agir de 3 a 5 minutos.",
+        "No lavatório, aplicar novamente o shampoo.",
+        "Aplicar na haste condicionador ou máscara de acordo com a característica do fio.",
+        "Retirar a umidade do cabelo com toalha ou secador em temperatura média, mantendo distância do couro cabeludo.",
+        "Aplicar uma gota de Vitamina B5 com o auxílio do conta-gotas por toda a região inflamada e espalhar com movimento suave de massagem (não remover)."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "oleo-vegetal-jojoba",
+        "oleo-essencial-lavanda",
+        "oleo-essencial-melaleuca-laranja",
+        "oleo-essencial-gengibre",
+        "vitamina-b5"
+      ]
+    },
+    {
+      "slug": "detox-green",
+      "nome": "Detox Green",
+      "pagina_pdf": 14,
+      "indicacao": "Oleosidade, caspa oleosa e foliculite.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo (não remover).",
+        "Em uma cumbuca, diluir a Argila Verde com a Água Thermal até formar uma pasta de média consistência.",
+        "Acrescentar à mistura 2 gotas de óleo essencial de Eucalipto Globulus, 4 gotas de óleo essencial de Melaleuca e Laranja e 2 gotas de óleo essencial de Menta Piperita.",
+        "Aplicar a Argila Verde associada ao blend de óleos em todo o couro cabeludo com auxílio de um pincel.",
+        "Deixar agir 15 minutos (não deixar a argila secar; se necessário, utilizar umidificador com vapor frio).",
+        "No lavatório, utilizar duas mãos de shampoo Minerals Vitamin ou Ginkgo Biloba para remover a Argila Verde.",
+        "Aplicar na haste capilar o condicionador ou máscara de acordo com a necessidade do fio.",
+        "Remover o excesso de água com toalha; se utilizar fonte de calor, sempre em temperatura média."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "argila-verde",
+        "agua-termal",
+        "oleo-essencial-eucalipto-globulus",
+        "oleo-essencial-melaleuca-laranja",
+        "oleo-essencial-menta-piperita"
+      ]
+    },
+    {
+      "slug": "mineral-growth",
+      "nome": "Mineral Growth",
+      "pagina_pdf": 15,
+      "indicacao": "Força e crescimento; eflúvio telógeno (queda capilar), alopecias, quebra capilar e afinamento.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo (não remover).",
+        "Em uma cumbuca, diluir a Argila Preta na Água Thermal até formar uma pasta de média consistência.",
+        "Acrescentar à mistura 2 gotas de óleo essencial de Gengibre, 4 gotas de óleo essencial de Alecrim e Limão e 2 gotas de óleo essencial de Menta Piperita.",
+        "Aplicar a Argila Preta associada ao blend de óleos em todo o couro cabeludo com auxílio de um pincel.",
+        "Deixar agir 15 minutos (não deixar a argila secar; se necessário, utilizar umidificador com vapor frio).",
+        "No lavatório, utilizar duas mãos de shampoo Spa Home Therapy, Ginkgo Biloba ou Capsitrat para remover a argila.",
+        "Aplicar na haste capilar o condicionador ou máscara de acordo com a necessidade do fio.",
+        "Remover o excesso de água com toalha; se utilizar fonte de calor, sempre em temperatura média.",
+        "Aplicar Growth Factor."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "argila-preta",
+        "agua-termal",
+        "oleo-essencial-gengibre",
+        "oleo-essencial-alecrim-limao",
+        "oleo-essencial-menta-piperita",
+        "tonico-growth-factor"
+      ]
+    },
+    {
+      "slug": "growth-factor-hair",
+      "nome": "Growth Factor Hair",
+      "pagina_pdf": 16,
+      "indicacao": "Oleosidade, caspa oleosa e foliculite.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo (não remover).",
+        "Aplicar 10 gramas da Máscara de Carvão Maison Visage Cosmetique, 4 gotas do óleo essencial de Alecrim e Limão, 4 gotas do óleo essencial de Lavanda e 2 gotas do óleo essencial de Menta Piperita.",
+        "Deixar agir 20 minutos e enxaguar.",
+        "Diluir o shampoo com Água Thermal e aplicar (deixar agir por 5 minutos).",
+        "Lavar os cabelos com shampoo Le Bain Vitamins, Ginkgo Biloba, Capsitrat ou Spa Home Therapy.",
+        "Finalizar com tônico Growth Factor."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "mascara-de-carvao",
+        "oleo-essencial-alecrim-limao",
+        "oleo-essencial-lavanda",
+        "oleo-essencial-menta-piperita",
+        "agua-termal",
+        "tonico-growth-factor"
+      ]
+    },
+    {
+      "slug": "black-mask-calmia",
+      "nome": "Black Mask Calmia",
+      "pagina_pdf": 17,
+      "indicacao": "Psoríase capilar, dermatite seborreica, processo inflamatório.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo (não remover).",
+        "Aplicar 10 gramas da Máscara de Carvão Maison Visage Cosmetique, 4 gotas de óleo essencial de Lavanda, 4 gotas de óleo essencial de Melaleuca e Laranja e 2 gotas de óleo essencial de Gengibre.",
+        "Deixar agir por 20 minutos e enxaguar.",
+        "Aplicar shampoo de Nutrição Vegetal diluído em Água Thermal, deixar agir 5 minutos e enxaguar.",
+        "Reaplicar o shampoo.",
+        "Finalizar a haste capilar de acordo com a necessidade.",
+        "Remover o excesso de água e aplicar no couro cabeludo Scalp Calming."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "mascara-de-carvao",
+        "oleo-essencial-lavanda",
+        "oleo-essencial-melaleuca-laranja",
+        "oleo-essencial-gengibre",
+        "agua-termal",
+        "scalp-calming"
+      ]
+    },
+    {
+      "slug": "cleaning-scalp-detox",
+      "nome": "Cleaning Scalp Detox",
+      "pagina_pdf": 18,
+      "indicacao": "Detox capilar, oleosidade e caspa oleosa.",
+      "etapas": [
+        "Diluir o shampoo Metal Cleaning com Água Thermal, aplicar no couro cabeludo, deixar agir de 3 a 5 minutos e enxaguar.",
+        "Reaplicar o shampoo.",
+        "Aplicar 10 gramas da máscara de carvão, 2 gotas do óleo essencial de Eucalipto, 4 gotas do óleo essencial de Melaleuca e Laranja e 2 gotas do óleo essencial de Menta Piperita.",
+        "Aplicar no couro cabeludo e deixar agir 15 minutos.",
+        "Enxaguar.",
+        "Finalizar a haste capilar de acordo com a necessidade."
+      ],
+      "produtos": [
+        "agua-termal",
+        "mascara-de-carvao",
+        "oleo-essencial-eucalipto-globulus",
+        "oleo-essencial-melaleuca-laranja",
+        "oleo-essencial-menta-piperita"
+      ]
+    },
+    {
+      "slug": "spa-therapy-calmia",
+      "nome": "Spa Therapy Calmia",
+      "pagina_pdf": 19,
+      "indicacao": "Eflúvio telógeno (queda capilar), alopecias, quebra capilar e afinamento.",
+      "etapas": [
+        "Diluir o shampoo Home Spa Therapy com Água Thermal, aplicar no couro cabeludo, deixar agir de 3 a 5 minutos e enxaguar.",
+        "Reaplicar o shampoo no lavatório.",
+        "Diluir 10 gramas do Balm do Home Spa Therapy e acrescentar.",
+        "Acrescentar 5 gotas de Vitamin E e 5 gotas de Vitamin B5.",
+        "Aplicar em todo o couro cabeludo e deixar agir por 15 minutos.",
+        "Enxaguar.",
+        "Finalizar a haste capilar de acordo com a necessidade e retirar a umidade do cabelo.",
+        "Finalizar com Scalp Calming."
+      ],
+      "produtos": [
+        "agua-termal",
+        "vitamina-e",
+        "vitamina-b5",
+        "scalp-calming"
+      ]
+    },
+    {
+      "slug": "force-hair",
+      "nome": "Force Hair",
+      "pagina_pdf": 20,
+      "indicacao": "Eflúvio telógeno (queda capilar), alopecias, quebra capilar e afinamento.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo (não remover).",
+        "Em uma cubeta de vidro ou porcelana adicionar: 10 ml do Óleo Vegetal de Jojoba, 4 gotas de óleo essencial de Alecrim e Limão, 4 gotas de óleo essencial de Lavanda e 2 gotas de óleo essencial de Menta Piperita.",
+        "Aplicar o blend de óleos diretamente no couro cabeludo com a ponta dos dedos, sempre com luvas.",
+        "Massagear por 5 a 8 minutos; tempo de pausa total de 20 minutos.",
+        "Em uma cubeta, colocar o shampoo Ginkgo Biloba, Spa Home Therapy ou Capsitrat; aplicar com pincel no couro cabeludo e deixar agir de 3 a 5 minutos.",
+        "No lavatório, aplicar mais uma mão de shampoo e remover.",
+        "Aplicar a Máscara líquida Nano Force Biotin + Vitamin B5 do couro cabeludo às pontas, deixar agir 5 minutos massageando e remover.",
+        "Retirar a umidade do cabelo com toalha ou secador em temperatura média, mantendo distância do couro cabeludo.",
+        "Aplicar uma gota do Tônico Capsitrat com o conta-gotas em todo o couro cabeludo e espalhar com massagem (não remover)."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "oleo-vegetal-jojoba",
+        "oleo-essencial-alecrim-limao",
+        "oleo-essencial-lavanda",
+        "oleo-essencial-menta-piperita"
+      ]
+    },
+    {
+      "slug": "alopecia-androgenetica",
+      "nome": "Alopecia Androgenética",
+      "pagina_pdf": 21,
+      "indicacao": "Prevenção, tratamento e reversão da alopecia androgenética.",
+      "etapas": [
+        "Diluir o Shampoo Home Spa Therapy com Água Thermal.",
+        "Aplicar em todo o couro cabeludo, massagear e deixar agir de 3 a 5 minutos.",
+        "No lavatório, enxaguar e aplicar mais uma mão do shampoo.",
+        "Aplicar no couro cabeludo 10 gramas do Balm Home Spa Therapy, adicionando 10 gotas da Vitamin Biotin.",
+        "Massagear e deixar agir por 15 minutos.",
+        "Enxaguar.",
+        "Finalizar com Tônico Home Spa Therapy ou Growth Factor (não remover)."
+      ],
+      "produtos": [
+        "vitamin-biotin",
+        "tonico-growth-factor"
+      ]
+    },
+    {
+      "slug": "tricodinia-prurido-capilar",
+      "nome": "Tricodinia e Prurido Capilar",
+      "pagina_pdf": 22,
+      "indicacao": "Coceira, dor e sensibilidade no couro cabeludo.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo (não remover).",
+        "Em uma cubeta de vidro ou porcelana adicionar: 10 ml do Óleo Vegetal de Abacate, 2 gotas de óleo essencial de Menta Piperita, 4 gotas de óleo essencial de Lavanda e 2 gotas de óleo essencial de Gengibre.",
+        "Aplicar o blend de óleos diretamente no couro cabeludo com a ponta dos dedos, sempre com luvas.",
+        "Massagear por 5 a 8 minutos; tempo de pausa total de 20 minutos.",
+        "Em uma cubeta, colocar o shampoo Nutrição Vegetal ou Spa Home Therapy e diluir com água filtrada ou mineral.",
+        "Com auxílio de um pincel, aplicar o shampoo no couro cabeludo e deixar agir de 3 a 5 minutos.",
+        "No lavatório, aplicar mais uma mão de shampoo e remover.",
+        "Retirar a umidade do cabelo com toalha ou secador em temperatura média, mantendo distância do couro cabeludo.",
+        "Aplicar uma gota de Vitamina E com o auxílio do conta-gotas em todo o couro cabeludo e espalhar com massagem (não remover)."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "oleo-vegetal-avocado",
+        "oleo-essencial-menta-piperita",
+        "oleo-essencial-lavanda",
+        "oleo-essencial-gengibre",
+        "vitamina-e"
+      ]
+    },
+    {
+      "slug": "peeling-capilar-aromatico",
+      "nome": "Peeling Capilar Aromático",
+      "pagina_pdf": 23,
+      "indicacao": "Oleosidade, crescimento e fortalecimento capilar, controle de microbiota, caspa.",
+      "etapas": [
+        "Molhar os cabelos e o couro cabeludo.",
+        "Em uma cubeta de vidro ou porcelana adicionar: 10 gramas de Spa Therapy Scrub, 2 gotas de óleo essencial de Menta Piperita, 2 gotas de óleo essencial de Eucalyptus Globulus e 4 gotas de óleo essencial de Laranja e Melaleuca.",
+        "Aplicar o Scrub diretamente no couro cabeludo com a ponta dos dedos, sempre com luvas. Massagear por 5 a 8 minutos; tempo de pausa total de 20 minutos.",
+        "Levar o cliente para o lavatório, molhar os cabelos e massagear: os cristais de quartzo do Scrub se dissolvem e formam um shampoo.",
+        "Aplicar mais uma mão de shampoo Detox Therapy, Ginkgo Biloba ou Le Bain Vitamins.",
+        "Retirar a umidade do cabelo com toalha ou secador em temperatura média, mantendo distância do couro cabeludo."
+      ],
+      "produtos": [
+        "spa-therapy-scrub",
+        "oleo-essencial-menta-piperita",
+        "oleo-essencial-eucalipto-globulus",
+        "oleo-essencial-melaleuca-laranja"
+      ]
+    },
+    {
+      "slug": "barber-therapy-calmia",
+      "nome": "Barber Therapy Calmia",
+      "pagina_pdf": 24,
+      "indicacao": "Psoríase capilar, pele desidratada, processo inflamatório da barba.",
+      "etapas": [
+        "Higienizar a pele com Sabonete Glycemide Olya.",
+        "Aplicar 10 gramas da Máscara de Carvão, 2 gotas do óleo essencial de Gengibre, 4 gotas do óleo essencial de Lavanda e 4 gotas do óleo essencial de Melaleuca e Laranja.",
+        "Aplicar em toda a região e deixar agir por 15 minutos.",
+        "Remover com água.",
+        "Finalizar com Scalp Calming.",
+        "Finalizar com protetor Sunscreen Face Olya Dermocosmética."
+      ],
+      "produtos": [
+        "mascara-de-carvao",
+        "oleo-essencial-gengibre",
+        "oleo-essencial-lavanda",
+        "oleo-essencial-melaleuca-laranja",
+        "scalp-calming"
+      ]
+    },
+    {
+      "slug": "barber-therapy-growth",
+      "nome": "Barber Therapy Growth",
+      "pagina_pdf": 25,
+      "indicacao": "Crescimento e preenchimento de barba.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar todo o couro cabeludo e a região da barba (não remover).",
+        "Aplicar 10 gramas da Máscara de Carvão Maison Visage Cosmetique e adicionar 2 gotas do óleo essencial de Gengibre, 4 gotas do óleo essencial de Lavanda e 4 gotas do óleo essencial de Alecrim e Limão.",
+        "Aplicar em toda a região e deixar agir por 15 minutos.",
+        "Remover com sabonete Glycemide Olya Dermocosmética.",
+        "Aplicar tônico Growth Factor (não remover).",
+        "Finalizar com protetor Sunscreen Face Olya Dermocosmética."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "mascara-de-carvao",
+        "oleo-essencial-gengibre",
+        "oleo-essencial-lavanda",
+        "oleo-essencial-alecrim-limao",
+        "tonico-growth-factor"
+      ]
+    },
+    {
+      "slug": "barber-therapy-detox",
+      "nome": "Barber Therapy Detox",
+      "pagina_pdf": 26,
+      "indicacao": "Dermatite seborreica, oleosidade, foliculite.",
+      "etapas": [
+        "Aplicar a espuma de limpeza Clorexidina em um algodão e higienizar toda a face e região da barba.",
+        "Em uma cubeta de vidro ou porcelana, adicionar 10 gramas de CO2 Mask (máscara carvão Olya).",
+        "Aplicar a máscara com auxílio de um pincel; tempo de pausa total de 15 minutos.",
+        "Remover a CO2 Mask com Acne Aid Soap Olya.",
+        "Borrifar Água Thermal em toda a face e região da barba, ou aplicar com uma gaze.",
+        "Aplicar Vitamin E e massagear.",
+        "Deixar secar e aplicar filtro solar Sunscreen Face Olya."
+      ],
+      "produtos": [
+        "espuma-de-limpeza-clorexidina",
+        "agua-termal",
+        "vitamina-e"
+      ]
+    },
+    {
+      "slug": "home-care-queda-capilar",
+      "nome": "Home Care Queda Capilar",
+      "pagina_pdf": 27,
+      "indicacao": "Eflúvio telógeno (queda capilar), alopecia areata, fortalecimento capilar.",
+      "etapas": [
+        "Opção 01: Shampoo Le Bain Vitamins (orientar o paciente a deixar agir 3 minutos).",
+        "Opção 01: No banho, aplicar a máscara de Vitamin B5 + Biotin Nano Force no couro cabeludo e nas pontas; massagear, deixar agir 5 minutos e remover.",
+        "Opção 01: Retirar a umidade com toalha e aplicar diretamente no couro cabeludo o Capsitrat Passo 3, todos os dias de manhã e à noite (não remover).",
+        "Opção 02: Shampoo Le Bain Vitamins (orientar o paciente a deixar agir 3 minutos).",
+        "Opção 02: Com os cabelos limpos e condicionados, retirar a umidade com toalha e aplicar diretamente no couro cabeludo Vitamin Biotin, uso diário 1 vez ao dia (não remover).",
+        "Opção 02: Utilizar o Home Spa Therapy Scalp 1 vez ao dia, aplicar no couro cabeludo, massagear e não remover.",
+        "Sugestão: pela manhã aplicar Vitamin Biotin e à noite o Home Spa Therapy Scalp."
+      ],
+      "produtos": [
+        "vitamin-biotin",
+        "vitamina-b5"
+      ]
+    },
+    {
+      "slug": "home-care-alopecia-androgenetica",
+      "nome": "Home Care Alopecia Androgenética",
+      "pagina_pdf": 28,
+      "indicacao": "Alopecia androgenética, calvície masculina e feminina.",
+      "etapas": [
+        "Opção 01: Shampoo Le Bain Vitamins (orientar o paciente a deixar agir 3 minutos).",
+        "Opção 01: No banho, aplicar a máscara de Vitamin B5 + Biotin Nano Force no couro cabeludo e nas pontas; massagear, deixar agir 5 minutos e remover.",
+        "Opção 01: Retirar a umidade com toalha e aplicar diretamente no couro cabeludo Home Spa Therapy Scalp, todos os dias de manhã e à noite (não remover).",
+        "Opção 02: Shampoo Home Spa Therapy (orientar o paciente a deixar agir 3 minutos).",
+        "Opção 02: Utilizar o Home Spa Therapy Scalp 1 vez ao dia, aplicar no couro cabeludo, massagear e não remover.",
+        "Sugestão: pela manhã aplicar Vitamin Biotin e à noite o Growth Factor."
+      ],
+      "produtos": [
+        "vitamin-biotin",
+        "tonico-growth-factor",
+        "vitamina-b5"
+      ]
+    },
+    {
+      "slug": "home-care-psoriase-xerose",
+      "nome": "Home Care Psoríase Capilar e Xerose Capilar",
+      "pagina_pdf": 29,
+      "indicacao": "Psoríase capilar e xerose capilar; caspa seca; couro cabeludo descamando pós-química.",
+      "etapas": [
+        "Opção 01: Shampoo Nutrição Vegetal (orientar o paciente a deixar agir 3 minutos).",
+        "Opção 01: No banho, aplicar no couro cabeludo o condicionador de Nutrição Vegetal ou Le Bain Repairing, massagear e deixar agir por 3 a 5 minutos; remover.",
+        "Opção 01: Retirar a umidade com toalha e aplicar diretamente no couro cabeludo Scalp Calming (não remover).",
+        "Opção 02: Shampoo Home Spa Therapy (orientar o paciente a deixar agir 3 minutos).",
+        "Opção 02: Com os cabelos limpos e condicionados, retirar a umidade com toalha e aplicar Vitamin E diretamente no couro cabeludo, uso diário 1 vez ao dia (espalhar e não remover).",
+        "A Vitamin E pode ser aplicada todos os dias, mesmo quando a cliente não lavar os cabelos."
+      ],
+      "produtos": [
+        "scalp-calming",
+        "vitamina-e"
+      ]
+    },
+    {
+      "slug": "home-care-dermatite-seborreica",
+      "nome": "Home Care Dermatite Seborreica e Prurido",
+      "pagina_pdf": 30,
+      "indicacao": "Dermatite seborreica, prurido ou sensibilidade no couro cabeludo.",
+      "etapas": [
+        "Opção 01: Shampoo Nutrição Vegetal (orientar o paciente a deixar agir 3 minutos).",
+        "Opção 01: Retirar a umidade com toalha e aplicar diretamente no couro cabeludo Scalp Calming (espalhar e não remover), uso diário 1 vez ao dia.",
+        "Opção 01: O Scalp Calming pode ser aplicado todos os dias, 1 vez ao dia, mesmo quando a cliente não lavar os cabelos.",
+        "Opção 02: Shampoo Home Spa Therapy (orientar o paciente a deixar agir 3 minutos).",
+        "Opção 02: Com os cabelos limpos e condicionados, retirar a umidade com toalha e aplicar Vitamin E diretamente no couro cabeludo (espalhar e não remover), uso diário 1 vez ao dia.",
+        "A Vitamin E pode ser aplicada todos os dias, mesmo quando a cliente não lavar os cabelos."
+      ],
+      "produtos": [
+        "scalp-calming",
+        "vitamina-e"
+      ]
+    }
+  ],
+  "linhas": [
+    {
+      "slug": "spa-therapy",
+      "nome": "Spa Therapy",
+      "descricao": "Óleos essenciais, óleos vegetais, argilas, vitaminas, água termal, espuma de limpeza, esfoliante e tônicos para os protocolos de terapia capilar.",
+      "area": "spa-capilar"
+    },
+    {
+      "slug": "home-spa-therapy",
+      "nome": "Home Spa Therapy",
+      "descricao": "Linha que atua em sinergia a favor da recuperação capilar e na biomodulação do folículo piloso. Paralisa a queda e controla diversos distúrbios capilares (micoses, fungos, coceira, Psoríase, Eflúvio Telógeno, Dermatite Seborreica). Seus ativos são os óleos essenciais de melaleuca e alecrim, cafeína, baicalina.",
+      "area": "spa-capilar"
+    }
+  ],
+  "produtos": [
+    {
+      "slug": "oleo-essencial-menta-piperita",
+      "nome": "Essential Oil Menta Piperita",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": "profissional",
+      "volumes": [
+        "30 ML"
+      ],
+      "descricao": "Menta Piperita é um dos óleos essenciais mais utilizados em todo o mundo.",
+      "beneficios": [
+        "analgésico",
+        "antimicrobiano",
+        "antioxidante",
+        "estimulante do crescimento e fortalecimento capilar por sua ação de vasodilatação"
+      ],
+      "ativos": [],
+      "indicacao": "Prurido (coceira), dor, afinamento capilar, queda capilar, alopecias, seborreia capilar e facial.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 3,
+      "imagem": "terapia-capilar/oleo-essencial-menta-piperita.webp"
+    },
+    {
+      "slug": "oleo-essencial-gengibre",
+      "nome": "Essential Oil Gengibre",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": "profissional",
+      "volumes": [
+        "30 ML"
+      ],
+      "descricao": "Óleo essencial com grande ação anti-inflamatória e ativador da circulação sanguínea. Muito utilizado em tratamentos capilares, faciais e corporais. Vasodilatador que também favorece o crescimento e fortalecimento dos fios.",
+      "beneficios": [
+        "anti-inflamatória",
+        "ativador da circulação sanguínea",
+        "favorece o crescimento e fortalecimento dos fios",
+        "apoio no processo de cicatrização"
+      ],
+      "ativos": [],
+      "indicacao": "Dermatite Seborreica, Alopecias, queda capilar; nos tratamentos corporais, para celulite.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 3,
+      "imagem": "terapia-capilar/oleo-essencial-gengibre.webp"
+    },
+    {
+      "slug": "oleo-essencial-eucalipto-globulus",
+      "nome": "Essential Oil Eucalipto Globulus",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": "profissional",
+      "volumes": [
+        "30 ML"
+      ],
+      "descricao": "Óleo essencial muito indicado para potencializar os tratamentos capilares, faciais e corporais. Tem atividade antibiótica comprovada – bactericida, fungicida. Age no tratamento de feridas e lesões, além de ser antisséptico. Controla a microbiota da pele e a oleosidade.",
+      "beneficios": [
+        "bactericida",
+        "fungicida",
+        "antisséptico",
+        "controla a microbiota da pele e a oleosidade",
+        "mantém a integridade da pele"
+      ],
+      "ativos": [],
+      "indicacao": "Dermatite Seborreica, Caspa, Acne, Foliculite.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 3,
+      "imagem": "terapia-capilar/oleo-essencial-eucalipto-globulus.webp"
+    },
+    {
+      "slug": "oleo-essencial-lavanda",
+      "nome": "Essential Oil Lavanda",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial",
+      "uso": "profissional",
+      "volumes": [
+        "30 ML"
+      ],
+      "descricao": "Óleo essencial versátil. Ajuda a equilibrar os óleos naturais do couro cabeludo.",
+      "beneficios": [
+        "equilibra os óleos naturais do couro cabeludo",
+        "anti-inflamatória",
+        "antisséptica",
+        "calmante",
+        "cicatrizante",
+        "antimicrobiana"
+      ],
+      "ativos": [],
+      "indicacao": "Dermatite, Eczema, Psoríase e Alopecias.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 3,
+      "imagem": "terapia-capilar/oleo-essencial-lavanda.webp"
+    },
+    {
+      "slug": "oleo-essencial-melaleuca-laranja",
+      "nome": "Essential Oil Melaleuca e Laranja",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial (blend)",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Une dois ativos terapêuticos significativos, que agem no couro cabeludo. Juntos tratam a caspa, seborreia, dermatites e irritações, além de promover ação revitalizante.",
+      "beneficios": [
+        "trata a caspa",
+        "trata a seborreia",
+        "trata dermatites e irritações",
+        "ação revitalizante"
+      ],
+      "ativos": [],
+      "indicacao": "Caspa, seborreia, dermatites e irritações.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 4,
+      "imagem": "terapia-capilar/oleo-essencial-melaleuca-laranja.webp"
+    },
+    {
+      "slug": "oleo-essencial-alecrim-limao",
+      "nome": "Essential Oil Alecrim e Limão",
+      "linha": "spa-therapy",
+      "categoria": "óleo essencial (blend)",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Combinação refrescante dos ativos, oferece propriedades terapêuticas. O tratamento contém dois ativos que intensificam o desenvolvimento dos fios e promovem ação calmante no couro cabeludo. Possui ação refrescante, que além de relaxar potencializa o crescimento capilar.",
+      "beneficios": [
+        "intensifica o desenvolvimento dos fios",
+        "ação calmante no couro cabeludo",
+        "ação refrescante",
+        "potencializa o crescimento capilar"
+      ],
+      "ativos": [],
+      "indicacao": "Queda capilar.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 4,
+      "imagem": "terapia-capilar/oleo-essencial-alecrim-limao.webp"
+    },
+    {
+      "slug": "spa-therapy-scrub",
+      "nome": "Spa Therapy Scrub",
+      "linha": "spa-therapy",
+      "categoria": "esfoliante",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Atua como esfoliante do couro cabeludo. Com suas propriedades terapêuticas, desintoxica, purifica e normaliza o excesso de oleosidade. A combinação de ativos veganos e naturais como a clorofila e os minerais marinhos removem com delicadeza impurezas e células mortas causadoras de possíveis patologias.",
+      "beneficios": [
+        "desintoxica, purifica e normaliza o excesso de oleosidade",
+        "remove impurezas e células mortas",
+        "promove brilho, textura e volume natural aos fios",
+        "ativa a microcirculação periférica do couro cabeludo",
+        "favorece a oxigenação e absorção dos ativos nutrientes"
+      ],
+      "ativos": [
+        "sal marinho",
+        "clorofila",
+        "minerais marinhos",
+        "cristais de quartzo"
+      ],
+      "indicacao": "Combate a caspa e remove o excesso de oleosidade; renovação celular.",
+      "modo_de_uso": "Aplicar diretamente no couro cabeludo com a ponta dos dedos, com luvas, e massagear de 5 a 8 minutos; tempo de pausa total de 20 minutos. No lavatório, molhar os cabelos e massagear: os cristais de quartzo se dissolvem e formam um shampoo.",
+      "selos": [],
+      "pagina_pdf": 4,
+      "imagem": "terapia-capilar/spa-therapy-scrub.webp"
+    },
+    {
+      "slug": "oleo-vegetal-jojoba",
+      "nome": "Óleo Vegetal de Jojoba",
+      "linha": "spa-therapy",
+      "categoria": "óleo vegetal",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Muito rico em vitamina A, vitaminas do complexo B, vitamina E e ceramida – um lipídio presente na estrutura capilar. Possui grande poder de compensação da hidratação de pele e cabelos secos, assim como equilíbrio de pele e cabelos muito oleosos.",
+      "beneficios": [
+        "compensação da hidratação de pele e cabelos secos",
+        "equilíbrio de pele e cabelos muito oleosos",
+        "ação antioxidante",
+        "ação anti-inflamatória"
+      ],
+      "ativos": [
+        "vitamina A",
+        "vitaminas do complexo B",
+        "vitamina E",
+        "ceramida"
+      ],
+      "indicacao": null,
+      "modo_de_uso": "Podem ser utilizados sozinhos ou como carreadores dos óleos essenciais.",
+      "selos": [],
+      "pagina_pdf": 5,
+      "imagem": "terapia-capilar/oleo-vegetal-jojoba.webp"
+    },
+    {
+      "slug": "oleo-vegetal-avocado",
+      "nome": "Óleo Vegetal de Avocado",
+      "linha": "spa-therapy",
+      "categoria": "óleo vegetal",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Rico em gorduras e excelente fonte de ácido oleico. Possui alta concentração de vitamina E. Tem intensa ação desintoxicante e fortalecedora do cabelo e da pele e também auxilia no crescimento capilar. Muito eficiente para melhorar a absorção de nutrientes de outros óleos.",
+      "beneficios": [
+        "ação desintoxicante",
+        "fortalecedor do cabelo e da pele",
+        "auxilia no crescimento capilar",
+        "melhora a absorção de nutrientes de outros óleos"
+      ],
+      "ativos": [
+        "ácido oleico",
+        "vitamina E"
+      ],
+      "indicacao": null,
+      "modo_de_uso": "Podem ser utilizados sozinhos ou como carreadores dos óleos essenciais.",
+      "selos": [],
+      "pagina_pdf": 5,
+      "imagem": "terapia-capilar/oleo-vegetal-avocado.webp"
+    },
+    {
+      "slug": "oleo-vegetal-semente-de-uva",
+      "nome": "Óleo Vegetal de Semente de Uva",
+      "linha": "spa-therapy",
+      "categoria": "óleo vegetal",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Alto teor de ácidos graxos poli-insaturados – como os ômegas 6 e 9 – e vitamina E. Aplicado diretamente no couro cabeludo. É eficaz no tratamento da caspa, reduz a queda capilar e promove o fortalecimento dos fios.",
+      "beneficios": [
+        "eficaz no tratamento da caspa",
+        "reduz a queda capilar",
+        "promove o fortalecimento dos fios"
+      ],
+      "ativos": [
+        "ômega 6",
+        "ômega 9",
+        "vitamina E"
+      ],
+      "indicacao": "Caspa, queda capilar e fortalecimento dos fios.",
+      "modo_de_uso": "Aplicado diretamente no couro cabeludo.",
+      "selos": [],
+      "pagina_pdf": 5,
+      "imagem": "terapia-capilar/oleo-vegetal-semente-de-uva.webp"
+    },
+    {
+      "slug": "argila-verde",
+      "nome": "Argila Verde",
+      "linha": "spa-therapy",
+      "categoria": "argila",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "100 % natural e orgânica, composta por diversos oligoelementos como silício, cálcio, potássio, zinco, alumínio, entre outros. Apresenta ação adstringente promovendo um detox da pele, remove o excesso de oleosidade além de realizar uma esfoliação suave dos tecidos, desobstruindo assim os poros e folículos capilares. Composta principalmente por montmorillonita, mineral formado por silicatos e gipsita.",
+      "beneficios": [
+        "detox da pele",
+        "remove o excesso de oleosidade",
+        "esfoliação suave",
+        "desobstrui poros e folículos capilares",
+        "combate edemas",
+        "capacidade bactericida",
+        "tonificante e estimulante da pele"
+      ],
+      "ativos": [
+        "silício",
+        "cálcio",
+        "potássio",
+        "zinco",
+        "alumínio",
+        "montmorillonita",
+        "gipsita"
+      ],
+      "indicacao": "Peles oleosas e acneicas; cabelos oleosos.",
+      "modo_de_uso": "Normalmente aplicada em shampoo e máscaras secativas.",
+      "selos": [],
+      "pagina_pdf": 6,
+      "imagem": "terapia-capilar/argila-verde.webp"
+    },
+    {
+      "slug": "argila-preta",
+      "nome": "Argila Preta",
+      "linha": "spa-therapy",
+      "categoria": "argila",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Alto teor de sais minerais, silício, titânio e alumínio. Promove um excelente efeito rejuvenescedor por sua ação de nutrição e oxigenação dos tecidos. Controla a oleosidade da pele e couro cabeludo. Esta argila também é usada para remineralização dos cabelos, aumentando o brilho e a sedosidade da fibra capilar.",
+      "beneficios": [
+        "rejuvenescedor",
+        "cicatrizante, anti-inflamatória, antioxidante e desintoxicante",
+        "controla a oleosidade da pele e couro cabeludo",
+        "remove toxinas e oleosidades",
+        "revitaliza o couro cabeludo",
+        "remineralização dos cabelos",
+        "aumenta o brilho e a sedosidade da fibra capilar"
+      ],
+      "ativos": [
+        "sais minerais",
+        "silício",
+        "titânio",
+        "alumínio"
+      ],
+      "indicacao": "Crescimento capilar e fortalecimento da pele e cabelos; redução de manchas na pele; anti-age e combate ao estresse.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 6,
+      "imagem": "terapia-capilar/argila-preta.webp"
+    },
+    {
+      "slug": "vitamina-e",
+      "nome": "Vitamin E",
+      "linha": "spa-therapy",
+      "categoria": "vitamina",
+      "uso": "ambos",
+      "volumes": [
+        "30 ML"
+      ],
+      "descricao": "Poderoso antioxidante, ajuda a neutralizar os radicais livres que são moléculas instáveis causadoras de danos à pele e ao folículo piloso. Muito utilizada na terapia capilar para o tratamento de Eflúvio Telógeno (Queda Capilar), Alopecias, Dermatites, Psoríase entre outras patologias inflamatórias. Excelente recurso na prevenção e tratamento do envelhecimento facial.",
+      "beneficios": [
+        "antioxidante",
+        "neutraliza os radicais livres"
+      ],
+      "ativos": [
+        "vitamina E"
+      ],
+      "indicacao": "Eflúvio Telógeno (queda capilar), alopecias, dermatites, psoríase e outras patologias inflamatórias; envelhecimento facial.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 7,
+      "imagem": "terapia-capilar/vitamina-e.webp"
+    },
+    {
+      "slug": "vitamina-b5",
+      "nome": "Vitamin B5",
+      "linha": "spa-therapy",
+      "categoria": "vitamina",
+      "uso": "ambos",
+      "volumes": [
+        "30 ML"
+      ],
+      "descricao": "Poderoso hidratante. Restaura, fortalece e nutre intensamente a pele e a fibra capilar. Apresenta efeito anti-inflamatório, acalmando a pele irritada, estimula a epitelização auxiliando na cicatrização de pequenas feridas. Muito utilizada nos protocolos para Psoríase de couro cabeludo, sobrancelhas, barba e corpo, dermatites, caspa seca entre outras patologias inflamatórias e descamativas.",
+      "beneficios": [
+        "hidratante",
+        "restaura, fortalece e nutre a pele e a fibra capilar",
+        "anti-inflamatório",
+        "estimula a epitelização",
+        "dá brilho e maciez na face"
+      ],
+      "ativos": [
+        "pantotenato (vitamina B5)"
+      ],
+      "indicacao": "Psoríase de couro cabeludo, sobrancelhas, barba e corpo, dermatites, caspa seca e outras patologias inflamatórias e descamativas.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 7,
+      "imagem": "terapia-capilar/vitamina-b5.webp"
+    },
+    {
+      "slug": "vitamin-biotin",
+      "nome": "Vitamin Biotin",
+      "linha": "spa-therapy",
+      "categoria": "vitamina",
+      "uso": "ambos",
+      "volumes": [
+        "30 ML"
+      ],
+      "descricao": "A Biotina está intimamente ligada à produção de queratina (principal proteína que forma nossa pele, cabelos e unhas). É indispensável para os tratamentos de estímulo de crescimento e fortalecimento capilar, como no caso de Eflúvio Telógeno (queda capilar) e Alopecia Areata. É grande aliada no tratamento da Alopecia Androgenética (calvície). Para a pele facial devolve firmeza, elasticidade, força e resistência.",
+      "beneficios": [
+        "estímulo de crescimento e fortalecimento capilar",
+        "indispensável à produção de queratina",
+        "firmeza, elasticidade, força e resistência da pele facial"
+      ],
+      "ativos": [
+        "biotina"
+      ],
+      "indicacao": "Eflúvio Telógeno (queda capilar), Alopecia Areata, Alopecia Androgenética (calvície) e envelhecimento facial.",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 7,
+      "imagem": "terapia-capilar/vitamin-biotin.webp"
+    },
+    {
+      "slug": "agua-termal",
+      "nome": "Água Termal",
+      "linha": "spa-therapy",
+      "categoria": "água termal",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Composta por aminoácidos, minerais e oligoelementos. Enriquecida com óleos essenciais orgânicos puros e Aloe Vera. Oferece propriedades calmantes e suavizantes. Atua na regeneração capilar, reduz as inflamações no couro cabeludo, ativa a circulação e regula a produção excessiva de sebo.",
+      "beneficios": [
+        "regeneração capilar",
+        "reduz as inflamações no couro cabeludo",
+        "ativa a circulação",
+        "regula a produção excessiva de sebo",
+        "calmante e suavizante"
+      ],
+      "ativos": [
+        "aminoácidos",
+        "minerais",
+        "oligoelementos",
+        "óleos essenciais orgânicos",
+        "Aloe Vera"
+      ],
+      "indicacao": "Infusões, vaporizações, ionizações, preparados cosméticos e misturas terapêuticas; associação com argilas, máscaras e outros preparados.",
+      "modo_de_uso": "Utilizada como veículo para diluir shampoos e argilas nos protocolos.",
+      "selos": [],
+      "pagina_pdf": 8,
+      "imagem": "terapia-capilar/agua-termal.webp"
+    },
+    {
+      "slug": "espuma-de-limpeza-clorexidina",
+      "nome": "Espuma de Limpeza Clorexidina",
+      "linha": "spa-therapy",
+      "categoria": "espuma de limpeza",
+      "uso": "ambos",
+      "volumes": [],
+      "descricao": "Cosmético funcional que serve para realizar a higienização da pele do corpo, face e couro cabeludo. Muito indicado para higienização da pele facial, tanto na rotina skincare quanto em cabine de atendimento, pré-microagulhamento, pré-eletroterapia e pré-design de sobrancelhas. Excelente opção para uso no pós-operatório de transplante capilar imediato.",
+      "beneficios": [
+        "limpeza",
+        "ação antisséptica",
+        "controla a microbiota cutânea (óleo essencial de Melaleuca)",
+        "ação calmante (Alfa Bisabolol, D'Pantenol e Açafrão da Terra)",
+        "ação antioxidante",
+        "pele macia, limpa e hidratada"
+      ],
+      "ativos": [
+        "clorexidina",
+        "Alfa Bisabolol",
+        "óleo essencial de Melaleuca",
+        "Pantenol",
+        "Açafrão da Terra"
+      ],
+      "indicacao": "Higienização do couro cabeludo (inclusive de crianças com Dermatite Seborreica ou inflamação), pré-aplicação dos blends de óleos essenciais, pré-microagulhamento capilar e higienização geral dos procedimentos capilares.",
+      "modo_de_uso": "Aplicar em um algodão e higienizar todo o couro cabeludo (não remover).",
+      "selos": [],
+      "pagina_pdf": 8,
+      "imagem": "terapia-capilar/espuma-de-limpeza-clorexidina.webp"
+    },
+    {
+      "slug": "tonico-growth-factor",
+      "nome": "Tônico Growth Factor",
+      "linha": "spa-therapy",
+      "categoria": "tônico",
+      "uso": "ambos",
+      "volumes": [],
+      "descricao": "Com uma tecnologia cosmética inovadora, o Tônico Growth Factor traz em sua composição os fatores de crescimento (IGF, KGF, AFGF, VEGF, BFGF) amplamente utilizados na indústria cosmética. Os fatores de crescimento são proteínas sinalizadoras que realizam a comunicação celular e melhoram o metabolismo folicular acelerando o processo de crescimento dos cabelos e pelos. Está associado a extratos vegetais como o Jaborandi; Chá Verde; Alecrim; Capilmax e a vitamina B7 Biotina além do Copper Peptídeo.",
+      "beneficios": [
+        "acelera o processo de crescimento dos cabelos e pelos",
+        "inibição da enzima 5 alfa redutase",
+        "fortalecimento capilar",
+        "estimula o crescimento dos pelos das sobrancelhas e barba",
+        "pode ser usado como Drug Delivery em microagulhamento (profissionais habilitados)"
+      ],
+      "ativos": [
+        "IGF",
+        "KGF",
+        "AFGF",
+        "VEGF",
+        "BFGF",
+        "Jaborandi",
+        "Chá Verde",
+        "Alecrim",
+        "Capilmax",
+        "vitamina B7 Biotina",
+        "Copper Peptídeo"
+      ],
+      "indicacao": "Eflúvio Telógeno (queda capilar), Alopecia Areata e Alopecia Androgenética (apresenta bloqueio enzimático e hormonal).",
+      "modo_de_uso": null,
+      "selos": [],
+      "pagina_pdf": 9,
+      "imagem": "terapia-capilar/tonico-growth-factor.webp"
+    },
+    {
+      "slug": "mascara-de-carvao",
+      "nome": "Máscara de Carvão Vegetal",
+      "linha": "spa-therapy",
+      "categoria": "máscara",
+      "uso": "profissional",
+      "volumes": [],
+      "descricao": "Apresenta uma excelente ação adsorvente atraindo todo o excesso de oleosidade, sujidades, impurezas, acúmulo de toxinas e resíduos de pele, além de apresentar uma excelente ação cicatrizante e anti-inflamatória. Versátil e multifuncional na sua formulação, com óleos vegetais de macadâmia, milho e extrato de Oliveira.",
+      "beneficios": [
+        "controle da oleosidade",
+        "adsorvente",
+        "cicatrizante e anti-inflamatória",
+        "crescimento e fortalecimento dos fios"
+      ],
+      "ativos": [
+        "carvão vegetal",
+        "óleo vegetal de macadâmia",
+        "óleo vegetal de milho",
+        "extrato de Oliveira"
+      ],
+      "indicacao": "Dermatite seborreica, foliculite, caspa, crescimento e fortalecimento dos fios.",
+      "modo_de_uso": "Aplicar 10 gramas conforme o protocolo; associar aos óleos essenciais e vitaminas indicados para cada protocolo.",
+      "selos": [],
+      "pagina_pdf": 9,
+      "imagem": "terapia-capilar/mascara-de-carvao.webp"
+    },
+    {
+      "slug": "scalp-calming",
+      "nome": "Scalp Calming",
+      "linha": "home-spa-therapy",
+      "categoria": "tônico",
+      "uso": "ambos",
+      "volumes": [],
+      "descricao": "Composto por Physavie, conhecido também como um corticoide vegetal. Ação similar à hidrocortisona, com potente ação anti-inflamatória, calmante, cicatrizante e antioxidante. A junção dos ativos Alfa Bisabolol, Betaglucan, Pantenol, Niacinamida, Aloe Vera e Camomila proporciona à pele uma redução significativa no processo inflamatório. Sua composição apresenta também o óleo essencial de Lavanda.",
+      "beneficios": [
+        "calmante",
+        "cicatrizante",
+        "anti-inflamatória",
+        "antioxidante",
+        "suavizante e hidratante",
+        "reduz o processo inflamatório"
+      ],
+      "ativos": [
+        "Physavie",
+        "Alfa Bisabolol",
+        "Betaglucan",
+        "Pantenol",
+        "Niacinamida",
+        "Aloe Vera",
+        "Camomila",
+        "óleo essencial de Lavanda"
+      ],
+      "indicacao": "Psoríase capilar, dermatite seborreica, alopecias, eflúvios, prurido, ardência, sensibilidade e descamação, sensibilidade pós-química e processos inflamatórios; também na região da barba (hiperemia, prurido, psoríase, dermatite e foliculite).",
+      "modo_de_uso": "Uso profissional e home care. Em home care, aplicar diretamente no couro cabeludo 1 vez ao dia, espalhar e não remover; pode ser usado todos os dias, mesmo quando não lavar os cabelos.",
+      "selos": [],
+      "pagina_pdf": 11,
+      "imagem": "terapia-capilar/scalp-calming.webp"
+    }
+  ]
+}
