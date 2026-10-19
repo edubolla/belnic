@@ -5,6 +5,9 @@ const svg = (f) => readFileSync(new URL(`./assets/img/${f}`, import.meta.url), '
 export const simbolo = svg('simbolo.svg');
 export const logoHorizontal = svg('logo-horizontal.svg');
 
+// `node build.mjs --lp` gera a versão landing page (uma página só, sem catálogo de produtos)
+export const LP = process.argv.includes('--lp');
+
 export const esc = (s = '') =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -59,6 +62,7 @@ export const btnWhats = (texto, msg, cls = 'btn btn--primario') =>
   `<a class="${cls}" href="${wa(msg)}" target="_blank" rel="noopener" data-evento="whatsapp">${icon.whatsapp}<span>${esc(texto)}</span></a>`;
 
 function header(atual) {
+  if (LP) return headerLP();
   return `
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="topo" data-topo>
@@ -76,6 +80,7 @@ function header(atual) {
 }
 
 function footer() {
+  if (LP) return footerLP();
   return `
 <footer class="rodape">
   <div class="container rodape__grade">
@@ -115,6 +120,64 @@ function footer() {
 </footer>
 <div class="barra-movel" aria-label="Atalhos">
   <a href="/catalogos/">${icon.download}<span>Catálogos</span></a>
+  <a class="barra-movel__whats" href="${wa()}" target="_blank" rel="noopener" data-evento="whatsapp">${icon.whatsapp}<span>Falar no WhatsApp</span></a>
+</div>`;
+}
+
+const navLP = [
+  ['/#para-quem', 'Para quem'], ['/#marcas', 'Marcas'], ['/#terapia-capilar', 'Terapia capilar'],
+  ['/#formacao', 'Formação'], ['/#onde-atendemos', 'Onde atendemos'],
+];
+
+function headerLP() {
+  return `
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo" data-topo>
+  <div class="topo__barra container">
+    <a class="topo__logo" href="/" aria-label="Belnic Cosméticos — início">${logoHorizontal}</a>
+    <nav class="topo__nav" id="menu" aria-label="Principal">
+      <ul>${navLP.map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join('')}</ul>
+      <a class="btn btn--primario topo__cta" href="/#parceiro">Seja parceiro</a>
+    </nav>
+    <button class="topo__menu" type="button" aria-controls="menu" aria-expanded="false" data-menu>
+      <span class="abre">${icon.menu}</span><span class="fecha">${icon.close}</span><span class="sr">Menu</span>
+    </button>
+  </div>
+</header>`;
+}
+
+function footerLP() {
+  return `
+<footer class="rodape">
+  <div class="container rodape__grade">
+    <div class="rodape__marca">
+      <span class="rodape__simbolo">${simbolo}</span>
+      <p>Distribuidora oficial <strong>Maison Visage</strong> e <strong>Mirra Professional</strong>. Produtos, formação e suporte para salões, clínicas e profissionais da beleza crescerem.</p>
+    </div>
+    <div>
+      <h2 class="rodape__titulo">Fale com a Belnic</h2>
+      <ul class="rodape__social">
+        <li><a href="${wa()}" target="_blank" rel="noopener" data-evento="whatsapp">${icon.whatsapp}<span>${site.whatsappExibicao}</span></a></li>
+        <li><a href="${site.instagram}" target="_blank" rel="noopener">${icon.instagram}<span>${site.instagramUser}</span></a></li>
+        <li><a href="mailto:${site.email}">${site.email}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="rodape__titulo">Catálogos</h2>
+      <ul>
+        <li><a href="/catalogos/catalogo-maison-visage.pdf" download>Maison Visage (PDF)</a></li>
+        <li><a href="/catalogos/catalogo-mirra-professional.pdf" download>Mirra Professional (PDF)</a></li>
+        <li><a href="/catalogos/catalogo-terapia-capilar-spa-therapy.pdf" download>Terapia Capilar (PDF)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container rodape__base">
+    <p>© ${new Date().getFullYear()} ${site.nome}. Venda exclusiva para profissionais da beleza.</p>
+    <p><a href="/politicas-de-privacidade/">Política de privacidade</a></p>
+  </div>
+</footer>
+<div class="barra-movel" aria-label="Atalhos">
+  <a href="/#catalogos">${icon.download}<span>Catálogos</span></a>
   <a class="barra-movel__whats" href="${wa()}" target="_blank" rel="noopener" data-evento="whatsapp">${icon.whatsapp}<span>Falar no WhatsApp</span></a>
 </div>`;
 }

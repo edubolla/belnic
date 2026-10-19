@@ -1,6 +1,6 @@
 import { pagina, icon, migalhas, breadcrumb, esc, btnWhats } from '../layout.mjs';
 import { site } from '../site.mjs';
-import { faqHtml, faqSchema } from '../componentes.mjs';
+import { faqHtml, faqSchema, formParceiro } from '../componentes.mjs';
 
 const faq = [
   ['Preciso ter CNPJ para ser parceiro?', 'Fale com a nossa equipe pelo WhatsApp: ela explica quais condições valem para o seu perfil, seja salão, clínica ou profissional autônomo.'],
@@ -9,8 +9,6 @@ const faq = [
   ['Minha cidade é atendida?', 'Atendemos Porto Alegre, Região Metropolitana, Vale do Sinos, Vale do Paranhana e Serra Gaúcha. Confira em <a href="/onde-atendemos/">Onde atendemos</a>.'],
   ['Meus dados ficam guardados no site?', 'Não. O formulário apenas abre o WhatsApp com a sua mensagem pronta. Nada é armazenado por nós neste site.'],
 ];
-const perfis = ['Salão de beleza', 'Clínica de estética', 'Profissional autônomo(a)', 'Terapeuta capilar', 'Barbearia', 'Outro'];
-const interesses = ['Maison Visage', 'Mirra Professional', 'Terapia Capilar', 'Cursos e formação', 'Ainda não sei'];
 
 export default ({ versao }) => {
   const caminho = '/seja-parceiro/';
@@ -37,16 +35,7 @@ export default ({ versao }) => {
     </div>
     <div class="revela" style="margin-top:32px">
       <h2>Fale com a gente</h2>
-      <form class="form form--2" data-form-whats="${site.whatsapp}">
-        <div class="campo"><label for="nome">Seu nome *</label><input id="nome" name="nome" type="text" required autocomplete="name"></div>
-        <div class="campo"><label for="perfil">Seu perfil</label><select id="perfil" name="perfil">${perfis.map((p) => `<option>${esc(p)}</option>`).join('')}</select></div>
-        <div class="campo"><label for="negocio">Nome do salão ou clínica</label><input id="negocio" name="negocio" type="text" autocomplete="organization"></div>
-        <div class="campo"><label for="cidade">Cidade *</label><input id="cidade" name="cidade" type="text" list="cidades" required autocomplete="off"><datalist id="cidades">${site.cidades.map((c) => `<option value="${esc(c)}">`).join('')}</datalist></div>
-        <div class="campo"><label for="interesse">O que mais interessa</label><select id="interesse" name="interesse">${interesses.map((p) => `<option>${esc(p)}</option>`).join('')}</select></div>
-        <div class="campo campo--cheio"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem"></textarea></div>
-        <div class="campo--cheio"><button class="btn btn--primario" type="submit">${icon.whatsapp}<span>Enviar pelo WhatsApp</span></button></div>
-        <p class="form__nota campo--cheio">Não guardamos seus dados: ao enviar, abrimos o WhatsApp com a mensagem pronta para você conferir e mandar.</p>
-      </form>
+      ${formParceiro()}
     </div>
   </div>
 </section>

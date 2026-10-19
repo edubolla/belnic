@@ -8,8 +8,10 @@ import { site } from './src/site.mjs';
 import { carregarDados } from './src/dados.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
-const dist = join(raiz, 'dist');
+const dist = join(raiz, process.env.SAIDA || 'dist');
 const versao = Date.now().toString(36);
+const lp = process.argv.includes('--lp');
+const pastaPaginas = lp ? 'src/lp' : 'src/pages';
 
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(dist, { recursive: true });
@@ -20,8 +22,8 @@ const dados = carregarDados(raiz);
 const ctx = { dados, versao };
 
 const paginas = [];
-for (const arq of readdirSync(join(raiz, 'src/pages')).filter((f) => f.endsWith('.mjs')).sort()) {
-  const mod = await import(join(raiz, 'src/pages', arq));
+for (const arq of readdirSync(join(raiz, pastaPaginas)).filter((f) => f.endsWith('.mjs')).sort()) {
+  const mod = await import(join(raiz, pastaPaginas, arq));
   const saida = await mod.default(ctx);
   paginas.push(...(Array.isArray(saida) ? saida : [saida]));
 }
@@ -41,7 +43,7 @@ ${urls.map((p) => `  <url><loc>${site.url}${p.caminho}</loc><lastmod>${hoje}</la
 </urlset>
 `);
 
-console.log(`✓ ${paginas.length} páginas geradas em dist/ (${dados.produtos.length} produtos)`);
+console.log(lp ? `✓ Landing page gerada em ${process.env.SAIDA || "dist"}/ (${paginas.length} páginas)` : `✓ ${paginas.length} páginas geradas em dist/ (${dados.produtos.length} produtos)`);
 
 if (process.argv.includes('--serve')) {
   const tipos = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.pdf': 'application/pdf', '.json': 'application/json' };

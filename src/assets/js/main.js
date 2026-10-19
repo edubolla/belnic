@@ -13,6 +13,7 @@
     };
     botao.addEventListener('click', () => alterna(botao.getAttribute('aria-expanded') !== 'true'));
     document.addEventListener('keydown', (e) => e.key === 'Escape' && alterna(false));
+    menu.addEventListener('click', (e) => e.target.closest('a') && alterna(false));
   }
 
   // Borda do topo ao rolar

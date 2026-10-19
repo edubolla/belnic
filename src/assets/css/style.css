@@ -311,3 +311,17 @@ a.filtro:hover { border-color: var(--verde); color: var(--verde-escuro); }
   .linha-topo--sem-img { grid-template-columns: 1fr; }
   .grade--3 .catalogo-card { height: 100%; }
 }
+
+/* === landing page === */
+[id] { scroll-margin-top: 84px; }
+.lp-catalogos { display: grid; gap: 12px; }
+.lp-catalogo { display: flex; align-items: center; justify-content: space-between; gap: 16px; background: var(--branco); border-radius: var(--raio); padding: 18px 20px; text-decoration: none; color: var(--verde-profundo); box-shadow: var(--sombra); }
+.lp-catalogo strong { display: block; font: 500 1.25rem/1.2 var(--serif); }
+.lp-catalogo small { color: var(--tinta-suave); font-size: .82rem; }
+.lp-catalogo svg { width: 24px; flex: none; color: var(--verde); }
+.lp-catalogo:hover { color: var(--verde-profundo); background: var(--areia-clara); }
+.lp-linhas { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0 0 18px; }
+.lp-linhas li { font-size: .78rem; padding: 4px 10px; border-radius: 999px; background: rgb(255 255 255 / .16); color: #fff; }
+@media (min-width: 640px) { .lp-catalogos { grid-template-columns: repeat(3, 1fr); } }
+.marca-card { padding-top: 72px; }
+.marca-card::before { background: linear-gradient(180deg, rgb(30 38 32 / .2) 0%, rgb(30 38 32 / .55) 30%, rgb(30 38 32 / .9) 70%); }

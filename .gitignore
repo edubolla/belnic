@@ -6,3 +6,4 @@ _fonte/tmp/
 *.pdf
 # Cópia de trabalho das imagens extraídas (as usadas no site ficam em src/assets/img/produtos)
 _fonte/imagens/
+dist-lp/
