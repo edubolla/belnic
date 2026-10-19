@@ -239,7 +239,7 @@ ${medicaoHead()}
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css?v=${p.versao}">
 ${jsonld(grafo)}
 </head>
