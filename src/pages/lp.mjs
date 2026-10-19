@@ -2,7 +2,7 @@
 // Fica fora do sitemap e com noindex para não concorrer com a home do site completo.
 import { pagina, esc, icon, simbolo, btnWhats } from '../layout.mjs';
 import { site } from '../site.mjs';
-import { faqHtml, faqSchema, formParceiro } from '../componentes.mjs';
+import { faqHtml, faqSchema } from '../componentes.mjs';
 
 const catalogos = [
   ['Maison Visage', 'Finalizadores, tratamento e cuidados corporais', '/catalogos/catalogo-maison-visage.pdf'],
@@ -18,7 +18,7 @@ const faq = [
   ['Em quais cidades a Belnic atende?',
     `Atendemos Porto Alegre, Região Metropolitana, Vale do Sinos, Vale do Paranhana e Serra Gaúcha: ${site.cidades.length} cidades no total.`],
   ['Como faço para me tornar parceiro Belnic?',
-    'Preencha o cadastro desta página ou chame nossa equipe no WhatsApp. Um representante da sua região entra em contato para apresentar as linhas, condições e treinamentos.'],
+    'Chame nossa equipe pelo botão de WhatsApp desta página. Um representante da sua região entra em contato para apresentar as linhas, condições e treinamentos.'],
   ['Onde vejo os produtos e valores?',
     'Os produtos estão nos catálogos em PDF desta página. Valores e condições são passados pelo representante, de acordo com o perfil do seu negócio.'],
 ];
@@ -97,7 +97,7 @@ export default ({ dados, versao }) => {
     </div>
     <div class="grade grade--3">
       <article class="cartao revela"><div class="cartao__icone">${simbolo}</div><h3>Produtos</h3><p>Linhas completas para cabine e home care, com catálogo atualizado e reposição ágil na sua região.</p></article>
-      <article class="cartao revela"><div class="cartao__icone">${icon.arrow}</div><h3>Formação</h3><p>Imersões presenciais e treinamentos com educadores das marcas: terapia capilar, colorimetria, protocolos e vendas.</p></article>
+      <article class="cartao revela"><div class="cartao__icone">${icon.livro}</div><h3>Formação</h3><p>Imersões presenciais e treinamentos com educadores das marcas: terapia capilar, colorimetria, protocolos e vendas.</p></article>
       <article class="cartao revela"><div class="cartao__icone">${icon.whatsapp}</div><h3>Suporte</h3><p>Representantes na sua região e atendimento pelo WhatsApp para tirar dúvidas de uso, protocolo e pedido.</p></article>
     </div>
   </div>
@@ -172,7 +172,7 @@ export default ({ dados, versao }) => {
     <div class="revela">
       <span class="sobretitulo">Seja parceiro Belnic</span>
       <h2>Leve as marcas da Belnic para o seu negócio</h2>
-      <p class="lead">Conte um pouco sobre você. O representante da sua região entra em contato para apresentar as linhas, as condições e os treinamentos.</p>
+      <p class="lead">É só mandar uma mensagem no WhatsApp. O representante da sua região apresenta as linhas, as condições e os treinamentos.</p>
       <ul class="lista-check" style="margin-top:20px">
         <li>Produtos exclusivos para profissionais</li>
         <li>Formação com educadores das marcas</li>
@@ -180,8 +180,15 @@ export default ({ dados, versao }) => {
         <li>Combos exclusivos para clientes VIP</li>
       </ul>
     </div>
-    <div class="revela" style="margin-top:32px">
-      ${formParceiro()}
+    <div class="cartao revela lp-parceiro">
+      <h3>Como funciona</h3>
+      <ol class="lp-passos">
+        <li><strong>Chame a Belnic no WhatsApp</strong><span>A mensagem já vai pronta, é só enviar.</span></li>
+        <li><strong>Conte sobre o seu negócio</strong><span>Salão, clínica, barbearia ou atendimento autônomo, e a sua cidade.</span></li>
+        <li><strong>Receba o contato do representante</strong><span>Ele apresenta as linhas, as condições e os treinamentos.</span></li>
+      </ol>
+      ${btnWhats('Quero ser parceiro Belnic', 'Olá! Vim pelo site e quero ser parceiro(a) Belnic.')}
+      <p class="form__nota">Atendimento pelo WhatsApp ${site.whatsappExibicao}.</p>
     </div>
   </div>
 </section>
