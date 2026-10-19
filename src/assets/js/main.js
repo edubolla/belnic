@@ -118,26 +118,34 @@
   document.querySelectorAll('[data-filtrar]').forEach((f) => f.addEventListener('click', () => rastreia('filtro_produto', { filtro: f.dataset.filtrar })));
 
   // ── Green Week ───────────────────────────────────────────────────────────
-  // Contagem regressiva (data em site.mjs → greenweek.inicio)
+  // Contagem em duas fases: até o início (dia 5) e depois até o grande dia (dia 9).
   const contagem = document.querySelector('[data-contagem]');
-  const inicio = contagem && Date.parse(contagem.dataset.contagem);
-  if (inicio) {
+  if (contagem) {
+    const [inicio, grande, fim] = ['inicio', 'grandeDia', 'fim'].map((k) => Date.parse(contagem.dataset[k]));
+    const rotulo = contagem.querySelector('[data-rotulo-contagem]');
+    const numeros = contagem.querySelector('.gw-contagem__numeros');
     const pad = (n) => String(n).padStart(2, '0');
     const atualiza = () => {
-      const falta = Math.max(0, inicio - Date.now());
-      const s = Math.floor(falta / 1000);
-      contagem.querySelector('[data-dias]').textContent = Math.floor(s / 86400);
-      contagem.querySelector('[data-horas]').textContent = pad(Math.floor((s % 86400) / 3600));
-      contagem.querySelector('[data-min]').textContent = pad(Math.floor((s % 3600) / 60));
-      contagem.querySelector('[data-seg]').textContent = pad(s % 60);
-      if (!falta) contagem.querySelector('.gw-contagem__rotulo').textContent = 'A Green Week começou no Grupo VIP';
+      const agora = Date.now();
+      let alvo = null;
+      if (inicio && agora < inicio) { alvo = inicio; rotulo.textContent = 'A Green Week começa em'; }
+      else if (grande && agora < grande) { alvo = grande; rotulo.textContent = 'O grande dia de ofertas começa em'; }
+      else if (fim && agora <= fim) { rotulo.textContent = 'É hoje! As ofertas estão no Grupo VIP'; }
+      else { rotulo.textContent = 'A Green Week terminou. Cadastre-se para a próxima edição'; }
+      numeros.hidden = !alvo;
+      if (!alvo) return;
+      const s = Math.floor((alvo - agora) / 1000);
+      numeros.querySelector('[data-dias]').textContent = Math.floor(s / 86400);
+      numeros.querySelector('[data-horas]').textContent = pad(Math.floor((s % 86400) / 3600));
+      numeros.querySelector('[data-min]').textContent = pad(Math.floor((s % 3600) / 60));
+      numeros.querySelector('[data-seg]').textContent = pad(s % 60);
     };
     atualiza();
     setInterval(atualiza, 1000);
   }
 
-  // Cadastro do Grupo VIP: valida, envia para a planilha (Apps Script) e mostra a confirmação.
-  // Sem endpoint configurado, envia o cadastro pelo WhatsApp da Belnic.
+  // Cadastro do Grupo VIP: valida, envia ao webhook (n8n) e, só quando o envio dá certo,
+  // mostra a confirmação e dispara o evento de lead (generate_lead) no dataLayer.
   const gw = document.querySelector('[data-form-greenweek]');
   // Esconde a barra fixa do celular enquanto o formulário está na tela
   const barraCampanha = document.querySelector('.barra-movel--campanha');
@@ -149,10 +157,11 @@
     const erro = gw.querySelector('[data-erro]');
     const sucesso = document.querySelector('[data-sucesso]');
     const botaoEnviar = gw.querySelector('[type="submit"]');
-    const utm = Object.fromEntries(['utm_source', 'utm_medium', 'utm_campaign', 'utm_content']
-      .map((k) => [k, new URLSearchParams(location.search).get(k) || '']));
+    const rotuloBotao = botaoEnviar.querySelector('[data-rotulo]');
+    const params = new URLSearchParams(location.search);
+    const utm = Object.fromEntries(['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].map((k) => [k, params.get(k) || '']));
     let comecou = false;
-    gw.addEventListener('focusin', () => { if (!comecou) { comecou = true; rastreia('greenweek_inicio_cadastro'); } });
+    gw.addEventListener('focusin', () => { if (!comecou) { comecou = true; rastreia('greenweek_inicio_cadastro', { form_id: 'greenweek_grupo_vip' }); } });
 
     const zap = gw.querySelector('[name="whatsapp"]');
     zap.addEventListener('input', () => {
@@ -163,15 +172,18 @@
     const valida = (d) => {
       gw.querySelectorAll('[aria-invalid]').forEach((el) => el.removeAttribute('aria-invalid'));
       const falhas = [];
-      const marca = (nome, msg) => { gw.querySelector(`[name="${nome}"]`)?.setAttribute('aria-invalid', 'true'); falhas.push(msg); };
-      if ((d.nome || '').trim().length < 2) marca('nome', 'seu nome');
-      if ((d.whatsapp || '').replace(/\D/g, '').length < 10) marca('whatsapp', 'um WhatsApp com DDD');
-      if (!d.perfil) marca('perfil', 'o seu perfil');
-      if ((d.cidade || '').trim().length < 2) marca('cidade', 'a sua cidade');
-      if (!d.ja_cliente) falhas.push('se já compra com a Belnic');
-      if (!d.aceite) falhas.push('o aceite de contato');
+      const marca = (sel, msg) => { gw.querySelector(sel)?.setAttribute('aria-invalid', 'true'); falhas.push(msg); };
+      if ((d.nome || '').trim().length < 2) marca('[name="nome"]', 'seu nome');
+      const digitos = (d.whatsapp || '').replace(/\D/g, '');
+      if (digitos.length < 10 || digitos.length > 11) marca('[name="whatsapp"]', 'um WhatsApp com DDD');
+      if (!d.perfil) marca('[name="perfil"]', 'o seu perfil');
+      if ((d.cidade || '').trim().length < 2) marca('[name="cidade"]', 'a sua cidade');
+      if (!d.ja_cliente) marca('.gw-opcoes', 'se já compra com a Belnic');
+      if (!d.aceite) marca('.gw-aceite', 'o aceite de contato');
       return falhas;
     };
+    const prioridade = (d) => (d.ja_cliente === 'Sim' ? 'Alta' : /estudante|consumidor/i.test(d.perfil) ? 'Baixa' : 'Média');
+    const mostraErro = (html) => { erro.innerHTML = html; erro.hidden = false; };
 
     gw.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -179,38 +191,52 @@
       if (d.site_empresa) return; // robô
       const falhas = valida(d);
       if (falhas.length) {
-        erro.textContent = `Falta informar: ${falhas.join(', ')}.`;
-        erro.hidden = false;
-        gw.querySelector('[aria-invalid="true"]')?.focus();
+        mostraErro(`Falta informar: ${falhas.join(', ')}.`);
+        (gw.querySelector('input[aria-invalid], select[aria-invalid]') || gw.querySelector('[aria-invalid] input'))?.focus();
         return;
       }
       erro.hidden = true;
       botaoEnviar.disabled = true;
+      rotuloBotao.textContent = 'Enviando...';
+      const digitos = d.whatsapp.replace(/\D/g, '');
       const lead = {
-        nome: d.nome.trim(), whatsapp: d.whatsapp, perfil: d.perfil, cidade: d.cidade.trim(),
-        negocio: (d.negocio || '').trim(), instagram: (d.instagram || '').trim(), ja_cliente: d.ja_cliente,
-        pagina: location.href, ...utm,
+        nome: d.nome.trim(), whatsapp: d.whatsapp, whatsapp_e164: `+55${digitos}`, perfil: d.perfil,
+        cidade: d.cidade.trim(), negocio: (d.negocio || '').trim(), instagram: (d.instagram || '').trim(),
+        ja_cliente: d.ja_cliente, prioridade: prioridade(d), aceite_contato: 'sim',
+        origem: 'site_greenweek', pagina: location.origin + location.pathname, enviado_em: new Date().toISOString(), ...utm,
       };
+      const msgWhats = ['Olá! Quero entrar no Grupo VIP da Green Week.', `Nome: ${lead.nome}`, `Perfil: ${lead.perfil}`,
+        lead.negocio && `Negócio: ${lead.negocio}`, `Cidade: ${lead.cidade}`, lead.instagram && `Instagram: ${lead.instagram}`,
+        `Já sou cliente Belnic: ${lead.ja_cliente}`].filter(Boolean).join('\n');
+      const linkWhats = `https://wa.me/${gw.dataset.whatsapp}?text=${encodeURIComponent(msgWhats)}`;
       const endpoint = gw.dataset.endpoint;
+
       try {
         if (endpoint) {
-          // text/plain evita o preflight de CORS do Apps Script; a resposta não é lida (no-cors).
-          await fetch(endpoint, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(lead) });
+          // Formulário urlencoded = requisição "simples" (sem preflight de CORS). O n8n precisa
+          // responder com Access-Control-Allow-Origin para o site ler a resposta (veja GREENWEEK.md).
+          const ctrl = new AbortController();
+          const tempo = setTimeout(() => ctrl.abort(), 15000);
+          const resp = await fetch(endpoint, { method: 'POST', body: new URLSearchParams(lead), signal: ctrl.signal });
+          clearTimeout(tempo);
+          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         } else {
-          const msg = ['Olá! Quero entrar no Grupo VIP da Green Week.', `Nome: ${lead.nome}`, `Perfil: ${lead.perfil}`,
-            lead.negocio && `Negócio: ${lead.negocio}`, `Cidade: ${lead.cidade}`, lead.instagram && `Instagram: ${lead.instagram}`,
-            `Já sou cliente Belnic: ${lead.ja_cliente}`].filter(Boolean).join('\n');
-          window.open(`https://wa.me/${gw.dataset.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+          window.open(linkWhats, '_blank', 'noopener');
         }
-        rastreia('greenweek_cadastro', { perfil: lead.perfil, ja_cliente: lead.ja_cliente, cidade: lead.cidade });
+        // Lead enviado com sucesso: evento recomendado do GA4 para conversões de formulário
+        rastreia('generate_lead', {
+          form_id: 'greenweek_grupo_vip', lead_source: 'greenweek', perfil: lead.perfil,
+          ja_cliente: lead.ja_cliente, prioridade: lead.prioridade, cidade: lead.cidade,
+        });
         window.fbq?.('track', 'Lead');
         gw.hidden = true;
         sucesso.hidden = false;
         sucesso.focus();
-      } catch {
-        erro.textContent = 'Não conseguimos enviar agora. Tente de novo em instantes ou chame a Belnic no WhatsApp.';
-        erro.hidden = false;
+      } catch (falha) {
+        rastreia('greenweek_erro_envio', { form_id: 'greenweek_grupo_vip', erro: String(falha.message || falha).slice(0, 80) });
+        mostraErro(`Não conseguimos enviar seu cadastro agora. Tente de novo em instantes ou <a href="${linkWhats}" target="_blank" rel="noopener">envie pelo WhatsApp</a>.`);
         botaoEnviar.disabled = false;
+        rotuloBotao.textContent = 'Quero meu acesso VIP';
       }
     });
   }

@@ -33,11 +33,14 @@ export const site = {
   bingVerificacao: '', // conteúdo da meta tag do Bing Webmaster Tools
   // Green Week (página /greenweek/)
   greenweek: {
-    // Início da Green Week, para a contagem regressiva. Vazio = mostra "data em breve".
-    inicio: '', // ex.: '2026-11-23T09:00:00-03:00'
-    // URL do Web App do Google Apps Script que grava os cadastros na planilha (veja GREENWEEK.md).
-    // Vazio = o cadastro é enviado pelo WhatsApp da Belnic (útil em prévias).
-    endpoint: '',
+    // Datas (horário de Brasília). A contagem vai até o início e, depois, até o grande dia.
+    inicio: '2026-11-05T00:00:00-03:00',
+    grandeDia: '2026-11-09T00:00:00-03:00',
+    fim: '2026-11-09T23:59:59-03:00',
+    datasTexto: 'de 5 a 9 de novembro',
+    grandeDiaTexto: '9 de novembro',
+    // Webhook (n8n) que recebe os cadastros. Vazio = o cadastro segue pelo WhatsApp da Belnic.
+    endpoint: 'https://n8n.metingertech.com.br/webhook/56d079a9-30e2-4fbf-9ecd-8d3906b471f1',
   },
   mapaUrl: 'https://www.google.com/maps/d/viewer?mid=1pcLneDbtBDrdGUFPIpXJ9lNRbPDYYBI',
 };

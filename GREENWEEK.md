@@ -1,48 +1,70 @@
 # Green Week — página /greenweek/
 
-Página de captação para o Grupo VIP da Green Week (a "Black Friday" da Belnic). O formulário é curto e já filtra o perfil do lead. Os cadastros caem numa planilha do Google, onde a equipe Belnic faz a triagem antes de mandar o convite do grupo.
+Página de captação para o Grupo VIP da Green Week (a "Black Friday" da Belnic): **de 5 a 9 de novembro**, com o **grande dia de ofertas em 9 de novembro**. O formulário é curto e já filtra o perfil do lead. Os cadastros vão para um **webhook do n8n**, que entrega para a equipe Belnic fazer a triagem antes de mandar o convite do grupo.
 
-## Como funciona
+## Configurações (`src/site.mjs` → `greenweek`)
 
-1. A pessoa preenche nome, WhatsApp, perfil (salão, clínica, estúdio, barbearia, autônomo, terapeuta capilar, estudante ou consumidor final), cidade, nome do negócio, Instagram profissional e se já compra com a Belnic.
-2. O cadastro vai para a planilha com uma **prioridade sugerida**:
-   - **Alta:** já é cliente Belnic
-   - **Média:** profissional que ainda não compra
-   - **Baixa:** estudante ou consumidor(a) final
-3. Se o mesmo WhatsApp se cadastrar de novo, a linha entra com status **Duplicado**.
-4. A equipe confere o perfil (o Instagram ajuda muito), muda o **Status** para *Aprovado* ou *Recusado* e, depois de mandar o convite do grupo pelo WhatsApp, marca *Convite enviado*.
-5. O link do grupo **não aparece na página**. Ele só é enviado pela equipe, depois da triagem.
+| Campo | Para que serve |
+|---|---|
+| `inicio`, `grandeDia`, `fim` | Datas da contagem regressiva (horário de Brasília). Até o dia 5, a contagem é para o início; do dia 5 ao 9, para o grande dia; no dia 9, mostra "É hoje!". |
+| `datasTexto`, `grandeDiaTexto` | Como as datas aparecem nos textos da página. |
+| `endpoint` | URL do webhook do n8n. Vazio = o cadastro segue pelo WhatsApp da Belnic. |
 
-## Configurar a planilha (uma vez, ~10 minutos)
+Depois de mudar, rode `node build.mjs` e publique.
 
-1. Crie uma planilha no Google Sheets, com a conta da Belnic, chamada por exemplo **Green Week — Cadastros**.
-2. Abra **Extensões → Apps Script**, apague o conteúdo e cole o arquivo [docs/greenweek-apps-script.gs](docs/greenweek-apps-script.gs).
-   - Opcional: em `EMAIL_AVISO`, coloque um e-mail para receber um aviso a cada cadastro.
-3. Clique em **Implantar → Nova implantação → tipo App da Web**:
-   - Executar como: **Eu**
-   - Quem pode acessar: **Qualquer pessoa**
-4. Autorize o acesso quando o Google pedir e copie a **URL do app da Web** (termina em `/exec`).
-5. Cole essa URL em `greenweek.endpoint`, no arquivo `src/site.mjs`, rode `node build.mjs` e publique.
+## O que o webhook recebe
 
-A aba **Cadastros** é criada sozinha no primeiro envio. Para testar, faça um cadastro na página e confira se a linha apareceu.
+`POST` com corpo `application/x-www-form-urlencoded`. No n8n, os campos chegam em `{{$json.body.<campo>}}`:
 
-Enquanto `endpoint` estiver vazio (como na prévia da Vercel), o formulário abre o WhatsApp da Belnic com os dados já preenchidos, para nenhum cadastro se perder.
+| Campo | Exemplo | Observação |
+|---|---|---|
+| `nome` | Ana Souza | |
+| `whatsapp` | (51) 99988-7766 | como digitado, com máscara |
+| `whatsapp_e164` | +5551999887766 | pronto para integrações de WhatsApp |
+| `perfil` | Salão de beleza | salão, clínica, estúdio, barbearia, autônomo(a), terapeuta capilar, estudante, consumidor(a) final |
+| `cidade` | Novo Hamburgo | |
+| `negocio` | Studio Ana | opcional |
+| `instagram` | @studioana | opcional, ajuda muito na triagem |
+| `ja_cliente` | Sim / Ainda não | |
+| `prioridade` | Alta / Média / Baixa | sugestão: Alta = já é cliente; Baixa = estudante ou consumidor final; Média = demais profissionais |
+| `aceite_contato` | sim | consentimento LGPD |
+| `origem` | site_greenweek | |
+| `pagina` | https://belniccosmeticos.com/greenweek/ | |
+| `enviado_em` | 2026-10-20T14:03:00.000Z | data/hora do envio (UTC) |
+| `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term` | instagram, social, greenweek | vazios se o link não tiver UTM |
 
-## Data e contagem regressiva
+Campos protegidos: há um campo invisível anti-robô. Se ele vier preenchido, o site nem envia.
 
-Preencha `greenweek.inicio` em `src/site.mjs` com a data e a hora de início, por exemplo `'2026-11-23T09:00:00-03:00'`. A página passa a mostrar a contagem regressiva. Vazio, ela mostra "Data anunciada primeiro no Grupo VIP".
+## Configuração necessária no n8n (importante)
 
-## Divulgação e medição
+Quando testei sem enviar dados, o webhook respondeu só a `OPTIONS, GET` e com erro 500. Para o formulário funcionar:
 
-- Use links com UTM para saber de onde vêm os cadastros. Eles vão para as colunas de origem da planilha. Exemplos:
-  - Instagram (bio/stories): `https://belniccosmeticos.com/greenweek/?utm_source=instagram&utm_medium=social&utm_campaign=greenweek`
-  - Representantes no WhatsApp: `...?utm_source=whatsapp&utm_medium=representante&utm_campaign=greenweek`
-- Eventos enviados ao dataLayer/GA4 (veja [MEDICAO.md](MEDICAO.md)):
-  - `greenweek_inicio_cadastro`: a pessoa começou a preencher
-  - `greenweek_cadastro` (parâmetros `perfil`, `ja_cliente`, `cidade`): cadastro enviado. Marque como **evento principal** no GA4.
-- Com o Meta Pixel instalado pelo GTM, o envio também dispara `Lead`.
-- As URLs antigas `/green-friday/`, `/green-friday-2023/`, `/24-com-24-off/` e `/promocoes-vip/` redirecionam para `/greenweek/`.
+1. No nó **Webhook**, mude **HTTP Method** para **POST**.
+2. Em **Options → Allowed Origins (CORS)**, coloque `https://belniccosmeticos.com,https://belnic.vercel.app`, ou `*`. Sem isso, o navegador bloqueia a leitura da resposta e a página mostra erro, mesmo com o dado tendo chegado.
+3. Em **Respond**, use **Immediately**, ou um nó *Respond to Webhook* com status **200**. A página só confirma o cadastro, e só dispara o evento de lead, quando recebe resposta 2xx.
+4. **Ative** o workflow e use a URL de **produção** (`/webhook/…`, não `/webhook-test/…`).
+
+Se o envio falhar (erro, n8n fora do ar, mais de 15 segundos sem resposta), a página mostra uma mensagem com um link para mandar o cadastro pelo WhatsApp da Belnic, e nada se perde.
+
+## Medição (dataLayer / GA4)
+
+| Evento | Quando |
+|---|---|
+| `greenweek_inicio_cadastro` | a pessoa começou a preencher |
+| `generate_lead` | cadastro **enviado com sucesso** (resposta 2xx do webhook). Parâmetros: `form_id` = `greenweek_grupo_vip`, `lead_source` = `greenweek`, `perfil`, `ja_cliente`, `prioridade`, `cidade` |
+| `greenweek_erro_envio` | o envio falhou (parâmetro `erro`) |
+
+No GA4, marque `generate_lead` como **evento principal** (conversão). Com o Meta Pixel instalado pelo GTM, o sucesso também dispara `fbq('track', 'Lead')`. Veja [MEDICAO.md](MEDICAO.md).
+
+## Divulgação
+
+Use links com UTM para saber de onde vêm os cadastros:
+
+- Instagram: `https://belniccosmeticos.com/greenweek/?utm_source=instagram&utm_medium=social&utm_campaign=greenweek`
+- Representantes no WhatsApp: `...?utm_source=whatsapp&utm_medium=representante&utm_campaign=greenweek`
+
+As URLs antigas `/green-friday/`, `/green-friday-2023/`, `/24-com-24-off/` e `/promocoes-vip/` redirecionam para `/greenweek/` (na Hostinger).
 
 ## Dados pessoais (LGPD)
 
-O formulário tem aceite obrigatório e link para a política de privacidade. A planilha deve ficar compartilhada só com quem faz a triagem. Para atender um pedido de exclusão, basta apagar a linha.
+O formulário tem aceite obrigatório e link para a política de privacidade. Os dados devem ficar acessíveis só para quem faz a triagem. Pedidos de exclusão chegam pelo e-mail informado na política.

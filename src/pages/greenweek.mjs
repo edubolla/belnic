@@ -1,7 +1,8 @@
 // /greenweek/ — captação para o Grupo VIP da Green Week (a "Black Friday" da Belnic).
-// Página de campanha: sem menu, um único chamado (entrar no Grupo VIP) e formulário curto
-// que já filtra o perfil do lead para a equipe fazer a triagem (veja GREENWEEK.md).
-import { pagina, esc, icon, simbolo } from '../layout.mjs';
+// Página de campanha: sem menu nem barra no topo, um único chamado (entrar no Grupo VIP) e
+// formulário curto que já filtra o perfil do lead. Os cadastros vão para o webhook (n8n)
+// configurado em site.mjs → greenweek.endpoint (veja GREENWEEK.md).
+import { pagina, esc, icon, simbolo, logoHorizontal } from '../layout.mjs';
 import { site } from '../site.mjs';
 import { faqHtml, faqSchema } from '../componentes.mjs';
 
@@ -10,26 +11,35 @@ const perfis = [
   'Profissional autônomo(a)', 'Terapeuta capilar', 'Estudante da área', 'Sou consumidor(a) final',
 ];
 
-const faq = [
-  ['Quem pode participar da Green Week?',
-    'Profissionais da beleza: salões, clínicas de estética, estúdios, barbearias, terapeutas capilares e profissionais autônomos. Cada cadastro é conferido pela equipe Belnic antes de entrar no Grupo VIP.'],
-  ['Quanto custa para entrar no Grupo VIP?',
-    'Nada. O cadastro e o grupo são gratuitos. Você só paga pelo que decidir comprar na Green Week.'],
-  ['Preciso já ser cliente Belnic?',
-    'Não. Profissionais que ainda não compram com a Belnic também podem se cadastrar. A equipe confere o perfil e, se estiver tudo certo, envia o convite.'],
-  ['Sou cliente final. Posso participar?',
-    'A Green Week é exclusiva para profissionais. Se você é cliente final, chame a Belnic no WhatsApp e indicamos um salão parceiro perto de você.'],
-  ['Como recebo as ofertas?',
-    'Pelo Grupo VIP no WhatsApp. É lá que as condições da Green Week são liberadas, antes de qualquer outro canal.'],
-  ['Quando acontece a Green Week?',
-    'A data é anunciada primeiro no Grupo VIP. Quem já está no grupo recebe o aviso antes e se organiza com antecedência.'],
-  ['O que a Belnic faz com os meus dados?',
-    'Usa apenas para conferir o seu perfil profissional e falar com você sobre a Green Week e as condições da Belnic. Você pode pedir a exclusão a qualquer momento pelo e-mail ' + site.email + '.'],
-];
+const icones = {
+  salao: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M7.8 16.2 18 4M16.2 16.2 6 4"/></svg>',
+  clinica: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3c3 3.5 5 6.4 5 9a5 5 0 0 1-10 0c0-2.6 2-5.5 5-9Z"/><path d="M10 13.5a2 2 0 0 0 2 2"/></svg>',
+  barbearia: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="8" y="3" width="8" height="18" rx="4"/><path d="M8 8l8 3M8 13l8 3"/></svg>',
+  autonomo: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg>',
+};
 
 export default ({ versao }) => {
   const caminho = '/greenweek/';
   const gw = site.greenweek || {};
+  const ano = gw.inicio ? new Date(gw.inicio).getFullYear() : '';
+
+  const faq = [
+    ['Quando acontece a Green Week?',
+      `A Green Week ${ano} acontece ${gw.datasTexto} e o grande dia de ofertas é ${gw.grandeDiaTexto}. As condições são liberadas no Grupo VIP do WhatsApp.`],
+    ['Quem pode participar da Green Week?',
+      'Profissionais da beleza: salões, clínicas de estética, estúdios, barbearias, terapeutas capilares e profissionais autônomos. Cada cadastro é conferido pela equipe Belnic antes de entrar no Grupo VIP.'],
+    ['É preciso pagar para entrar no Grupo VIP?',
+      'Não. Entrar no Grupo VIP é gratuito. O pagamento só acontece se você fizer uma compra durante a Green Week.'],
+    ['Preciso já ser cliente Belnic?',
+      'Não. Profissionais que ainda não compram com a Belnic também podem se cadastrar. A equipe confere o perfil e, se estiver tudo certo, envia o convite.'],
+    ['Sou cliente final. Posso participar?',
+      'A Green Week é exclusiva para profissionais. Se você é cliente final, chame a Belnic no WhatsApp e indicamos um salão parceiro perto de você.'],
+    ['Como recebo as ofertas?',
+      'Pelo Grupo VIP no WhatsApp. É lá que as condições da Green Week são liberadas, antes de qualquer outro canal.'],
+    ['O que a Belnic faz com os meus dados?',
+      `Usa apenas para conferir o seu perfil profissional e falar com você sobre a Green Week e as condições da Belnic. Você pode pedir a exclusão a qualquer momento pelo e-mail ${site.email}.`],
+  ];
+
   const campo = (id, rotulo, html, cheio = false) =>
     `<div class="campo${cheio ? ' campo--cheio' : ''}"><label for="gw-${id}">${rotulo}</label>${html}</div>`;
 
@@ -41,15 +51,17 @@ export default ({ versao }) => {
   ${campo('cidade', 'Cidade *', `<input id="gw-cidade" name="cidade" type="text" required list="gw-cidades" autocomplete="address-level2" maxlength="60"><datalist id="gw-cidades">${site.cidades.map((c) => `<option value="${esc(c)}">`).join('')}</datalist>`)}
   ${campo('negocio', 'Nome do salão, clínica ou estúdio', '<input id="gw-negocio" name="negocio" type="text" autocomplete="organization" maxlength="80">')}
   ${campo('instagram', 'Instagram profissional', '<input id="gw-instagram" name="instagram" type="text" placeholder="@seuperfil" maxlength="60" autocapitalize="off">')}
-  <fieldset class="campo campo--cheio gw-opcoes">
+  <fieldset class="campo--cheio gw-opcoes">
     <legend>Você já compra com a Belnic? *</legend>
-    <label><input type="radio" name="ja_cliente" value="Sim" required> Sim, já sou cliente</label>
-    <label><input type="radio" name="ja_cliente" value="Ainda não"> Ainda não</label>
+    <div class="gw-opcoes__grupo">
+      <label class="gw-opcao"><input type="radio" name="ja_cliente" value="Sim" required><span>Sim, já sou cliente</span></label>
+      <label class="gw-opcao"><input type="radio" name="ja_cliente" value="Ainda não"><span>Ainda não</span></label>
+    </div>
   </fieldset>
   <div class="gw-armadilha" aria-hidden="true"><label>Não preencha<input type="text" name="site_empresa" tabindex="-1" autocomplete="off"></label></div>
-  <label class="campo--cheio gw-aceite"><input type="checkbox" name="aceite" value="sim" required> Aceito receber o contato da Belnic pelo WhatsApp sobre a Green Week. Li a <a href="/politicas-de-privacidade/" target="_blank">política de privacidade</a>.</label>
-  <p class="gw-erro campo--cheio" data-erro hidden role="alert"></p>
-  <div class="campo--cheio"><button class="btn btn--primario gw-enviar" type="submit">Quero meu acesso VIP ${icon.arrow}</button></div>
+  <label class="campo--cheio gw-aceite"><input type="checkbox" name="aceite" value="sim" required><span>Aceito receber o contato da Belnic pelo WhatsApp sobre a Green Week. Li a <a href="/politicas-de-privacidade/" target="_blank">política de privacidade</a>.</span></label>
+  <div class="gw-erro campo--cheio" data-erro hidden role="alert"></div>
+  <div class="campo--cheio"><button class="btn btn--primario gw-enviar" type="submit"><span data-rotulo>Quero meu acesso VIP</span> ${icon.arrow}</button></div>
   <p class="form__nota campo--cheio">Leva menos de 1 minuto. Seus dados são usados só para validar o seu perfil e falar com você sobre a Green Week.</p>
 </form>
 <div class="gw-sucesso" data-sucesso hidden tabindex="-1">
@@ -62,14 +74,21 @@ export default ({ versao }) => {
   const corpo = `
 <section class="gw-hero">
   <span class="gw-hero__folha" aria-hidden="true">${simbolo}</span>
+  <div class="container">
+    <a class="gw-hero__logo" href="/" aria-label="Belnic Cosméticos — início">${logoHorizontal}</a>
+  </div>
   <div class="container gw-hero__grade">
     <div>
       <span class="gw-selo">Acesso exclusivo · Grupo VIP no WhatsApp</span>
       <h1>Green Week Belnic: <em>a semana mais esperada do ano</em> para quem vive de beleza</h1>
-      <p class="gw-lead">Condições que não se repetem no resto do ano em <strong>Mirra Professional</strong> e <strong>Maison Visage</strong>. Liberadas só para profissionais do Grupo VIP. Quem não está no grupo, não fica sabendo.</p>
-      <div class="gw-contagem" data-contagem="${esc(gw.inicio || '')}">
-        <p class="gw-contagem__rotulo">${gw.inicio ? 'Começa em' : 'Data anunciada primeiro no Grupo VIP'}</p>
-        ${gw.inicio ? `<div class="gw-contagem__numeros" aria-live="polite">${['dias', 'horas', 'min', 'seg'].map((u) => `<span><b data-${u}>--</b><small>${u}</small></span>`).join('')}</div>` : ''}
+      <p class="gw-lead">${esc(gw.datasTexto ? gw.datasTexto.charAt(0).toUpperCase() + gw.datasTexto.slice(1) : '')}, condições que não se repetem no resto do ano em <strong>Mirra Professional</strong> e <strong>Maison Visage</strong>. Liberadas só para profissionais do Grupo VIP. Quem não está no grupo, não fica sabendo.</p>
+      <div class="gw-datas">
+        <span><small>Green Week</small><b>${esc(gw.datasTexto?.replace(/^de /, '') || '')}</b></span>
+        <span class="gw-datas__destaque"><small>Grande dia de ofertas</small><b>${esc(gw.grandeDiaTexto || '')}</b></span>
+      </div>
+      <div class="gw-contagem" data-contagem data-inicio="${esc(gw.inicio || '')}" data-grande-dia="${esc(gw.grandeDia || '')}" data-fim="${esc(gw.fim || '')}">
+        <p class="gw-contagem__rotulo" data-rotulo-contagem>A Green Week começa em</p>
+        <div class="gw-contagem__numeros" aria-live="polite">${['dias', 'horas', 'min', 'seg'].map((u) => `<span><b data-${u}>--</b><small>${u}</small></span>`).join('')}</div>
       </div>
       <a class="btn btn--claro gw-cta" href="#cadastro">Quero entrar no Grupo VIP ${icon.arrow}</a>
       <p class="gw-micro">Gratuito · Só para profissionais da beleza · Cada cadastro é validado pela equipe Belnic</p>
@@ -82,41 +101,34 @@ export default ({ versao }) => {
 
 <section class="secao secao--branca">
   <div class="container">
-    <div class="gw-destaque revela">
-      <span class="gw-destaque__numero">1 dia</span>
-      <p>Em um único dia de Green Week, a procura dos profissionais supera a de <strong>um mês inteiro</strong>. Quem está no grupo se prepara antes e garante primeiro.</p>
-    </div>
-    <div class="cabeca revela" style="margin-top:48px">
+    <div class="cabeca revela">
       <span class="sobretitulo">O que você ganha no Grupo VIP</span>
       <h2>Vantagens que só quem está dentro recebe</h2>
     </div>
     <div class="grade grade--2 grade--4">
-      <article class="cartao revela"><span class="numero">01</span><h3>Aviso antes de todo mundo</h3><p>A data, as linhas participantes e as condições chegam primeiro no grupo.</p></article>
+      <article class="cartao revela"><span class="numero">01</span><h3>Aviso antes de todo mundo</h3><p>As linhas participantes e as condições chegam primeiro no grupo.</p></article>
       <article class="cartao revela"><span class="numero">02</span><h3>Condições exclusivas</h3><p>Ofertas em Mirra Professional e Maison Visage que não aparecem no resto do ano.</p></article>
       <article class="cartao revela"><span class="numero">03</span><h3>Combos para o seu salão</h3><p>Kits pensados para cabine e para revenda de home care aos seus clientes.</p></article>
-      <article class="cartao revela"><span class="numero">04</span><h3>Quem chega primeiro, garante</h3><p>Com a procura de um mês concentrada em um dia, sair na frente faz diferença.</p></article>
+      <article class="cartao revela"><span class="numero">04</span><h3>Quem chega primeiro, garante</h3><p>No grande dia, ${esc(gw.grandeDiaTexto || '')}, sair na frente faz diferença.</p></article>
     </div>
   </div>
 </section>
 
-<section class="secao">
-  <div class="container dividido">
-    <div class="revela">
-      <span class="sobretitulo">Não é para todo mundo</span>
-      <h2>A Green Week é exclusiva para profissionais da beleza</h2>
-      <p class="lead">Por isso, cada cadastro passa pela equipe Belnic antes de entrar no grupo. Assim o Grupo VIP continua sendo de quem trabalha com beleza.</p>
-    </div>
-    <div class="gw-para revela">
-      <div>
-        <h3>É para você se trabalha em</h3>
-        <ul class="lista-check">
-          <li>Salão de beleza ou estúdio</li>
-          <li>Clínica de estética ou terapia capilar</li>
-          <li>Barbearia</li>
-          <li>Atendimento autônomo na área da beleza</li>
-        </ul>
+<section class="secao gw-exclusivo">
+  <div class="container">
+    <div class="gw-exclusivo__painel revela">
+      <div class="gw-exclusivo__texto">
+        <span class="gw-selo gw-selo--escuro">Somente profissionais</span>
+        <h2>A Green Week é exclusiva para quem trabalha com beleza</h2>
+        <p>Não é aberta ao público e não tem anúncio. Cada cadastro passa pela equipe Belnic antes de entrar no grupo, para que as condições cheguem a quem realmente vive de beleza.</p>
       </div>
-      <p class="gw-para__nao">É cliente final? A Green Week não é para você, mas a Belnic indica um salão parceiro perto de você pelo <a href="https://wa.me/${site.whatsapp}?text=${encodeURIComponent('Olá! Sou cliente final e gostaria da indicação de um salão parceiro.')}" target="_blank" rel="noopener" data-evento="whatsapp">WhatsApp</a>.</p>
+      <ul class="gw-exclusivo__perfis">
+        <li>${icones.salao}<span>Salões e estúdios de beleza</span></li>
+        <li>${icones.clinica}<span>Clínicas de estética e terapia capilar</span></li>
+        <li>${icones.barbearia}<span>Barbearias</span></li>
+        <li>${icones.autonomo}<span>Profissionais autônomos da beleza</span></li>
+      </ul>
+      <p class="gw-exclusivo__nao"><strong>É cliente final?</strong> A Green Week não é para você, mas a Belnic indica um salão parceiro perto de você pelo <a href="https://wa.me/${site.whatsapp}?text=${encodeURIComponent('Olá! Sou cliente final e gostaria da indicação de um salão parceiro.')}" target="_blank" rel="noopener" data-evento="whatsapp">WhatsApp</a>.</p>
     </div>
   </div>
 </section>
@@ -140,7 +152,7 @@ export default ({ versao }) => {
     <div class="revela">
       <span class="sobretitulo">Cadastro Grupo VIP</span>
       <h2>Garanta seu lugar na Green Week</h2>
-      <p class="lead">Preencha os dados abaixo. Se o seu perfil for aprovado, o convite do Grupo VIP chega no seu WhatsApp.</p>
+      <p class="lead">Preencha os dados ao lado. Se o seu perfil for aprovado, o convite do Grupo VIP chega no seu WhatsApp antes de a Green Week começar.</p>
       <ul class="gw-marcas">
         <li>Mirra Professional</li><li>Maison Visage</li><li>Spa Therapy</li><li>Elements</li><li>BioRestore</li><li>Trend Colors</li><li>Luxury</li><li>Touch Finishers</li>
       </ul>
@@ -160,17 +172,27 @@ export default ({ versao }) => {
   return {
     caminho,
     html: pagina({
-      titulo: 'Green Week Belnic | Grupo VIP para profissionais da beleza',
-      descricao: 'Green Week Belnic: condições exclusivas em Mirra Professional e Maison Visage, só para profissionais do Grupo VIP. Cadastre-se e garanta seu acesso.',
+      titulo: `Green Week Belnic ${ano} | Grupo VIP para profissionais`,
+      descricao: `Green Week Belnic ${gw.datasTexto} de ${ano}: condições exclusivas em Mirra Professional e Maison Visage só para profissionais do Grupo VIP.`,
       caminho,
       corpo,
       versao,
+      classeBody: 'pagina-gw',
       imagem: '/assets/img/produtos/mirra/ambiente-3.webp',
-      campanha: { cta: 'Quero entrar no Grupo VIP', ctaCurto: 'Entrar no VIP', alvo: '#cadastro' },
+      campanha: { cta: 'Quero entrar no Grupo VIP', alvo: '#cadastro', semTopo: true },
       schema: [
         {
           '@type': 'WebPage', '@id': `${site.url}${caminho}#pagina`, url: `${site.url}${caminho}`,
-          name: 'Green Week Belnic', inLanguage: 'pt-BR', about: { '@id': `${site.url}/#organizacao` },
+          name: `Green Week Belnic ${ano}`, inLanguage: 'pt-BR', about: { '@id': `${site.url}/#organizacao` },
+        },
+        {
+          '@type': 'SaleEvent', name: `Green Week Belnic ${ano}`,
+          description: 'Condições exclusivas em Mirra Professional e Maison Visage para profissionais da beleza do Grupo VIP Belnic.',
+          startDate: gw.inicio, endDate: gw.fim, eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+          eventStatus: 'https://schema.org/EventScheduled',
+          location: { '@type': 'VirtualLocation', url: `${site.url}${caminho}` },
+          organizer: { '@id': `${site.url}/#organizacao` },
+          image: `${site.url}/assets/img/produtos/mirra/ambiente-3.webp`,
         },
         faqSchema(faq),
       ],

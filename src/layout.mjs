@@ -213,6 +213,8 @@ function footerLP() {
 // Páginas de campanha (ex.: /greenweek/): topo e rodapé enxutos, sem menu, com um único chamado.
 // c = { cta: 'texto do botão', alvo: '#cadastro' }
 function headerCampanha(c) {
+  // Sem barra no topo: o logo fica dentro do hero da campanha.
+  if (c.semTopo) return '<a class="pular" href="#conteudo">Pular para o conteúdo</a>';
   return `
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="topo topo--campanha" data-topo>
@@ -269,7 +271,7 @@ ${medicaoHead()}
 <link rel="stylesheet" href="/assets/css/style.css?v=${p.versao}">
 ${jsonld(grafo)}
 </head>
-<body>
+<body${p.classeBody ? ` class="${p.classeBody}"` : ''}>
 ${site.gtm ? `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${site.gtm}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n` : ''}${p.campanha ? headerCampanha(p.campanha) : header(p.caminho, p.lp || modo === 'landing')}
 <main id="conteudo">
 ${p.corpo}
