@@ -79,25 +79,29 @@ export default ({ versao }) => {
   </div>
   <div class="container gw-hero__grade">
     <div>
-      <span class="gw-selo">Acesso exclusivo · Grupo VIP no WhatsApp</span>
-      <h1>Green Week Belnic: <em>a semana mais esperada do ano</em> para quem vive de beleza</h1>
-      <p class="gw-lead">${esc(gw.datasTexto ? gw.datasTexto.charAt(0).toUpperCase() + gw.datasTexto.slice(1) : '')}, condições que não se repetem no resto do ano em <strong>Mirra Professional</strong> e <strong>Maison Visage</strong>. Liberadas só para profissionais do Grupo VIP. Quem não está no grupo, não fica sabendo.</p>
-      <div class="gw-datas">
+      <span class="gw-selo gw-entra" style="--d:0">Acesso exclusivo · Grupo VIP no WhatsApp</span>
+      <h1 class="gw-entra" style="--d:1">Green Week Belnic: <em>a semana mais esperada do ano</em> para quem vive de beleza</h1>
+      <p class="gw-lead gw-entra" style="--d:2">${esc(gw.datasTexto ? gw.datasTexto.charAt(0).toUpperCase() + gw.datasTexto.slice(1) : '')}, condições que não se repetem no resto do ano em <strong>Mirra Professional</strong> e <strong>Maison Visage</strong>. Liberadas só para profissionais do Grupo VIP. Quem não está no grupo, não fica sabendo.</p>
+      <div class="gw-datas gw-entra" style="--d:3">
         <span><small>Green Week</small><b>${esc(gw.datasTexto?.replace(/^de /, '') || '')}</b></span>
         <span class="gw-datas__destaque"><small>Grande dia de ofertas</small><b>${esc(gw.grandeDiaTexto || '')}</b></span>
       </div>
-      <div class="gw-contagem" data-contagem data-inicio="${esc(gw.inicio || '')}" data-grande-dia="${esc(gw.grandeDia || '')}" data-fim="${esc(gw.fim || '')}">
+      <div class="gw-contagem gw-entra" style="--d:4" data-contagem data-inicio="${esc(gw.inicio || '')}" data-grande-dia="${esc(gw.grandeDia || '')}" data-fim="${esc(gw.fim || '')}">
         <p class="gw-contagem__rotulo" data-rotulo-contagem>A Green Week começa em</p>
         <div class="gw-contagem__numeros" aria-live="polite">${['dias', 'horas', 'min', 'seg'].map((u) => `<span><b data-${u}>--</b><small>${u}</small></span>`).join('')}</div>
       </div>
-      <a class="btn btn--claro gw-cta" href="#cadastro">Quero entrar no Grupo VIP ${icon.arrow}</a>
-      <p class="gw-micro">Gratuito · Só para profissionais da beleza · Cada cadastro é validado pela equipe Belnic</p>
+      <a class="btn btn--claro gw-cta gw-entra" style="--d:5" href="#cadastro">Quero entrar no Grupo VIP ${icon.arrow}</a>
+      <p class="gw-micro gw-entra" style="--d:6">Gratuito · Só para profissionais da beleza · Cada cadastro é validado pela equipe Belnic</p>
     </div>
-    <div class="gw-hero__visual">
+    <div class="gw-hero__visual gw-entra-img">
       <img src="/assets/img/produtos/mirra/ambiente-3.webp" alt="Profissional com cabelo tratado com Mirra Professional" width="1134" height="1365" fetchpriority="high">
     </div>
   </div>
 </section>
+
+<div class="gw-letreiro" aria-hidden="true">
+  <div class="gw-letreiro__trilho"><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Hombre</span><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Hombre</span></div>
+</div>
 
 <section class="secao secao--branca">
   <div class="container">

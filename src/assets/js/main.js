@@ -135,10 +135,14 @@
       numeros.hidden = !alvo;
       if (!alvo) return;
       const s = Math.floor((alvo - agora) / 1000);
-      numeros.querySelector('[data-dias]').textContent = Math.floor(s / 86400);
-      numeros.querySelector('[data-horas]').textContent = pad(Math.floor((s % 86400) / 3600));
-      numeros.querySelector('[data-min]').textContent = pad(Math.floor((s % 3600) / 60));
-      numeros.querySelector('[data-seg]').textContent = pad(s % 60);
+      // Atualiza cada número e dá um "tique" animado só nos que mudaram
+      [['dias', Math.floor(s / 86400)], ['horas', pad(Math.floor((s % 86400) / 3600))],
+        ['min', pad(Math.floor((s % 3600) / 60))], ['seg', pad(s % 60)]].forEach(([k, v]) => {
+        const el = numeros.querySelector(`[data-${k}]`);
+        if (el.textContent === String(v)) return;
+        el.textContent = v;
+        el.classList.remove('tique'); void el.offsetWidth; el.classList.add('tique');
+      });
     };
     atualiza();
     setInterval(atualiza, 1000);
