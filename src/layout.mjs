@@ -210,6 +210,32 @@ function footerLP() {
  * Página completa.
  * @param {{titulo:string, descricao:string, caminho:string, corpo:string, schema?:object[], imagem?:string, tipo?:string, noindex?:boolean}} p
  */
+// Páginas de campanha (ex.: /greenweek/): topo e rodapé enxutos, sem menu, com um único chamado.
+// c = { cta: 'texto do botão', alvo: '#cadastro' }
+function headerCampanha(c) {
+  return `
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo topo--campanha" data-topo>
+  <div class="topo__barra container">
+    <a class="topo__logo" href="/" aria-label="Belnic Cosméticos — início">${logoHorizontal}</a>
+    <a class="btn btn--primario topo__cta-campanha" href="${c.alvo}">${esc(c.ctaCurto || c.cta)}</a>
+  </div>
+</header>`;
+}
+
+function footerCampanha(c) {
+  return `
+<footer class="rodape rodape--campanha">
+  <div class="container rodape__base">
+    <p>© ${new Date().getFullYear()} ${site.nome}. Distribuidora oficial Maison Visage e Mirra Professional no RS.</p>
+    <p><a href="/">Conheça a Belnic</a> · <a href="/politicas-de-privacidade/">Política de privacidade</a></p>
+  </div>
+</footer>
+<div class="barra-movel barra-movel--campanha" aria-label="Atalho">
+  <a class="barra-movel__whats" href="${c.alvo}">${esc(c.cta)}</a>
+</div>`;
+}
+
 export function pagina(p) {
   const canonical = `${site.url}${p.caminho}`;
   const titulo = p.titulo.includes('Belnic') ? p.titulo : `${p.titulo} | Belnic Cosméticos`;
@@ -244,11 +270,11 @@ ${medicaoHead()}
 ${jsonld(grafo)}
 </head>
 <body>
-${site.gtm ? `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${site.gtm}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n` : ''}${header(p.caminho, p.lp || modo === 'landing')}
+${site.gtm ? `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${site.gtm}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n` : ''}${p.campanha ? headerCampanha(p.campanha) : header(p.caminho, p.lp || modo === 'landing')}
 <main id="conteudo">
 ${p.corpo}
 </main>
-${footer(p.lp || modo === 'landing')}
+${p.campanha ? footerCampanha(p.campanha) : footer(p.lp || modo === 'landing')}
 <script src="/assets/js/main.js?v=${p.versao}" defer></script>
 </body>
 </html>`;

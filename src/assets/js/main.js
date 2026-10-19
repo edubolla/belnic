@@ -116,4 +116,102 @@
     if (termo.length >= 3) espera = setTimeout(() => rastreia('busca_produto', { termo: termo.slice(0, 50) }), 1200);
   });
   document.querySelectorAll('[data-filtrar]').forEach((f) => f.addEventListener('click', () => rastreia('filtro_produto', { filtro: f.dataset.filtrar })));
+
+  // ── Green Week ───────────────────────────────────────────────────────────
+  // Contagem regressiva (data em site.mjs → greenweek.inicio)
+  const contagem = document.querySelector('[data-contagem]');
+  const inicio = contagem && Date.parse(contagem.dataset.contagem);
+  if (inicio) {
+    const pad = (n) => String(n).padStart(2, '0');
+    const atualiza = () => {
+      const falta = Math.max(0, inicio - Date.now());
+      const s = Math.floor(falta / 1000);
+      contagem.querySelector('[data-dias]').textContent = Math.floor(s / 86400);
+      contagem.querySelector('[data-horas]').textContent = pad(Math.floor((s % 86400) / 3600));
+      contagem.querySelector('[data-min]').textContent = pad(Math.floor((s % 3600) / 60));
+      contagem.querySelector('[data-seg]').textContent = pad(s % 60);
+      if (!falta) contagem.querySelector('.gw-contagem__rotulo').textContent = 'A Green Week começou no Grupo VIP';
+    };
+    atualiza();
+    setInterval(atualiza, 1000);
+  }
+
+  // Cadastro do Grupo VIP: valida, envia para a planilha (Apps Script) e mostra a confirmação.
+  // Sem endpoint configurado, envia o cadastro pelo WhatsApp da Belnic.
+  const gw = document.querySelector('[data-form-greenweek]');
+  // Esconde a barra fixa do celular enquanto o formulário está na tela
+  const barraCampanha = document.querySelector('.barra-movel--campanha');
+  const secaoCadastro = document.getElementById('cadastro');
+  if (barraCampanha && secaoCadastro && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([i]) => barraCampanha.classList.toggle('escondida', i.isIntersecting), { threshold: 0.15 }).observe(secaoCadastro);
+  }
+  if (gw) {
+    const erro = gw.querySelector('[data-erro]');
+    const sucesso = document.querySelector('[data-sucesso]');
+    const botaoEnviar = gw.querySelector('[type="submit"]');
+    const utm = Object.fromEntries(['utm_source', 'utm_medium', 'utm_campaign', 'utm_content']
+      .map((k) => [k, new URLSearchParams(location.search).get(k) || '']));
+    let comecou = false;
+    gw.addEventListener('focusin', () => { if (!comecou) { comecou = true; rastreia('greenweek_inicio_cadastro'); } });
+
+    const zap = gw.querySelector('[name="whatsapp"]');
+    zap.addEventListener('input', () => {
+      const d = zap.value.replace(/\D/g, '').slice(0, 11);
+      zap.value = d.length > 6 ? `(${d.slice(0, 2)}) ${d.slice(2, d.length - 4)}-${d.slice(-4)}` : d.length > 2 ? `(${d.slice(0, 2)}) ${d.slice(2)}` : d;
+    });
+
+    const valida = (d) => {
+      gw.querySelectorAll('[aria-invalid]').forEach((el) => el.removeAttribute('aria-invalid'));
+      const falhas = [];
+      const marca = (nome, msg) => { gw.querySelector(`[name="${nome}"]`)?.setAttribute('aria-invalid', 'true'); falhas.push(msg); };
+      if ((d.nome || '').trim().length < 2) marca('nome', 'seu nome');
+      if ((d.whatsapp || '').replace(/\D/g, '').length < 10) marca('whatsapp', 'um WhatsApp com DDD');
+      if (!d.perfil) marca('perfil', 'o seu perfil');
+      if ((d.cidade || '').trim().length < 2) marca('cidade', 'a sua cidade');
+      if (!d.ja_cliente) falhas.push('se já compra com a Belnic');
+      if (!d.aceite) falhas.push('o aceite de contato');
+      return falhas;
+    };
+
+    gw.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const d = Object.fromEntries(new FormData(gw));
+      if (d.site_empresa) return; // robô
+      const falhas = valida(d);
+      if (falhas.length) {
+        erro.textContent = `Falta informar: ${falhas.join(', ')}.`;
+        erro.hidden = false;
+        gw.querySelector('[aria-invalid="true"]')?.focus();
+        return;
+      }
+      erro.hidden = true;
+      botaoEnviar.disabled = true;
+      const lead = {
+        nome: d.nome.trim(), whatsapp: d.whatsapp, perfil: d.perfil, cidade: d.cidade.trim(),
+        negocio: (d.negocio || '').trim(), instagram: (d.instagram || '').trim(), ja_cliente: d.ja_cliente,
+        pagina: location.href, ...utm,
+      };
+      const endpoint = gw.dataset.endpoint;
+      try {
+        if (endpoint) {
+          // text/plain evita o preflight de CORS do Apps Script; a resposta não é lida (no-cors).
+          await fetch(endpoint, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(lead) });
+        } else {
+          const msg = ['Olá! Quero entrar no Grupo VIP da Green Week.', `Nome: ${lead.nome}`, `Perfil: ${lead.perfil}`,
+            lead.negocio && `Negócio: ${lead.negocio}`, `Cidade: ${lead.cidade}`, lead.instagram && `Instagram: ${lead.instagram}`,
+            `Já sou cliente Belnic: ${lead.ja_cliente}`].filter(Boolean).join('\n');
+          window.open(`https://wa.me/${gw.dataset.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+        }
+        rastreia('greenweek_cadastro', { perfil: lead.perfil, ja_cliente: lead.ja_cliente, cidade: lead.cidade });
+        window.fbq?.('track', 'Lead');
+        gw.hidden = true;
+        sucesso.hidden = false;
+        sucesso.focus();
+      } catch {
+        erro.textContent = 'Não conseguimos enviar agora. Tente de novo em instantes ou chame a Belnic no WhatsApp.';
+        erro.hidden = false;
+        botaoEnviar.disabled = false;
+      }
+    });
+  }
 })();

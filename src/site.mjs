@@ -31,7 +31,15 @@ export const site = {
   ga4: '', // ex.: 'G-XXXXXXXXXX' (só se não usar o GTM)
   googleVerificacao: '', // conteúdo da meta tag do Google Search Console (opcional se verificar pelo DNS)
   bingVerificacao: '', // conteúdo da meta tag do Bing Webmaster Tools
-  mapaUrl:'https://www.google.com/maps/d/viewer?mid=1pcLneDbtBDrdGUFPIpXJ9lNRbPDYYBI',
+  // Green Week (página /greenweek/)
+  greenweek: {
+    // Início da Green Week, para a contagem regressiva. Vazio = mostra "data em breve".
+    inicio: '', // ex.: '2026-11-23T09:00:00-03:00'
+    // URL do Web App do Google Apps Script que grava os cadastros na planilha (veja GREENWEEK.md).
+    // Vazio = o cadastro é enviado pelo WhatsApp da Belnic (útil em prévias).
+    endpoint: '',
+  },
+  mapaUrl: 'https://www.google.com/maps/d/viewer?mid=1pcLneDbtBDrdGUFPIpXJ9lNRbPDYYBI',
 };
 
 export const wa = (texto = 'Olá! Vim pelo site da Belnic e gostaria de mais informações.') =>

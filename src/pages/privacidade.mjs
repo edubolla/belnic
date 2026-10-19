@@ -17,7 +17,9 @@ export default ({ versao }) => {
   <h2>Quem é o controlador</h2>
   <p>O controlador dos dados é a ${site.nome}. Para qualquer assunto sobre privacidade, escreva para <a href="mailto:${site.email}">${site.email}</a>.</p>
   <h2>O que coletamos</h2>
-  <p>Este site não tem login, cadastro de usuários nem loja, e não há formulários: nenhum dado digitado é armazenado por este site.</p>
+  <p>Este site não tem login nem loja.</p>
+  <h2>Cadastro da Green Week</h2>
+  <p>O único formulário do site é o de cadastro no Grupo VIP da <a href="/greenweek/">Green Week</a>. Nele pedimos nome, WhatsApp, perfil profissional, cidade e, se você quiser informar, nome do negócio e Instagram profissional, além de saber se você já compra com a Belnic. Esses dados ficam guardados em uma planilha de acesso restrito à equipe Belnic e são usados apenas para conferir se o perfil é profissional, enviar o convite do grupo e falar com você sobre a Green Week e as condições da Belnic. A base legal é o seu consentimento, dado no aceite do formulário, e você pode retirá-lo a qualquer momento.</p>
   ${medicao
     ? `<h2>Estatísticas de visita</h2>
   <p>Usamos o Google Analytics${site.gtm ? ', por meio do Google Tag Manager,' : ''} para entender como o site é usado: páginas e seções vistas, cliques nos botões de contato e downloads de catálogos. Esses dados são estatísticos, não identificam você pelo nome e são tratados pelo Google conforme a <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener">política de privacidade do Google</a>. Você pode bloquear esses cookies nas configurações do seu navegador.</p>`
@@ -36,7 +38,7 @@ export default ({ versao }) => {
     caminho,
     html: pagina({
       titulo: 'Política de privacidade | Belnic Cosméticos',
-      descricao: 'Saiba como a Belnic Cosméticos trata dados neste site conforme a LGPD: sem login, sem formulários e com contato direto pelo WhatsApp.',
+      descricao: 'Saiba como a Belnic Cosméticos trata dados neste site conforme a LGPD: contato pelo WhatsApp e cadastro da Green Week com consentimento.',
       caminho, corpo, versao,
       schema: [breadcrumb([['Início', '/'], ['Política de privacidade', caminho]])],
     }),

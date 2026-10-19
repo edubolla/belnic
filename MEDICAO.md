@@ -26,7 +26,7 @@ O sitemap é gerado a cada build (`dist/sitemap.xml`) com a página inicial e as
 
 1. Crie uma propriedade GA4 em analytics.google.com e um fluxo de dados Web para `https://belniccosmeticos.com`. Anote o **ID de métricas** (`G-XXXXXXXXXX`).
 2. No GTM, crie a tag **Google Tag** com esse ID e acionador **Initialization - All Pages**.
-3. Crie as variáveis da camada de dados (Variáveis → Nova → Variável da camada de dados): `local`, `botao`, `catalogo`, `pergunta`, `secao`.
+3. Crie as variáveis da camada de dados (Variáveis → Nova → Variável da camada de dados): `local`, `botao`, `catalogo`, `pergunta`, `secao`, `perfil`, `ja_cliente`, `cidade`.
 4. Para cada evento da tabela abaixo, crie:
    - um **acionador** do tipo *Evento personalizado* com o nome exato do evento;
    - uma tag **Google Analytics: evento GA4** com o mesmo nome de evento e os parâmetros listados (valor = variável correspondente).
@@ -47,6 +47,8 @@ Todos vão para o `dataLayer` (GTM). Se o GA4 estiver instalado direto (`ga4`), 
 | `clique_instagram` | Clique no Instagram | `local` |
 | `clique_email` | Clique no e-mail | `local` |
 | `abrir_mapa` | Abre o mapa de cidades atendidas | `local` |
+| `greenweek_inicio_cadastro` | Começou a preencher o cadastro da Green Week | — |
+| `greenweek_cadastro` | Enviou o cadastro da Green Week (marque como evento principal) | `perfil`, `ja_cliente`, `cidade` |
 | `busca_produto` | Busca no catálogo (só no site completo) | `termo` |
 | `filtro_produto` | Filtro do catálogo (só no site completo) | `filtro` |
 
