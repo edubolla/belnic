@@ -37,7 +37,7 @@ Campos protegidos: há um campo invisível anti-robô. Se ele vier preenchido, o
 
 ## Configuração necessária no n8n (importante)
 
-Quando testei sem enviar dados, o webhook respondeu só a `OPTIONS, GET` e com erro 500. Para o formulário funcionar:
+Configurado e testado em 19/10/2026: POST, CORS liberado para `belniccosmeticos.com` e `belnic.vercel.app`, resposta 200. Se o workflow for alterado, mantenha:
 
 1. No nó **Webhook**, mude **HTTP Method** para **POST**.
 2. Em **Options → Allowed Origins (CORS)**, coloque `https://belniccosmeticos.com,https://belnic.vercel.app`, ou `*`. Sem isso, o navegador bloqueia a leitura da resposta e a página mostra erro, mesmo com o dado tendo chegado.
