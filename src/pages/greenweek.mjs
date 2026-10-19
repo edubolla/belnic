@@ -120,7 +120,7 @@ export default ({ versao }) => {
       <div class="gw-exclusivo__texto">
         <span class="gw-selo gw-selo--escuro">Somente profissionais</span>
         <h2>A Green Week é exclusiva para quem trabalha com beleza</h2>
-        <p>Não é aberta ao público e não tem anúncio. Cada cadastro passa pela equipe Belnic antes de entrar no grupo, para que as condições cheguem a quem realmente vive de beleza.</p>
+        <p>As ofertas da Green Week são liberadas somente dentro do Grupo VIP, e não ficam abertas ao público. Por isso, cada cadastro passa pela equipe Belnic antes de entrar no grupo, para que as condições cheguem a quem realmente vive de beleza.</p>
       </div>
       <ul class="gw-exclusivo__perfis">
         <li>${icones.salao}<span>Salões e estúdios de beleza</span></li>
