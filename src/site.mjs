@@ -40,7 +40,7 @@ export const site = {
     datasTexto: 'de 5 a 9 de novembro',
     grandeDiaTexto: '9 de novembro',
     // Webhook (n8n) que recebe os cadastros. Vazio = o cadastro segue pelo WhatsApp da Belnic.
-    endpoint: 'https://n8n.metingertech.com.br/webhook/56d079a9-30e2-4fbf-9ecd-8d3906b471f1',
+    endpoint: 'https://n8n.metingertech.com.br/webhook/green-week',
   },
   mapaUrl: 'https://www.google.com/maps/d/viewer?mid=1pcLneDbtBDrdGUFPIpXJ9lNRbPDYYBI',
 };
