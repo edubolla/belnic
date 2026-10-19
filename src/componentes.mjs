@@ -68,18 +68,15 @@ export const faqSchema = (itens) => ({
   })),
 });
 
-// Formulário "Seja parceiro": não envia dados a servidor, abre o WhatsApp com a mensagem pronta (main.js).
-const perfis = ['Salão de beleza', 'Clínica de estética', 'Profissional autônomo(a)', 'Terapeuta capilar', 'Barbearia', 'Outro'];
-const interesses = ['Maison Visage', 'Mirra Professional', 'Terapia Capilar', 'Cursos e formação', 'Ainda não sei'];
-
-export const formParceiro = () => `
-      <form class="form form--2" data-form-whats="${site.whatsapp}">
-        <div class="campo"><label for="nome">Seu nome *</label><input id="nome" name="nome" type="text" required autocomplete="name"></div>
-        <div class="campo"><label for="perfil">Seu perfil</label><select id="perfil" name="perfil">${perfis.map((p) => `<option>${esc(p)}</option>`).join('')}</select></div>
-        <div class="campo"><label for="negocio">Nome do salão ou clínica</label><input id="negocio" name="negocio" type="text" autocomplete="organization"></div>
-        <div class="campo"><label for="cidade">Cidade *</label><input id="cidade" name="cidade" type="text" list="cidades" required autocomplete="off"><datalist id="cidades">${site.cidades.map((c) => `<option value="${esc(c)}">`).join('')}</datalist></div>
-        <div class="campo"><label for="interesse">O que mais interessa</label><select id="interesse" name="interesse">${interesses.map((p) => `<option>${esc(p)}</option>`).join('')}</select></div>
-        <div class="campo campo--cheio"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem"></textarea></div>
-        <div class="campo--cheio"><button class="btn btn--primario" type="submit">${icon.whatsapp}<span>Enviar pelo WhatsApp</span></button></div>
-        <p class="form__nota campo--cheio">Não guardamos seus dados: ao enviar, abrimos o WhatsApp com a mensagem pronta para você conferir e mandar.</p>
-      </form>`;
+// Card "Seja parceiro": passos + botão que abre o WhatsApp com a mensagem pronta.
+export const cardParceiro = () => `
+<div class="cartao revela parceiro-card">
+  <h3>Como funciona</h3>
+  <ol class="passos">
+    <li><strong>Chame a Belnic no WhatsApp</strong><span>A mensagem já vai pronta, é só enviar.</span></li>
+    <li><strong>Conte sobre o seu negócio</strong><span>Salão, clínica, barbearia ou atendimento autônomo, e a sua cidade.</span></li>
+    <li><strong>Receba o contato do representante</strong><span>Ele apresenta as linhas, as condições e os treinamentos.</span></li>
+  </ol>
+  ${btnWhats('Quero ser parceiro Belnic', 'Olá! Vim pelo site e quero ser parceiro(a) Belnic.')}
+  <p class="form__nota">Atendimento pelo WhatsApp ${site.whatsappExibicao}.</p>
+</div>`;

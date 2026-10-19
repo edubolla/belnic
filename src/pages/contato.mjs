@@ -25,7 +25,7 @@ export default ({ versao }) => {
   <div class="container">
     <div class="cabeca revela"><span class="sobretitulo">Com quem falar</span><h2>Escolha o assunto</h2></div>
     <div class="grade grade--3">
-      <article class="cartao revela"><h3>Pedidos e parcerias</h3><p>Para comprar ou se tornar parceiro, chame no WhatsApp ou use o <a href="/seja-parceiro/">cadastro de parceiro</a>.</p>${btnWhats('Falar sobre pedidos', 'Olá! Quero produtos exclusivos para o meu salão.', 'btn btn--contorno')}</article>
+      <article class="cartao revela"><h3>Pedidos e parcerias</h3><p>Para comprar ou se tornar parceiro, chame no WhatsApp ou veja como funciona em <a href="/seja-parceiro/">Seja parceiro</a>.</p>${btnWhats('Falar sobre pedidos', 'Olá! Quero produtos exclusivos para o meu salão.', 'btn btn--contorno')}</article>
       <article class="cartao revela"><h3>Cursos e formação</h3><p>Datas, turmas e treinamentos gravados. Veja a página de <a href="/formacao/">formação</a>.</p>${btnWhats('Falar sobre cursos', 'Oi, gostaria de mais informações sobre os Cursos.', 'btn btn--contorno')}</article>
       <article class="cartao revela"><h3>Consumidor final</h3><p>Quer encontrar um salão que usa nossos produtos? Veja <a href="/sou-consumidor-final/">como funciona</a>.</p>${btnWhats('Achar um salão', 'Olá! Sou cliente final e gostaria de saber qual salão parceiro Belnic fica mais perto de mim. Minha cidade é: ', 'btn btn--contorno')}</article>
     </div>

@@ -60,25 +60,6 @@
     if (inicial) document.querySelector(`[data-filtrar="${inicial}"]`)?.click();
   }
 
-  // Formulário "Seja parceiro" → WhatsApp
-  const form = document.querySelector('[data-form-whats]');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const d = new FormData(form);
-      const linhas = [
-        'Olá! Quero ser parceiro(a) Belnic.',
-        `Nome: ${d.get('nome')}`,
-        `Perfil: ${d.get('perfil')}`,
-        d.get('negocio') && `Salão/clínica: ${d.get('negocio')}`,
-        `Cidade: ${d.get('cidade')}`,
-        d.get('interesse') && `Interesse: ${d.get('interesse')}`,
-        d.get('mensagem') && `Mensagem: ${d.get('mensagem')}`,
-      ].filter(Boolean);
-      window.open(`https://wa.me/${form.dataset.formWhats}?text=${encodeURIComponent(linhas.join('\n'))}`, '_blank', 'noopener');
-    });
-  }
-
   // Evento de clique no WhatsApp para GA4/Meta, se instalados depois
   document.addEventListener('click', (e) => {
     const a = e.target.closest('[data-evento="whatsapp"]');

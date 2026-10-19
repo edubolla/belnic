@@ -10,7 +10,7 @@ const faq = [
   ['Em quais cidades a Belnic atende?',
     `Atendemos Porto Alegre, Região Metropolitana, Vale do Sinos e Serra Gaúcha, incluindo ${site.cidades.slice(0, 8).join(', ')} e outras. Veja a lista completa em <a href="/onde-atendemos/">Onde atendemos</a>.`],
   ['Como faço para me tornar parceiro Belnic?',
-    'Preencha o <a href="/seja-parceiro/">cadastro de parceiro</a> ou chame nossa equipe no WhatsApp. Um consultor da sua região entra em contato para apresentar as linhas, condições e treinamentos.'],
+    'Chame nossa equipe no WhatsApp ou veja como funciona em <a href="/seja-parceiro/">Seja parceiro</a>. Um consultor da sua região entra em contato para apresentar as linhas, condições e treinamentos.'],
   ['A Belnic oferece cursos e treinamentos?',
     'Sim. Oferecemos imersões presenciais e treinamentos com educadores das marcas, em temas como terapia capilar, colorimetria, tratamentos e estratégia de vendas. Veja em <a href="/formacao/">Formação</a>.'],
 ];

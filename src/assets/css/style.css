@@ -325,12 +325,12 @@ a.filtro:hover { border-color: var(--verde); color: var(--verde-escuro); }
 @media (min-width: 640px) { .lp-catalogos { grid-template-columns: repeat(3, 1fr); } }
 .marca-card { padding-top: 72px; }
 .marca-card::before { background: linear-gradient(180deg, rgb(30 38 32 / .2) 0%, rgb(30 38 32 / .55) 30%, rgb(30 38 32 / .9) 70%); }
-.lp-parceiro { margin-top: 32px; }
-.lp-parceiro .btn { width: 100%; margin-top: 8px; }
-.lp-parceiro .form__nota { text-align: center; margin: 12px 0 0; }
-.lp-passos { list-style: none; counter-reset: passo; padding: 0; margin: 18px 0 20px; display: grid; gap: 18px; }
-.lp-passos li { counter-increment: passo; position: relative; padding-left: 48px; }
-.lp-passos li::before { content: counter(passo); position: absolute; left: 0; top: 0; width: 34px; height: 34px; border-radius: 50%; background: var(--areia-clara); color: var(--verde-profundo); font: 500 1.1rem/34px var(--serif); text-align: center; }
-.lp-passos strong { display: block; color: var(--verde-profundo); font-weight: 500; }
-.lp-passos span { color: var(--tinta-suave); font-size: .92rem; }
-@media (min-width: 1024px) { .lp-parceiro { margin-top: 0; padding: 36px; } }
+.parceiro-card { margin-top: 32px; }
+.parceiro-card .btn { width: 100%; margin-top: 8px; }
+.parceiro-card .form__nota { text-align: center; margin: 12px 0 0; }
+.passos { list-style: none; counter-reset: passo; padding: 0; margin: 18px 0 20px; display: grid; gap: 18px; }
+.passos li { counter-increment: passo; position: relative; padding-left: 48px; }
+.passos li::before { content: counter(passo); position: absolute; left: 0; top: 0; width: 34px; height: 34px; border-radius: 50%; background: var(--areia-clara); color: var(--verde-profundo); font: 500 1.1rem/34px var(--serif); text-align: center; }
+.passos strong { display: block; color: var(--verde-profundo); font-weight: 500; }
+.passos span { color: var(--tinta-suave); font-size: .92rem; }
+@media (min-width: 1024px) { .parceiro-card { margin-top: 0; padding: 36px; } }

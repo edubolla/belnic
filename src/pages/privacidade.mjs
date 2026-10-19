@@ -15,8 +15,8 @@ export default ({ versao }) => {
   <h2>Quem é o controlador</h2>
   <p>O controlador dos dados é a ${site.nome}. Para qualquer assunto sobre privacidade, escreva para <a href="mailto:${site.email}">${site.email}</a>.</p>
   <h2>O que coletamos</h2>
-  <p>Este site não tem login, cadastro de usuários nem loja. Não usamos cookies próprios e não armazenamos em servidor os dados digitados nos formulários.</p>
-  <p>O formulário de <a href="/seja-parceiro/">parceiro</a> apenas monta uma mensagem e abre o WhatsApp. O envio só acontece se você apertar enviar no aplicativo, e a partir daí a conversa segue as regras do WhatsApp.</p>
+  <p>Este site não tem login, cadastro de usuários nem loja. Não usamos cookies próprios e não há formulários: nenhum dado digitado é armazenado por este site.</p>
+  <p>Os botões de contato (como em <a href="/seja-parceiro/">Seja parceiro</a>) apenas abrem o WhatsApp com uma mensagem pronta. O envio só acontece se você apertar enviar no aplicativo, e a partir daí a conversa segue as regras do WhatsApp.</p>
   <h2>Serviços de terceiros</h2>
   <p>O site tem links para serviços externos, como WhatsApp, Instagram, Facebook e Google Maps (mapa de atendimento). Ao acessá-los, você passa a estar sujeito às políticas de privacidade de cada um, sobre as quais não temos controle.</p>
   <h2>Como usamos as conversas</h2>
@@ -30,7 +30,7 @@ export default ({ versao }) => {
     caminho,
     html: pagina({
       titulo: 'Política de privacidade | Belnic Cosméticos',
-      descricao: 'Saiba como a Belnic Cosméticos trata dados neste site conforme a LGPD: sem cookies próprios, sem login e com formulário que apenas abre o WhatsApp.',
+      descricao: 'Saiba como a Belnic Cosméticos trata dados neste site conforme a LGPD: sem cookies próprios, sem login e com contato direto pelo WhatsApp.',
       caminho, corpo, versao,
       schema: [breadcrumb([['Início', '/'], ['Política de privacidade', caminho]])],
     }),

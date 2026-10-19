@@ -2,7 +2,7 @@
 // Fica fora do sitemap e com noindex para não concorrer com a home do site completo.
 import { pagina, esc, icon, simbolo, btnWhats } from '../layout.mjs';
 import { site } from '../site.mjs';
-import { faqHtml, faqSchema } from '../componentes.mjs';
+import { faqHtml, faqSchema, cardParceiro } from '../componentes.mjs';
 
 const catalogos = [
   ['Maison Visage', 'Finalizadores, tratamento e cuidados corporais', '/catalogos/catalogo-maison-visage.pdf'],
@@ -180,16 +180,7 @@ export default ({ dados, versao }) => {
         <li>Combos exclusivos para clientes VIP</li>
       </ul>
     </div>
-    <div class="cartao revela lp-parceiro">
-      <h3>Como funciona</h3>
-      <ol class="lp-passos">
-        <li><strong>Chame a Belnic no WhatsApp</strong><span>A mensagem já vai pronta, é só enviar.</span></li>
-        <li><strong>Conte sobre o seu negócio</strong><span>Salão, clínica, barbearia ou atendimento autônomo, e a sua cidade.</span></li>
-        <li><strong>Receba o contato do representante</strong><span>Ele apresenta as linhas, as condições e os treinamentos.</span></li>
-      </ol>
-      ${btnWhats('Quero ser parceiro Belnic', 'Olá! Vim pelo site e quero ser parceiro(a) Belnic.')}
-      <p class="form__nota">Atendimento pelo WhatsApp ${site.whatsappExibicao}.</p>
-    </div>
+    ${cardParceiro()}
   </div>
 </section>
 
