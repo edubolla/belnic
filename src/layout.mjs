@@ -5,6 +5,11 @@ const svg = (f) => readFileSync(new URL(`./assets/img/${f}`, import.meta.url), '
 export const simbolo = svg('simbolo.svg');
 export const logoHorizontal = svg('logo-horizontal.svg');
 
+// Modo do build ('landing' ou 'completo'), definido pelo build.mjs.
+export let modo = 'completo';
+export const definirModo = (m) => { modo = m; };
+const baseLP = () => (modo === 'landing' ? '/' : '/lp/');
+
 export const esc = (s = '') =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -19,11 +24,27 @@ export const icon = {
   pin: `<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>`,
 };
 
+// Verificação de buscadores + Google Tag Manager (ou GA4 direto). Tudo desligado enquanto
+// os códigos em site.mjs estiverem vazios. Os eventos do site vão para o dataLayer (main.js).
+function medicaoHead() {
+  const linhas = [];
+  if (site.googleVerificacao) linhas.push(`<meta name="google-site-verification" content="${esc(site.googleVerificacao)}">`);
+  if (site.bingVerificacao) linhas.push(`<meta name="msvalidate.01" content="${esc(site.bingVerificacao)}">`);
+  if (site.gtm) {
+    linhas.push(`<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${site.gtm}');</script>`);
+  } else if (site.ga4) {
+    linhas.push(`<script async src="https://www.googletagmanager.com/gtag/js?id=${site.ga4}"></script>`);
+    linhas.push(`<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${site.ga4}');</script>`);
+  }
+  return linhas.join('\n');
+}
+
 export const jsonld = (obj) =>
   `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
 
 export const organizacao = {
-  '@type': ['Organization', 'LocalBusiness'],
+  // Organization (sem LocalBusiness: não há endereço público de loja)
+  '@type': 'Organization',
   '@id': `${site.url}/#organizacao`,
   name: site.nome,
   alternateName: ['Belnic', 'Belnic Hub da Beleza', 'Belnic Oficial'],
@@ -31,14 +52,19 @@ export const organizacao = {
   logo: `${site.url}/assets/img/logo-belnic.png`,
   image: `${site.url}/assets/img/og-belnic.jpg`,
   description: site.descricao,
+  slogan: 'Produtos, formação e suporte para salões crescerem.',
   telephone: `+${site.whatsapp}`,
-  address: { '@type': 'PostalAddress', addressRegion: site.uf, addressCountry: 'BR' },
+  email: site.email,
+  contactPoint: {
+    '@type': 'ContactPoint', contactType: 'sales', telephone: `+${site.whatsapp}`, email: site.email,
+    areaServed: 'BR-RS', availableLanguage: 'pt-BR',
+  },
   areaServed: site.cidades.map((c) => ({ '@type': 'City', name: `${c}, ${site.uf}` })),
   sameAs: [site.instagram, site.facebook],
-  knowsAbout: ['cosméticos profissionais', 'estética facial', 'dermocosméticos', 'tratamento capilar', 'terapia capilar', 'coloração capilar'],
+  knowsAbout: ['cosméticos profissionais para salão', 'tratamento capilar', 'terapia capilar', 'tricologia', 'coloração capilar', 'finalizadores capilares', 'cuidados para barbearia'],
   brand: [
-    { '@type': 'Brand', name: 'Maison Visage' },
-    { '@type': 'Brand', name: 'Mirra Professional' },
+    { '@type': 'Brand', name: 'Maison Visage', alternateName: 'Maison Visage Cosmetique', url: 'https://maisonvisage.com/' },
+    { '@type': 'Brand', name: 'Mirra Professional', alternateName: ['Mirra Cosméticos', 'Mirra'], url: 'https://mirracosmeticos.com/' },
   ],
 };
 
@@ -91,7 +117,7 @@ function footer(lp) {
       </p>
     </div>
     <div>
-      <h2 class="rodape__titulo">Marcas</h2>
+      <p class="rodape__titulo">Marcas</p>
       <ul>
         <li><a href="/marcas/maison-visage/">Maison Visage</a></li>
         <li><a href="/marcas/mirra-professional/">Mirra Professional</a></li>
@@ -101,7 +127,7 @@ function footer(lp) {
       </ul>
     </div>
     <div>
-      <h2 class="rodape__titulo">Belnic</h2>
+      <p class="rodape__titulo">Belnic</p>
       <ul>
         <li><a href="/sobre/">Sobre a Belnic</a></li>
         <li><a href="/formacao/">Formação e cursos</a></li>
@@ -123,8 +149,8 @@ function footer(lp) {
 }
 
 const navLP = [
-  ['#para-quem', 'Para quem'], ['#marcas', 'Marcas'], ['#terapia-capilar', 'Terapia capilar'],
-  ['#formacao', 'Formação'], ['#onde-atendemos', 'Onde atendemos'],
+  ['para-quem', 'Para quem'], ['marcas', 'Marcas'], ['terapia-capilar', 'Terapia capilar'],
+  ['formacao', 'Formação'], ['onde-atendemos', 'Onde atendemos'],
 ];
 
 function headerLP() {
@@ -132,10 +158,10 @@ function headerLP() {
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="topo" data-topo>
   <div class="topo__barra container">
-    <a class="topo__logo" href="/lp/" aria-label="Belnic Cosméticos — início">${logoHorizontal}</a>
+    <a class="topo__logo" href="${baseLP()}" aria-label="Belnic Cosméticos — início">${logoHorizontal}</a>
     <nav class="topo__nav" id="menu" aria-label="Principal">
-      <ul>${navLP.map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join('')}</ul>
-      <a class="btn btn--primario topo__cta" href="#parceiro">Seja parceiro</a>
+      <ul>${navLP.map(([id, label]) => `<li><a href="${baseLP()}#${id}">${label}</a></li>`).join('')}</ul>
+      <a class="btn btn--primario topo__cta" href="${baseLP()}#parceiro">Seja parceiro</a>
     </nav>
     <button class="topo__menu" type="button" aria-controls="menu" aria-expanded="false" data-menu>
       <span class="abre">${icon.menu}</span><span class="fecha">${icon.close}</span><span class="sr">Menu</span>
@@ -153,7 +179,7 @@ function footerLP() {
       <p>Distribuidora oficial <strong>Maison Visage</strong> e <strong>Mirra Professional</strong>. Produtos, formação e suporte para salões, clínicas e profissionais da beleza crescerem.</p>
     </div>
     <div>
-      <h2 class="rodape__titulo">Fale com a Belnic</h2>
+      <p class="rodape__titulo">Fale com a Belnic</p>
       <ul class="rodape__social">
         <li><a href="${wa()}" target="_blank" rel="noopener" data-evento="whatsapp">${icon.whatsapp}<span>${site.whatsappExibicao}</span></a></li>
         <li><a href="${site.instagram}" target="_blank" rel="noopener">${icon.instagram}<span>${site.instagramUser}</span></a></li>
@@ -161,7 +187,7 @@ function footerLP() {
       </ul>
     </div>
     <div>
-      <h2 class="rodape__titulo">Catálogos</h2>
+      <p class="rodape__titulo">Catálogos</p>
       <ul>
         <li><a href="/catalogos/catalogo-maison-visage.pdf" download>Maison Visage (PDF)</a></li>
         <li><a href="/catalogos/catalogo-mirra-professional.pdf" download>Mirra Professional (PDF)</a></li>
@@ -171,11 +197,11 @@ function footerLP() {
   </div>
   <div class="container rodape__base">
     <p>© ${new Date().getFullYear()} ${site.nome}. Venda exclusiva para profissionais da beleza.</p>
-    <p><a href="/politicas-de-privacidade/">Política de privacidade</a></p>
+    <p><a href="/politicas-de-privacidade/">Política de privacidade</a> · <a href="/termos-de-uso/">Termos de uso</a></p>
   </div>
 </footer>
 <div class="barra-movel" aria-label="Atalhos">
-  <a href="#catalogos">${icon.download}<span>Catálogos</span></a>
+  <a href="${baseLP()}#catalogos">${icon.download}<span>Catálogos</span></a>
   <a class="barra-movel__whats" href="${wa()}" target="_blank" rel="noopener" data-evento="whatsapp">${icon.whatsapp}<span>Falar no WhatsApp</span></a>
 </div>`;
 }
@@ -200,6 +226,7 @@ export function pagina(p) {
 <link rel="canonical" href="${canonical}">
 ${p.noindex ? '<meta name="robots" content="noindex, follow">' : '<meta name="robots" content="index, follow, max-image-preview:large">'}
 <meta name="theme-color" content="#667B68">
+${medicaoHead()}
 <meta property="og:type" content="${p.tipo || 'website'}">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="${site.nome}">
@@ -217,11 +244,11 @@ ${p.noindex ? '<meta name="robots" content="noindex, follow">' : '<meta name="ro
 ${jsonld(grafo)}
 </head>
 <body>
-${header(p.caminho, p.lp)}
+${site.gtm ? `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${site.gtm}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n` : ''}${header(p.caminho, p.lp || modo === 'landing')}
 <main id="conteudo">
 ${p.corpo}
 </main>
-${footer(p.lp)}
+${footer(p.lp || modo === 'landing')}
 <script src="/assets/js/main.js?v=${p.versao}" defer></script>
 </body>
 </html>`;

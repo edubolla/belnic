@@ -334,3 +334,4 @@ a.filtro:hover { border-color: var(--verde); color: var(--verde-escuro); }
 .passos strong { display: block; color: var(--verde-profundo); font-weight: 500; }
 .passos span { color: var(--tinta-suave); font-size: .92rem; }
 @media (min-width: 1024px) { .parceiro-card { margin-top: 0; padding: 36px; } }
+h1 .sobretitulo { display: flex; width: fit-content; margin-bottom: 18px; line-height: 1.45; }

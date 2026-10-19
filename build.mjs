@@ -6,10 +6,15 @@ import { createServer } from 'node:http';
 import { fileURLToPath } from 'node:url';
 import { site } from './src/site.mjs';
 import { carregarDados } from './src/dados.mjs';
+import { definirModo } from './src/layout.mjs';
 
 const raiz = dirname(fileURLToPath(import.meta.url));
 const dist = join(raiz, 'dist');
 const versao = Date.now().toString(36);
+const modo = process.argv.includes('--completo') ? 'completo' : process.argv.includes('--landing') ? 'landing' : site.modo;
+definirModo(modo);
+// No modo landing só vão para o ar a página única, as páginas legais, o 404 e o llms.txt.
+const PAGINAS_LANDING = ['lp.mjs', 'privacidade.mjs', 'termos.mjs', '404.mjs', 'llms.mjs'];
 
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(dist, { recursive: true });
@@ -17,10 +22,11 @@ cpSync(join(raiz, 'src/assets'), join(dist, 'assets'), { recursive: true });
 cpSync(join(raiz, 'src/public'), dist, { recursive: true });
 
 const dados = carregarDados(raiz);
-const ctx = { dados, versao };
+const ctx = { dados, versao, modo };
 
 const paginas = [];
-for (const arq of readdirSync(join(raiz, 'src/pages')).filter((f) => f.endsWith('.mjs')).sort()) {
+const arquivos = readdirSync(join(raiz, 'src/pages')).filter((f) => f.endsWith('.mjs') && (modo === 'completo' || PAGINAS_LANDING.includes(f))).sort();
+for (const arq of arquivos) {
   const mod = await import(join(raiz, 'src/pages', arq));
   const saida = await mod.default(ctx);
   paginas.push(...(Array.isArray(saida) ? saida : [saida]));
@@ -29,7 +35,8 @@ for (const arq of readdirSync(join(raiz, 'src/pages')).filter((f) => f.endsWith(
 for (const p of paginas) {
   const destino = p.arquivo ? join(dist, p.arquivo) : join(dist, p.caminho, 'index.html');
   mkdirSync(dirname(destino), { recursive: true });
-  writeFileSync(destino, p.html);
+  // Links para páginas que só existem no site completo apontam para a seção da landing.
+  writeFileSync(destino, modo === 'landing' ? p.html.replaceAll('href="/seja-parceiro/"', 'href="/#parceiro"') : p.html);
 }
 
 // sitemap.xml
@@ -41,7 +48,19 @@ ${urls.map((p) => `  <url><loc>${site.url}${p.caminho}</loc><lastmod>${hoje}</la
 </urlset>
 `);
 
-console.log(`✓ ${paginas.length} páginas geradas em dist/ (${dados.produtos.length} produtos; landing page em /lp/)`);
+// .htaccess: no modo landing, URLs antigas e as do site completo voltam para a página única.
+const ht = join(dist, '.htaccess');
+let regras = readFileSync(ht, 'utf8');
+if (modo === 'landing') {
+  regras = regras
+    .replace(/ \/(marcas|terapia-capilar|formacao)\/[^ ]* \[R=301,L\]/g, ' / [R=301,L]')
+    .replace('# [landing]', 'RewriteRule ^(contato|sou-consumidor-final|terapia-capilar|sobre|formacao|seja-parceiro|onde-atendemos|lp|marcas(/.*)?|produtos(/.*)?)/?$ / [R=301,L]');
+}
+writeFileSync(ht, regras);
+
+console.log(modo === 'landing'
+  ? `✓ Modo landing: ${paginas.length} páginas em dist/ (página única na raiz)`
+  : `✓ Modo completo: ${paginas.length} páginas em dist/ (${dados.produtos.length} produtos; landing em /lp/)`);
 
 if (process.argv.includes('--serve')) {
   const tipos = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.pdf': 'application/pdf', '.json': 'application/json' };

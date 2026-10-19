@@ -6,13 +6,21 @@ Gerado por um script Node sem dependências: o resultado é HTML, CSS e JS puros
 ## Comandos
 
 ```bash
-node build.mjs            # gera a pasta dist/
-node build.mjs --serve    # gera e abre em http://localhost:4321
+node build.mjs                 # gera a pasta dist/ na versão definida em src/site.mjs (hoje: landing)
+node build.mjs --serve         # gera e abre em http://localhost:4321
+node build.mjs --completo      # força o site completo (marcas + 176 produtos), para prévias
 ```
 
 Precisa só do Node 18+. Não há `npm install`.
 
-O mesmo build gera também a **landing page** (versão enxuta, sem catálogo de produtos) em `/lp/`, a partir de `src/pages/lp.mjs`. Ela fica com `noindex` e fora do sitemap para não concorrer com a home.
+### Duas versões
+
+- **`landing` (no ar agora):** página única (`src/pages/lp.mjs`) na raiz do domínio, mais política de privacidade, termos de uso, 404, `sitemap.xml` e `llms.txt`. URLs antigas e do site completo redirecionam para a página inicial (`.htaccess`).
+- **`completo`:** site com páginas de marcas, 176 produtos, terapia capilar, formação etc. A landing continua em `/lp/`, com `noindex`.
+
+Para trocar, mude `modo` em `src/site.mjs`.
+
+Medição (Search Console, Tag Manager, GA4 e eventos): veja [MEDICAO.md](MEDICAO.md).
 
 ## Publicar na Hostinger
 

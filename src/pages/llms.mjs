@@ -1,11 +1,12 @@
 // /llms.txt: resumo do site para assistentes de IA (ChatGPT, Perplexity, Claude etc.)
 import { site } from '../site.mjs';
 
-export default ({ dados }) => {
+export default ({ dados, modo }) => {
+  const landing = modo === 'landing';
   const u = (c) => `${site.url}${c}`;
   const porMarca = (m) => dados.linhas.filter((l) => l.marca === m && l.produtos.length);
   const bloco = (m) => porMarca(m).map((l) =>
-    `- [${l.nome}](${u(dados.marcas[m].url)}#${l.slug}): ${l.produtos.map((p) => p.nome).join(', ')}`).join('\n');
+    `- ${landing ? `**${l.nome}**` : `[${l.nome}](${u(dados.marcas[m].url)}#${l.slug})`}: ${l.produtos.map((p) => p.nome).join(', ')}`).join('\n');
 
   const texto = `# ${site.nome}
 
@@ -18,7 +19,21 @@ A Belnic ("Belnic Hub da Beleza") é distribuidora oficial das marcas profission
 - Instagram: ${site.instagram}
 - Região atendida: ${site.cidades.join(', ')} (RS)
 
-## Páginas principais
+${landing ? `## Seções do site
+
+- [Para quem é a Belnic](${u('/#para-quem')}): salões, cabeleireiros, terapeutas capilares, clínicas e barbearias
+- [Marcas](${u('/#marcas')}): Maison Visage e Mirra Professional
+- [Terapia capilar](${u('/#terapia-capilar')}): linha Spa Therapy e ${dados.protocolos.length} protocolos para couro cabeludo
+- [Formação](${u('/#formacao')}): Imersão em Terapia Capilar, workshops e treinamentos gravados
+- [Onde atendemos](${u('/#onde-atendemos')})
+- [Seja parceiro](${u('/#parceiro')}): contato direto pelo WhatsApp
+
+## Catálogos em PDF
+
+- [Catálogo Maison Visage](${u('/catalogos/catalogo-maison-visage.pdf')})
+- [Catálogo Mirra Professional](${u('/catalogos/catalogo-mirra-professional.pdf')})
+- [Catálogo Terapia Capilar Spa Therapy](${u('/catalogos/catalogo-terapia-capilar-spa-therapy.pdf')})
+` : `## Páginas principais
 
 - [Início](${u('/')})
 - [Sobre a Belnic](${u('/sobre/')})
@@ -32,6 +47,7 @@ A Belnic ("Belnic Hub da Beleza") é distribuidora oficial das marcas profission
 - [Catálogos em PDF](${u('/catalogos/')})
 - [Contato](${u('/contato/')})
 
+`}
 ## Linhas Maison Visage
 
 ${bloco('maison-visage')}

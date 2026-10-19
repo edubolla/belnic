@@ -1,6 +1,6 @@
 import { pagina, icon, btnWhats } from '../layout.mjs';
 
-export default ({ versao }) => ({
+export default ({ versao, modo }) => ({
   caminho: '/404/',
   arquivo: '404.html',
   noindex: true,
@@ -18,7 +18,7 @@ export default ({ versao }) => ({
     <p class="lead">O site da Belnic foi renovado e alguns endereços mudaram. Comece pela página inicial ou veja nossos produtos.</p>
     <div class="botoes" style="margin-top:24px">
       <a class="btn btn--primario" href="/">Ir para o início ${icon.arrow}</a>
-      <a class="btn btn--contorno" href="/produtos/">Ver produtos</a>
+      ${modo === 'landing' ? '' : '<a class="btn btn--contorno" href="/produtos/">Ver produtos</a>'}
       ${btnWhats('Falar no WhatsApp', 'Olá! Não encontrei uma página no site da Belnic.', 'btn btn--contorno')}
     </div>
   </div>

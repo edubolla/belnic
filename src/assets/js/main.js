@@ -60,11 +60,60 @@
     if (inicial) document.querySelector(`[data-filtrar="${inicial}"]`)?.click();
   }
 
-  // Evento de clique no WhatsApp para GA4/Meta, se instalados depois
+  // ── Medição ──────────────────────────────────────────────────────────────
+  // Todo evento vai para o dataLayer (Google Tag Manager). Se o GA4 estiver instalado
+  // direto (gtag), vai para ele também. Nomes e parâmetros documentados em MEDICAO.md.
+  window.dataLayer = window.dataLayer || [];
+  const rastreia = (evento, params = {}) => {
+    window.dataLayer.push({ event: evento, ...params });
+    if (typeof window.gtag === 'function') window.gtag('event', evento, params);
+  };
+  // Onde o clique aconteceu: id da seção, topo, rodapé ou barra fixa do celular
+  const localDe = (el) =>
+    el.closest('.barra-movel') ? 'barra_movel'
+      : el.closest('.topo') ? 'topo'
+      : el.closest('.rodape') ? 'rodape'
+      : el.closest('section[id]')?.id || el.closest('section')?.className.split(' ')[0] || 'pagina';
+  const texto = (el) => el.textContent.trim().replace(/\s+/g, ' ').slice(0, 80);
+
   document.addEventListener('click', (e) => {
-    const a = e.target.closest('[data-evento="whatsapp"]');
+    const a = e.target.closest('a');
     if (!a) return;
-    window.gtag?.('event', 'contato_whatsapp', { pagina: location.pathname });
-    window.fbq?.('track', 'Contact');
+    const href = a.getAttribute('href') || '';
+    if (a.dataset.evento === 'whatsapp' || /wa\.me|api\.whatsapp\.com/.test(href)) {
+      rastreia('contato_whatsapp', { local: localDe(a), botao: texto(a) });
+      window.fbq?.('track', 'Contact');
+    } else if (href.endsWith('.pdf')) {
+      rastreia('download_catalogo', { catalogo: href.split('/').pop().replace('.pdf', ''), local: localDe(a) });
+    } else if (href.includes('instagram.com')) {
+      rastreia('clique_instagram', { local: localDe(a) });
+    } else if (href.startsWith('mailto:')) {
+      rastreia('clique_email', { local: localDe(a) });
+    } else if (a.dataset.evento === 'mapa' || href.includes('google.com/maps')) {
+      rastreia('abrir_mapa', { local: localDe(a) });
+    }
   });
+
+  // Pergunta frequente aberta
+  document.querySelectorAll('.ficha details').forEach((d) => d.addEventListener('toggle', () => {
+    if (d.open) rastreia('faq_aberta', { pergunta: texto(d.querySelector('summary')) });
+  }));
+
+  // Seções vistas (uma vez por visita): mostra até onde as pessoas chegam na página
+  const secoes = document.querySelectorAll('main section[id]');
+  if ('IntersectionObserver' in window && secoes.length) {
+    const vistas = new IntersectionObserver((itens) => itens.forEach((i) => {
+      if (i.isIntersecting) { rastreia('secao_vista', { secao: i.target.id }); vistas.unobserve(i.target); }
+    }), { threshold: 0.4 });
+    secoes.forEach((s) => vistas.observe(s));
+  }
+
+  // Busca e filtros do catálogo (site completo)
+  let espera;
+  document.querySelector('[data-busca]')?.addEventListener('input', (e) => {
+    clearTimeout(espera);
+    const termo = e.target.value.trim();
+    if (termo.length >= 3) espera = setTimeout(() => rastreia('busca_produto', { termo: termo.slice(0, 50) }), 1200);
+  });
+  document.querySelectorAll('[data-filtrar]').forEach((f) => f.addEventListener('click', () => rastreia('filtro_produto', { filtro: f.dataset.filtrar })));
 })();

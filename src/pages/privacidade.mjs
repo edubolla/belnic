@@ -3,6 +3,8 @@ import { site } from '../site.mjs';
 
 export default ({ versao }) => {
   const caminho = '/politicas-de-privacidade/';
+  // O texto muda sozinho quando o GTM ou o GA4 forem ativados em site.mjs.
+  const medicao = Boolean(site.gtm || site.ga4);
   const corpo = `
 <section class="cabecalho-pagina"><div class="container">
   ${migalhas([['Início', '/'], ['Política de privacidade', caminho]])}
@@ -15,7 +17,11 @@ export default ({ versao }) => {
   <h2>Quem é o controlador</h2>
   <p>O controlador dos dados é a ${site.nome}. Para qualquer assunto sobre privacidade, escreva para <a href="mailto:${site.email}">${site.email}</a>.</p>
   <h2>O que coletamos</h2>
-  <p>Este site não tem login, cadastro de usuários nem loja. Não usamos cookies próprios e não há formulários: nenhum dado digitado é armazenado por este site.</p>
+  <p>Este site não tem login, cadastro de usuários nem loja, e não há formulários: nenhum dado digitado é armazenado por este site.</p>
+  ${medicao
+    ? `<h2>Estatísticas de visita</h2>
+  <p>Usamos o Google Analytics${site.gtm ? ', por meio do Google Tag Manager,' : ''} para entender como o site é usado: páginas e seções vistas, cliques nos botões de contato e downloads de catálogos. Esses dados são estatísticos, não identificam você pelo nome e são tratados pelo Google conforme a <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener">política de privacidade do Google</a>. Você pode bloquear esses cookies nas configurações do seu navegador.</p>`
+    : '<p>Não usamos cookies de rastreamento ou de publicidade.</p>'}
   <p>Os botões de contato (como em <a href="/seja-parceiro/">Seja parceiro</a>) apenas abrem o WhatsApp com uma mensagem pronta. O envio só acontece se você apertar enviar no aplicativo, e a partir daí a conversa segue as regras do WhatsApp.</p>
   <h2>Serviços de terceiros</h2>
   <p>O site tem links para serviços externos, como WhatsApp, Instagram, Facebook e Google Maps (mapa de atendimento). Ao acessá-los, você passa a estar sujeito às políticas de privacidade de cada um, sobre as quais não temos controle.</p>
@@ -30,7 +36,7 @@ export default ({ versao }) => {
     caminho,
     html: pagina({
       titulo: 'Política de privacidade | Belnic Cosméticos',
-      descricao: 'Saiba como a Belnic Cosméticos trata dados neste site conforme a LGPD: sem cookies próprios, sem login e com contato direto pelo WhatsApp.',
+      descricao: 'Saiba como a Belnic Cosméticos trata dados neste site conforme a LGPD: sem login, sem formulários e com contato direto pelo WhatsApp.',
       caminho, corpo, versao,
       schema: [breadcrumb([['Início', '/'], ['Política de privacidade', caminho]])],
     }),

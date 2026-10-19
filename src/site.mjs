@@ -1,11 +1,14 @@
 // Dados globais do site. Edite aqui telefone, cidades, redes etc.
 export const site = {
+  // Versão publicada no domínio: 'landing' (página única, contratada agora) ou 'completo'
+  // (site com marcas e 176 páginas de produto). Dá para forçar com `node build.mjs --completo`.
+  modo: 'landing',
   nome: 'Belnic Cosméticos',
   marca: 'Belnic',
   slogan: 'Hub da Beleza',
   url: 'https://belniccosmeticos.com',
   descricao:
-    'Distribuidora oficial Maison Visage e Mirra Professional no RS. Produtos profissionais, formação e suporte para salões, clínicas estéticas e profissionais da beleza em Porto Alegre e região.',
+    'Distribuidora oficial Mirra Professional e Maison Visage no RS: produtos para salão, terapia capilar, cursos e suporte em Porto Alegre e região.',
   whatsapp: '5551989086044',
   whatsappExibicao: '(51) 98908-6044',
   email: 'contato@belniccosmeticos.com',
@@ -22,7 +25,13 @@ export const site = {
     'Santa Maria do Herval', 'Picada Café', 'Nova Petrópolis', 'Nova Hartz', 'Araricá',
     'Parobé', 'Taquara', 'Igrejinha', 'Três Coroas', 'Esteio', 'Feliz', 'Gramado', 'Linha Nova', 'Vale Real',
   ],
-  mapaUrl: 'https://www.google.com/maps/d/viewer?mid=1pcLneDbtBDrdGUFPIpXJ9lNRbPDYYBI',
+  // Medição: deixe vazio até ter os códigos (veja MEDICAO.md).
+  // Use o GTM (recomendado) OU o GA4 direto, não os dois ao mesmo tempo.
+  gtm: '', // ex.: 'GTM-XXXXXXX'
+  ga4: '', // ex.: 'G-XXXXXXXXXX' (só se não usar o GTM)
+  googleVerificacao: '', // conteúdo da meta tag do Google Search Console (opcional se verificar pelo DNS)
+  bingVerificacao: '', // conteúdo da meta tag do Bing Webmaster Tools
+  mapaUrl:'https://www.google.com/maps/d/viewer?mid=1pcLneDbtBDrdGUFPIpXJ9lNRbPDYYBI',
 };
 
 export const wa = (texto = 'Olá! Vim pelo site da Belnic e gostaria de mais informações.') =>

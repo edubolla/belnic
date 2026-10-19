@@ -29,6 +29,8 @@ AddDefaultCharset UTF-8
   RewriteRule ^(wp-sitemap\.xml|sitemap_index\.xml|page-sitemap\.xml|post-sitemap\.xml)$ /sitemap.xml [R=301,L]
   RewriteRule ^(wp-admin|wp-login\.php|xmlrpc\.php|feed) - [R=410,L]
 
+  # [landing]
+
   # Barra final nas páginas (evita conteúdo duplicado)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_URI} !/$
