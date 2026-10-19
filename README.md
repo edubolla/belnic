@@ -12,6 +12,8 @@ node build.mjs --serve    # gera e abre em http://localhost:4321
 
 Precisa só do Node 18+. Não há `npm install`.
 
+O mesmo build gera também a **landing page** (versão enxuta, sem catálogo de produtos) em `/lp/`, a partir de `src/pages/lp.mjs`. Ela fica com `noindex` e fora do sitemap para não concorrer com a home.
+
 ## Publicar na Hostinger
 
 1. Rode `node build.mjs`.

@@ -9,20 +9,6 @@
         "--serve"
       ],
       "port": 4321
-    },
-    {
-      "name": "belnic-lp",
-      "runtimeExecutable": "node",
-      "runtimeArgs": [
-        "build.mjs",
-        "--lp",
-        "--serve"
-      ],
-      "env": {
-        "SAIDA": "dist-lp",
-        "PORT": "4322"
-      },
-      "port": 4322
     }
   ]
 }

@@ -5,9 +5,6 @@ const svg = (f) => readFileSync(new URL(`./assets/img/${f}`, import.meta.url), '
 export const simbolo = svg('simbolo.svg');
 export const logoHorizontal = svg('logo-horizontal.svg');
 
-// `node build.mjs --lp` gera a versão landing page (uma página só, sem catálogo de produtos)
-export const LP = process.argv.includes('--lp');
-
 export const esc = (s = '') =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -61,8 +58,8 @@ export const migalhas = (itens) => `
 export const btnWhats = (texto, msg, cls = 'btn btn--primario') =>
   `<a class="${cls}" href="${wa(msg)}" target="_blank" rel="noopener" data-evento="whatsapp">${icon.whatsapp}<span>${esc(texto)}</span></a>`;
 
-function header(atual) {
-  if (LP) return headerLP();
+function header(atual, lp) {
+  if (lp) return headerLP();
   return `
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="topo" data-topo>
@@ -79,8 +76,8 @@ function header(atual) {
 </header>`;
 }
 
-function footer() {
-  if (LP) return footerLP();
+function footer(lp) {
+  if (lp) return footerLP();
   return `
 <footer class="rodape">
   <div class="container rodape__grade">
@@ -125,8 +122,8 @@ function footer() {
 }
 
 const navLP = [
-  ['/#para-quem', 'Para quem'], ['/#marcas', 'Marcas'], ['/#terapia-capilar', 'Terapia capilar'],
-  ['/#formacao', 'Formação'], ['/#onde-atendemos', 'Onde atendemos'],
+  ['#para-quem', 'Para quem'], ['#marcas', 'Marcas'], ['#terapia-capilar', 'Terapia capilar'],
+  ['#formacao', 'Formação'], ['#onde-atendemos', 'Onde atendemos'],
 ];
 
 function headerLP() {
@@ -134,10 +131,10 @@ function headerLP() {
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="topo" data-topo>
   <div class="topo__barra container">
-    <a class="topo__logo" href="/" aria-label="Belnic Cosméticos — início">${logoHorizontal}</a>
+    <a class="topo__logo" href="/lp/" aria-label="Belnic Cosméticos — início">${logoHorizontal}</a>
     <nav class="topo__nav" id="menu" aria-label="Principal">
       <ul>${navLP.map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join('')}</ul>
-      <a class="btn btn--primario topo__cta" href="/#parceiro">Seja parceiro</a>
+      <a class="btn btn--primario topo__cta" href="#parceiro">Seja parceiro</a>
     </nav>
     <button class="topo__menu" type="button" aria-controls="menu" aria-expanded="false" data-menu>
       <span class="abre">${icon.menu}</span><span class="fecha">${icon.close}</span><span class="sr">Menu</span>
@@ -177,7 +174,7 @@ function footerLP() {
   </div>
 </footer>
 <div class="barra-movel" aria-label="Atalhos">
-  <a href="/#catalogos">${icon.download}<span>Catálogos</span></a>
+  <a href="#catalogos">${icon.download}<span>Catálogos</span></a>
   <a class="barra-movel__whats" href="${wa()}" target="_blank" rel="noopener" data-evento="whatsapp">${icon.whatsapp}<span>Falar no WhatsApp</span></a>
 </div>`;
 }
@@ -219,11 +216,11 @@ ${p.noindex ? '<meta name="robots" content="noindex, follow">' : '<meta name="ro
 ${jsonld(grafo)}
 </head>
 <body>
-${header(p.caminho)}
+${header(p.caminho, p.lp)}
 <main id="conteudo">
 ${p.corpo}
 </main>
-${footer()}
+${footer(p.lp)}
 <script src="/assets/js/main.js?v=${p.versao}" defer></script>
 </body>
 </html>`;

@@ -1,4 +1,5 @@
-// Landing page (plano enxuto): uma página só, sem catálogo de produtos no site.
+// Landing page (plano enxuto) em /lp/: uma página só, sem catálogo de produtos.
+// Fica fora do sitemap e com noindex para não concorrer com a home do site completo.
 import { pagina, esc, icon, simbolo, btnWhats } from '../layout.mjs';
 import { site } from '../site.mjs';
 import { faqHtml, faqSchema, formParceiro } from '../componentes.mjs';
@@ -193,11 +194,14 @@ export default ({ dados, versao }) => {
 </section>`;
 
   return {
-    caminho: '/',
+    caminho: '/lp/',
+    noindex: true,
     html: pagina({
+      lp: true,
+      noindex: true,
       titulo: 'Belnic Cosméticos | Distribuidora Maison Visage e Mirra Professional no RS',
       descricao: 'Distribuidora oficial Maison Visage e Mirra Professional em Porto Alegre e região. Produtos profissionais, formação e suporte para salões, clínicas e profissionais da beleza.',
-      caminho: '/',
+      caminho: '/lp/',
       corpo,
       versao,
       schema: [
