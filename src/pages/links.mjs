@@ -23,13 +23,25 @@ const links = [
     href: '/greenweek/?utm_source=instagram&utm_medium=bio&utm_campaign=greenweek', foto: img('produtos/mirra/ambiente-3.webp'), icone: ic.estrela, cor: 'areia',
   },
   {
-    id: 'whatsapp', titulo: 'Se interessou? Chame aqui!', sub: 'Produtos exclusivos para o seu salão',
-    href: wa('Oi, gostaria de mais informações sobre os Produtos Exclusivos.'), foto: img('produtos/mirra/ambiente-2.webp'), icone: ic.whatsapp, cor: 'whats', externo: true,
+    id: 'whatsapp', titulo: 'Quer conhecer a Belnic?', sub: 'Fale com a nossa equipe pelo WhatsApp',
+    href: wa('Olá! Vim pelo Instagram e quero conhecer os produtos da Belnic.'), foto: img('produtos/mirra/ambiente-2.webp'), icone: ic.whatsapp, cor: 'whats', externo: true,
   },
   {
     id: 'cursos', titulo: 'Nossos cursos', sub: 'Imersão em Terapia Capilar e treinamentos',
     href: wa('Oi, gostaria de mais informações sobre os Cursos.'), foto: img('produtos/maison-visage/ambiente-1.webp'), icone: ic.livro, cor: 'verde', externo: true,
   },
+  {
+    id: 'parceiro', titulo: 'Seja parceiro Belnic', sub: 'Produtos, formação e suporte para o seu salão',
+    href: wa('Olá! Vim pelo site e quero ser parceiro(a) Belnic.'), foto: img('produtos/maison-visage/ambiente-3.webp'), icone: ic.pessoas, cor: 'verde', externo: true,
+  },
+  {
+    id: 'site', titulo: 'Acesse nosso site', sub: 'Conheça a Belnic, as marcas e onde atendemos',
+    href: '/?utm_source=instagram&utm_medium=bio&utm_campaign=links', foto: img('produtos/maison-visage/ambiente-4.webp'), icone: ic.globo, cor: 'claro',
+  },
+];
+
+// Catálogos em PDF, agrupados no fim da página sob "Downloads"
+const downloads = [
   {
     id: 'catalogo-maison-visage', titulo: 'Catálogo Maison Visage', sub: 'Finalizadores, tratamento e Spa Therapy',
     href: '/catalogos/catalogo-maison-visage.pdf', foto: img('produtos/maison-visage/ambiente-2.webp'), icone: ic.pdf, cor: 'verde', download: true,
@@ -41,14 +53,6 @@ const links = [
   {
     id: 'catalogo-terapia-capilar', titulo: 'Catálogo Terapia Capilar', sub: 'Linha Spa Therapy e protocolos',
     href: '/catalogos/catalogo-terapia-capilar-spa-therapy.pdf', foto: img('produtos/terapia-capilar/tonico-growth-factor.webp'), icone: ic.pdf, cor: 'verde', download: true,
-  },
-  {
-    id: 'comunidade', titulo: 'Quero fazer parte da Comunidade Belnic', sub: 'Novidades, conteúdos e condições especiais',
-    href: wa('Oii, quero fazer parte da Comunidade Belnic.'), foto: img('produtos/maison-visage/ambiente-3.webp'), icone: ic.pessoas, cor: 'verde', externo: true,
-  },
-  {
-    id: 'site', titulo: 'Acesse nosso site', sub: 'Conheça a Belnic, as marcas e onde atendemos',
-    href: '/?utm_source=instagram&utm_medium=bio&utm_campaign=links', foto: img('produtos/maison-visage/ambiente-4.webp'), icone: ic.globo, cor: 'claro',
   },
 ];
 
@@ -104,6 +108,7 @@ body::before{content:"";position:fixed;inset:auto -30% -20% auto;width:520px;hei
 .card--destaque .card__titulo{font-size:20px}
 .card--destaque .card__veu{background:linear-gradient(90deg,rgb(30 38 32/.92) 0%,rgb(30 38 32/.7) 60%,rgb(30 38 32/.2) 100%)}
 .card__selo{align-self:flex-start;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--profundo);background:var(--areia);padding:4px 9px;border-radius:999px;margin-bottom:4px}
+.grupo{margin:14px 0 -2px;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--areia);text-align:center;opacity:.85}
 .divisor{width:40px;height:1px;background:rgb(255 255 255/.16);margin-bottom:24px}
 .sociais{display:flex;gap:12px;margin-bottom:30px}
 .social{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;color:rgb(255 255 255/.75);background:rgb(255 255 255/.06);border:1.5px solid rgb(255 255 255/.1);text-decoration:none;transition:background .18s,color .18s,border-color .18s,transform .18s}
@@ -138,7 +143,7 @@ export default ({ versao }) => {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Belnic | Links</title>
-<meta name="description" content="Links da Belnic Cosméticos: Green Week, catálogos Maison Visage, Mirra e Terapia Capilar, cursos e WhatsApp.">
+<meta name="description" content="Links da Belnic Cosméticos: Green Week, cursos, seja parceiro, site e catálogos Maison Visage, Mirra e Terapia Capilar.">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="${site.url}${caminho}">
 <meta name="theme-color" content="#2F3B32">
@@ -162,6 +167,7 @@ ${site.gtm ? `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id
   <p class="tagline">Distribuidora oficial<br>Maison Visage &amp; Mirra Professional</p>
 
   <nav class="links" aria-label="Links da Belnic">${links.map(card).join('')}
+    <p class="grupo">Downloads</p>${downloads.map((l, i) => card(l, i + links.length)).join('')}
   </nav>
 
   <div class="divisor"></div>
