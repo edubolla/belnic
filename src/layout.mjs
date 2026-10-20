@@ -26,7 +26,7 @@ export const icon = {
 
 // Verificação de buscadores + Google Tag Manager (ou GA4 direto). Tudo desligado enquanto
 // os códigos em site.mjs estiverem vazios. Os eventos do site vão para o dataLayer (main.js).
-function medicaoHead() {
+export function medicaoHead() {
   const linhas = [];
   if (site.googleVerificacao) linhas.push(`<meta name="google-site-verification" content="${esc(site.googleVerificacao)}">`);
   if (site.bingVerificacao) linhas.push(`<meta name="msvalidate.01" content="${esc(site.bingVerificacao)}">`);

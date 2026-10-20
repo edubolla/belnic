@@ -14,7 +14,7 @@ const versao = Date.now().toString(36);
 const modo = process.argv.includes('--completo') ? 'completo' : process.argv.includes('--landing') ? 'landing' : site.modo;
 definirModo(modo);
 // No modo landing só vão para o ar a página única, as páginas legais, o 404 e o llms.txt.
-const PAGINAS_LANDING = ['lp.mjs', 'greenweek.mjs', 'privacidade.mjs', 'termos.mjs', '404.mjs', 'llms.mjs'];
+const PAGINAS_LANDING = ['lp.mjs', 'greenweek.mjs', 'links.mjs', 'privacidade.mjs', 'termos.mjs', '404.mjs', 'llms.mjs'];
 
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(dist, { recursive: true });
