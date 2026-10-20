@@ -448,7 +448,6 @@ h3, h4 { font-family: var(--sans); font-weight: 500; font-size: clamp(1.1rem, 3.
 /* === Green Week — animações ===
    Só CSS + um pouco de JS (main.js). Quem ativa "reduzir movimento" no aparelho vê tudo parado. */
 @keyframes gwSobe { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
-@keyframes gwRevelaImg { from { opacity: 0; transform: scale(1.06); clip-path: inset(8% 8% 8% 8% round 24px); } to { opacity: 1; transform: none; clip-path: inset(0 0 0 0 round 24px); } }
 @keyframes gwFlutua { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-14px) rotate(4deg); } }
 @keyframes gwBrilho { 0%, 70% { transform: translateX(-120%) skewX(-20deg); } 100% { transform: translateX(220%) skewX(-20deg); } }
 @keyframes gwPulso { 0%, 100% { box-shadow: 0 0 0 0 rgb(213 205 191 / .55); } 60% { box-shadow: 0 0 0 10px rgb(213 205 191 / 0); } }
@@ -470,7 +469,6 @@ h3, h4 { font-family: var(--sans); font-weight: 500; font-size: clamp(1.1rem, 3.
 
 @media (prefers-reduced-motion: no-preference) {
   .gw-entra { opacity: 0; animation: gwSobe .7s cubic-bezier(.2, .7, .2, 1) forwards; animation-delay: calc(var(--d, 0) * 80ms + 60ms); }
-  .gw-entra-img { animation: gwRevelaImg 1.2s cubic-bezier(.2, .7, .2, 1) .25s both; }
   .gw-hero__folha { animation: gwFlutua 9s ease-in-out infinite; }
   .gw-hero::after { animation: gwLuz 12s ease-in-out infinite; }
   .gw-cta::after { animation: gwBrilho 4.5s ease-in-out 2s infinite; }

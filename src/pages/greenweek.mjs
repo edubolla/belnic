@@ -93,7 +93,7 @@ export default ({ versao }) => {
       <a class="btn btn--claro gw-cta gw-entra" style="--d:5" href="#cadastro">Quero entrar no Grupo VIP ${icon.arrow}</a>
       <p class="gw-micro gw-entra" style="--d:6">Gratuito · Só para profissionais da beleza · Cada cadastro é validado pela equipe Belnic</p>
     </div>
-    <div class="gw-hero__visual gw-entra-img">
+    <div class="gw-hero__visual">
       <img src="/assets/img/produtos/mirra/ambiente-3.webp" alt="Profissional com cabelo tratado com Mirra Professional" width="1134" height="1365" fetchpriority="high">
     </div>
   </div>
