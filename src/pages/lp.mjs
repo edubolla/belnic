@@ -108,7 +108,7 @@ export default ({ dados, versao, modo }) => {
       <h2>Produtos, formação e suporte em um só parceiro</h2>
     </div>
     <div class="grade grade--3">
-      <article class="cartao revela"><div class="cartao__icone">${simbolo}</div><h3>Produtos</h3><p>Linhas completas de A a Z para salões de beleza e home care.</p></article>
+      <article class="cartao revela"><div class="cartao__icone">${simbolo}</div><h3>Produtos</h3><p>Linhas completas de A a Z para salões de beleza e home care, com catálogo atualizado e reposição ágil na sua região.</p></article>
       <article class="cartao revela"><div class="cartao__icone">${icon.livro}</div><h3>Formação</h3><p>Imersões presenciais e treinamentos com educadores das marcas: terapia capilar, colorimetria, protocolos e vendas.</p></article>
       <article class="cartao revela"><div class="cartao__icone">${icon.whatsapp}</div><h3>Suporte</h3><p>Representantes na sua região e atendimento pelo WhatsApp para tirar dúvidas de uso, protocolo e pedido.</p></article>
     </div>
