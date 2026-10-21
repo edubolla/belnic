@@ -4,7 +4,7 @@ import { site } from '../site.mjs';
 export default ({ dados, modo }) => {
   const landing = modo === 'landing';
   const u = (c) => `${site.url}${c}`;
-  const porMarca = (m) => dados.linhas.filter((l) => l.marca === m && l.produtos.length);
+  const porMarca = (m) => dados.linhas.filter((l) => l.marca === m && l.produtos.length && l.slug !== 'hombre-barbearia');
   const bloco = (m) => porMarca(m).map((l) =>
     `- ${landing ? `**${l.nome}**` : `[${l.nome}](${u(dados.marcas[m].url)}#${l.slug})`}: ${l.produtos.map((p) => p.nome).join(', ')}`).join('\n');
 
@@ -12,7 +12,7 @@ export default ({ dados, modo }) => {
 
 > ${site.descricao}
 
-A Belnic ("Belnic Hub da Beleza") é distribuidora oficial das marcas profissionais Maison Visage e Mirra Professional no Rio Grande do Sul. Atende salões de beleza, barbearias, terapeutas capilares, clínicas e profissionais da beleza com produtos, formação (cursos e imersões) e suporte de representantes por região. Não vende ao consumidor final: indica salões parceiros. Não há preços no site; pedidos e condições são tratados pelo WhatsApp.
+A Belnic ("Belnic Hub da Beleza") é distribuidora oficial das marcas profissionais Maison Visage e Mirra Professional no Rio Grande do Sul. Atende salões de beleza, estúdios, terapeutas capilares, clínicas e profissionais da beleza com produtos, formação (cursos e imersões) e suporte de representantes por região. Não vende ao consumidor final: indica salões parceiros. Não há preços no site; pedidos e condições são tratados pelo WhatsApp.
 
 - WhatsApp: +${site.whatsapp} (${site.whatsappExibicao})
 - E-mail: ${site.email}
@@ -21,7 +21,7 @@ A Belnic ("Belnic Hub da Beleza") é distribuidora oficial das marcas profission
 
 ${landing ? `## Seções do site
 
-- [Para quem é a Belnic](${u('/#para-quem')}): salões, cabeleireiros, terapeutas capilares, clínicas e barbearias
+- [Para quem é a Belnic](${u('/#para-quem')}): salões, cabeleireiros, estúdios, terapeutas capilares e clínicas
 - [Marcas](${u('/#marcas')}): Maison Visage e Mirra Professional
 - [Terapia capilar](${u('/#terapia-capilar')}): linha Spa Therapy e ${dados.protocolos.length} protocolos para couro cabeludo
 - [Formação](${u('/#formacao')}): Imersão em Terapia Capilar, workshops e treinamentos gravados

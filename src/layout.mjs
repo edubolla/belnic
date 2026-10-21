@@ -61,7 +61,7 @@ export const organizacao = {
   },
   areaServed: site.cidades.map((c) => ({ '@type': 'City', name: `${c}, ${site.uf}` })),
   sameAs: [site.instagram, site.facebook],
-  knowsAbout: ['cosméticos profissionais para salão', 'tratamento capilar', 'terapia capilar', 'tricologia', 'coloração capilar', 'finalizadores capilares', 'cuidados para barbearia'],
+  knowsAbout: ['cosméticos profissionais para salão', 'tratamento capilar', 'terapia capilar', 'tricologia', 'coloração capilar', 'finalizadores capilares'],
   brand: [
     { '@type': 'Brand', name: 'Maison Visage', alternateName: 'Maison Visage Cosmetique', url: 'https://maisonvisage.com/' },
     { '@type': 'Brand', name: 'Mirra Professional', alternateName: ['Mirra Cosméticos', 'Mirra'], url: 'https://mirracosmeticos.com/' },

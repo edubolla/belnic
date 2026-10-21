@@ -53,7 +53,7 @@ export default ({ dados, versao }) => {
     <div class="grade grade--3">
       <article class="cartao revela"><span class="numero">01</span><h3>Salões e cabeleireiros</h3><p>Tratamento, coloração, alisamento e finalização Mirra e Maison Visage, além de home care para revenda ao cliente.</p></article>
       <article class="cartao revela"><span class="numero">02</span><h3>Clínicas e terapeutas capilares</h3><p>A linha Spa Therapy da Maison Visage, com óleos essenciais, argilas, tônicos e protocolos prontos para couro cabeludo.</p></article>
-      <article class="cartao revela"><span class="numero">03</span><h3>Barbearias</h3><p>Linha Hombre da Mirra e protocolos Barber Therapy para cuidar do cabelo, da barba e do couro cabeludo masculino.</p></article>
+      <article class="cartao revela"><span class="numero">03</span><h3>Estúdios e profissionais autônomos</h3><p>Tratamento, finalização e home care para revender às suas clientes, com o suporte de um representante da sua região.</p></article>
     </div>
   </div>
 </section>
@@ -101,7 +101,7 @@ ${vitrine.length ? `
       <h2>Mais do que entregar produto</h2>
     </div>
     <div class="grade grade--3">
-      <article class="cartao revela"><div class="cartao__icone">${simbolo}</div><h3>Produtos</h3><p>Linhas completas para cabine e home care, com catálogo atualizado e reposição ágil na sua região.</p></article>
+      <article class="cartao revela"><div class="cartao__icone">${simbolo}</div><h3>Produtos</h3><p>Linhas completas de A a Z para salões de beleza e home care.</p></article>
       <article class="cartao revela"><div class="cartao__icone">${icon.livro}</div><h3>Formação</h3><p>Imersões presenciais e treinamentos com educadores das marcas: terapia capilar, colorimetria, protocolos e vendas.</p></article>
       <article class="cartao revela"><div class="cartao__icone">${icon.whatsapp}</div><h3>Suporte</h3><p>Representantes na sua região e atendimento pelo WhatsApp para tirar dúvidas de uso, protocolo e pedido.</p></article>
     </div>
@@ -116,7 +116,7 @@ ${vitrine.length ? `
       <p class="lead">A linha Spa Therapy da Maison Visage reúne óleos essenciais, argilas, vitaminas e tônicos com ${dados.protocolos.length || 'diversos'} protocolos prontos: queda capilar, oleosidade, caspa, sensibilidade e mais.</p>
       <ul class="lista-check" style="margin:24px 0 28px">
         <li>Protocolos de cabine e de home care</li>
-        <li>Barber Therapy para o público masculino</li>
+        <li>Home Spa Therapy para revender às clientes</li>
         <li>Imersão presencial para terapeutas capilares</li>
       </ul>
       <a class="btn btn--primario" href="/terapia-capilar/">Ver protocolos ${icon.arrow}</a>

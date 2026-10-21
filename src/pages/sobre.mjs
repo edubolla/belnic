@@ -18,7 +18,7 @@ export default ({ versao }) => {
     <div class="revela">
       <span class="sobretitulo">Quem somos</span>
       <h2>Um parceiro de verdade para o seu salão</h2>
-      <p>A Belnic Cosméticos é distribuidora oficial das marcas <a href="/marcas/maison-visage/">Maison Visage</a> e <a href="/marcas/mirra-professional/">Mirra Professional</a> em ${site.cidades.length} cidades do Rio Grande do Sul. Vendemos para quem vive da beleza: salões, cabeleireiros, terapeutas capilares, barbearias e clínicas estéticas.</p>
+      <p>A Belnic Cosméticos é distribuidora oficial das marcas <a href="/marcas/maison-visage/">Maison Visage</a> e <a href="/marcas/mirra-professional/">Mirra Professional</a> em ${site.cidades.length} cidades do Rio Grande do Sul. Vendemos para quem vive da beleza: salões, cabeleireiros, estúdios, terapeutas capilares e clínicas estéticas.</p>
       <p>Nosso trabalho não termina na entrega. Você recebe orientação de uso, apoio para montar protocolos e acesso a treinamentos com educadores das marcas, para transformar produto em resultado na cadeira e em faturamento.</p>
     </div>
     <ul class="lista-check revela" style="margin-top:24px">

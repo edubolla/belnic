@@ -36,7 +36,7 @@ export default ({ dados, versao }) => {
       <div>
         <span class="sobretitulo">Maison Visage · Spa Therapy</span>
         <h1>Terapia capilar profissional</h1>
-        <p class="lead">Protocolos e produtos para o cuidado do couro cabeludo e dos fios, com óleos essenciais, argilas, vitaminas e tônicos. Uma linha completa para terapeutas capilares, salões e barbearias que querem oferecer um serviço de cabine diferenciado.</p>
+        <p class="lead">Protocolos e produtos para o cuidado do couro cabeludo e dos fios, com óleos essenciais, argilas, vitaminas e tônicos. Uma linha completa para terapeutas capilares e salões que querem oferecer um serviço de cabine diferenciado.</p>
         <div class="botoes" style="margin-top:24px">
           <a class="btn btn--primario" href="#protocolos">Ver os ${dados.protocolos.length} protocolos ${icon.arrow}</a>
           <a class="btn btn--contorno" href="/formacao/">Imersão em Terapia Capilar</a>

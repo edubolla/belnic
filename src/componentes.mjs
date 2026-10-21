@@ -74,7 +74,7 @@ export const cardParceiro = () => `
   <h3>Como funciona</h3>
   <ol class="passos">
     <li><strong>Chame a Belnic no WhatsApp</strong><span>A mensagem já vai pronta, é só enviar.</span></li>
-    <li><strong>Conte sobre o seu negócio</strong><span>Salão, clínica, barbearia ou atendimento autônomo, e a sua cidade.</span></li>
+    <li><strong>Conte sobre o seu negócio</strong><span>Salão, clínica, estúdio ou atendimento autônomo, e a sua cidade.</span></li>
     <li><strong>Receba o contato do representante</strong><span>Ele apresenta as linhas, as condições e os treinamentos.</span></li>
   </ol>
   ${btnWhats('Quero ser parceiro Belnic', 'Olá! Vim pelo site e quero ser parceiro(a) Belnic.')}
@@ -82,7 +82,7 @@ export const cardParceiro = () => `
 </div>`;
 
 // Cidades atendidas, agrupadas por região (accordion; o texto fica no HTML para Google e IAs).
-export const regioesAtendidas = ({ abertas = 1 } = {}) => `
+export const regioesAtendidas = ({ abertas = 0 } = {}) => `
 <div class="regioes">
   ${site.regioes.map((r, i) => `
   <details class="regiao"${i < abertas ? ' open' : ''}>

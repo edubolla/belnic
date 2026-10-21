@@ -11,7 +11,7 @@ export default ({ dados, versao }) => {
   };
   const cats = [
     { titulo: 'Maison Visage', img: '/assets/img/produtos/maison-visage/ambiente-2.webp', arq: '/catalogos/catalogo-maison-visage.pdf', ver: '/marcas/maison-visage/', qtd: n.mv, texto: 'Finalizadores Touch, Le Bain, Luxury Nanotherapy, Nano Force, home care e Spa Therapy.' },
-    { titulo: 'Mirra Professional', img: '/assets/img/produtos/mirra/ambiente-2.webp', arq: '/catalogos/catalogo-mirra-professional.pdf', ver: '/marcas/mirra-professional/', qtd: n.mirra, texto: 'Elements, BioRestore, coloração Trend Colors, Theraplex, MS Curls, Hombre Barbearia e mais.' },
+    { titulo: 'Mirra Professional', img: '/assets/img/produtos/mirra/ambiente-2.webp', arq: '/catalogos/catalogo-mirra-professional.pdf', ver: '/marcas/mirra-professional/', qtd: n.mirra, texto: 'Elements, BioRestore, coloração Trend Colors, Theraplex, MS Curls e mais.' },
     { titulo: 'Terapia Capilar Spa Therapy', img: '/assets/img/produtos/terapia-capilar/ambiente-1.webp', arq: '/catalogos/catalogo-terapia-capilar-spa-therapy.pdf', ver: '/terapia-capilar/', qtd: n.spa, texto: 'Óleos essenciais, argilas, vitaminas, tônicos e os protocolos de cabine, Barber Therapy e home care.' },
   ];
   const corpo = `

@@ -7,14 +7,14 @@ import { site } from '../site.mjs';
 import { faqHtml, faqSchema } from '../componentes.mjs';
 
 const perfis = [
-  'Salão de beleza', 'Clínica de estética', 'Estúdio de beleza', 'Barbearia',
+  'Salão de beleza', 'Clínica de estética', 'Estúdio de beleza',
   'Profissional autônomo(a)', 'Terapeuta capilar', 'Estudante da área', 'Sou consumidor(a) final',
 ];
 
 const icones = {
   salao: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M7.8 16.2 18 4M16.2 16.2 6 4"/></svg>',
   clinica: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3c3 3.5 5 6.4 5 9a5 5 0 0 1-10 0c0-2.6 2-5.5 5-9Z"/><path d="M10 13.5a2 2 0 0 0 2 2"/></svg>',
-  barbearia: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="8" y="3" width="8" height="18" rx="4"/><path d="M8 8l8 3M8 13l8 3"/></svg>',
+  terapia: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 21c-4-3-6-6.5-6-10a6 6 0 0 1 12 0c0 3.5-2 7-6 10Z"/><path d="M9.5 10.5c1.4 1.6 3.6 1.6 5 0"/></svg>',
   autonomo: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg>',
 };
 
@@ -28,7 +28,7 @@ export default ({ versao }) => {
     ['Quando acontece a Green Week?',
       `O grande lançamento da Green Week ${ano} é no dia ${gw.lancamentoTexto}, dentro do Grupo VIP do WhatsApp. É nesse dia que as condições são liberadas. Faça seu cadastro antes para não ficar de fora.`],
     ['Quem pode participar da Green Week?',
-      'Profissionais da beleza: salões, clínicas de estética, estúdios, barbearias, terapeutas capilares e profissionais autônomos. Cada cadastro é conferido pela equipe Belnic antes de entrar no Grupo VIP.'],
+      'Profissionais da beleza: salões, clínicas de estética, estúdios, terapeutas capilares e profissionais autônomos. Cada cadastro é conferido pela equipe Belnic antes de entrar no Grupo VIP.'],
     ['É preciso pagar para entrar no Grupo VIP?',
       'Não. Entrar no Grupo VIP é gratuito. O pagamento só acontece se você fizer uma compra no lançamento da Green Week.'],
     ['Preciso já ser cliente Belnic?',
@@ -101,7 +101,7 @@ export default ({ versao }) => {
 </section>
 
 <div class="gw-letreiro" aria-hidden="true">
-  <div class="gw-letreiro__trilho"><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Hombre</span><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Hombre</span></div>
+  <div class="gw-letreiro__trilho"><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Nano Force</span><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Nano Force</span></div>
 </div>
 
 <section class="secao secao--branca">
@@ -130,7 +130,7 @@ export default ({ versao }) => {
       <ul class="gw-exclusivo__perfis">
         <li>${icones.salao}<span>Salões e estúdios de beleza</span></li>
         <li>${icones.clinica}<span>Clínicas de estética e terapia capilar</span></li>
-        <li>${icones.barbearia}<span>Barbearias</span></li>
+        <li>${icones.terapia}<span>Terapeutas capilares</span></li>
         <li>${icones.autonomo}<span>Profissionais autônomos da beleza</span></li>
       </ul>
       <p class="gw-exclusivo__nao"><strong>É cliente final?</strong> A Green Week não é para você, mas a Belnic indica um salão parceiro perto de você pelo <a href="https://wa.me/${site.whatsapp}?text=${encodeURIComponent('Olá! Sou cliente final e gostaria da indicação de um salão parceiro.')}" target="_blank" rel="noopener" data-evento="whatsapp">WhatsApp</a>.</p>

@@ -10,7 +10,6 @@ const filtros = [
   ['coloracao', 'Coloração'],
   ['finalizacao', 'Finalização'],
   ['cachos', 'Cachos'],
-  ['barbearia', 'Barbearia'],
   ['home-care', 'Home care'],
 ];
 
@@ -25,7 +24,7 @@ export default ({ dados, versao }) => {
     ${migalhas([['Início', '/'], ['Produtos', caminho]])}
     <span class="sobretitulo" style="margin-top:18px">Maison Visage e Mirra Professional</span>
     <h1>Produtos profissionais para cabelo e couro cabeludo</h1>
-    <p class="lead">${lista.length} produtos para salões, barbearias, terapeutas capilares e profissionais da beleza. Busque por nome, linha ou ativo. Valores e condições, consulte nossa equipe no WhatsApp.</p>
+    <p class="lead">${lista.length} produtos para salões, estúdios, terapeutas capilares e profissionais da beleza. Busque por nome, linha ou ativo. Valores e condições, consulte nossa equipe no WhatsApp.</p>
   </div>
 </section>
 

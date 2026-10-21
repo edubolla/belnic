@@ -13,7 +13,7 @@ export const marcas = {
     slug: 'mirra-professional',
     nome: 'Mirra Professional',
     url: '/marcas/mirra-professional/',
-    resumo: 'Há mais de 25 anos em cuidados pessoais: tratamento, coloração, alisamento e finalização profissional para salões e barbearias.',
+    resumo: 'Há mais de 25 anos em cuidados pessoais: tratamento, coloração, alisamento e finalização profissional para salões de beleza.',
   },
 };
 
