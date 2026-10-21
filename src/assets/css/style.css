@@ -493,3 +493,10 @@ h3, h4 { font-family: var(--sans); font-weight: 500; font-size: clamp(1.1rem, 3.
   .pagina-gw .gw-exclusivo__perfis svg { transition: transform .3s ease; }
   .gw-cta:hover { transform: translateY(-2px); }
 }
+
+/* Green Week — data do grande lançamento */
+.gw-data { display: inline-flex; align-items: center; gap: 16px; margin: 24px 0 4px; padding: 12px 20px 12px 14px; border-radius: var(--raio); background: var(--areia); color: var(--verde-profundo); }
+.gw-data b { font: 500 clamp(2.2rem, 9vw, 3rem)/1 var(--serif); letter-spacing: -.02em; padding-right: 16px; border-right: 1px solid rgb(47 59 50 / .2); }
+.gw-data span { display: grid; gap: 2px; font-size: .88rem; line-height: 1.3; }
+.gw-data strong { font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+@media (prefers-reduced-motion: no-preference) { .gw-data { animation: gwSobe .7s cubic-bezier(.2, .7, .2, 1) forwards, gwPulso 2.6s ease-out 1.6s infinite; } }

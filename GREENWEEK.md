@@ -1,13 +1,13 @@
 # Green Week — página /greenweek/
 
-Página de captação para o Grupo VIP da Green Week (a "Black Friday" da Belnic): **de 5 a 9 de novembro**, com o **grande dia de ofertas em 9 de novembro**. O formulário é curto e já filtra o perfil do lead. Os cadastros vão para um **webhook do n8n**, que entrega para a equipe Belnic fazer a triagem antes de mandar o convite do grupo.
+Página de captação para o Grupo VIP da Green Week (a "Black Friday" da Belnic). O foco é o **grande lançamento em 9 de novembro**, que acontece dentro do Grupo VIP do WhatsApp. O formulário é curto e já filtra o perfil do lead. Os cadastros vão para um **webhook do n8n**, que entrega para a equipe Belnic fazer a triagem antes de mandar o convite do grupo.
 
 ## Configurações (`src/site.mjs` → `greenweek`)
 
 | Campo | Para que serve |
 |---|---|
-| `inicio`, `grandeDia`, `fim` | Datas da contagem regressiva (horário de Brasília). Até o dia 5, a contagem é para o início; do dia 5 ao 9, para o grande dia; no dia 9, mostra "É hoje!". |
-| `datasTexto`, `grandeDiaTexto` | Como as datas aparecem nos textos da página. |
+| `lancamento`, `fim` | Data e hora do grande lançamento (horário de Brasília). Até `lancamento`, a página mostra a contagem regressiva; até `fim`, mostra "É hoje!". |
+| `lancamentoTexto`, `lancamentoCurto` | Como a data aparece nos textos ("9 de novembro") e no destaque ("09.11"). |
 | `endpoint` | URL do webhook do n8n. Vazio = o cadastro segue pelo WhatsApp da Belnic. |
 
 Depois de mudar, rode `node build.mjs` e publique.

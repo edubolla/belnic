@@ -19,7 +19,7 @@ const img = (p) => `/assets/img/${p}`;
 // Ordem = ordem na página. `destaque` deixa o card maior e com selo.
 const links = [
   {
-    id: 'greenweek', destaque: 'De 5 a 9 de novembro', titulo: 'Green Week Belnic', sub: 'Cadastre-se no Grupo VIP e receba as ofertas primeiro',
+    id: 'greenweek', destaque: `Grande lançamento · ${site.greenweek.lancamentoCurto.replace('.', '/')}`, titulo: 'Green Week Belnic', sub: 'Entre no Grupo VIP e participe do lançamento',
     href: '/greenweek/?utm_source=instagram&utm_medium=bio&utm_campaign=greenweek', foto: img('produtos/mirra/ambiente-3.webp'), icone: ic.estrela, cor: 'areia',
   },
   {

@@ -33,12 +33,12 @@ export const site = {
   bingVerificacao: '', // conteúdo da meta tag do Bing Webmaster Tools
   // Green Week (página /greenweek/)
   greenweek: {
-    // Datas (horário de Brasília). A contagem vai até o início e, depois, até o grande dia.
-    inicio: '2026-11-05T00:00:00-03:00',
-    grandeDia: '2026-11-09T00:00:00-03:00',
+    // Grande lançamento no Grupo VIP (horário de Brasília). A contagem regressiva vai até `lancamento`;
+    // até `fim` a página mostra "É hoje!".
+    lancamento: '2026-11-09T00:00:00-03:00',
     fim: '2026-11-09T23:59:59-03:00',
-    datasTexto: 'de 5 a 9 de novembro',
-    grandeDiaTexto: '9 de novembro',
+    lancamentoTexto: '9 de novembro',
+    lancamentoCurto: '09.11',
     // Webhook (n8n) que recebe os cadastros. Vazio = o cadastro segue pelo WhatsApp da Belnic.
     endpoint: 'https://n8n.metingertech.com.br/webhook/green-week',
   },

@@ -118,20 +118,20 @@
   document.querySelectorAll('[data-filtrar]').forEach((f) => f.addEventListener('click', () => rastreia('filtro_produto', { filtro: f.dataset.filtrar })));
 
   // ── Green Week ───────────────────────────────────────────────────────────
-  // Contagem em duas fases: até o início (dia 5) e depois até o grande dia (dia 9).
+  // Contagem regressiva até o grande lançamento; no dia, mostra "É hoje!".
   const contagem = document.querySelector('[data-contagem]');
   if (contagem) {
-    const [inicio, grande, fim] = ['inicio', 'grandeDia', 'fim'].map((k) => Date.parse(contagem.dataset[k]));
+    const lancamento = Date.parse(contagem.dataset.alvo);
+    const fim = Date.parse(contagem.dataset.fim);
     const rotulo = contagem.querySelector('[data-rotulo-contagem]');
     const numeros = contagem.querySelector('.gw-contagem__numeros');
     const pad = (n) => String(n).padStart(2, '0');
     const atualiza = () => {
       const agora = Date.now();
       let alvo = null;
-      if (inicio && agora < inicio) { alvo = inicio; rotulo.textContent = 'A Green Week começa em'; }
-      else if (grande && agora < grande) { alvo = grande; rotulo.textContent = 'O grande dia de ofertas começa em'; }
-      else if (fim && agora <= fim) { rotulo.textContent = 'É hoje! As ofertas estão no Grupo VIP'; }
-      else { rotulo.textContent = 'A Green Week terminou. Cadastre-se para a próxima edição'; }
+      if (lancamento && agora < lancamento) { alvo = lancamento; rotulo.textContent = 'O grande lançamento começa em'; }
+      else if (fim && agora <= fim) { rotulo.textContent = 'É hoje! O lançamento está acontecendo no Grupo VIP'; }
+      else { rotulo.textContent = 'O lançamento terminou. Cadastre-se para a próxima Green Week'; }
       numeros.hidden = !alvo;
       if (!alvo) return;
       const s = Math.floor((alvo - agora) / 1000);
