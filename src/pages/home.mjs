@@ -8,7 +8,7 @@ const faq = [
   ['Quais marcas a Belnic distribui?',
     'Somos distribuidora oficial das marcas <a href="/marcas/maison-visage/">Maison Visage</a> e <a href="/marcas/mirra-professional/">Mirra Professional</a>, com linhas para pele, cabelo, coloração e <a href="/terapia-capilar/">terapia capilar</a>.'],
   ['Em quais cidades a Belnic atende?',
-    `Atendemos Porto Alegre, Região Metropolitana, Vale do Sinos e Serra Gaúcha, incluindo ${site.cidades.slice(0, 8).join(', ')} e outras. Veja a lista completa em <a href="/onde-atendemos/">Onde atendemos</a>.`],
+    `Atendemos ${site.cidades.length} cidades do RS, na Grande Porto Alegre, nos Vales, na Serra Gaúcha, no Litoral Norte e na Região Sul. Veja a lista completa em <a href="/onde-atendemos/">Onde atendemos</a>.`],
   ['Como faço para me tornar parceiro Belnic?',
     'Chame nossa equipe no WhatsApp ou veja como funciona em <a href="/seja-parceiro/">Seja parceiro</a>. Um consultor da sua região entra em contato para apresentar as linhas, condições e treinamentos.'],
   ['A Belnic oferece cursos e treinamentos?',
@@ -29,7 +29,7 @@ export default ({ dados, versao }) => {
     <div class="hero__texto">
       <span class="sobretitulo">Distribuidora oficial no RS</span>
       <h1>Produtos, formação e suporte para o seu salão <em>crescer</em>.</h1>
-      <p class="lead">A Belnic leva as linhas profissionais <strong>Maison Visage</strong> e <strong>Mirra Professional</strong> para salões, clínicas estéticas e profissionais da beleza de ${site.regiao}, com treinamento e acompanhamento de perto.</p>
+      <p class="lead">A Belnic leva as linhas profissionais <strong>Maison Visage</strong> e <strong>Mirra Professional</strong> para salões, clínicas estéticas e profissionais da beleza de todo o Rio Grande do Sul, com treinamento e acompanhamento de perto.</p>
       <div class="botoes">
         ${btnWhats('Quero ser parceiro', 'Olá! Vim pelo site e quero ser parceiro(a) Belnic.')}
         <a class="btn btn--contorno" href="/produtos/">Ver produtos ${icon.arrow}</a>
@@ -38,7 +38,7 @@ export default ({ dados, versao }) => {
     </div>
     <div class="hero__visual">
       <img src="${heroImg}" alt="Modelo com produtos Spa Therapy da Maison Visage, distribuídos pela Belnic" width="900" height="912" fetchpriority="high">
-      <div class="hero__selo">${icon.pin}<span><strong>Atendemos ${site.cidades.length} cidades</strong><br>Porto Alegre, Vale do Sinos e Serra</span></div>
+      <div class="hero__selo">${icon.pin}<span><strong>Atendemos ${site.cidades.length} cidades</strong><br>Da Serra ao Litoral e ao Sul do RS</span></div>
     </div>
   </div>
 </section>
@@ -131,7 +131,7 @@ ${vitrine.length ? `
   <div class="container">
     <div class="cabeca revela">
       <span class="sobretitulo">Onde atendemos</span>
-      <h2>Porto Alegre, Vale do Sinos e Serra Gaúcha</h2>
+      <h2>${site.cidades.length} cidades no Rio Grande do Sul</h2>
       <p class="lead">Representantes Belnic visitam salões e clínicas em ${site.cidades.length} cidades do Rio Grande do Sul.</p>
     </div>
     <ul class="cidades revela">${site.cidades.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>

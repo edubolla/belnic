@@ -6,7 +6,7 @@ const faq = [
   ['Preciso ter CNPJ para ser parceiro?', 'Fale com a nossa equipe pelo WhatsApp: ela explica quais condições valem para o seu perfil, seja salão, clínica ou profissional autônomo.'],
   ['Existe pedido mínimo?', 'As condições comerciais são combinadas com o representante da sua região. Chame a Belnic no WhatsApp e ele entra em contato para apresentar tudo.'],
   ['A Belnic oferece treinamento aos parceiros?', 'Sim. Oferecemos imersões, workshops e treinamentos gravados. Veja em <a href="/formacao/">Formação</a>.'],
-  ['Minha cidade é atendida?', 'Atendemos Porto Alegre, Região Metropolitana, Vale do Sinos, Vale do Paranhana e Serra Gaúcha. Confira em <a href="/onde-atendemos/">Onde atendemos</a>.'],
+  ['Minha cidade é atendida?', 'Atendemos ' + site.cidades.length + ' cidades do RS: Grande Porto Alegre, Vales, Serra Gaúcha, Litoral Norte e Região Sul. Confira em <a href="/onde-atendemos/">Onde atendemos</a>.'],
   ['Preciso preencher algum cadastro?', 'Não. É só chamar a Belnic no WhatsApp pelo botão desta página. A conversa continua por lá, com o representante da sua região.'],
 ];
 

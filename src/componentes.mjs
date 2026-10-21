@@ -80,3 +80,13 @@ export const cardParceiro = () => `
   ${btnWhats('Quero ser parceiro Belnic', 'Olá! Vim pelo site e quero ser parceiro(a) Belnic.')}
   <p class="form__nota">Atendimento pelo WhatsApp ${site.whatsappExibicao}.</p>
 </div>`;
+
+// Cidades atendidas, agrupadas por região (accordion; o texto fica no HTML para Google e IAs).
+export const regioesAtendidas = ({ abertas = 1 } = {}) => `
+<div class="regioes">
+  ${site.regioes.map((r, i) => `
+  <details class="regiao"${i < abertas ? ' open' : ''}>
+    <summary><span>${esc(r.nome)}</span><small>${r.cidades.length} cidades</small></summary>
+    <ul class="cidades">${[...r.cidades].sort((a, b) => a.localeCompare(b, 'pt-BR')).map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+  </details>`).join('')}
+</div>`;

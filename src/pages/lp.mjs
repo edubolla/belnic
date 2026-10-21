@@ -4,7 +4,7 @@
 // claras, nomes das marcas e variações ("Mirra Cosméticos"), cidades e perguntas reais.
 import { pagina, esc, icon, simbolo, btnWhats } from '../layout.mjs';
 import { site } from '../site.mjs';
-import { faqHtml, faqSchema, cardParceiro } from '../componentes.mjs';
+import { faqHtml, faqSchema, cardParceiro, regioesAtendidas } from '../componentes.mjs';
 
 const catalogos = [
   ['Maison Visage', 'Finalizadores, tratamento e cuidados corporais', '/catalogos/catalogo-maison-visage.pdf'],
@@ -15,7 +15,7 @@ const catalogos = [
 // Perguntas no formato em que as pessoas buscam no Google e perguntam às IAs.
 const faq = [
   ['Onde comprar Mirra Professional e Maison Visage em Porto Alegre?',
-    'Profissionais da beleza compram com a Belnic, distribuidora oficial das duas marcas no Rio Grande do Sul. O pedido é feito pelo WhatsApp com o representante da sua região, que atende Porto Alegre, Região Metropolitana, Vale do Sinos e Serra Gaúcha.'],
+    'Profissionais da beleza compram com a Belnic, distribuidora oficial das duas marcas no Rio Grande do Sul. O pedido é feito pelo WhatsApp com o representante da sua região, que atende ' + site.cidades.length + ' cidades, da Grande Porto Alegre e Serra Gaúcha ao Litoral Norte e à Região Sul.'],
   ['A Belnic é distribuidora oficial da Mirra e da Maison Visage?',
     'Sim. A Belnic é distribuidora oficial da Mirra Professional (também conhecida como Mirra Cosméticos) e da Maison Visage no RS, com produtos para tratamento, coloração, finalização, barbearia e terapia capilar.'],
   ['Qual a diferença entre Maison Visage e Mirra Professional?',
@@ -23,7 +23,7 @@ const faq = [
   ['A Belnic vende para consumidor final?',
     'Não. A Belnic vende apenas para salões, barbearias, clínicas e profissionais da beleza. Se você é cliente final, chame no WhatsApp e indicamos um salão parceiro perto de você.'],
   ['Em quais cidades a Belnic atende?',
-    `A Belnic atende ${site.cidades.length} cidades do Rio Grande do Sul: ${site.cidades.join(', ')}.`],
+    `A Belnic atende ${site.cidades.length} cidades do Rio Grande do Sul. ${site.regioes.map((r) => `${r.nome}: ${r.cidades.join(', ')}`).join('. ')}.`],
   ['A Belnic oferece curso de terapia capilar?',
     'Sim. A Belnic promove a Imersão em Terapia Capilar, com dois dias presenciais em Novo Hamburgo (RS), além de workshops e treinamentos gravados com educadores das marcas. Pergunte no WhatsApp pelas próximas turmas.'],
   ['Como ser parceiro Belnic e comprar para o meu salão?',
@@ -43,7 +43,7 @@ export default ({ dados, versao, modo }) => {
   <div class="container hero__grade">
     <div class="hero__texto">
       <h1><span class="sobretitulo">Distribuidora Mirra e Maison Visage no RS</span> Produtos, formação e suporte para o seu salão <em>crescer</em>.</h1>
-      <p class="lead">A Belnic é a distribuidora oficial da <strong>Mirra Professional</strong> e da <strong>Maison Visage</strong> no Rio Grande do Sul. Atendemos salões, barbearias, terapeutas capilares e clínicas de Porto Alegre, Vale do Sinos e Serra Gaúcha, com produtos profissionais, cursos e suporte de perto.</p>
+      <p class="lead">A Belnic é a distribuidora oficial da <strong>Mirra Professional</strong> e da <strong>Maison Visage</strong> no Rio Grande do Sul. Atendemos salões, barbearias, terapeutas capilares e clínicas em ${site.cidades.length} cidades gaúchas, da Grande Porto Alegre à Serra, ao Litoral Norte e à Região Sul, com produtos profissionais, cursos e suporte de perto.</p>
       <div class="botoes">
         <a class="btn btn--primario" href="#parceiro">Quero ser parceiro ${icon.arrow}</a>
         ${btnWhats('Falar no WhatsApp', 'Olá! Vim pelo site e gostaria de mais informações.', 'btn btn--contorno')}
@@ -52,7 +52,7 @@ export default ({ dados, versao, modo }) => {
     </div>
     <div class="hero__visual">
       <img src="/assets/img/home-hero.webp" alt="Modelo com produtos Spa Therapy da Maison Visage, distribuídos pela Belnic no RS" width="900" height="912" fetchpriority="high">
-      <div class="hero__selo">${icon.pin}<span><strong>Atendemos ${site.cidades.length} cidades</strong><br>Porto Alegre, Vale do Sinos e Serra</span></div>
+      <div class="hero__selo">${icon.pin}<span><strong>Atendemos ${site.cidades.length} cidades</strong><br>Da Serra ao Litoral e ao Sul do RS</span></div>
     </div>
   </div>
 </section>
@@ -157,11 +157,11 @@ export default ({ dados, versao, modo }) => {
   <div class="container">
     <div class="cabeca revela">
       <span class="sobretitulo">Onde atendemos</span>
-      <h2>Onde a Belnic atende: Porto Alegre, Vale do Sinos e Serra Gaúcha</h2>
-      <p class="lead">Representantes Belnic visitam salões, barbearias e clínicas em ${site.cidades.length} cidades do Rio Grande do Sul.</p>
+      <h2>Onde a Belnic atende: ${site.cidades.length} cidades no Rio Grande do Sul</h2>
+      <p class="lead">Representantes Belnic visitam salões, barbearias e clínicas na Grande Porto Alegre, nos Vales, na Serra Gaúcha, no Litoral Norte e na Região Sul. Toque na região para ver as cidades.</p>
     </div>
-    <ul class="cidades revela">${site.cidades.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
-    <p style="margin-top:28px"><a class="link-seta" href="${site.mapaUrl}" target="_blank" rel="noopener" data-evento="mapa">Ver no mapa ${icon.arrow}</a></p>
+    <div class="revela">${regioesAtendidas()}</div>
+    <p style="margin-top:24px">Não encontrou a sua cidade? <a href="${'https://wa.me/' + site.whatsapp + '?text=' + encodeURIComponent('Olá! Gostaria de saber se a Belnic atende a minha cidade.')}" target="_blank" rel="noopener" data-evento="whatsapp">Fale com a gente no WhatsApp</a>.</p>
   </div>
 </section>
 
@@ -210,7 +210,7 @@ export default ({ dados, versao, modo }) => {
       lp: true,
       noindex,
       titulo: 'Belnic | Distribuidora Mirra e Maison Visage em Porto Alegre',
-      descricao: 'Distribuidora oficial Mirra Professional e Maison Visage no RS: produtos para salão, terapia capilar, cursos e suporte em Porto Alegre e região.',
+      descricao: 'Distribuidora oficial Mirra Professional e Maison Visage no RS: produtos para salão, terapia capilar, cursos e suporte da Grande Porto Alegre ao Litoral e Sul.',
       caminho,
       corpo,
       versao,
