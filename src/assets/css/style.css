@@ -514,3 +514,21 @@ h3, h4 { font-family: var(--sans); font-weight: 500; font-size: clamp(1.1rem, 3.
 .secao:not(.secao--verde) .regiao summary { color: var(--verde-profundo); }
 .secao:not(.secao--verde) .regiao summary small, .secao:not(.secao--verde) .regiao summary::after { color: var(--oliva-escuro); }
 @media (min-width: 1024px) { .regioes { grid-template-columns: 1fr 1fr; align-items: start; } }
+
+/* Green Week — carrossel de produtos no hero */
+.gw-carrossel { position: relative; aspect-ratio: 4 / 3 !important; max-height: none; background: #F3F1EC; isolation: isolate; touch-action: pan-y; }
+.gw-slide { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity .9s ease; }
+.gw-slide.ativo { opacity: 1; z-index: 1; }
+.gw-slide img { width: 100%; height: 100%; object-fit: cover; }
+.gw-slide figcaption { position: absolute; left: 14px; bottom: 14px; display: grid; gap: 2px; padding: 10px 14px; border-radius: 12px; background: rgb(255 255 255 / .92); backdrop-filter: blur(6px); color: var(--verde-profundo); font-weight: 500; font-size: .95rem; line-height: 1.2; box-shadow: 0 6px 20px rgb(0 0 0 / .12); }
+.gw-slide figcaption small { font-size: .66rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--oliva-escuro); }
+.gw-carrossel__pontos { position: absolute; z-index: 2; right: 14px; bottom: 22px; display: flex; gap: 8px; }
+.gw-carrossel__pontos button { width: 10px; height: 10px; padding: 0; border: 0; border-radius: 999px; background: rgb(47 59 50 / .3); cursor: pointer; transition: width .3s ease, background .3s ease; }
+.gw-carrossel__pontos button[aria-current="true"] { width: 26px; background: var(--verde-profundo); }
+.gw-carrossel__pontos button:focus-visible { outline: 2px solid var(--verde); outline-offset: 2px; }
+@media (prefers-reduced-motion: no-preference) {
+  .gw-slide img { transform: scale(1.06); transition: transform 6s ease-out; }
+  .gw-slide.ativo img { transform: scale(1); }
+}
+@media (min-width: 1024px) { .gw-hero__visual.gw-carrossel { align-self: center; } }
+.gw-carrossel__pontos { top: 14px; bottom: auto; right: 14px; padding: 7px 9px; border-radius: 999px; background: rgb(255 255 255 / .85); backdrop-filter: blur(6px); }

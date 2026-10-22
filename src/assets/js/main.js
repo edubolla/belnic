@@ -148,6 +148,36 @@
     setInterval(atualiza, 1000);
   }
 
+  // Carrossel de produtos do hero: troca a cada 4,5 s, pausa ao passar o mouse ou focar,
+  // aceita deslizar no celular e os pontinhos. Com "reduzir movimento", só troca manualmente.
+  document.querySelectorAll('[data-carrossel]').forEach((car) => {
+    const slides = [...car.querySelectorAll('.gw-slide')];
+    const pontos = [...car.querySelectorAll('.gw-carrossel__pontos button')];
+    if (slides.length < 2) return;
+    let atual = 0, timer = null, x0 = null;
+    const auto = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const vai = (n) => {
+      atual = (n + slides.length) % slides.length;
+      slides.forEach((s, i) => { s.classList.toggle('ativo', i === atual); s.toggleAttribute('aria-hidden', i !== atual); });
+      pontos.forEach((p, i) => p.setAttribute('aria-current', String(i === atual)));
+    };
+    const para = () => { clearInterval(timer); timer = null; };
+    const roda = () => { if (auto && !timer) timer = setInterval(() => vai(atual + 1), 4500); };
+    pontos.forEach((p, i) => p.addEventListener('click', () => { vai(i); para(); roda(); }));
+    car.addEventListener('mouseenter', para);
+    car.addEventListener('mouseleave', roda);
+    car.addEventListener('focusin', para);
+    car.addEventListener('focusout', roda);
+    car.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+    car.addEventListener('touchend', (e) => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) { vai(atual + (dx < 0 ? 1 : -1)); para(); roda(); }
+    });
+    document.addEventListener('visibilitychange', () => (document.hidden ? para() : roda()));
+    roda();
+  });
+
   // Cadastro do Grupo VIP: valida, envia ao webhook (n8n) e, só quando o envio dá certo,
   // mostra a confirmação e dispara o evento de lead (generate_lead) no dataLayer.
   const gw = document.querySelector('[data-form-greenweek]');

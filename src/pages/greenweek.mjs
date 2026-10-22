@@ -18,6 +18,14 @@ const icones = {
   autonomo: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg>',
 };
 
+// Produtos do carrossel do hero (fotos extraídas dos catálogos em PDF)
+const destaques = [
+  { marca: 'Mirra Professional', nome: 'Elements Ginkgo Biloba', img: '/assets/img/greenweek/mirra-elements-ginkgo-biloba.webp', w: 1400, h: 957,
+    alt: 'Linha Elements Ginkgo Biloba da Mirra Professional: máscara, leave-in, shampoo e condicionador' },
+  { marca: 'Maison Visage', nome: 'Luxury Nanotherapy', img: '/assets/img/greenweek/maison-visage-luxury.webp', w: 1187, h: 896,
+    alt: 'Produtos da linha Luxury Nanotherapy da Maison Visage' },
+];
+
 export default ({ versao }) => {
   const caminho = '/greenweek/';
   const gw = site.greenweek || {};
@@ -94,8 +102,13 @@ export default ({ versao }) => {
       <a class="btn btn--claro gw-cta gw-entra" style="--d:5" href="#cadastro">Quero entrar no Grupo VIP ${icon.arrow}</a>
       <p class="gw-micro gw-entra" style="--d:6">Gratuito · Só para profissionais da beleza · Cada cadastro é validado pela equipe Belnic</p>
     </div>
-    <div class="gw-hero__visual">
-      <img src="/assets/img/produtos/mirra/ambiente-3.webp" alt="Profissional com cabelo tratado com Mirra Professional" width="1134" height="1365" fetchpriority="high">
+    <div class="gw-hero__visual gw-carrossel" data-carrossel aria-roledescription="carrossel" aria-label="Produtos em destaque na Green Week">
+      ${destaques.map((d, i) => `
+      <figure class="gw-slide${i === 0 ? ' ativo' : ''}" aria-roledescription="slide" aria-label="${i + 1} de ${destaques.length}: ${esc(d.nome)}"${i ? ' aria-hidden="true"' : ''}>
+        <img src="${d.img}" alt="${esc(d.alt)}" width="${d.w}" height="${d.h}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">
+        <figcaption><small>${esc(d.marca)}</small>${esc(d.nome)}</figcaption>
+      </figure>`).join('')}
+      <div class="gw-carrossel__pontos">${destaques.map((d, i) => `<button type="button" aria-label="Ver ${esc(d.nome)}"${i === 0 ? ' aria-current="true"' : ''}></button>`).join('')}</div>
     </div>
   </div>
 </section>
@@ -183,7 +196,7 @@ export default ({ versao }) => {
       corpo,
       versao,
       classeBody: 'pagina-gw',
-      imagem: '/assets/img/produtos/mirra/ambiente-3.webp',
+      imagem: '/assets/img/greenweek/maison-visage-luxury.webp',
       campanha: { cta: 'Quero entrar no Grupo VIP', alvo: '#cadastro', semTopo: true },
       schema: [
         {
@@ -197,7 +210,7 @@ export default ({ versao }) => {
           eventStatus: 'https://schema.org/EventScheduled',
           location: { '@type': 'VirtualLocation', url: `${site.url}${caminho}` },
           organizer: { '@id': `${site.url}/#organizacao` },
-          image: `${site.url}/assets/img/produtos/mirra/ambiente-3.webp`,
+          image: destaques.map((d) => `${site.url}${d.img}`),
         },
         faqSchema(faq),
       ],
