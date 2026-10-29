@@ -19,7 +19,8 @@ const img = (p) => `/assets/img/${p}`;
 // Ordem = ordem na página. `destaque` deixa o card maior e com selo.
 const links = [
   {
-    id: 'greenweek', destaque: `Grande lançamento · ${site.greenweek.lancamentoCurto.replace('.', '/')}`, titulo: 'Green Week Belnic', sub: 'Entre no Grupo VIP e participe do lançamento',
+    // Escondido/mostrado por site.greenweek.linkNaBio (o card continua guardado aqui).
+    id: 'greenweek', mostrar: site.greenweek.linkNaBio, destaque: `${site.greenweek.desconto} OFF · ${site.greenweek.lancamentoCurto.replace('.', '/')}`, titulo: 'Green Week Belnic', sub: 'Entre no Grupo VIP e participe do grande lançamento',
     href: '/greenweek/?utm_source=instagram&utm_medium=bio&utm_campaign=greenweek', foto: img('produtos/mirra/ambiente-3.webp'), icone: ic.estrela, cor: 'areia',
   },
   {
@@ -143,12 +144,12 @@ export default ({ versao }) => {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Belnic | Links</title>
-<meta name="description" content="Links da Belnic Cosméticos: Green Week, cursos, seja parceiro, site e catálogos Maison Visage, Mirra e Terapia Capilar.">
+<meta name="description" content="Links da Belnic Cosméticos: ${site.greenweek.linkNaBio ? 'Green Week, ' : ''}cursos, seja parceiro, site e catálogos Maison Visage, Mirra e Terapia Capilar.">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="${site.url}${caminho}">
 <meta name="theme-color" content="#2F3B32">
 <meta property="og:title" content="Belnic | Links">
-<meta property="og:description" content="Green Week, catálogos, cursos e WhatsApp da Belnic.">
+<meta property="og:description" content="${site.greenweek.linkNaBio ? 'Green Week, ' : ''}Catálogos, cursos e WhatsApp da Belnic.">
 <meta property="og:image" content="${site.url}/assets/img/og-belnic.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
@@ -166,7 +167,7 @@ ${site.gtm ? `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id
   <a class="logo" href="/?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links" aria-label="Belnic Cosméticos — site">${logoHorizontal}</a>
   <p class="tagline">Distribuidora oficial<br>Maison Visage &amp; Mirra Professional</p>
 
-  <nav class="links" aria-label="Links da Belnic">${links.map(card).join('')}
+  <nav class="links" aria-label="Links da Belnic">${links.filter((l) => l.mostrar !== false).map(card).join('')}
     <p class="grupo">Downloads</p>${downloads.map((l, i) => card(l, i + links.length)).join('')}
   </nav>
 

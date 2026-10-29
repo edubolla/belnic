@@ -8,6 +8,8 @@ Página de captação para o Grupo VIP da Green Week (a "Black Friday" da Belnic
 |---|---|
 | `lancamento`, `fim` | Data e hora do grande lançamento (horário de Brasília). Até `lancamento`, a página mostra a contagem regressiva; até `fim`, mostra "É hoje!". |
 | `lancamentoTexto`, `lancamentoCurto` | Como a data aparece nos textos ("9 de novembro") e no destaque ("09.11"). |
+| `desconto` | Desconto divulgado na página ("até 70%"): título, selo do topo, vantagens, cadastro, FAQ e letreiro. Vazio = não mostra. |
+| `linkNaBio` | Mostra (`true`) ou esconde (`false`) o card da Green Week na página `/links/`. O card fica guardado em `src/pages/links.mjs`. Escondido até 01/11/2026 a pedido da Belnic (fechamento do mês). |
 | `endpoint` | URL do webhook do n8n. Vazio = o cadastro segue pelo WhatsApp da Belnic. |
 
 Depois de mudar, rode `node build.mjs` e publique.

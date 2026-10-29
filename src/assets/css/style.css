@@ -532,3 +532,10 @@ h3, h4 { font-family: var(--sans); font-weight: 500; font-size: clamp(1.1rem, 3.
 }
 @media (min-width: 1024px) { .gw-hero__visual.gw-carrossel { align-self: center; } }
 .gw-carrossel__pontos { top: 14px; bottom: auto; right: 14px; padding: 7px 9px; border-radius: 999px; background: rgb(255 255 255 / .85); backdrop-filter: blur(6px); }
+
+/* Green Week — selo de desconto */
+.gw-desconto { display: inline-flex; align-items: baseline; gap: 8px; margin: 24px 12px 0 0; padding: 10px 20px; border-radius: var(--raio); background: #fff; color: var(--verde-profundo); box-shadow: 0 10px 30px rgb(0 0 0 / .25); vertical-align: middle; }
+.gw-desconto span { font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--verde); }
+.gw-desconto b { font: 600 clamp(2.4rem, 10vw, 3.2rem)/1 var(--serif); letter-spacing: -.02em; }
+.gw-hero .gw-data { vertical-align: middle; }
+.gw-letreiro__trilho span:first-child, .gw-letreiro__trilho span:nth-child(13) { font-weight: 700; }

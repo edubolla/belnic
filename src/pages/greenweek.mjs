@@ -31,12 +31,15 @@ export default ({ versao }) => {
   const gw = site.greenweek || {};
   const ano = gw.lancamento ? new Date(gw.lancamento).getFullYear() : '';
   const dia = esc(gw.lancamentoTexto || '');
+  const off = esc(gw.desconto || '');
 
   const faq = [
     ['Quando acontece a Green Week?',
       `O grande lançamento da Green Week ${ano} é no dia ${gw.lancamentoTexto}, dentro do Grupo VIP do WhatsApp. É nesse dia que as condições são liberadas. Faça seu cadastro antes para não ficar de fora.`],
     ['Quem pode participar da Green Week?',
       'Profissionais da beleza: salões, clínicas de estética, estúdios, terapeutas capilares e profissionais autônomos. Cada cadastro é conferido pela equipe Belnic antes de entrar no Grupo VIP.'],
+    ['Qual é o desconto da Green Week?',
+      `Os produtos da Green Week têm descontos de ${gw.desconto}, liberados no Grupo VIP do WhatsApp no dia do lançamento, ${gw.lancamentoTexto}.`],
     ['É preciso pagar para entrar no Grupo VIP?',
       'Não. Entrar no Grupo VIP é gratuito. O pagamento só acontece se você fizer uma compra no lançamento da Green Week.'],
     ['Preciso já ser cliente Belnic?',
@@ -89,8 +92,9 @@ export default ({ versao }) => {
   <div class="container gw-hero__grade">
     <div>
       <span class="gw-selo gw-entra" style="--d:0">Grande lançamento · ${dia} · Grupo VIP</span>
-      <h1 class="gw-entra" style="--d:1">Green Week Belnic: <em>o grande lançamento</em> do ano para quem vive de beleza</h1>
-      <p class="gw-lead gw-entra" style="--d:2">No dia <strong>${dia}</strong>, a Belnic libera no Grupo VIP do WhatsApp as condições mais esperadas do ano em <strong>Mirra Professional</strong> e <strong>Maison Visage</strong>. Só quem está no grupo participa do lançamento.</p>
+      <h1 class="gw-entra" style="--d:1">Green Week Belnic: <em>${off} de desconto</em> no grande lançamento do ano</h1>
+      <p class="gw-lead gw-entra" style="--d:2">No dia <strong>${dia}</strong>, a Belnic libera no Grupo VIP do WhatsApp descontos de <strong>${off}</strong> em produtos <strong>Mirra Professional</strong> e <strong>Maison Visage</strong>. Só quem está no grupo participa do lançamento.</p>
+      ${off ? `<div class="gw-desconto gw-entra" style="--d:3" aria-label="Descontos de ${off}"><span>até</span><b>${off.replace(/^até\s*/, '')}</b><span>OFF</span></div>` : ''}
       <div class="gw-data gw-entra" style="--d:3">
         <b>${esc(gw.lancamentoCurto || '')}</b>
         <span><strong>Grande lançamento</strong>No Grupo VIP do WhatsApp</span>
@@ -114,7 +118,7 @@ export default ({ versao }) => {
 </section>
 
 <div class="gw-letreiro" aria-hidden="true">
-  <div class="gw-letreiro__trilho"><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Nano Force</span><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Nano Force</span></div>
+  <div class="gw-letreiro__trilho"><span>Até 70% OFF</span><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Nano Force</span><span>Até 70% OFF</span><span>Mirra Professional</span><span>Maison Visage</span><span>Spa Therapy</span><span>Elements</span><span>BioRestore</span><span>Trend Colors</span><span>Theraplex</span><span>Luxury Nanotherapy</span><span>Touch Finishers</span><span>MS Curls</span><span>Le Bain</span><span>Nano Force</span></div>
 </div>
 
 <section class="secao secao--branca">
@@ -125,7 +129,7 @@ export default ({ versao }) => {
     </div>
     <div class="grade grade--2 grade--4">
       <article class="cartao revela"><span class="numero">01</span><h3>Aviso antes de todo mundo</h3><p>Lembretes do lançamento e as linhas participantes chegam primeiro no grupo.</p></article>
-      <article class="cartao revela"><span class="numero">02</span><h3>Condições exclusivas</h3><p>Ofertas em Mirra Professional e Maison Visage que não aparecem no resto do ano.</p></article>
+      <article class="cartao revela"><span class="numero">02</span><h3>Descontos de ${off}</h3><p>Ofertas em Mirra Professional e Maison Visage que não aparecem no resto do ano.</p></article>
       <article class="cartao revela"><span class="numero">03</span><h3>Combos para o seu salão</h3><p>Kits pensados para cabine e para revenda de home care aos seus clientes.</p></article>
       <article class="cartao revela"><span class="numero">04</span><h3>Quem chega primeiro, garante</h3><p>No dia ${dia}, quem já está no grupo sai na frente.</p></article>
     </div>
@@ -169,7 +173,7 @@ export default ({ versao }) => {
   <div class="container dividido">
     <div class="revela">
       <span class="sobretitulo">Cadastro Grupo VIP</span>
-      <h2>Garanta seu lugar no lançamento do dia ${dia}</h2>
+      <h2>Garanta ${off} de desconto no lançamento do dia ${dia}</h2>
       <p class="lead">Preencha os dados ao lado. Se o seu perfil for aprovado, o convite do Grupo VIP chega no seu WhatsApp antes do lançamento.</p>
       <ul class="gw-marcas">
         <li>Mirra Professional</li><li>Maison Visage</li><li>Spa Therapy</li><li>Elements</li><li>BioRestore</li><li>Trend Colors</li><li>Luxury</li><li>Touch Finishers</li>
@@ -190,8 +194,8 @@ export default ({ versao }) => {
   return {
     caminho,
     html: pagina({
-      titulo: `Green Week Belnic ${ano} | Grande lançamento em ${gw.lancamentoCurto?.replace('.', '/')}`,
-      descricao: `Grande lançamento da Green Week Belnic em ${gw.lancamentoTexto}: condições exclusivas Mirra Professional e Maison Visage no Grupo VIP para profissionais.`,
+      titulo: `Green Week Belnic: ${gw.desconto} OFF em ${gw.lancamentoCurto?.replace('.', '/')}`,
+      descricao: `Green Week Belnic em ${gw.lancamentoTexto}: descontos de ${gw.desconto} em Mirra Professional e Maison Visage, só para profissionais do Grupo VIP.`,
       caminho,
       corpo,
       versao,
@@ -205,7 +209,7 @@ export default ({ versao }) => {
         },
         {
           '@type': 'SaleEvent', name: `Green Week Belnic ${ano}: grande lançamento`,
-          description: 'Grande lançamento com condições exclusivas em Mirra Professional e Maison Visage para profissionais da beleza do Grupo VIP Belnic.',
+          description: `Grande lançamento com descontos de ${gw.desconto} em Mirra Professional e Maison Visage para profissionais da beleza do Grupo VIP Belnic.`,
           startDate: gw.lancamento, endDate: gw.fim, eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
           eventStatus: 'https://schema.org/EventScheduled',
           location: { '@type': 'VirtualLocation', url: `${site.url}${caminho}` },
