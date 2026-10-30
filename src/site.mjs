@@ -30,10 +30,10 @@ export const site = {
   // Resumo da área de atendimento para textos
   areaTexto: 'Porto Alegre, Vales, Serra Gaúcha, Litoral Norte e Sul do RS',
   // Medição: deixe vazio até ter os códigos (veja MEDICAO.md).
-  // Use o GTM (recomendado) OU o GA4 direto, não os dois ao mesmo tempo.
+  // O GA4 roda direto no site (gtag) e o GTM fica para outras tags (Meta Pixel etc.).
+  // Não crie tag do GA4 dentro do GTM, senão as visitas contam em dobro.
   gtm: 'GTM-5KTD5WNN',
-  // GA4 da Belnic: G-3QD545KYWP. Fica configurado DENTRO do GTM (tag Google Tag), por isso vazio aqui.
-  ga4: '', // só preencha se deixar de usar o GTM
+  ga4: 'G-3QD545KYWP',
   googleVerificacao: '', // conteúdo da meta tag do Google Search Console (opcional se verificar pelo DNS)
   bingVerificacao: '', // conteúdo da meta tag do Bing Webmaster Tools
   // Green Week (página /greenweek/)

@@ -14,29 +14,23 @@ O site já sai pronto: só falta criar as contas e colar os códigos em `src/sit
 
 O sitemap é gerado a cada build (`dist/sitemap.xml`) com a página inicial e as páginas legais. O `robots.txt` libera todos os robôs, incluindo os de IA, e aponta para o sitemap. O `llms.txt` resume a Belnic para assistentes de IA.
 
-## 2. Google Tag Manager (recomendado)
+## 2. Instalação na Belnic (30/10/2026)
 
-1. Crie uma conta e um contêiner **Web** em tagmanager.google.com.
-2. Copie o ID `GTM-XXXXXXX` para `gtm` em `src/site.mjs`, rode `node build.mjs` e publique. O código do GTM (no `<head>` e o `<noscript>` logo após o `<body>`) entra sozinho em todas as páginas.
-3. A política de privacidade passa a mencionar o Google Analytics automaticamente quando `gtm` ou `ga4` estiver preenchido.
+- **GA4 direto no site:** `ga4: 'G-3QD545KYWP'` em `src/site.mjs`. O código do GA4 (gtag) entra em todas as páginas e envia sozinho as visitas (`page_view`) e todos os eventos da tabela abaixo. **Não é preciso configurar nada no GTM para o GA4.**
+- **Google Tag Manager:** `gtm: 'GTM-5KTD5WNN'`. Fica disponível para outras tags (Meta Pixel, Google Ads etc.). Os eventos também chegam no `dataLayer`, então dá para usá-los como acionadores.
+- A política de privacidade menciona o Google Analytics automaticamente quando `gtm` ou `ga4` está preenchido.
 
-> Use o GTM **ou** o GA4 direto (`ga4` em `src/site.mjs`), nunca os dois, para não contar visitas em dobro.
+> **Atenção:** não crie a tag **Google Tag / GA4** dentro do GTM. O GA4 já roda direto no site, e uma segunda tag contaria as visitas em dobro.
 
-## 3. GA4 dentro do GTM
+## 3. Ajustes no painel do GA4
 
-1. Crie uma propriedade GA4 em analytics.google.com e um fluxo de dados Web para `https://belniccosmeticos.com`. Anote o **ID de métricas** (`G-XXXXXXXXXX`). Belnic: contêiner `GTM-5KTD5WNN`, GA4 `G-3QD545KYWP` (instalados em 30/10/2026).
-2. No GTM, crie a tag **Google Tag** com esse ID e acionador **Initialization - All Pages**.
-3. Crie as variáveis da camada de dados (Variáveis → Nova → Variável da camada de dados): `local`, `botao`, `catalogo`, `pergunta`, `secao`, `perfil`, `ja_cliente`, `cidade`, `form_id`, `lead_source`, `prioridade`.
-4. Para cada evento da tabela abaixo, crie:
-   - um **acionador** do tipo *Evento personalizado* com o nome exato do evento;
-   - uma tag **Google Analytics: evento GA4** com o mesmo nome de evento e os parâmetros listados (valor = variável correspondente).
-5. Publique o contêiner e teste no **Preview** do GTM e no **DebugView** do GA4.
-6. No GA4, em Administrador → Eventos, marque **`contato_whatsapp`** como **evento principal** (conversão). Se quiser, marque também `download_catalogo`.
-7. No GA4, em Administrador → Definições personalizadas, crie dimensões de evento para `local`, `catalogo`, `secao` e `pergunta`, para usar nos relatórios.
+1. No GA4, em Administrador → Eventos (ou Eventos principais), marque **`generate_lead`** e **`contato_whatsapp`** como **eventos principais** (conversões). Se quiser, marque também `download_catalogo`. Os eventos só aparecem na lista depois de acontecerem pelo menos uma vez.
+2. Em Administrador → Definições personalizadas, crie dimensões de evento para `local`, `catalogo`, `secao`, `pergunta`, `perfil` e `link`, para usar nos relatórios.
+3. Para testar, abra o site e veja em Relatórios → Tempo real (ou Administrador → DebugView).
 
 ## 4. Eventos que o site já envia
 
-Todos vão para o `dataLayer` (GTM). Se o GA4 estiver instalado direto (`ga4`), vão também para o `gtag`.
+Todos vão para o GA4 (via `gtag`) e para o `dataLayer` (GTM).
 
 | Evento | Quando acontece | Parâmetros |
 |---|---|---|
