@@ -33,7 +33,12 @@ Depois de mudar, rode `node build.mjs` e publique.
 | `origem` | site_greenweek | |
 | `pagina` | https://belniccosmeticos.com/greenweek/ | |
 | `enviado_em` | 2026-10-20T14:03:00.000Z | data/hora do envio (UTC) |
-| `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term` | instagram, social, greenweek | vazios se o link não tiver UTM |
+| `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term` | facebook, paid_social, greenweek_2026_leads_rs | vazios se o link não tiver UTM. Ficam guardados na sessão se a pessoa navegar antes de se cadastrar |
+| `fbclid` | IwAR... | id do clique no anúncio do Facebook/Instagram (o Meta coloca sozinho no link) |
+| `fbc` | fb.1.1793391147429.IwAR... | cookie `_fbc` do Pixel ou montado a partir do `fbclid`; formato pronto para a API de Conversões do Meta |
+| `fbp` | fb.1.1793391147429.123456789 | cookie `_fbp` do Pixel; vazio enquanto o Pixel da Meta não estiver instalado |
+| `gclid` | Cj0KCQ... | id do clique no Google Ads |
+| `navegador` | Mozilla/5.0 (...) | user agent, usado pela API de Conversões |
 
 Campos protegidos: há um campo invisível anti-robô. Se ele vier preenchido, o site nem envia.
 
@@ -63,6 +68,7 @@ Nenhum dos dois dispara com formulário incompleto, com robô (honeypot) ou se o
 
 Use links com UTM para saber de onde vêm os cadastros:
 
+- Anúncios Meta (no campo **Parâmetros de URL** do anúncio): `utm_source={{site_source_name}}&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}`. O `fbclid` é adicionado sozinho pelo Meta.
 - Instagram: `https://belniccosmeticos.com/greenweek/?utm_source=instagram&utm_medium=social&utm_campaign=greenweek`
 - Representantes no WhatsApp: `...?utm_source=whatsapp&utm_medium=representante&utm_campaign=greenweek`
 
