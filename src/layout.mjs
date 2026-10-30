@@ -33,12 +33,13 @@ export function medicaoHead() {
   if (site.gtm) {
     linhas.push(`<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${site.gtm}');</script>`);
   }
-  // GA4 direto (gtag): recebe page_view e todos os eventos do rastreia(). content_group agrupa as páginas
+  // GA4 direto (gtag) numa fila própria (gaLayer), separada do dataLayer do GTM: assim cada evento aparece
+  // uma vez só no GTM e o GA4 recebe uma vez só. Recebe page_view e todos os eventos do rastreia(). content_group agrupa as páginas
   // nos relatórios pelo 1º trecho do endereço (inicio, greenweek, links...). Pode rodar junto com o GTM,
   // desde que o GTM não tenha também uma tag do GA4 (senão conta em dobro).
   if (site.ga4) {
-    linhas.push(`<script async src="https://www.googletagmanager.com/gtag/js?id=${site.ga4}"></script>`);
-    linhas.push(`<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());var p=location.pathname,g=p==='/'?'inicio':p.split('/')[1]||'inicio';gtag('config','${site.ga4}',{content_group:g});</script>`);
+    linhas.push(`<script async src="https://www.googletagmanager.com/gtag/js?id=${site.ga4}&l=gaLayer"></script>`);
+    linhas.push(`<script>window.gaLayer=window.gaLayer||[];function gtag(){gaLayer.push(arguments)}gtag('js',new Date());var p=location.pathname,g=p==='/'?'inicio':p.split('/')[1]||'inicio';gtag('config','${site.ga4}',{content_group:g});</script>`);
   }
   return linhas.join('\n');
 }

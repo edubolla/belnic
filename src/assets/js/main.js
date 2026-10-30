@@ -61,8 +61,8 @@
   }
 
   // ── Medição ──────────────────────────────────────────────────────────────
-  // Todo evento vai para o dataLayer (Google Tag Manager). Se o GA4 estiver instalado
-  // direto (gtag), vai para ele também. Nomes e parâmetros documentados em MEDICAO.md.
+  // Todo evento vai para o dataLayer (Google Tag Manager) e para o GA4 direto (gtag, que usa
+  // a fila própria gaLayer). Nomes e parâmetros documentados em MEDICAO.md.
   window.dataLayer = window.dataLayer || [];
   const rastreia = (evento, params = {}) => {
     window.dataLayer.push({ event: evento, ...params });
