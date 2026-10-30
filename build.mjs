@@ -1,5 +1,5 @@
 // Gerador estático da Belnic. Sem dependências: `node build.mjs` gera /dist
-// pronto para subir na public_html da Hostinger. `node build.mjs --serve` sobe um servidor local.
+// pronto para subir na public_html da HostGator. `node build.mjs --serve` sobe um servidor local.
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync, statSync } from 'node:fs';
 import { join, dirname, extname } from 'node:path';
 import { createServer } from 'node:http';
@@ -63,16 +63,16 @@ console.log(modo === 'landing'
   ? `✓ Modo landing: ${paginas.length} páginas em dist/ (página única na raiz)`
   : `✓ Modo completo: ${paginas.length} páginas em dist/ (${dados.produtos.length} produtos; landing em /lp/)`);
 
-// `--zip`: gera os pacotes para subir na Hostinger (Gerenciador de Arquivos → Extrair) em entrega/.
+// `--zip`: gera os pacotes para subir na HostGator (Gerenciador de Arquivos → Extrair) em entrega/.
 // O completo leva os catálogos em PDF; o "sem-pdfs" serve para atualizações do site.
 if (process.argv.includes('--zip')) {
   const entrega = join(raiz, 'entrega');
   rmSync(entrega, { recursive: true, force: true });
   mkdirSync(entrega);
   const zip = (nome, ...extra) => execFileSync('zip', ['-rqX', join(entrega, nome), '.', '-x', '*.DS_Store', ...extra], { cwd: dist });
-  zip('belnic-hostinger-completo.zip');
-  zip('belnic-hostinger-sem-pdfs.zip', 'catalogos/*');
-  console.log('✓ Pacotes em entrega/: belnic-hostinger-completo.zip e belnic-hostinger-sem-pdfs.zip');
+  zip('belnic-hostgator-completo.zip');
+  zip('belnic-hostgator-sem-pdfs.zip', 'catalogos/*');
+  console.log('✓ Pacotes em entrega/: belnic-hostgator-completo.zip e belnic-hostgator-sem-pdfs.zip');
 }
 
 if (process.argv.includes('--serve')) {

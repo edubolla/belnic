@@ -1,4 +1,4 @@
-# Belnic — Hostinger (Apache/LiteSpeed)
+# Belnic — HostGator (Apache, cPanel)
 Options -Indexes
 DirectoryIndex index.html
 ErrorDocument 404 /404.html

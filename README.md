@@ -1,7 +1,7 @@
 # Site Belnic Cosméticos
 
 Site estático, mobile first, para a Belnic (distribuidora Maison Visage e Mirra Professional no RS).
-Gerado por um script Node sem dependências: o resultado é HTML, CSS e JS puros, compatíveis com a hospedagem compartilhada da Hostinger.
+Gerado por um script Node sem dependências: o resultado é HTML, CSS e JS puros, compatíveis com a hospedagem compartilhada da HostGator.
 
 ## Comandos
 
@@ -9,7 +9,7 @@ Gerado por um script Node sem dependências: o resultado é HTML, CSS e JS puros
 node build.mjs                 # gera a pasta dist/ na versão definida em src/site.mjs (hoje: landing)
 node build.mjs --serve         # gera e abre em http://localhost:4321
 node build.mjs --completo      # força o site completo (marcas + 176 produtos), para prévias
-node build.mjs --zip           # gera também os .zip para a Hostinger em entrega/
+node build.mjs --zip           # gera também os .zip para a HostGator em entrega/
 ```
 
 Precisa só do Node 18+. Não há `npm install`.
@@ -23,9 +23,9 @@ Para trocar, mude `modo` em `src/site.mjs`.
 
 Medição (Search Console, Tag Manager, GA4 e eventos): veja [MEDICAO.md](MEDICAO.md).
 
-## Publicar na Hostinger
+## Publicar na HostGator
 
-`node build.mjs --zip` gera os pacotes em `entrega/`. O passo a passo da troca do WordPress pelo site novo, o checklist e as atualizações estão em [HOSTINGER.md](HOSTINGER.md). A Vercel fica só como prévia (com `noindex`).
+`node build.mjs --zip` gera os pacotes em `entrega/`. O passo a passo da troca do WordPress pelo site novo, o checklist e as atualizações estão em [HOSTGATOR.md](HOSTGATOR.md). A Vercel fica só como prévia (com `noindex`).
 
 ## Onde editar
 

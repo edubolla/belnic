@@ -6,7 +6,7 @@ O site já sai pronto: só falta criar as contas e colar os códigos em `src/sit
 ## 1. Google Search Console (indexação)
 
 1. Acesse search.google.com/search-console e adicione a propriedade **Domínio** `belniccosmeticos.com`.
-2. Verifique pelo **DNS**: o Google mostra um registro TXT. Cole esse registro na zona DNS do domínio (hPanel da Hostinger → Domínios → DNS). É a forma recomendada e cobre http, https e www.
+2. Verifique pelo **DNS**: o Google mostra um registro TXT. Cole esse registro na zona DNS do domínio (cPanel da HostGator → Domínios → Editor de Zona; se o DNS estiver em outro lugar, como Registro.br ou Cloudflare, é lá). É a forma recomendada e cobre http, https e www.
    - Alternativa: propriedade **Prefixo de URL** `https://belniccosmeticos.com/` com verificação por **meta tag**. Copie só o código do `content="..."` para `googleVerificacao` em `src/site.mjs`, rode o build e publique.
 3. Em **Sitemaps**, envie: `https://belniccosmeticos.com/sitemap.xml`
 4. Em **Inspeção de URL**, cole `https://belniccosmeticos.com/` e clique em **Solicitar indexação**.

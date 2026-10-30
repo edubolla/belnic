@@ -6,5 +6,5 @@ _fonte/tmp/
 *.pdf
 # Cópia de trabalho das imagens extraídas (as usadas no site ficam em src/assets/img/produtos)
 _fonte/imagens/
-# Pacotes .zip para a Hostinger (gerados por node build.mjs --zip)
+# Pacotes .zip para a HostGator (gerados por node build.mjs --zip)
 entrega/
