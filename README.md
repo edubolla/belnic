@@ -9,6 +9,7 @@ Gerado por um script Node sem dependências: o resultado é HTML, CSS e JS puros
 node build.mjs                 # gera a pasta dist/ na versão definida em src/site.mjs (hoje: landing)
 node build.mjs --serve         # gera e abre em http://localhost:4321
 node build.mjs --completo      # força o site completo (marcas + 176 produtos), para prévias
+node build.mjs --zip           # gera também os .zip para a Hostinger em entrega/
 ```
 
 Precisa só do Node 18+. Não há `npm install`.
@@ -24,10 +25,7 @@ Medição (Search Console, Tag Manager, GA4 e eventos): veja [MEDICAO.md](MEDICA
 
 ## Publicar na Hostinger
 
-1. Rode `node build.mjs`.
-2. No hPanel → Gerenciador de Arquivos (ou FTP), envie **o conteúdo** de `dist/` para `public_html/`, incluindo o arquivo oculto `.htaccess`.
-3. Os catálogos em PDF (`dist/catalogos/*.pdf`, cerca de 35 MB cada) só precisam ser reenviados quando mudarem.
-4. Depois de publicar: envie `https://belniccosmeticos.com/sitemap.xml` no Google Search Console e no Bing Webmaster Tools.
+`node build.mjs --zip` gera os pacotes em `entrega/`. O passo a passo da troca do WordPress pelo site novo, o checklist e as atualizações estão em [HOSTINGER.md](HOSTINGER.md). A Vercel fica só como prévia (com `noindex`).
 
 ## Onde editar
 

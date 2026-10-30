@@ -3,6 +3,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync, statSync } from 'node:fs';
 import { join, dirname, extname } from 'node:path';
 import { createServer } from 'node:http';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { site } from './src/site.mjs';
 import { carregarDados } from './src/dados.mjs';
@@ -61,6 +62,18 @@ writeFileSync(ht, regras);
 console.log(modo === 'landing'
   ? `✓ Modo landing: ${paginas.length} páginas em dist/ (página única na raiz)`
   : `✓ Modo completo: ${paginas.length} páginas em dist/ (${dados.produtos.length} produtos; landing em /lp/)`);
+
+// `--zip`: gera os pacotes para subir na Hostinger (Gerenciador de Arquivos → Extrair) em entrega/.
+// O completo leva os catálogos em PDF; o "sem-pdfs" serve para atualizações do site.
+if (process.argv.includes('--zip')) {
+  const entrega = join(raiz, 'entrega');
+  rmSync(entrega, { recursive: true, force: true });
+  mkdirSync(entrega);
+  const zip = (nome, ...extra) => execFileSync('zip', ['-rqX', join(entrega, nome), '.', '-x', '*.DS_Store', ...extra], { cwd: dist });
+  zip('belnic-hostinger-completo.zip');
+  zip('belnic-hostinger-sem-pdfs.zip', 'catalogos/*');
+  console.log('✓ Pacotes em entrega/: belnic-hostinger-completo.zip e belnic-hostinger-sem-pdfs.zip');
+}
 
 if (process.argv.includes('--serve')) {
   const tipos = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.pdf': 'application/pdf', '.json': 'application/json' };
