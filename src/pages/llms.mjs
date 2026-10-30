@@ -8,6 +8,13 @@ export default ({ dados, modo }) => {
   const bloco = (m) => porMarca(m).map((l) =>
     `- ${landing ? `**${l.nome}**` : `[${l.nome}](${u(dados.marcas[m].url)}#${l.slug})`}: ${l.produtos.map((p) => p.nome).join(', ')}`).join('\n');
 
+  // Green Week: aparece enquanto a campanha não terminou (o build seguinte depois de 09/11 tira o bloco)
+  const gw = site.greenweek;
+  const blocoGW = new Date() < new Date(gw.fim) ? `## Green Week Belnic (campanha)
+
+- [Green Week Belnic](${u('/greenweek/')}): grande lançamento em ${gw.lancamentoTexto} de ${gw.lancamento.slice(0, 4)}, com descontos de ${gw.desconto} em produtos Mirra Professional e Maison Visage. As ofertas são liberadas só no Grupo VIP do WhatsApp, para profissionais da beleza; a entrada é gratuita, pelo cadastro na página.
+` : '';
+
   const texto = `# ${site.nome}
 
 > ${site.descricao}
@@ -17,7 +24,8 @@ A Belnic ("Belnic Hub da Beleza") é distribuidora oficial das marcas profission
 - WhatsApp: +${site.whatsapp} (${site.whatsappExibicao})
 - E-mail: ${site.email}
 - Instagram: ${site.instagram}
-- Região atendida: ${site.cidades.join(', ')} (RS)
+- Região atendida: ${site.cidades.length} cidades do Rio Grande do Sul
+${site.regioes.map((r) => `  - ${r.nome}: ${r.cidades.join(', ')}`).join('\n')}
 
 ${landing ? `## Seções do site
 
@@ -27,7 +35,9 @@ ${landing ? `## Seções do site
 - [Formação](${u('/#formacao')}): Imersão em Terapia Capilar, workshops e treinamentos gravados
 - [Onde atendemos](${u('/#onde-atendemos')})
 - [Seja parceiro](${u('/#parceiro')}): contato direto pelo WhatsApp
+- [Catálogos](${u('/#catalogos')}) e [Dúvidas frequentes](${u('/#duvidas')})
 
+${blocoGW}
 ## Catálogos em PDF
 
 - [Catálogo Maison Visage](${u('/catalogos/catalogo-maison-visage.pdf')})
