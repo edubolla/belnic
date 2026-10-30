@@ -26,6 +26,8 @@ O sitemap é gerado a cada build (`dist/sitemap.xml`) com a página inicial e as
 
 O site já manda tudo; estes ajustes deixam os relatórios prontos para uso.
 
+**Status em 30/10/2026 (propriedade "Belnic Site", 340709277):** feitos os itens 1 (retenção 14 meses), 3 (11 dimensões), 5 (medição otimizada ligada, com *Interações com formulário* desligada para não gerar `form_submit` em envios incompletos) e 8 (já estava certo). Pendentes: 2 (marcar os eventos principais assim que `lead_greenweek` e `contato_whatsapp` aparecerem na lista, em até 24h), 4 (IPs) e 6/7 (vinculações).
+
 1. **Retenção de dados:** Administrador → Coleta e modificação de dados → Retenção de dados → **14 meses** (o padrão é 2, e apaga o histórico dos relatórios de exploração).
 2. **Eventos principais (conversões):** Administrador → Eventos principais → marque **`lead_greenweek`** e **`contato_whatsapp`**. Opcional: `download_catalogo`. Não marque `generate_lead` (é o mesmo lead do `lead_greenweek`). Os eventos aparecem na lista depois de acontecerem pelo menos uma vez; dá para criar o nome manualmente antes.
 3. **Dimensões personalizadas** (Administrador → Definições personalizadas → Criar, escopo **Evento**), uma para cada parâmetro: `local`, `botao`, `catalogo`, `secao`, `pergunta`, `perfil`, `ja_cliente`, `prioridade`, `cidade`, `link`, `form_id`.
