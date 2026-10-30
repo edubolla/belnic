@@ -43,7 +43,7 @@ O site já manda tudo; estes ajustes deixam os relatórios prontos para uso.
 
 ## 4. Eventos que o site já envia
 
-Todos vão para o GA4 (via `gtag`) e para o `dataLayer` (GTM).
+Todos vão para o GA4 (via `gtag`, numa fila própria chamada `gaLayer`) e para o `dataLayer` (GTM). Por serem filas separadas, no Preview do GTM cada evento aparece uma vez só, como `dataLayer.push`; os comandos `gtag(...)` do GA4 não aparecem lá.
 
 | Evento | Quando acontece | Parâmetros |
 |---|---|---|
