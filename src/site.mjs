@@ -50,7 +50,7 @@ export const site = {
     // Escondido até o fechamento do mês de outubro, a pedido da Belnic: volte para true a partir de 01/11.
     linkNaBio: false,
     // Webhook (n8n) que recebe os cadastros. Vazio = o cadastro segue pelo WhatsApp da Belnic.
-    endpoint: 'https://n8n.metingertech.com.br/webhook/green-week',
+    endpoint: 'https://n8n.metingertech.com.br/webhook/greenweek',
   },
 };
 
