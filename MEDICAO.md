@@ -24,7 +24,7 @@ O sitemap é gerado a cada build (`dist/sitemap.xml`) com a página inicial e as
 
 ## 3. GA4 dentro do GTM
 
-1. Crie uma propriedade GA4 em analytics.google.com e um fluxo de dados Web para `https://belniccosmeticos.com`. Anote o **ID de métricas** (`G-XXXXXXXXXX`).
+1. Crie uma propriedade GA4 em analytics.google.com e um fluxo de dados Web para `https://belniccosmeticos.com`. Anote o **ID de métricas** (`G-XXXXXXXXXX`). Belnic: contêiner `GTM-5KTD5WNN`, GA4 `G-3QD545KYWP` (instalados em 30/10/2026).
 2. No GTM, crie a tag **Google Tag** com esse ID e acionador **Initialization - All Pages**.
 3. Crie as variáveis da camada de dados (Variáveis → Nova → Variável da camada de dados): `local`, `botao`, `catalogo`, `pergunta`, `secao`, `perfil`, `ja_cliente`, `cidade`, `form_id`, `lead_source`, `prioridade`.
 4. Para cada evento da tabela abaixo, crie:

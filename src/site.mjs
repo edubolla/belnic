@@ -31,8 +31,9 @@ export const site = {
   areaTexto: 'Porto Alegre, Vales, Serra Gaúcha, Litoral Norte e Sul do RS',
   // Medição: deixe vazio até ter os códigos (veja MEDICAO.md).
   // Use o GTM (recomendado) OU o GA4 direto, não os dois ao mesmo tempo.
-  gtm: '', // ex.: 'GTM-XXXXXXX'
-  ga4: '', // ex.: 'G-XXXXXXXXXX' (só se não usar o GTM)
+  gtm: 'GTM-5KTD5WNN',
+  // GA4 da Belnic: G-3QD545KYWP. Fica configurado DENTRO do GTM (tag Google Tag), por isso vazio aqui.
+  ga4: '', // só preencha se deixar de usar o GTM
   googleVerificacao: '', // conteúdo da meta tag do Google Search Console (opcional se verificar pelo DNS)
   bingVerificacao: '', // conteúdo da meta tag do Bing Webmaster Tools
   // Green Week (página /greenweek/)
