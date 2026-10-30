@@ -192,8 +192,17 @@
     const sucesso = document.querySelector('[data-sucesso]');
     const botaoEnviar = gw.querySelector('[type="submit"]');
     const rotuloBotao = botaoEnviar.querySelector('[data-rotulo]');
+    // Origem do lead: UTMs e identificadores de clique (Meta e Google). Ficam guardados na sessão,
+    // para não se perderem se a pessoa navegar antes de se cadastrar.
     const params = new URLSearchParams(location.search);
-    const utm = Object.fromEntries(['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].map((k) => [k, params.get(k) || '']));
+    const chaves = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid', 'gclid'];
+    let guardado = {};
+    try { guardado = JSON.parse(sessionStorage.getItem('belnic_origem') || '{}'); } catch (_) { /* sem storage */ }
+    const utm = Object.fromEntries(chaves.map((k) => [k, params.get(k) || guardado[k] || '']));
+    try { sessionStorage.setItem('belnic_origem', JSON.stringify(utm)); } catch (_) { /* sem storage */ }
+    const cookie = (n) => (document.cookie.match(new RegExp(`(?:^|; )${n}=([^;]*)`)) || [])[1] || '';
+    // fbc/fbp no formato do Meta, para a API de Conversões: _fbc = fb.1.<timestamp>.<fbclid>
+    const fbc = () => cookie('_fbc') || (utm.fbclid ? `fb.1.${Date.now()}.${utm.fbclid}` : '');
     let comecou = false;
     gw.addEventListener('focusin', () => { if (!comecou) { comecou = true; rastreia('greenweek_inicio_cadastro', { form_id: 'greenweek_grupo_vip' }); } });
 
@@ -238,6 +247,7 @@
         cidade: d.cidade.trim(), negocio: (d.negocio || '').trim(), instagram: (d.instagram || '').trim(),
         ja_cliente: d.ja_cliente, prioridade: prioridade(d), aceite_contato: 'sim',
         origem: 'site_greenweek', pagina: location.origin + location.pathname, enviado_em: new Date().toISOString(), ...utm,
+        fbc: fbc(), fbp: cookie('_fbp'), navegador: navigator.userAgent.slice(0, 200),
       };
       const msgWhats = ['Olá! Quero entrar no Grupo VIP da Green Week.', `Nome: ${lead.nome}`, `Perfil: ${lead.perfil}`,
         lead.negocio && `Negócio: ${lead.negocio}`, `Cidade: ${lead.cidade}`, lead.instagram && `Instagram: ${lead.instagram}`,
