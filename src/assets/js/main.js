@@ -179,7 +179,7 @@
   });
 
   // Cadastro do Grupo VIP: valida, envia ao webhook (n8n) e, só quando o envio dá certo,
-  // mostra a confirmação e dispara o evento de lead (generate_lead) no dataLayer.
+  // mostra a confirmação e dispara os eventos de lead (lead_greenweek e generate_lead).
   const gw = document.querySelector('[data-form-greenweek]');
   // Esconde a barra fixa do celular enquanto o formulário está na tela
   const barraCampanha = document.querySelector('.barra-movel--campanha');
@@ -257,11 +257,14 @@
         } else {
           window.open(linkWhats, '_blank', 'noopener');
         }
-        // Lead enviado com sucesso: evento recomendado do GA4 para conversões de formulário
-        rastreia('generate_lead', {
+        // Lead enviado com sucesso (validado e aceito pelo webhook). lead_greenweek é a conversão
+        // própria da campanha; generate_lead é o evento recomendado do GA4 para qualquer lead.
+        const dadosLead = {
           form_id: 'greenweek_grupo_vip', lead_source: 'greenweek', perfil: lead.perfil,
           ja_cliente: lead.ja_cliente, prioridade: lead.prioridade, cidade: lead.cidade,
-        });
+        };
+        rastreia('lead_greenweek', dadosLead);
+        rastreia('generate_lead', dadosLead);
         window.fbq?.('track', 'Lead');
         gw.hidden = true;
         sucesso.hidden = false;
