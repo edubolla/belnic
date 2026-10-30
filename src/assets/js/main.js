@@ -82,7 +82,6 @@
     const href = a.getAttribute('href') || '';
     if (a.dataset.evento === 'whatsapp' || /wa\.me|api\.whatsapp\.com/.test(href)) {
       rastreia('contato_whatsapp', { local: localDe(a), botao: texto(a) });
-      window.fbq?.('track', 'Contact');
     } else if (href.endsWith('.pdf')) {
       rastreia('download_catalogo', { catalogo: href.split('/').pop().replace('.pdf', ''), local: localDe(a) });
     } else if (href.includes('instagram.com')) {
@@ -275,7 +274,6 @@
         };
         rastreia('lead_greenweek', dadosLead);
         rastreia('generate_lead', dadosLead);
-        window.fbq?.('track', 'Lead');
         gw.hidden = true;
         sucesso.hidden = false;
         sucesso.focus();

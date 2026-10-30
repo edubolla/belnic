@@ -61,7 +61,7 @@ Todos vão para o GA4 (via `gtag`, numa fila própria chamada `gaLayer`) e para 
 | `busca_produto` | Busca no catálogo (só no site completo) | `termo` |
 | `filtro_produto` | Filtro do catálogo (só no site completo) | `filtro` |
 
-Se o Meta Pixel for instalado pelo GTM, o clique no WhatsApp também dispara `fbq('track', 'Contact')`.
+O Meta Pixel fica todo no GTM (tags `00 | Meta Pixel - PageView`, `01 | Meta Pixel - Contact` no evento `contato_whatsapp` e `02 | Meta Pixel - Lead` no evento `lead_greenweek`). O código do site não chama `fbq` direto, para não duplicar. Não crie tag do GA4 no GTM: o GA4 já roda direto no site.
 
 ## 5. O que acompanhar
 

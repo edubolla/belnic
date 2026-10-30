@@ -62,7 +62,7 @@ Se o envio falhar (erro, n8n fora do ar, mais de 15 segundos sem resposta), a p�
 | `generate_lead` | cadastro **enviado com sucesso** (resposta 2xx do webhook). Parâmetros: `form_id` = `greenweek_grupo_vip`, `lead_source` = `greenweek`, `perfil`, `ja_cliente`, `prioridade`, `cidade` |
 | `greenweek_erro_envio` | o envio falhou (parâmetro `erro`) |
 
-Nenhum dos dois dispara com formulário incompleto, com robô (honeypot) ou se o webhook falhar. No GA4, marque **`lead_greenweek`** como **evento principal** (conversão); não marque o `generate_lead` também, para não contar o lead duas vezes. Com o Meta Pixel instalado pelo GTM, o sucesso também dispara `fbq('track', 'Lead')`. Veja [MEDICAO.md](MEDICAO.md).
+Nenhum dos dois dispara com formulário incompleto, com robô (honeypot) ou se o webhook falhar. No GA4, marque **`lead_greenweek`** como **evento principal** (conversão); não marque o `generate_lead` também, para não contar o lead duas vezes. O Lead do Meta Pixel é disparado pela tag `02 | Meta Pixel - Lead` do GTM, no evento `lead_greenweek`. Veja [MEDICAO.md](MEDICAO.md).
 
 ## Divulgação
 
