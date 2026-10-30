@@ -22,11 +22,22 @@ O sitemap é gerado a cada build (`dist/sitemap.xml`) com a página inicial e as
 
 > **Atenção:** não crie a tag **Google Tag / GA4** dentro do GTM. O GA4 já roda direto no site, e uma segunda tag contaria as visitas em dobro.
 
-## 3. Ajustes no painel do GA4
+## 3. Ajustes no painel do GA4 (feitos uma vez, em analytics.google.com)
 
-1. No GA4, em Administrador → Eventos (ou Eventos principais), marque **`generate_lead`** e **`contato_whatsapp`** como **eventos principais** (conversões). Se quiser, marque também `download_catalogo`. Os eventos só aparecem na lista depois de acontecerem pelo menos uma vez.
-2. Em Administrador → Definições personalizadas, crie dimensões de evento para `local`, `catalogo`, `secao`, `pergunta`, `perfil` e `link`, para usar nos relatórios.
-3. Para testar, abra o site e veja em Relatórios → Tempo real (ou Administrador → DebugView).
+O site já manda tudo; estes ajustes deixam os relatórios prontos para uso.
+
+1. **Retenção de dados:** Administrador → Coleta e modificação de dados → Retenção de dados → **14 meses** (o padrão é 2, e apaga o histórico dos relatórios de exploração).
+2. **Eventos principais (conversões):** Administrador → Eventos principais → marque **`lead_greenweek`** e **`contato_whatsapp`**. Opcional: `download_catalogo`. Não marque `generate_lead` (é o mesmo lead do `lead_greenweek`). Os eventos aparecem na lista depois de acontecerem pelo menos uma vez; dá para criar o nome manualmente antes.
+3. **Dimensões personalizadas** (Administrador → Definições personalizadas → Criar, escopo **Evento**), uma para cada parâmetro: `local`, `botao`, `catalogo`, `secao`, `pergunta`, `perfil`, `ja_cliente`, `prioridade`, `cidade`, `link`, `form_id`.
+4. **Tráfego interno:** Administrador → Fluxos de dados → Web → Configurar tag → Definir tráfego interno, com o IP do escritório da Belnic e o seu. Depois, em Configurações de dados → Filtros de dados, ative o filtro "Internal Traffic".
+5. **Medição otimizada:** no fluxo de dados Web, deixe ligada (rolagem, cliques de saída, downloads, vídeo). Ela complementa os eventos do site.
+6. **Search Console:** Administrador → Vinculações de produtos → Search Console, para ver as buscas do Google dentro do GA4.
+7. **Google Ads** (se for anunciar): Vinculações de produtos → Google Ads, e importe `lead_greenweek` como conversão.
+8. **Fuso e moeda:** Administrador → Configurações da propriedade → America/Sao_Paulo e Real (BRL).
+
+**Grupos de conteúdo:** cada página manda o `content_group` pelo 1º trecho do endereço (`inicio`, `greenweek`, `links`, `politicas-de-privacidade`…). Em Relatórios → Engajamento → Páginas, troque a dimensão para "Grupo de conteúdo".
+
+**Link da bio do Instagram:** use `https://belniccosmeticos.com/links/?utm_source=instagram&utm_medium=bio` para o GA4 separar o tráfego da bio do resto do Instagram. Não use UTM em links internos do site (quebra a sessão).
 
 ## 4. Eventos que o site já envia
 
@@ -42,7 +53,8 @@ Todos vão para o GA4 (via `gtag`) e para o `dataLayer` (GTM).
 | `clique_email` | Clique no e-mail | `local` |
 | `abrir_mapa` | Abre o mapa de cidades atendidas | `local` |
 | `greenweek_inicio_cadastro` | Começou a preencher o cadastro da Green Week | — |
-| `generate_lead` | Cadastro da Green Week enviado com sucesso ao webhook (marque como evento principal) | `form_id`, `lead_source`, `perfil`, `ja_cliente`, `prioridade`, `cidade` |
+| `lead_greenweek` | Cadastro da Green Week preenchido corretamente e aceito pelo webhook (**marque como evento principal**) | `form_id`, `lead_source`, `perfil`, `ja_cliente`, `prioridade`, `cidade` |
+| `generate_lead` | Mesmo momento do `lead_greenweek` (evento recomendado do GA4; não marque como principal) | `form_id`, `lead_source`, `perfil`, `ja_cliente`, `prioridade`, `cidade` |
 | `greenweek_erro_envio` | O envio do cadastro falhou | `erro` |
 | `busca_produto` | Busca no catálogo (só no site completo) | `termo` |
 | `filtro_produto` | Filtro do catálogo (só no site completo) | `filtro` |
