@@ -107,6 +107,22 @@
     secoes.forEach((s) => vistas.observe(s));
   }
 
+  // Rolagem da página: scroll_50 na metade e scroll_100 no fim (uma vez cada por página vista).
+  // O GA4 não aceita nome de evento começando com número, por isso "scroll_50" e não "50scroll".
+  const marcos = [50, 100];
+  const atingidos = new Set();
+  const confereRolagem = () => {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    // Página que cabe inteira na tela conta como 100%; 5px de folga no fim para arredondamentos
+    const pct = total <= 0 ? 100 : ((window.scrollY + 5) / total) * 100;
+    marcos.forEach((m) => {
+      if (pct >= m && !atingidos.has(m)) { atingidos.add(m); rastreia(`scroll_${m}`, { percentual: m }); }
+    });
+    if (atingidos.size === marcos.length) window.removeEventListener('scroll', confereRolagem);
+  };
+  window.addEventListener('scroll', confereRolagem, { passive: true });
+  window.addEventListener('load', confereRolagem);
+
   // Busca e filtros do catálogo (site completo)
   let espera;
   document.querySelector('[data-busca]')?.addEventListener('input', (e) => {

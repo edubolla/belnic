@@ -50,6 +50,8 @@ Todos vão para o GA4 (via `gtag`, numa fila própria chamada `gaLayer`) e para 
 | `contato_whatsapp` | Clique em qualquer botão ou link de WhatsApp | `local` (seção: `parceiro`, `formacao`, `topo`, `rodape`, `barra_movel`…), `botao` (texto do botão) |
 | `download_catalogo` | Clique para baixar um catálogo em PDF | `catalogo` (`catalogo-maison-visage`, `catalogo-mirra-professional`, `catalogo-terapia-capilar-spa-therapy`), `local` |
 | `secao_vista` | A pessoa chega a uma seção da página (uma vez por visita) | `secao` (`para-quem`, `marcas`, `terapia-capilar`, `formacao`, `onde-atendemos`, `catalogos`, `parceiro`, `duvidas`) |
+| `scroll_50` | A pessoa rolou até a metade da página (uma vez por página vista) | `percentual` = 50 |
+| `scroll_100` | A pessoa chegou ao fim da página (uma vez por página vista; página que cabe na tela conta na hora) | `percentual` = 100 |
 | `faq_aberta` | Abre uma pergunta frequente | `pergunta` |
 | `clique_instagram` | Clique no Instagram | `local` |
 | `clique_email` | Clique no e-mail | `local` |
