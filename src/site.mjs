@@ -47,8 +47,8 @@ export const site = {
     // Desconto máximo divulgado na página (vazio = não mostra)
     desconto: 'até 70%',
     // Card da Green Week na página /links/. false = escondido (fica guardado em links.mjs).
-    // Escondido até o fechamento do mês de outubro, a pedido da Belnic: volte para true a partir de 01/11.
-    linkNaBio: false,
+    // Voltou ao ar em 01/11/2026.
+    linkNaBio: true,
     // Webhook (n8n) que recebe os cadastros. Vazio = o cadastro segue pelo WhatsApp da Belnic.
     endpoint: 'https://n8n.metingertech.com.br/webhook/greenweek',
   },
