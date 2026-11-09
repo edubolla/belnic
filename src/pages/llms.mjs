@@ -10,7 +10,11 @@ export default ({ dados, modo }) => {
 
   // Green Week: aparece enquanto a campanha não terminou (o build seguinte depois de 09/11 tira o bloco)
   const gw = site.greenweek;
-  const blocoGW = new Date() < new Date(gw.fim) ? `## Green Week Belnic (campanha)
+  const anoGW = gw.lancamento.slice(0, 4);
+  const blocoGW = gw.fase === 'lista-espera' ? `## Green Week Belnic (lista de espera)
+
+- [Green Week Belnic](${u('/greenweek/')}): a edição ${anoGW} aconteceu em ${gw.lancamentoTexto}, com descontos de ${gw.desconto} em Mirra Professional e Maison Visage para profissionais do Grupo VIP do WhatsApp. Profissionais da beleza podem entrar gratuitamente na lista de espera da Green Week ${Number(anoGW) + 1} e recebem a data e o convite antes de todo mundo.
+` : new Date() < new Date(gw.fim) ? `## Green Week Belnic (campanha)
 
 - [Green Week Belnic](${u('/greenweek/')}): grande lançamento em ${gw.lancamentoTexto} de ${gw.lancamento.slice(0, 4)}, com descontos de ${gw.desconto} em produtos Mirra Professional e Maison Visage. As ofertas são liberadas só no Grupo VIP do WhatsApp, para profissionais da beleza; a entrada é gratuita, pelo cadastro na página.
 ` : '';

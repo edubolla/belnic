@@ -38,6 +38,9 @@ export const site = {
   bingVerificacao: '', // conteúdo da meta tag do Bing Webmaster Tools
   // Green Week (página /greenweek/)
   greenweek: {
+    // Fase da página /greenweek/: 'campanha' (cadastro no Grupo VIP, com contagem regressiva) ou
+    // 'lista-espera' (depois do lançamento: cadastro para a edição do ano seguinte, mesmo webhook).
+    fase: 'lista-espera',
     // Grande lançamento no Grupo VIP (horário de Brasília). A contagem regressiva vai até `lancamento`;
     // até `fim` a página mostra "É hoje!".
     lancamento: '2026-11-09T00:00:00-03:00',
@@ -47,8 +50,8 @@ export const site = {
     // Desconto máximo divulgado na página (vazio = não mostra)
     desconto: 'até 70%',
     // Card da Green Week na página /links/. false = escondido (fica guardado em links.mjs).
-    // Voltou ao ar em 01/11/2026.
-    linkNaBio: true,
+    // Escondido de novo em 09/11/2026: a Green Week 2026 acabou e a página virou lista de espera.
+    linkNaBio: false,
     // Webhook (n8n) que recebe os cadastros. Vazio = o cadastro segue pelo WhatsApp da Belnic.
     endpoint: 'https://n8n.metingertech.com.br/webhook/greenweek',
   },

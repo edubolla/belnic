@@ -539,3 +539,7 @@ h3, h4 { font-family: var(--sans); font-weight: 500; font-size: clamp(1.1rem, 3.
 .gw-desconto b { font: 600 clamp(2.4rem, 10vw, 3.2rem)/1 var(--serif); letter-spacing: -.02em; }
 .gw-hero .gw-data { vertical-align: middle; }
 .gw-letreiro__trilho span:first-child, .gw-letreiro__trilho span:nth-child(13) { font-weight: 700; }
+
+/* Green Week — lista de espera: atalho para comprar agora */
+.gw-agora { margin-top: 24px; font-size: 1rem; opacity: .92; }
+.gw-agora a { color: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }

@@ -207,6 +207,11 @@
     const sucesso = document.querySelector('[data-sucesso]');
     const botaoEnviar = gw.querySelector('[type="submit"]');
     const rotuloBotao = botaoEnviar.querySelector('[data-rotulo]');
+    const rotuloOriginal = rotuloBotao.textContent;
+    // Campanha ou lista de espera: a página informa o id do formulário, a origem e a mensagem do WhatsApp
+    const formId = gw.dataset.formId || 'greenweek_grupo_vip';
+    const origem = gw.dataset.origem || 'site_greenweek';
+    const msgInicial = gw.dataset.msgWhatsapp || 'Olá! Quero entrar no Grupo VIP da Green Week.';
     // Origem do lead: UTMs e identificadores de clique (Meta e Google). Ficam guardados na sessão,
     // para não se perderem se a pessoa navegar antes de se cadastrar.
     const params = new URLSearchParams(location.search);
@@ -219,7 +224,7 @@
     // fbc/fbp no formato do Meta, para a API de Conversões: _fbc = fb.1.<timestamp>.<fbclid>
     const fbc = () => cookie('_fbc') || (utm.fbclid ? `fb.1.${Date.now()}.${utm.fbclid}` : '');
     let comecou = false;
-    gw.addEventListener('focusin', () => { if (!comecou) { comecou = true; rastreia('greenweek_inicio_cadastro', { form_id: 'greenweek_grupo_vip' }); } });
+    gw.addEventListener('focusin', () => { if (!comecou) { comecou = true; rastreia('greenweek_inicio_cadastro', { form_id: formId }); } });
 
     const zap = gw.querySelector('[name="whatsapp"]');
     zap.addEventListener('input', () => {
@@ -261,10 +266,10 @@
         nome: d.nome.trim(), whatsapp: d.whatsapp, whatsapp_e164: `+55${digitos}`, perfil: d.perfil,
         cidade: d.cidade.trim(), negocio: (d.negocio || '').trim(), instagram: (d.instagram || '').trim(),
         ja_cliente: d.ja_cliente, prioridade: prioridade(d), aceite_contato: 'sim',
-        origem: 'site_greenweek', pagina: location.origin + location.pathname, enviado_em: new Date().toISOString(), ...utm,
+        origem, pagina: location.origin + location.pathname, enviado_em: new Date().toISOString(), ...utm,
         fbc: fbc(), fbp: cookie('_fbp'), navegador: navigator.userAgent.slice(0, 200),
       };
-      const msgWhats = ['Olá! Quero entrar no Grupo VIP da Green Week.', `Nome: ${lead.nome}`, `Perfil: ${lead.perfil}`,
+      const msgWhats = [msgInicial, `Nome: ${lead.nome}`, `Perfil: ${lead.perfil}`,
         lead.negocio && `Negócio: ${lead.negocio}`, `Cidade: ${lead.cidade}`, lead.instagram && `Instagram: ${lead.instagram}`,
         `Já sou cliente Belnic: ${lead.ja_cliente}`].filter(Boolean).join('\n');
       const linkWhats = `https://wa.me/${gw.dataset.whatsapp}?text=${encodeURIComponent(msgWhats)}`;
@@ -285,7 +290,7 @@
         // Lead enviado com sucesso (validado e aceito pelo webhook). lead_greenweek é a conversão
         // própria da campanha; generate_lead é o evento recomendado do GA4 para qualquer lead.
         const dadosLead = {
-          form_id: 'greenweek_grupo_vip', lead_source: 'greenweek', perfil: lead.perfil,
+          form_id: formId, lead_source: 'greenweek', perfil: lead.perfil,
           ja_cliente: lead.ja_cliente, prioridade: lead.prioridade, cidade: lead.cidade,
         };
         rastreia('lead_greenweek', dadosLead);
@@ -294,10 +299,10 @@
         sucesso.hidden = false;
         sucesso.focus();
       } catch (falha) {
-        rastreia('greenweek_erro_envio', { form_id: 'greenweek_grupo_vip', erro: String(falha.message || falha).slice(0, 80) });
+        rastreia('greenweek_erro_envio', { form_id: formId, erro: String(falha.message || falha).slice(0, 80) });
         mostraErro(`Não conseguimos enviar seu cadastro agora. Tente de novo em instantes ou <a href="${linkWhats}" target="_blank" rel="noopener">envie pelo WhatsApp</a>.`);
         botaoEnviar.disabled = false;
-        rotuloBotao.textContent = 'Quero meu acesso VIP';
+        rotuloBotao.textContent = rotuloOriginal;
       }
     });
   }
