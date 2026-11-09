@@ -6,7 +6,7 @@ Página de captação para o Grupo VIP da Green Week (a "Black Friday" da Belnic
 
 | Campo | Para que serve |
 |---|---|
-| `fase` | `'campanha'`: cadastro no Grupo VIP, com contagem regressiva. `'lista-espera'`: depois do lançamento, a página vira lista de espera da edição do ano seguinte (mesmo formulário e webhook; o lead chega com `origem` = `site_greenweek_lista_espera_2027` e os eventos com `form_id` = `greenweek_lista_espera_2027`). Em lista de espera desde 09/11/2026, à noite. |
+| `fase` | `'campanha'`: cadastro no Grupo VIP, com contagem regressiva. `'lista-espera'`: depois do lançamento, a página vira lista de espera da edição do ano seguinte (mesmo formulário e webhook; o lead chega com `origem` = `site_greenweek_lista_espera_2027` e os eventos com `form_id` = `greenweek_lista_espera_2027`). Em lista de espera desde 09/11/2026. |
 | `lancamento`, `fim` | Data e hora do grande lançamento (horário de Brasília). Até `lancamento`, a página mostra a contagem regressiva; até `fim`, mostra "É hoje!". |
 | `lancamentoTexto`, `lancamentoCurto` | Como a data aparece nos textos ("9 de novembro") e no destaque ("09.11"). |
 | `desconto` | Desconto divulgado na página ("até 70%"): título, selo do topo, vantagens, cadastro, FAQ e letreiro. Vazio = não mostra. |
