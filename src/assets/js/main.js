@@ -198,7 +198,7 @@
   const gw = document.querySelector('[data-form-greenweek]');
   // Esconde a barra fixa do celular enquanto o formulário está na tela
   const barraCampanha = document.querySelector('.barra-movel--campanha');
-  const secaoCadastro = document.getElementById('cadastro');
+  const secaoCadastro = document.querySelector('#cadastro, #inscricao');
   if (barraCampanha && secaoCadastro && 'IntersectionObserver' in window) {
     new IntersectionObserver(([i]) => barraCampanha.classList.toggle('escondida', i.isIntersecting), { threshold: 0.15 }).observe(secaoCadastro);
   }
@@ -212,6 +212,13 @@
     const formId = gw.dataset.formId || 'greenweek_grupo_vip';
     const origem = gw.dataset.origem || 'site_greenweek';
     const msgInicial = gw.dataset.msgWhatsapp || 'Olá! Quero entrar no Grupo VIP da Green Week.';
+    // Nomes dos eventos e origem do lead (a página da formação usa os seus próprios)
+    const ev = {
+      inicio: gw.dataset.eventoInicio || 'greenweek_inicio_cadastro',
+      lead: gw.dataset.eventoLead || 'lead_greenweek',
+      erro: gw.dataset.eventoErro || 'greenweek_erro_envio',
+      fonte: gw.dataset.leadSource || 'greenweek',
+    };
     // Origem do lead: UTMs e identificadores de clique (Meta e Google). Ficam guardados na sessão,
     // para não se perderem se a pessoa navegar antes de se cadastrar.
     const params = new URLSearchParams(location.search);
@@ -224,7 +231,7 @@
     // fbc/fbp no formato do Meta, para a API de Conversões: _fbc = fb.1.<timestamp>.<fbclid>
     const fbc = () => cookie('_fbc') || (utm.fbclid ? `fb.1.${Date.now()}.${utm.fbclid}` : '');
     let comecou = false;
-    gw.addEventListener('focusin', () => { if (!comecou) { comecou = true; rastreia('greenweek_inicio_cadastro', { form_id: formId }); } });
+    gw.addEventListener('focusin', () => { if (!comecou) { comecou = true; rastreia(ev.inicio, { form_id: formId }); } });
 
     const zap = gw.querySelector('[name="whatsapp"]');
     zap.addEventListener('input', () => {
@@ -290,16 +297,16 @@
         // Lead enviado com sucesso (validado e aceito pelo webhook). lead_greenweek é a conversão
         // própria da campanha; generate_lead é o evento recomendado do GA4 para qualquer lead.
         const dadosLead = {
-          form_id: formId, lead_source: 'greenweek', perfil: lead.perfil,
+          form_id: formId, lead_source: ev.fonte, perfil: lead.perfil,
           ja_cliente: lead.ja_cliente, prioridade: lead.prioridade, cidade: lead.cidade,
         };
-        rastreia('lead_greenweek', dadosLead);
+        rastreia(ev.lead, dadosLead);
         rastreia('generate_lead', dadosLead);
         gw.hidden = true;
         sucesso.hidden = false;
         sucesso.focus();
       } catch (falha) {
-        rastreia('greenweek_erro_envio', { form_id: formId, erro: String(falha.message || falha).slice(0, 80) });
+        rastreia(ev.erro, { form_id: formId, erro: String(falha.message || falha).slice(0, 80) });
         mostraErro(`Não conseguimos enviar seu cadastro agora. Tente de novo em instantes ou <a href="${linkWhats}" target="_blank" rel="noopener">envie pelo WhatsApp</a>.`);
         botaoEnviar.disabled = false;
         rotuloBotao.textContent = rotuloOriginal;

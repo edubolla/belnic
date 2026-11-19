@@ -21,7 +21,7 @@ Precisa só do Node 18+. Não há `npm install`.
 
 Para trocar, mude `modo` em `src/site.mjs`.
 
-Medição (Search Console, Tag Manager, GA4 e eventos): veja [MEDICAO.md](MEDICAO.md).
+Medição (Search Console, Tag Manager, GA4 e eventos): veja [MEDICAO.md](MEDICAO.md). Página da Formação em Terapia Capilar: [FORMACAO.md](FORMACAO.md).
 
 ## Publicar na HostGator
 

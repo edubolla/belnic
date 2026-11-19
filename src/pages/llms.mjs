@@ -37,6 +37,7 @@ ${landing ? `## Seções do site
 - [Marcas](${u('/#marcas')}): Maison Visage e Mirra Professional
 - [Terapia capilar](${u('/#terapia-capilar')}): linha Spa Therapy e ${dados.protocolos.length} protocolos para couro cabeludo
 - [Formação](${u('/#formacao')}): Imersão em Terapia Capilar, workshops e treinamentos gravados
+- [Formação em Terapia Capilar ${site.formacao.turma}](${u('/formacao-terapia-capilar/')}): ${site.formacao.datasTexto}, ${site.formacao.horario}, em ${site.formacao.local}, com ${site.formacao.docente}. 3 dias teóricos e práticos (avaliação capilar e tricoscopia, queda e alopecias, patologias do couro cabeludo, eletroterapia e protocolos), com certificado, jaleco e placa de reconhecimento. Investimento de R$ ${site.formacao.preco.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/, '.')} ou ${site.formacao.parcelas}x; pré-inscrição pela página.
 - [Onde atendemos](${u('/#onde-atendemos')})
 - [Seja parceiro](${u('/#parceiro')}): contato direto pelo WhatsApp
 - [Catálogos](${u('/#catalogos')}) e [Dúvidas frequentes](${u('/#duvidas')})

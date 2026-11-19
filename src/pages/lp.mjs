@@ -148,7 +148,8 @@ export default ({ dados, versao, modo }) => {
       <article class="cartao revela"><span class="numero">02</span><h3>Workshops com especialistas</h3><p>Como o The Blond's Secret, com Pedro Pinheiro, especialista Mirra Professional e Maison Visage.</p></article>
       <article class="cartao revela"><span class="numero">03</span><h3>Treinamentos gravados</h3><p>Colorimetria, alisamento, cacheadas, protocolos, mega hair e estratégia de vendas.</p></article>
     </div>
-    <div class="botoes revela" style="margin-top:28px;max-width:420px">
+    <div class="botoes revela" style="margin-top:28px">
+      <a class="btn btn--primario" href="/formacao-terapia-capilar/">Formação em Terapia Capilar ${site.formacao.turma} ${icon.arrow}</a>
       ${btnWhats('Quero saber das próximas turmas', 'Oi, gostaria de mais informações sobre os Cursos.')}
     </div>
   </div>

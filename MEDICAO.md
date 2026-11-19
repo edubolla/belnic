@@ -59,6 +59,8 @@ Todos vão para o GA4 (via `gtag`, numa fila própria chamada `gaLayer`) e para 
 | `greenweek_inicio_cadastro` | Começou a preencher o cadastro da Green Week | — |
 | `lead_greenweek` | Cadastro da Green Week preenchido corretamente e aceito pelo webhook (**marque como evento principal**) | `form_id`, `lead_source`, `perfil`, `ja_cliente`, `prioridade`, `cidade` |
 | `generate_lead` | Mesmo momento do `lead_greenweek` (evento recomendado do GA4; não marque como principal) | `form_id`, `lead_source`, `perfil`, `ja_cliente`, `prioridade`, `cidade` |
+| `lead_formacao` | Pré-inscrição da Formação em Terapia Capilar recebida pelo webhook (**marque como evento principal**). Também dispara `generate_lead`. Veja [FORMACAO.md](FORMACAO.md) | `form_id`, `lead_source`, `perfil`, `ja_cliente`, `prioridade`, `cidade` |
+| `formacao_inicio_cadastro`, `formacao_erro_envio` | Início do preenchimento e falha no envio da pré-inscrição da formação | `form_id` (e `erro`) |
 | `greenweek_erro_envio` | O envio do cadastro falhou | `erro` |
 | `busca_produto` | Busca no catálogo (só no site completo) | `termo` |
 | `filtro_produto` | Filtro do catálogo (só no site completo) | `filtro` |

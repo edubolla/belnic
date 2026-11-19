@@ -55,6 +55,24 @@ export const site = {
     // Webhook (n8n) que recebe os cadastros. Vazio = o cadastro segue pelo WhatsApp da Belnic.
     endpoint: 'https://n8n.metingertech.com.br/webhook/greenweek',
   },
+  // Formação em Terapia Capilar (página /formacao-terapia-capilar/)
+  formacao: {
+    turma: '2027',
+    inicio: '2027-03-14T08:30:00-03:00',
+    fim: '2027-03-16T18:00:00-03:00',
+    datasTexto: '14, 15 e 16 de março de 2027',
+    datasCurto: '14, 15 e 16/03',
+    horario: '8h30 às 18h',
+    local: 'Porto Alegre/RS',
+    // Endereço completo: vazio = "enviado na confirmação da inscrição"
+    endereco: '',
+    docente: 'Daia Carneiro',
+    preco: 2457.90,
+    parcelas: 10,
+    // Webhook (n8n) da pré-inscrição. Usa o mesmo da Green Week; o lead chega com
+    // origem = site_formacao_terapia_capilar_<turma> para separar no n8n.
+    endpoint: 'https://n8n.metingertech.com.br/webhook/greenweek',
+  },
 };
 
 // Lista simples de todas as cidades (ordem alfabética)
