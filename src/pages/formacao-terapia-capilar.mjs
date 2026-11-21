@@ -1,5 +1,6 @@
 // /formacao-terapia-capilar/ — página de venda da Formação em Terapia Capilar Belnic.
-// Página de campanha (sem menu no topo), com cronograma completo dos 3 dias, quem conduz,
+// Página de campanha (sem menu no topo), com o conteúdo da formação (por tema, sem dia e horário,
+// a pedido da Belnic: a ordem muda conforme a dinâmica da turma), quem conduz,
 // a experiência da turma anterior, investimento e pré-inscrição. O formulário reaproveita o da
 // Green Week (validação, máscara, UTM/fbclid) e envia para o webhook em site.mjs → formacao.endpoint;
 // a equipe Belnic chama no WhatsApp para confirmar a vaga e o pagamento.
@@ -14,45 +15,16 @@ const perfis = [
 
 const reais = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-// Cronograma oficial enviado pela Belnic
-const dias = [
-  {
-    titulo: 'Fundamentos da terapia capilar & rotina de salão',
-    blocos: [
-      ['08:30', 'Recepção dos alunos', ['Credenciamento', 'Entrega de material didático']],
-      ['09:00', 'Introdução à terapia capilar', ['O que é terapia capilar', 'Atuação do terapeuta capilar', 'Diferença entre tricologista e terapeuta capilar']],
-      ['10:30', 'Anatomia e fisiologia do sistema capilar', ['Estrutura do fio', 'Ciclo capilar', 'Couro cabeludo', 'Microbiota e vascularização']],
-      ['12:00', 'Intervalo para almoço', []],
-      ['13:30', 'Como inserir a terapia capilar no salão de beleza', ['Posicionamento profissional', 'Precificação de serviços', 'Como vender tratamentos e planos', 'Fidelização de clientes']],
-      ['14:30', 'Prática demonstrativa', ['Escova terapêutica', 'Coloração terapêutica', 'Progressiva terapêutica', 'Como minimizar danos químicos']],
-      ['16:00', 'Intervalo', []],
-      ['16:15', 'Organização de protocolos home care', ['Produtos de uso contínuo', 'Como orientar o cliente corretamente']],
-      ['18:00', 'Finalização do dia', []],
-    ],
-  },
-  {
-    titulo: 'Avaliação clínica & tratamentos de crescimento',
-    blocos: [
-      ['08:30', 'Recepção dos alunos', []],
-      ['09:00', 'Queda capilar, alopecias e afinamento capilar', ['Tipos de queda', 'Alopecia androgenética, eflúvio telógeno e areata', 'Miniaturização dos fios']],
-      ['11:00', 'Fatores sistêmicos na saúde capilar', ['Principais exames laboratoriais', 'Emoções x problemas capilares', 'Metabolismo x cabelo', 'Hormônios x queda capilar']],
-      ['12:00', 'Intervalo para almoço', []],
-      ['13:30', 'Avaliação capilar e tricoscopia', ['Anamnese completa', 'Identificação de patologias', 'Leitura correta do couro cabeludo']],
-      ['15:00', 'Protocolos práticos de crescimento e fortalecimento', ['Protocolos para queda', 'Protocolos para afinamento', 'Protocolos para fortalecimento', 'Associações terapêuticas']],
-      ['18:00', 'Finalização do dia', []],
-    ],
-  },
-  {
-    titulo: 'Patologias inflamatórias & eletroterapia',
-    blocos: [
-      ['08:30', 'Recepção dos alunos', []],
-      ['09:00', 'Patologias inflamatórias do couro cabeludo', ['Psoríase', 'Dermatite', 'Caspa', 'Oleosidade excessiva', 'Foliculite']],
-      ['12:00', 'Intervalo para almoço', []],
-      ['13:30', 'Eletroterapia capilar na prática', ['Vapor de ozônio', 'Alta-frequência', 'Laser e LEDs', 'Indicações, contraindicações e protocolos']],
-      ['16:30', 'Protocolos integrados práticos', []],
-      ['18:00', 'Encerramento oficial', ['Entrega de certificados', 'Fotos oficiais', 'Networking entre alunos']],
-    ],
-  },
+// Conteúdo da formação, agrupado por tema (sem dia nem horário: a ordem depende da dinâmica da turma)
+const modulos = [
+  ['Fundamentos da terapia capilar', 'O que é terapia capilar, a atuação do terapeuta, a diferença para o tricologista, a anatomia e a fisiologia do fio e do couro cabeludo.'],
+  ['Terapia capilar no salão', 'Posicionamento, precificação, como vender tratamentos e planos e como fidelizar clientes. Inclui protocolos home care.'],
+  ['Prática demonstrativa', 'Escova, coloração e progressiva terapêuticas, e como minimizar os danos químicos no dia a dia do salão.'],
+  ['Queda capilar e alopecias', 'Tipos de queda, alopecias e afinamento dos fios, além dos fatores sistêmicos: exames, hormônios, metabolismo e emoções.'],
+  ['Avaliação capilar e tricoscopia', 'Anamnese completa, identificação de patologias e a leitura correta do couro cabeludo.'],
+  ['Patologias inflamatórias', 'Psoríase, dermatite, caspa, oleosidade excessiva e foliculite: como reconhecer e como tratar.'],
+  ['Eletroterapia capilar', 'Vapor de ozônio, alta-frequência, laser e LEDs, com indicações, contraindicações e protocolos.'],
+  ['Protocolos na prática', 'Protocolos de crescimento e fortalecimento e protocolos integrados, aplicados na prática.'],
 ];
 
 const icones = {
@@ -69,6 +41,8 @@ export default ({ versao }) => {
   const parcela = reais(Math.round((f.preco / f.parcelas) * 100) / 100);
   const preco = reais(f.preco);
   const local = f.endereco ? `${esc(f.endereco)} · ${esc(f.local)}` : esc(f.local);
+  const mapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${f.endereco}, ${f.local}`)}`;
+  const localLink = f.endereco ? `<a href="${mapa}" target="_blank" rel="noopener" data-evento="mapa">${local}</a>` : local;
   const linkWhats = (msg) => `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(msg)}`;
 
   const faq = [
@@ -77,13 +51,13 @@ export default ({ versao }) => {
     ['Para quem é a formação?',
       'Para profissionais da beleza que querem atuar com terapia capilar: cabeleireiros, donos de salão, terapeutas capilares, esteticistas e profissionais autônomos.'],
     ['Preciso ter experiência com terapia capilar?',
-      'Não. O primeiro dia começa pelos fundamentos (o que é terapia capilar, anatomia e fisiologia do fio e do couro cabeludo) e a formação avança até avaliação, patologias, eletroterapia e protocolos integrados.'],
+      'Não. A formação começa pelos fundamentos (o que é terapia capilar, anatomia e fisiologia do fio e do couro cabeludo) e avança até avaliação, patologias, eletroterapia e protocolos integrados.'],
     ['A formação tem certificado?',
-      'Sim. O certificado é entregue no encerramento do terceiro dia. Você também recebe um jaleco e uma placa de reconhecimento de Terapeuta Capilar.'],
+      'Sim. O certificado é entregue no encerramento da formação. Você também recebe um jaleco e uma placa de reconhecimento de Terapeuta Capilar.'],
     ['Qual é o investimento?',
       `${preco} à vista ou em até ${f.parcelas}x de ${parcela}. A forma de pagamento é combinada com a equipe Belnic na confirmação da vaga.`],
     ['Como funciona a inscrição?',
-      'Você preenche a pré-inscrição nesta página e a equipe Belnic chama você no WhatsApp para confirmar a vaga, enviar o endereço e combinar o pagamento.'],
+      'Você preenche a pré-inscrição nesta página e a equipe Belnic chama você no WhatsApp para confirmar a vaga e combinar o pagamento.'],
     ['A formação é teórica ou prática?',
       'As duas coisas. Os conteúdos teóricos são acompanhados de prática demonstrativa e de protocolos práticos de crescimento, fortalecimento, eletroterapia e protocolos integrados.'],
     ['O que a Belnic faz com os meus dados?',
@@ -120,17 +94,12 @@ export default ({ versao }) => {
 <div class="gw-sucesso" data-sucesso hidden tabindex="-1">
   <span class="gw-sucesso__icone" aria-hidden="true">${simbolo}</span>
   <h3>Pré-inscrição recebida!</h3>
-  <p>A equipe Belnic vai chamar você no WhatsApp para confirmar a sua vaga na turma ${turma}, enviar o endereço e combinar o pagamento.</p>
+  <p>A equipe Belnic vai chamar você no WhatsApp para confirmar a sua vaga na turma ${turma} e combinar o pagamento.</p>
   <p>Enquanto isso, siga <a href="${site.instagram}" target="_blank" rel="noopener">${site.instagramUser}</a> para acompanhar as novidades.</p>
 </div>`;
 
-  const cronograma = dias.map((d, i) => `
-      <details class="fm-dia revela"${i === 0 ? ' open' : ''}>
-        <summary><span class="fm-dia__num">Dia 0${i + 1}</span><span class="fm-dia__titulo">${esc(d.titulo)}</span></summary>
-        <ol class="fm-agenda">
-          ${d.blocos.map(([h, t, itens]) => `<li class="${itens.length ? '' : 'fm-agenda__pausa'}"><time>${h}</time><div><strong>${esc(t)}</strong>${itens.length ? `<ul>${itens.map((it) => `<li>${esc(it)}</li>`).join('')}</ul>` : ''}</div></li>`).join('')}
-        </ol>
-      </details>`).join('');
+  const conteudo = modulos.map(([t, d], i) => `
+      <article class="cartao fm-modulo revela"><span class="numero">${String(i + 1).padStart(2, '0')}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></article>`).join('');
 
   const inclui = ['3 dias intensivos de formação', 'Teoria e prática demonstrativa', 'Material didático', 'Certificado de conclusão', 'Jaleco de Terapeuta Capilar', 'Placa de reconhecimento'];
 
@@ -148,7 +117,7 @@ export default ({ versao }) => {
       <ul class="fm-info gw-entra" style="--d:3">
         <li>${icones.data}<span><small>Datas</small>${esc(f.datasCurto)}</span></li>
         <li>${icones.hora}<span><small>Horário</small>${esc(f.horario)}</span></li>
-        <li>${icones.local}<span><small>Local</small>${local}</span></li>
+        <li>${icones.local}<span><small>Local</small>${localLink}</span></li>
       </ul>
       <a class="btn btn--claro gw-cta gw-entra" style="--d:4" href="#inscricao">Quero garantir minha vaga ${icon.arrow}</a>
       <p class="gw-micro gw-entra" style="--d:5">Certificado incluso · Ganhe jaleco e placa de reconhecimento · Em até ${f.parcelas}x</p>
@@ -180,14 +149,14 @@ export default ({ versao }) => {
   </div>
 </section>
 
-<section class="secao secao--areia" id="cronograma">
+<section class="secao secao--areia" id="conteudo">
   <div class="container">
     <div class="cabeca revela">
-      <span class="sobretitulo">Cronograma e conteúdo</span>
-      <h2>3 dias, do fundamento ao protocolo integrado</h2>
-      <p class="lead">Das ${esc(f.horario)} · ${esc(f.datasTexto)}</p>
+      <span class="sobretitulo">O que você vai aprender</span>
+      <h2>Do fundamento ao protocolo integrado</h2>
+      <p class="lead">3 dias de teoria e prática que cobrem a terapia capilar de ponta a ponta, da avaliação do couro cabeludo à aplicação dos protocolos no salão.</p>
     </div>
-    <div class="fm-cronograma">${cronograma}
+    <div class="grade grade--2 grade--4 fm-conteudo">${conteudo}
     </div>
   </div>
 </section>
@@ -289,7 +258,7 @@ export default ({ versao }) => {
       <ul class="fm-info fm-info--claro">
         <li>${icones.data}<span><small>Datas</small>${esc(f.datasTexto)}</span></li>
         <li>${icones.hora}<span><small>Horário</small>${esc(f.horario)}</span></li>
-        <li>${icones.local}<span><small>Local</small>${local}</span></li>
+        <li>${icones.local}<span><small>Local</small>${localLink}</span></li>
       </ul>
       <p class="gw-agora">Prefere conversar antes? <a href="${linkWhats(`Olá! Tenho dúvidas sobre a Formação em Terapia Capilar Belnic (turma ${f.turma}).`)}" target="_blank" rel="noopener" data-evento="whatsapp">Fale com a Belnic no WhatsApp</a>.</p>
     </div>
@@ -317,7 +286,7 @@ export default ({ versao }) => {
     educationalCredentialAwarded: 'Certificado de conclusão',
     hasCourseInstance: {
       '@type': 'CourseInstance', courseMode: 'Onsite', startDate: f.inicio, endDate: f.fim,
-      location: { '@type': 'Place', name: f.local, address: { '@type': 'PostalAddress', addressLocality: 'Porto Alegre', addressRegion: 'RS', addressCountry: 'BR', ...(f.endereco ? { streetAddress: f.endereco } : {}) } },
+      location: { '@type': 'Place', name: f.local, address: { '@type': 'PostalAddress', addressLocality: f.cidade, addressRegion: 'RS', addressCountry: 'BR', ...(f.endereco ? { streetAddress: f.endereco } : {}) } },
       instructor: { '@type': 'Person', name: f.docente },
       offers: { '@type': 'Offer', price: f.preco.toFixed(2), priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${site.url}${caminho}#inscricao` },
     },
@@ -327,8 +296,8 @@ export default ({ versao }) => {
   return {
     caminho,
     html: pagina({
-      titulo: `Formação em Terapia Capilar Belnic ${f.turma} | Porto Alegre`,
-      descricao: `Formação em Terapia Capilar Belnic em ${f.local}: 3 dias de teoria e prática (${f.datasCurto}) com ${f.docente}. Avaliação, tricoscopia, queda, patologias, eletroterapia e protocolos. Certificado incluso.`,
+      titulo: `Formação em Terapia Capilar Belnic ${f.turma} | ${f.local}`,
+      descricao: `Formação em Terapia Capilar Belnic em ${f.local}, na região metropolitana de Porto Alegre: 3 dias de teoria e prática (${f.datasCurto}) com ${f.docente}. Avaliação, tricoscopia, queda, patologias, eletroterapia e protocolos. Certificado incluso.`,
       caminho,
       corpo,
       versao,

@@ -1,6 +1,6 @@
 # Formação em Terapia Capilar (`/formacao-terapia-capilar/`)
 
-Página de venda da formação, com pré-inscrição. A pessoa preenche o formulário, o lead vai para o n8n, e a equipe Belnic chama no WhatsApp para confirmar a vaga, enviar o endereço e combinar o pagamento.
+Página de venda da formação, com pré-inscrição. A pessoa preenche o formulário, o lead vai para o n8n, e a equipe Belnic chama no WhatsApp para confirmar a vaga e combinar o pagamento.
 
 Código: `src/pages/formacao-terapia-capilar.mjs`. As fotos foram recortadas dos carrosséis do Instagram (@belnicoficial, turma 2026) e estão em `src/assets/img/formacao/`. Na foto da placa de reconhecimento, o nome da aluna foi desfocado.
 
@@ -11,14 +11,14 @@ Código: `src/pages/formacao-terapia-capilar.mjs`. As fotos foram recortadas dos
 | `turma` | Ano da turma (aparece no selo, nos títulos e no `form_id`) |
 | `inicio`, `fim` | Data e hora de início e fim (dados estruturados do curso para o Google) |
 | `datasTexto`, `datasCurto` | Como as datas aparecem nos textos ("14, 15 e 16 de março de 2027") e nos destaques ("14, 15 e 16/03") |
-| `horario` | "8h30 às 18h" |
-| `local` | Cidade ("Porto Alegre/RS") |
-| `endereco` | Endereço completo. Vazio = a página diz que o endereço é enviado na confirmação |
+| `horario` | "8h30 às 17h30" |
+| `local`, `cidade` | Cidade como aparece na página ("Dois Irmãos/RS") e só o nome dela, para os dados estruturados |
+| `endereco` | "Rua Santa Helena, 423". Vira link para o Google Maps. Vazio = a página diz que o endereço é enviado na confirmação |
 | `docente` | Quem conduz |
 | `preco`, `parcelas` | Valor à vista e número de parcelas. A parcela é calculada (2.457,90 ÷ 10 = 245,79) |
 | `endpoint` | Webhook do n8n que recebe a pré-inscrição |
 
-O cronograma completo fica no topo do arquivo da página (`dias`). Para uma nova turma, troque as datas, o preço e o cronograma.
+O conteúdo aparece **por tema, sem dia nem horário**, a pedido da Belnic: a ordem muda conforme a dinâmica da turma, e um assunto pode passar de um dia para outro. Os 8 temas ficam no topo do arquivo da página (`modulos`). Para uma nova turma, troque as datas, o preço e os temas.
 
 ## Webhook (n8n)
 

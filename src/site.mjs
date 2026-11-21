@@ -59,13 +59,14 @@ export const site = {
   formacao: {
     turma: '2027',
     inicio: '2027-03-14T08:30:00-03:00',
-    fim: '2027-03-16T18:00:00-03:00',
+    fim: '2027-03-16T17:30:00-03:00',
     datasTexto: '14, 15 e 16 de março de 2027',
     datasCurto: '14, 15 e 16/03',
-    horario: '8h30 às 18h',
-    local: 'Porto Alegre/RS',
+    horario: '8h30 às 17h30',
+    local: 'Dois Irmãos/RS',
+    cidade: 'Dois Irmãos',
     // Endereço completo: vazio = "enviado na confirmação da inscrição"
-    endereco: '',
+    endereco: 'Rua Santa Helena, 423',
     docente: 'Daia Carneiro',
     preco: 2457.90,
     parcelas: 10,
