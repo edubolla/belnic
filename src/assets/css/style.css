@@ -583,7 +583,10 @@ h3, h4 { font-family: var(--sans); font-weight: 500; font-size: clamp(1.1rem, 3.
 .fm-preco { display: grid; gap: 4px; margin: 20px 0 24px; padding: 20px 22px; border-radius: var(--raio-g); background: var(--areia); color: var(--verde-profundo); max-width: 380px; }
 .fm-preco__parcela { font: 500 2.4rem/1.1 var(--sans); display: grid; }
 .fm-preco__parcela small { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 500; color: var(--verde-escuro); }
-.fm-preco__vista { font-size: 1rem; color: var(--verde-escuro); }
+.fm-preco__vista { font-size: 1.05rem; color: var(--verde-escuro); display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-top: 4px; }
+.fm-preco__vista strong { color: var(--verde-profundo); font-weight: 600; }
+.fm-preco__selo { font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: var(--verde); padding: 4px 10px; border-radius: 999px; }
+.fm-preco__total { font-size: .82rem; color: var(--verde-escuro); opacity: .85; }
 .fm-inclui li { color: #fff; }
 .fm-inclui li::before { border-color: var(--areia); }
 .fm-info--claro { margin-top: 28px; }

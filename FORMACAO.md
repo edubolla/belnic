@@ -15,7 +15,8 @@ Código: `src/pages/formacao-terapia-capilar.mjs`. As fotos foram recortadas dos
 | `local`, `cidade` | Cidade como aparece na página ("Dois Irmãos/RS") e só o nome dela, para os dados estruturados |
 | `endereco` | "Rua Santa Helena, 423". Vira link para o Google Maps. Vazio = a página diz que o endereço é enviado na confirmação |
 | `docente` | Quem conduz |
-| `preco`, `parcelas` | Valor à vista e número de parcelas. A parcela é calculada (2.457,90 ÷ 10 = 245,79) |
+| `preco`, `parcelas` | Valor total e número de parcelas. A parcela é calculada (2.457,90 ÷ 10 = 245,79) |
+| `descontoVista` | Desconto à vista (`0.10` = 10%, calculado sobre o `preco`: 2.457,90 − 10% = 2.212,11). `0` = sem desconto |
 | `endpoint` | Webhook do n8n que recebe a pré-inscrição |
 
 O conteúdo aparece **por tema, sem dia nem horário**, a pedido da Belnic: a ordem muda conforme a dinâmica da turma, e um assunto pode passar de um dia para outro. Os 8 temas ficam no topo do arquivo da página (`modulos`). Para uma nova turma, troque as datas, o preço e os temas.

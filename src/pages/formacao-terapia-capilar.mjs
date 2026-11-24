@@ -40,6 +40,8 @@ export default ({ versao }) => {
   const turma = esc(f.turma);
   const parcela = reais(Math.round((f.preco / f.parcelas) * 100) / 100);
   const preco = reais(f.preco);
+  const pctVista = Math.round((f.descontoVista || 0) * 100);
+  const precoVista = reais(Math.round(f.preco * (1 - (f.descontoVista || 0)) * 100) / 100);
   const local = f.endereco ? `${esc(f.endereco)} · ${esc(f.local)}` : esc(f.local);
   const mapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${f.endereco}, ${f.local}`)}`;
   const localLink = f.endereco ? `<a href="${mapa}" target="_blank" rel="noopener" data-evento="mapa">${local}</a>` : local;
@@ -55,7 +57,7 @@ export default ({ versao }) => {
     ['A formação tem certificado?',
       'Sim. O certificado é entregue no encerramento da formação. Você também recebe um jaleco e uma placa de reconhecimento de Terapeuta Capilar.'],
     ['Qual é o investimento?',
-      `${preco} à vista ou em até ${f.parcelas}x de ${parcela}. A forma de pagamento é combinada com a equipe Belnic na confirmação da vaga.`],
+      `${pctVista ? `${precoVista} à vista, com ${pctVista}% de desconto, ou ` : `${preco} à vista ou `}em até ${f.parcelas}x de ${parcela} (total de ${preco}). A forma de pagamento é combinada com a equipe Belnic na confirmação da vaga.`],
     ['Como funciona a inscrição?',
       'Você preenche a pré-inscrição nesta página e a equipe Belnic chama você no WhatsApp para confirmar a vaga e combinar o pagamento.'],
     ['A formação é teórica ou prática?',
@@ -120,7 +122,7 @@ export default ({ versao }) => {
         <li>${icones.local}<span><small>Local</small>${localLink}</span></li>
       </ul>
       <a class="btn btn--claro gw-cta gw-entra" style="--d:4" href="#inscricao">Quero garantir minha vaga ${icon.arrow}</a>
-      <p class="gw-micro gw-entra" style="--d:5">Certificado incluso · Ganhe jaleco e placa de reconhecimento · Em até ${f.parcelas}x</p>
+      <p class="gw-micro gw-entra" style="--d:5">Certificado incluso · Ganhe jaleco e placa de reconhecimento · Em até ${f.parcelas}x${pctVista ? ` ou ${pctVista}% off à vista` : ''}</p>
     </div>
     <figure class="gw-hero__visual fm-hero__visual">
       <img src="/assets/img/formacao/turma-2026-completa.webp" alt="Turma 2026 da Formação em Terapia Capilar Belnic com os jalecos de Terapeuta Capilar" width="1000" height="939" fetchpriority="high" decoding="async">
@@ -252,7 +254,8 @@ export default ({ versao }) => {
       <h2>Garanta sua vaga na Formação em Terapia Capilar</h2>
       <div class="fm-preco">
         <span class="fm-preco__parcela"><small>em até ${f.parcelas}x de</small>${parcela}</span>
-        <span class="fm-preco__vista">ou ${preco} à vista</span>
+        ${pctVista ? `<span class="fm-preco__vista">ou <strong>${precoVista} à vista</strong> <span class="fm-preco__selo">${pctVista}% de desconto</span></span>
+        <span class="fm-preco__total">Valor total parcelado: ${preco}</span>` : `<span class="fm-preco__vista">ou ${preco} à vista</span>`}
       </div>
       <ul class="lista-check fm-inclui">${inclui.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
       <ul class="fm-info fm-info--claro">

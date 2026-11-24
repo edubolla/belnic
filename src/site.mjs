@@ -70,6 +70,8 @@ export const site = {
     docente: 'Daia Carneiro',
     preco: 2457.90,
     parcelas: 10,
+    // Desconto para pagamento à vista (0.10 = 10%; 0 = sem desconto)
+    descontoVista: 0.10,
     // Webhook (n8n) da pré-inscrição. Usa o mesmo da Green Week; o lead chega com
     // origem = site_formacao_terapia_capilar_<turma> para separar no n8n.
     endpoint: 'https://n8n.metingertech.com.br/webhook/greenweek',
