@@ -15,6 +15,29 @@ const perfis = [
 
 const reais = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
+// Currículo da professora (enviado pela Belnic)
+const professora = {
+  nome: 'Daiane Carneiro Schneider',
+  cargo: 'Educadora em Terapia Capilar Mirra Professional e Maison Visage',
+  numeros: [
+    ['+5.000', 'alunos formados em imersões de terapia capilar pelo Brasil'],
+    ['+600', 'mentorados na Comunidade de Terapia Capilar, sua plataforma online'],
+    ['+15 anos', 'de experiência clínica em estética capilar, facial e corporal'],
+    ['11 anos', 'como docente universitária de Estética e Cosmética'],
+  ],
+  formacao: [
+    ['2008', 'Graduação em Estética e Cosmetologia', 'Universidade Paranaense'],
+    ['2010', 'Pós-graduação em Dermocosmética', 'ICosmetologia'],
+    ['2025', 'MBA em Tricologia', 'ICosmetologia'],
+  ],
+  trajetoria: [
+    ['2009–2020', 'Docente do curso de Tecnologia em Estética e Cosmética', 'Universidade Paranaense'],
+    ['6 anos', 'Coordenadora de Pós-Graduação em Estética e Cosmética', 'Universidade Paranaense'],
+    ['8 anos', 'Coordenadora e supervisora de estágio presencial', 'Universidade Paranaense'],
+    ['Hoje', 'Educadora em Terapia Capilar', 'Mirra Professional e Maison Visage'],
+  ],
+};
+
 // Conteúdo da formação, agrupado por tema (sem dia nem horário: a ordem depende da dinâmica da turma)
 const modulos = [
   ['Fundamentos da terapia capilar', 'O que é terapia capilar, a atuação do terapeuta, a diferença para o tricologista, a anatomia e a fisiologia do fio e do couro cabeludo.'],
@@ -54,6 +77,8 @@ export default ({ versao }) => {
       'Para profissionais da beleza que querem atuar com terapia capilar: cabeleireiros, donos de salão, terapeutas capilares, esteticistas e profissionais autônomos.'],
     ['Preciso ter experiência com terapia capilar?',
       'Não. A formação começa pelos fundamentos (o que é terapia capilar, anatomia e fisiologia do fio e do couro cabeludo) e avança até avaliação, patologias, eletroterapia e protocolos integrados.'],
+    ['Quem é a professora da formação?',
+      `${professora.nome} (Daia Carneiro) é graduada em Estética e Cosmetologia, pós-graduada em Dermocosmética e tem MBA em Tricologia. Foi docente universitária por 11 anos, tem mais de 15 anos de experiência clínica e já formou mais de 5.000 alunos em terapia capilar. Hoje é educadora em Terapia Capilar da Mirra Professional e da Maison Visage.`],
     ['A formação tem certificado?',
       'Sim. O certificado é entregue no encerramento da formação. Você também recebe um jaleco e uma placa de reconhecimento de Terapeuta Capilar.'],
     ['Qual é o investimento?',
@@ -115,7 +140,7 @@ export default ({ versao }) => {
     <div>
       <span class="gw-selo gw-entra" style="--d:0">Turma ${turma} · Inscrições abertas</span>
       <h1 class="gw-entra" style="--d:1">Formação em Terapia Capilar <em>Belnic</em></h1>
-      <p class="gw-lead gw-entra" style="--d:2"><strong>3 dias intensivos</strong> de teoria e prática para você avaliar o couro cabeludo, montar protocolos personalizados e oferecer terapia capilar no seu salão, com <strong>certificado</strong>.</p>
+      <p class="gw-lead gw-entra" style="--d:2"><strong>3 dias intensivos</strong> de teoria e prática com <strong>${esc(f.docente)}</strong>, que já formou mais de 5.000 profissionais em terapia capilar. Você aprende a avaliar o couro cabeludo, montar protocolos personalizados e oferecer terapia capilar no seu salão, com <strong>certificado</strong>.</p>
       <ul class="fm-info gw-entra" style="--d:3">
         <li>${icones.data}<span><small>Datas</small>${esc(f.datasCurto)}</span></li>
         <li>${icones.hora}<span><small>Horário</small>${esc(f.horario)}</span></li>
@@ -163,18 +188,39 @@ export default ({ versao }) => {
   </div>
 </section>
 
-<section class="secao secao--branca">
+<section class="secao secao--branca fm-prof" id="professora">
   <div class="container dividido fm-docente">
-    <figure class="fm-foto revela">
-      <img src="/assets/img/formacao/daia-carneiro.webp" alt="${esc(f.docente)}, responsável pela Formação em Terapia Capilar Belnic" width="767" height="513" loading="lazy" decoding="async">
+    <figure class="fm-foto fm-prof__foto revela">
+      <img src="/assets/img/formacao/daia-maquete.webp" alt="${esc(f.docente)} segurando uma maquete do couro cabeludo" width="800" height="1000" loading="lazy" decoding="async">
     </figure>
     <div class="revela">
-      <span class="sobretitulo">Quem conduz</span>
+      <span class="sobretitulo">Quem conduz a formação</span>
       <h2>${esc(f.docente)}</h2>
-      <p class="lead">${esc(f.docente)} está à frente da Formação em Terapia Capilar Belnic, conduzindo os profissionais por conteúdos técnicos, demonstrações e aplicações práticas.</p>
+      <p class="fm-prof__cargo">${esc(professora.nome)} · ${esc(professora.cargo)}</p>
+      <p class="lead">Referência na formação de profissionais em <strong>Terapia Capilar Integrativa</strong>, Daia une mais de 15 anos de experiência clínica a uma longa trajetória como professora e coordenadora universitária.</p>
+      <ul class="fm-numeros">
+        ${professora.numeros.map(([n, t]) => `<li><b>${esc(n)}</b><span>${esc(t)}</span></li>`).join('')}
+      </ul>
       <p>Durante a formação, ela acompanha cada etapa, esclarece dúvidas e mostra como transformar conhecimento em protocolos aplicáveis à rotina profissional.</p>
-      <p class="fm-destaque">Conhecimento que sai da teoria e <strong>chega à prática</strong>.</p>
     </div>
+  </div>
+  <div class="container fm-prof__curriculo">
+    <div class="revela">
+      <h3>Formação acadêmica</h3>
+      <ol class="fm-linha">${professora.formacao.map(([a, t, o]) => `<li><time>${esc(a)}</time><div><strong>${esc(t)}</strong><span>${esc(o)}</span></div></li>`).join('')}</ol>
+    </div>
+    <div class="revela">
+      <h3>Trajetória</h3>
+      <ol class="fm-linha">${professora.trajetoria.map(([a, t, o]) => `<li><time>${esc(a)}</time><div><strong>${esc(t)}</strong><span>${esc(o)}</span></div></li>`).join('')}</ol>
+    </div>
+  </div>
+  <div class="container">
+    <div class="fm-prof__galeria">
+      <img class="revela" src="/assets/img/formacao/daia-palestra.webp" alt="${esc(f.docente)} conduzindo um treinamento para profissionais" width="600" height="750" loading="lazy" decoding="async">
+      <img class="revela" src="/assets/img/formacao/daia-palco.webp" alt="${esc(f.docente)} em palestra sobre terapia capilar" width="600" height="750" loading="lazy" decoding="async">
+      <img class="revela" src="/assets/img/formacao/daia-aula.webp" alt="${esc(f.docente)} em uma aula de terapia capilar" width="600" height="750" loading="lazy" decoding="async">
+    </div>
+    <p class="fm-destaque revela">Conhecimento que sai da teoria e <strong>chega à prática</strong>.</p>
   </div>
 </section>
 
@@ -290,10 +336,14 @@ export default ({ versao }) => {
     hasCourseInstance: {
       '@type': 'CourseInstance', courseMode: 'Onsite', startDate: f.inicio, endDate: f.fim,
       location: { '@type': 'Place', name: f.local, address: { '@type': 'PostalAddress', addressLocality: f.cidade, addressRegion: 'RS', addressCountry: 'BR', ...(f.endereco ? { streetAddress: f.endereco } : {}) } },
-      instructor: { '@type': 'Person', name: f.docente },
+      instructor: {
+        '@type': 'Person', name: professora.nome, alternateName: f.docente, jobTitle: professora.cargo,
+        image: `${site.url}/assets/img/formacao/daia-maquete.webp`,
+        alumniOf: [{ '@type': 'CollegeOrUniversity', name: 'Universidade Paranaense' }, { '@type': 'EducationalOrganization', name: 'ICosmetologia' }],
+      },
       offers: { '@type': 'Offer', price: f.preco.toFixed(2), priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${site.url}${caminho}#inscricao` },
     },
-    image: [`${site.url}/assets/img/formacao/daia-carneiro.webp`, `${site.url}/assets/img/formacao/turma-2026-completa.webp`],
+    image: [`${site.url}/assets/img/formacao/daia-maquete.webp`, `${site.url}/assets/img/formacao/turma-2026-completa.webp`],
   };
 
   return {

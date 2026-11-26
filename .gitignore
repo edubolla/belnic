@@ -8,3 +8,5 @@ _fonte/tmp/
 _fonte/imagens/
 # Pacotes .zip para a HostGator (gerados por node build.mjs --zip)
 entrega/
+# Fotos originais enviadas pela Belnic (as usadas no site ficam em src/assets/img/formacao)
+fotos-prof-curso/
