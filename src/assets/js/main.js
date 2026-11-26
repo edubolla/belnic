@@ -90,6 +90,9 @@
       rastreia('clique_email', { local: localDe(a) });
     } else if (a.dataset.evento === 'mapa' || href.includes('google.com/maps')) {
       rastreia('abrir_mapa', { local: localDe(a) });
+    } else if (href === '#inscricao' || href === '#cadastro') {
+      // Botões que levam ao formulário (topo, meio da página, barra do celular): mostra qual chamada funciona melhor
+      rastreia('clique_cta', { local: localDe(a), botao: texto(a) });
     }
   });
 

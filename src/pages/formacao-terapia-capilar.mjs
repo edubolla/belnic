@@ -125,6 +125,10 @@ export default ({ versao }) => {
   <p>Enquanto isso, siga <a href="${site.instagram}" target="_blank" rel="noopener">${site.instagramUser}</a> para acompanhar as novidades.</p>
 </div>`;
 
+  // Chamada no meio da página: leva ao formulário de pré-inscrição
+  const ctaMeio = (texto, nota) => `
+    <div class="fm-cta-meio revela"><a class="btn btn--primario" href="#inscricao" data-cta="${esc(texto)}">${esc(texto)} ${icon.arrow}</a><small>${esc(nota)}</small></div>`;
+
   const conteudo = modulos.map(([t, d], i) => `
       <article class="cartao fm-modulo revela"><span class="numero">${String(i + 1).padStart(2, '0')}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></article>`).join('');
 
@@ -185,6 +189,7 @@ export default ({ versao }) => {
     </div>
     <div class="grade grade--2 grade--4 fm-conteudo">${conteudo}
     </div>
+    ${ctaMeio('Quero garantir minha vaga', 'Pré-inscrição gratuita · A equipe Belnic confirma a vaga pelo WhatsApp')}
   </div>
 </section>
 
@@ -221,6 +226,7 @@ export default ({ versao }) => {
       <img class="revela" src="/assets/img/formacao/daia-aula.webp" alt="${esc(f.docente)} em uma aula de terapia capilar" width="600" height="750" loading="lazy" decoding="async">
     </div>
     <p class="fm-destaque revela">Conhecimento que sai da teoria e <strong>chega à prática</strong>.</p>
+    ${ctaMeio('Quero aprender com a ' + f.docente.split(' ')[0], 'Certificado incluso · Jaleco e placa de reconhecimento')}
   </div>
 </section>
 
@@ -279,7 +285,7 @@ export default ({ versao }) => {
   </div>
 </section>
 
-<section class="secao secao--branca">
+<section class="secao secao--branca" id="turma-2026">
   <div class="container">
     <div class="cabeca revela">
       <span class="sobretitulo">Turma 2026</span>
@@ -290,6 +296,7 @@ export default ({ versao }) => {
       <img class="revela" src="/assets/img/formacao/turma-2026-grupo.webp" alt="Foto oficial da turma 2026 da Formação em Terapia Capilar" width="1080" height="440" loading="lazy" decoding="async">
       <img class="revela" src="/assets/img/formacao/sala-aula.webp" alt="Aula teórica da turma 2026" width="1080" height="505" loading="lazy" decoding="async">
     </div>
+    ${ctaMeio('Quero fazer parte da turma ${f.turma}'.replace('${f.turma}', f.turma), 'Pré-inscrição gratuita · Em até ' + f.parcelas + 'x ou ' + pctVista + '% off à vista')}
   </div>
 </section>
 

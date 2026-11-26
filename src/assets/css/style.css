@@ -586,6 +586,9 @@ h3, h4 { font-family: var(--sans); font-weight: 500; font-size: clamp(1.1rem, 3.
 .fm-prof__galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 32px; }
 .fm-prof__galeria img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--raio); }
 .fm-prof .fm-destaque { text-align: center; margin-top: 28px; }
+.fm-cta-meio { display: grid; justify-items: center; gap: 10px; margin-top: 36px; text-align: center; }
+.fm-cta-meio .btn { width: 100%; max-width: 380px; }
+.fm-cta-meio small { font-size: .82rem; color: var(--tinta-suave); }
 .fm-experiencia figure { margin: 0; background: var(--branco); border-radius: var(--raio-g); overflow: hidden; box-shadow: var(--sombra); }
 .fm-experiencia img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
 .fm-experiencia figcaption { display: grid; gap: 4px; padding: 16px 18px 20px; color: var(--tinta-suave); font-size: .95rem; }

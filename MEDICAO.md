@@ -53,6 +53,7 @@ Todos vão para o GA4 (via `gtag`, numa fila própria chamada `gaLayer`) e para 
 | `scroll_50` | A pessoa rolou até a metade da página (uma vez por página vista) | `percentual` = 50 |
 | `scroll_100` | A pessoa chegou ao fim da página (uma vez por página vista; página que cabe na tela conta na hora) | `percentual` = 100 |
 | `faq_aberta` | Abre uma pergunta frequente | `pergunta` |
+| `clique_cta` | Clique num botão que leva ao formulário (`#inscricao` na formação, `#cadastro` na Green Week): topo, meio da página, rodapé ou barra do celular | `local` (seção ou `barra_movel`), `botao` (texto do botão) |
 | `clique_instagram` | Clique no Instagram | `local` |
 | `clique_email` | Clique no e-mail | `local` |
 | `abrir_mapa` | Abre o mapa de cidades atendidas | `local` |
